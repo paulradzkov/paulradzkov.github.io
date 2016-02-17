@@ -4,7 +4,7 @@
 	<subtitle>Заметки о веб-разработке Павла Радькова.</subtitle>
 	<link href="https://paulradzkov.github.io/atom.xml" rel="self" />
 	<link href="https://paulradzkov.github.io" />
-	<updated>2016-02-17T20:47:19.860Z</updated>
+	<updated>2016-02-17T22:41:48.338Z</updated>
 	<id>https://paulradzkov.github.io</id>
 	<author>
 		<name>Павел Радьков</name>
@@ -688,11 +688,11 @@ id sem consectetuer libero luctus adipiscing.
 
 Картинка без `alt` текста
 
-![](http://placehold.it/150x100)
+![](//placehold.it/150x100)
 
 Картинка с альтом и тайтлом:
 
-![Alt text](http://placehold.it/150x100 &quot;Можно задать title&quot;)
+![Alt text](//placehold.it/150x100 &quot;Можно задать title&quot;)
 
 Запомнить просто: синтаксис как у ссылок, только перед открывающей квадратной скобкой ставится восклицательный знак.
 
@@ -702,13 +702,13 @@ id sem consectetuer libero luctus adipiscing.
 ![Картинка][image2]
 ![Картинка][image3]
 
-[image1]: http://placehold.it/250x100
-[image2]: http://placehold.it/200x100
-[image3]: http://placehold.it/150x100
+[image1]: //placehold.it/250x100
+[image2]: //placehold.it/200x100
+[image3]: //placehold.it/150x100
 
 Картинки-ссылки:
 
-[![Alt text](http://placehold.it/150x100)](http://example.com/)
+[![Alt text](//placehold.it/150x100)](http://example.com/)
 
 
 ## Использование HTML внутри Markdown
@@ -754,7 +754,6 @@ Content Cell  | Content Cell
 Внутри таблиц можно использовать ссылки, наклонный, жирный или зачеркнутый текст.
 
 Для всего остального есть обычный HTML.
-
 
         &lt;/textarea&gt;
       &lt;/form&gt;
@@ -1299,7 +1298,7 @@ Content Cell  | Content Cell
 &lt;p&gt;Живой пример:&lt;/p&gt;
 
 &lt;div class=&quot;demo&quot;&gt;
-    &lt;img src=&quot;http://placehold.it/320x240&quot; style=&quot;float:left; margin-right:1em;&quot; alt=&quot;&quot;&gt;
+    &lt;img src=&quot;https://paulradzkov.github.io//placehold.it/320x240&quot; style=&quot;float:left; margin-right:1em;&quot; alt=&quot;&quot;&gt;
     &lt;p&gt;Lorem ipsum.&lt;/p&gt;
     &lt;ul&gt;
         &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat porro eligendi quod ratione quaerat dolores quia quasi provident. Veniam earum iste modi quam aliquam qui itaque corporis quia vel inventore.&lt;/li&gt;
@@ -1341,7 +1340,7 @@ Content Cell  | Content Cell
 &lt;div class=&quot;demo&quot;&gt;
 
     &lt;div class=&quot;demo-card&quot;&gt;
-    	&lt;a href=&quot;#&quot; class=&quot;demo-card-image-holder&quot;&gt;&lt;img src=&quot;http://placehold.it/300x200&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    	&lt;a href=&quot;#&quot; class=&quot;demo-card-image-holder&quot;&gt;&lt;img src=&quot;https://paulradzkov.github.io//placehold.it/300x200&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
         &lt;div class=&quot;demo-card-txt&quot;&gt;
             &lt;h3 class=&quot;demo-card-title&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;demo-card-link&quot;&gt;Pointer-events: none&lt;/a&gt;&lt;/h3&gt;
             &lt;p class=&quot;demo-card-descr&quot;&gt;&lt;strong&gt;Выдели меня курсором.&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!&lt;/p&gt;
@@ -1349,7 +1348,7 @@ Content Cell  | Content Cell
         &lt;span class=&quot;demo-card-overlay&quot; style=&quot;pointer-events:none;&quot;&gt;&lt;!--gradient overlay--&gt;&lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&quot;demo-card&quot;&gt;
-    	&lt;a href=&quot;#&quot; class=&quot;demo-card-image-holder&quot;&gt;&lt;img src=&quot;http://placehold.it/300x200&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    	&lt;a href=&quot;#&quot; class=&quot;demo-card-image-holder&quot;&gt;&lt;img src=&quot;https://paulradzkov.github.io//placehold.it/300x200&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
         &lt;div class=&quot;demo-card-txt&quot;&gt;
             &lt;h3 class=&quot;demo-card-title&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;demo-card-link&quot;&gt;Pointer-events: auto&lt;/a&gt;&lt;/h3&gt;
             &lt;p class=&quot;demo-card-descr&quot;&gt;&lt;strong&gt;Выдели меня курсором.&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!&lt;/p&gt;
@@ -1475,7 +1474,7 @@ Content Cell  | Content Cell
     &lt;div class=&quot;media&quot;&gt;
         &lt;figure class=&quot;img&quot;&gt;
             &lt;div class=&quot;del-cross&quot;&gt;
-                &lt;img src=&quot;http://placehold.it/300x200&quot; width=&quot;300&quot; height=&quot;200&quot; alt=&quot;No kitten here&quot;/&gt;
+                &lt;img src=&quot;https://paulradzkov.github.io//placehold.it/300x200&quot; width=&quot;300&quot; height=&quot;200&quot; alt=&quot;No kitten here&quot;/&gt;
             &lt;/div&gt;
             &lt;figcaption&gt;&lt;p&gt;Image caption&lt;/p&gt;&lt;/figcaption&gt;
         &lt;/figure&gt;

@@ -702,11 +702,11 @@ id sem consectetuer libero luctus adipiscing.
 
 Картинка без `alt` текста
 
-![](http://placehold.it/150x100)
+![](//placehold.it/150x100)
 
 Картинка с альтом и тайтлом:
 
-![Alt text](http://placehold.it/150x100 "Можно задать title")
+![Alt text](//placehold.it/150x100 "Можно задать title")
 
 Запомнить просто: синтаксис как у ссылок, только перед открывающей квадратной скобкой ставится восклицательный знак.
 
@@ -716,13 +716,13 @@ id sem consectetuer libero luctus adipiscing.
 ![Картинка][image2]
 ![Картинка][image3]
 
-[image1]: http://placehold.it/250x100
-[image2]: http://placehold.it/200x100
-[image3]: http://placehold.it/150x100
+[image1]: //placehold.it/250x100
+[image2]: //placehold.it/200x100
+[image3]: //placehold.it/150x100
 
 Картинки-ссылки:
 
-[![Alt text](http://placehold.it/150x100)](http://example.com/)
+[![Alt text](//placehold.it/150x100)](http://example.com/)
 
 
 ## Использование HTML внутри Markdown
@@ -768,7 +768,6 @@ Content Cell  | Content Cell
 Внутри таблиц можно использовать ссылки, наклонный, жирный или зачеркнутый текст.
 
 Для всего остального есть обычный HTML.
-
 
         </textarea>
       </form>
@@ -1341,7 +1340,7 @@ Content Cell  | Content Cell
 <p>Живой пример:</p>
 
 <div class="demo">
-    <img src="http://placehold.it/320x240" style="float:left; margin-right:1em;" alt="">
+    <img src="//placehold.it/320x240" style="float:left; margin-right:1em;" alt="">
     <p>Lorem ipsum.</p>
     <ul>
         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat porro eligendi quod ratione quaerat dolores quia quasi provident. Veniam earum iste modi quam aliquam qui itaque corporis quia vel inventore.</li>
@@ -1387,7 +1386,7 @@ Content Cell  | Content Cell
 <div class="demo">
 
     <div class="demo-card">
-    	<a href="#" class="demo-card-image-holder"><img src="http://placehold.it/300x200" alt=""></a>
+    	<a href="#" class="demo-card-image-holder"><img src="//placehold.it/300x200" alt=""></a>
         <div class="demo-card-txt">
             <h3 class="demo-card-title"><a href="#" class="demo-card-link">Pointer-events: none</a></h3>
             <p class="demo-card-descr"><strong>Выдели меня курсором.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!</p>
@@ -1395,7 +1394,7 @@ Content Cell  | Content Cell
         <span class="demo-card-overlay" style="pointer-events:none;"><!--gradient overlay--></span>
     </div>
     <div class="demo-card">
-    	<a href="#" class="demo-card-image-holder"><img src="http://placehold.it/300x200" alt=""></a>
+    	<a href="#" class="demo-card-image-holder"><img src="//placehold.it/300x200" alt=""></a>
         <div class="demo-card-txt">
             <h3 class="demo-card-title"><a href="#" class="demo-card-link">Pointer-events: auto</a></h3>
             <p class="demo-card-descr"><strong>Выдели меня курсором.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!</p>
@@ -1529,7 +1528,7 @@ Content Cell  | Content Cell
     <div class="media">
         <figure class="img">
             <div class="del-cross">
-                <img src="http://placehold.it/300x200" width="300" height="200" alt="No kitten here"/>
+                <img src="//placehold.it/300x200" width="300" height="200" alt="No kitten here"/>
             </div>
             <figcaption><p>Image caption</p></figcaption>
         </figure>
