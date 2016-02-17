@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    
+    <title>Font-weight: bolder для шрифтов со множеством начертаний</title>
+    <meta name="description" content="Font-weight: bolder не работает или работает не так? Это легко исправить. Статья о том как правильно использовать font-weight: bolder и lighter.">
+    <meta name="keywords" content="Paul Radzkov, web-developer, blog, html, css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    
+    <meta name="generator" content="DocPad v6.78.4">
+
+    
+    <link rel="stylesheet" href="http://paulradzkov.github.io/css/template.css">
+
+    
+    
+    <link rel="shortcut icon" href="http://paulradzkov.github.io/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://paulradzkov.github.io/atom.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://paulradzkov.github.io/rss.xml">
+    <link rel="canonical" href="http://paulradzkov.github.io/2014/font-weight_bolder/">
+
+    <script type="text/javascript">!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var e=new XMLHttpRequest;e.open("GET",o,!0),e.onreadystatechange=function(){4===e.readyState&&(c(e.responseText),localStorage.font_css_cache=e.responseText,localStorage.font_css_cache_file=o)},e.send()}else{var n=document.createElement("link");n.href=o,n.rel="stylesheet",n.type="text/css",document.getElementsByTagName("head")[0].appendChild(n),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.setAttribute("type","text/css"),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="http://paulradzkov.github.io/fonts/webfonts.css?v=0.0.1";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script><meta property="og:title" content="Font-weight: bolder для шрифтов со множеством начертаний">
+<meta property="og:description" content="Font-weight: bolder не работает или работает не так? Это легко исправить. Статья о том как правильно использовать font-weight: bolder и lighter.">
+
+    <meta property="og:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+    <meta property="og:type" content="article">
+    <meta property="og:article:published_time" content="Thu Feb 06 2014 03:00:00 GMT+0300 (FET)">
+    
+    <meta property="og:article:author" content="Павел Радьков">
+    
+    
+    <meta property="og:article:tag" content="css, typography, css, typography">
+    
+
+<meta property="og:locale" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@paul_radzkov">
+<meta name="twitter:title" content="Font-weight: bolder для шрифтов со множеством начертаний">
+<meta name="twitter:description" content="Font-weight: bolder не работает или работает не так? Это легко исправить. Статья о том как правильно использовать font-weight: bolder и lighter.">
+
+<meta name="twitter:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+
+    
+    <script>!function(e,a,n,t,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(n),s=a.getElementsByTagName(n)[0],o.async=1,o.src=t,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-29416794-1","paulradzkov.com"),ga("send","pageview");</script></head><body class="layout-article">
+    
+    
+    <header class="page-header">
+        <nav class="read-siblings">
+            <div class="navlinks">
+  <a href="/2014/mailto_parameters/" title="Previous Post: Параметры subject и body в mailto ссылках" class="navlinks-prev">&laquo; Параметры subject и body в mailto ссылках</a>
+  <a href="/2014/capture_screen_to_gif/" title="Next Post: Захват экрана в GIF" class="navlinks-next">Захват экрана в GIF &raquo;</a>
+</div>
+        </nav>
+        <nav class="site-navigation">
+            <a class="nav-icon nav-icon-centered js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null,this.src=&quot;/i/home.png&quot;"><span class="visuallyhidden">На главную</span></a>
+        </nav>
+        <aside class="nav-placeholder article-meta content-width">
+            
+            <p class="date"><time datetime="Thu Feb 06 2014 03:00:00 GMT+0300 (FET)">06 февраля 2014</time></p>
+            
+        </aside>
+        <div class="content-width">
+            <h1 class="article-title">Font-weight: bolder для шрифтов со множеством начертаний</h1>
+        </div>
+        <aside class="article-meta content-width inlined">
+            
+            <span class="tags-list">
+                
+                    <a class="tag" href="/tags/css/">css</a>
+                
+                    <a class="tag" href="/tags/typography/">typography</a>
+                
+            </span>
+            
+            
+            <span class="comments"><a href="#disqus_thread" data-disqus-identifier="font-weight_bolder">Комментарии</a></span>
+            
+            <span class="pageviews" style="display:none"></span>
+        </aside>
+
+    </header>
+    
+    
+        <nav class="site-navigation sticky-nav" id="sticker">
+            <a class="nav-icon js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null,this.src=&quot;/i/home.png&quot;"><span class="visuallyhidden">На главную</span></a>
+        </nav>
+    
+    
+    <article class="nav-placeholder page-content content-width" role="main">
+        <p>Если вы используете шрифт со множеством начертаний, то вам, вероятно, захочется, чтобы теги <code class="hljs-tag">strong</code> и <code class="hljs-tag">b</code> не увеличивали жирность шрифта до фиксированного значения <code class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-number">700</span></code>, как это происходит по-умолчанию, а использовали промежуточные значения, рассчитанные исходя из жирности шрифта родительского элемента.</p>
+<p>Ведь не очень красиво, когда в ультратонком шрифте появляются жирные кляксы тегов <code class="hljs-tag">strong</code>.</p>
+
+
+
+<p>Возьмём для примера Open Sans.</p>
+
+<figure>
+  <img src="/2014/font-weight_bolder//open-sans.png" width="847" height="345" alt="Open Sans и все его начертания">
+  <figcaption>
+  	<p>Open Sans имеет пять начертаний: Light 300, Normal 400, Semi-Bold 600, Bold 700 и Extra-Bold 800. <br> Цифры соответствуют значению <code class="hljs-attribute">font-weight</code>.</p>
+  </figcaption>
+</figure>
+
+<p>Основной текст имеет начертание Light 300, заголовки и цитаты — Normal 400, а промо-блок — Semi-Bold 600:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">body</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">'Open Sans'</span>, sans-serif</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">300</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-tag">h1</span>, <span class="hljs-tag">h2</span>, <span class="hljs-tag">h3</span>, <span class="hljs-tag">h4</span>, <span class="hljs-tag">h5</span>, <span class="hljs-tag">h6</span>,
+<span class="hljs-tag">blockquote</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">400</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.promo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">600</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Тег <code class="hljs-tag">strong</code> может встечаться и в основном тексте, и в цитатах, и промо-блоке. Надо это учесть.</p>
+
+<p>По-умолчанию:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">strong</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bold</span></span>; <span class="hljs-comment">/* bold = 700 */</span>
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>А нам хочется, чтобы у <code class="hljs-tag">strong</code> и <code class="hljs-tag">b</code> для основного текста было Normal 400, для цитат и заголовков — Bold 700, а для промо блока — Extra-Bold 800. Это сохранит контраст между жирным и нежирным текстом примерно равным во всех случаях.</p>
+
+<p>Уверен, многие пробовали использовать <code class="css"><span class="hljs-tag">strong</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bolder</span></span>;<span class="hljs-rule">}</span></span></code>, но это не принесло ожидаемого результата — текст стал ещё жирнее, чем ожидалось.</p>
+
+<p>А всё потому, что согласно <a href="http://www.w3.org/TR/CSS2/fonts.html#font-boldness" target="_blank">спецификации</a>, значение <code class="hljs-rule"><span class="hljs-value">bolder</span></code>  (<code class="hljs-rule"><span class="hljs-value">lighter</span></code>) увеличивает (уменьшает) <em>унаследованное</em> значение <code class="hljs-attribute">font-weight</code> до следующего возможного для данного шрифта значения, согласно следующей таблице.</p>
+
+<figure>
+<table style="margin: auto">
+    <tr>
+        <th>Наследуемое значение</th><th>bolder</th><th>lighter</th>
+    </tr>
+    <tr>
+        <td>100</td><td>400</td><td>100</td>
+    </tr>
+    <tr>
+        <td>200</td><td>400</td><td>100</td>
+    </tr>
+    <tr>
+        <td>300</td><td>400</td><td>100</td>
+    </tr>
+    <tr>
+        <td>400</td><td>700</td><td>100</td>
+    </tr>
+    <tr>
+        <td>500</td><td>700</td><td>100</td>
+    </tr>
+    <tr>
+        <td>600</td><td>900</td><td>400</td>
+    </tr>
+    <tr>
+        <td>700</td><td>900</td><td>400</td>
+    </tr>
+    <tr>
+        <td>800</td><td>900</td><td>700</td>
+    </tr>
+    <tr>
+        <td>900</td><td>900</td><td>700</td>
+    </tr>
+</table>
+<figcaption><p>Значения «bolder» и «lighter» в зависимости от наследуемого значения.</p></figcaption>
+</figure>
+
+<p><del>Но в браузерной CSS прописано <code class="css"><span class="hljs-tag">strong</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value">bold</span></span>;<span class="hljs-rule">}</span></span></code>, т.е. <em>унаследуется</em> значение «700», а потом оно ещё и увеличивается до «900». Поэтому кажется, что <code class="hljs-rule"><span class="hljs-value">bolder</span></code> работает неправильно.</del></p>
+
+<blockquote>
+    <p><strong>Добавлено 22 января 2016</strong></p>
+    <p>На самом деле это был баг и он присутствовал во всех браузерах на момент написания статьи. Позже баги в браузерах были исправлены.
+        А <a href="https://github.com/necolas/normalize.css/pull/342">мой пулл-реквест</a> был принят в <a href="https://github.com/necolas/normalize.css">normalize.css</a>.</p>
+</blockquote>
+
+<p>Исправить это можно так:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* сбрасываем стандартное «bold»,
+шрифт становится таким же как его родительский элемент */</span>
+<span class="hljs-tag">strong</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> inherit</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* теперь bolder будет вычисляться исходя из веса шрифта родительского элемента */</span>
+<span class="hljs-tag">strong</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bolder</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Именно так, как два отдельных правила. Первое обнуляет значение <code class="hljs-attribute">font-weight</code> из браузерной таблицы стилей, второе задаёт жирность уже в относительных, а не абсолютных единицах.</p>
+
+<p>Теперь нам не придётся заботиться о вложенности элементов — каскад всё сделает автоматически. Мы можем вкладывать теги <code class="hljs-tag">strong</code> друг в друга.</p>
+
+<figure>
+    <a href="http://cssdeck.com/labs/x20utix0" target="_blank"><img src="/2014/font-weight_bolder//nested-tags-with-font-weight-bolder.png" alt=""></a>
+    <figcaption>
+        <p>Вложенные теги «strong». Толщина шрифта определяется исходя из значения родительского элемента.</p>
+        <p style="text-align: center"><a href="http://cssdeck.com/labs/x20utix0" target="_blank" class="link-to-demo">Демка</a></p>
+    </figcaption>
+</figure>
+
+
+<h2>Ограничения</h2>
+
+<p>Используя относительные значения <code class="hljs-attribute">font-weight</code> мы получаем только по три градации жирности шрифта для <code class="hljs-rule"><span class="hljs-value">bolder</span></code> и <code class="hljs-rule"><span class="hljs-value">lighter</span></code> соответственно. Спецификация не гарантирует, что браузеры правильно сопоставят названия начертаний и числовые значения. Не гарантирует, что для шрифта найдётся более жирное или более тонкое начертание. У некоторых шрифтов всего два начертания, у некоторых может быть восемь.</p>
+
+<p>Единственной гарантией при использовании <code class="hljs-rule"><span class="hljs-value">bolder</span></code> / <code class="hljs-rule"><span class="hljs-value">lighter</span></code> является то, что шрифт при значении «bolder» не будет тоньше, чем более легкие начертания этого шрифта, а при значении «lighter» будет не толще, чем более жирные начертания этого шрифта.</p>
+
+<p>Чтобы более тонко настроить вес шрифта, надо использовать абсолютные значения.</p>
+
+<h2>Баги</h2>
+
+<p>Если у вас шрифт установлен в системе, но не подключен через <code class="hljs-at_rule">@<span class="hljs-keyword">font-face</span></code>, то Google Chrome определяет только Normal и Bold начертания шрифта. Чтобы локальный шрифт заработал, нужно дополнительно указать его <code class="hljs-attribute">font-family</code>.</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.fw300</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">"Open Sans Light"</span>, <span class="hljs-string">"Open Sans"</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">300</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.fw600</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">"Open Sans SemiBold"</span>, <span class="hljs-string">"Open Sans"</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">600</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+    </article>
+    <div class="likely-container content-width">
+    <div class="likely">
+        <div class="facebook">Поделиться</div>
+        <div class="twitter" data-via="paul_radzkov">Твитнуть</div>
+        <div class="gplus">Плюсануть</div>
+        <div class="vkontakte">Поделиться</div>
+    </div>
+</div>
+
+    <footer class="page-footer content-width">
+	<p class="copyrights">
+		© <a href="//plus.google.com/+ПавелРадьков?rel=author" class="author"><span class="author-label">Автор:</span>Павел Радьков</a>
+		
+			2014.
+		
+		
+	</p>
+</footer>
+
+    
+    <div class="disqus-wrapper">
+        <article id="disqus_thread" class="disqus-container"></article>
+    </div>
+    
+    
+    <nav class="read-next">
+        <h4 class="read-next-title">Читать дальше:</h4>
+        <div class="navlinks">
+  <a href="/2014/mailto_parameters/" title="Previous Post: Параметры subject и body в mailto ссылках" class="navlinks-prev">&laquo; Параметры subject и body в mailto ссылках</a>
+  <a href="/2014/capture_screen_to_gif/" title="Next Post: Захват экрана в GIF" class="navlinks-next">Захват экрана в GIF &raquo;</a>
+</div>
+    </nav>
+    
+        <script src="http://paulradzkov.github.io/vendor/modernizr.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script>window.jQuery||document.write('<script src="http://paulradzkov.github.io/vendor/jquery.js"><\/script>');</script><script defer="defer" src="http://paulradzkov.github.io/js/output.min.js"></script><script type="text/javascript">var disqus_shortname="paulradzkov",disqus_url="http://paulradzkov.com/2014/font-weight_bolder/",disqus_identifier="font-weight_bolder",disqus_title="Font-weight: bolder для шрифтов со множеством начертаний";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="http://"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}(),function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="http://"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script><script type="text/javascript">!function(t,e,a){(e[a]=e[a]||[]).push(function(){try{e.yaCounter22878469=new Ya.Metrika({id:22878469,webvisor:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(t){}});var c=t.getElementsByTagName("script")[0],n=t.createElement("script"),r=function(){c.parentNode.insertBefore(n,c)};n.type="text/javascript",n.async=!0,n.src=("https:"==t.location.protocol?"https:":"http:")+"//mc.yandex.ru/metrika/watch.js","[object Opera]"==e.opera?t.addEventListener("DOMContentLoaded",r,!1):r()}(document,window,"yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22878469" style="position:absolute; left:-1px;" alt="" /></div></noscript>
+    
+
+    <script>ChatraID="m55vjivb29JgQgbXL",function(t,a,e){var r=t.getElementsByTagName("script")[0],c=t.createElement("script");a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},c.async=!0,c.src=("https:"===t.location.protocol?"https:":"http:")+"//chat.chatra.io/chatra.js",r.parentNode.insertBefore(c,r)}(document,window,"Chatra");</script><script defer="defer" src="https://apis.google.com/js/client.js?onload=gapiInit"></script><script>function gapiInit(){gapi.client.setApiKey(apiKey),gapi.auth.authorize({client_id:clientId,scope:scopes,immediate:!0},handleAuthResult)}function handleAuthResult(e){e&&!e.error?gapi.client.load("analytics","v3",makeApiCall):console.log("Not authorized")}function makeApiCall(){var e=gapi.client.analytics.data.ga.get({ids:tableIDs,"start-date":startDate,"end-date":"today",metrics:"ga:pageviews",filters:searchFilters});e.execute(handleCoreReportingResults)}function handleCoreReportingResults(e){e.error?console.log("There was an error: "+e.message):(console.log("Total pageviews since "+startDate+" : "+e.rows),$(".pageviews").show().append("Просмотров: "+e.rows))}var apiKey="AIzaSyCHQx2_4Kc-GL0eRB1wH9EfnraIVyAQueA",clientId="666487715579-h8ds9j92rsfrjtqho1u1oqldda9gm0gm.apps.googleusercontent.com",scopes=["https://www.googleapis.com/auth/analytics.readonly"],tableIDs="ga:56553165",startDate="2014-02-06",searchFilters="ga:pagePath==/2014/font-weight_bolder/";</script></body></html>

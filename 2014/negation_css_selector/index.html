@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    
+    <title>CSS-селектор :not(). Полезные примеры</title>
+    <meta name="description" content="CSS3 селектор :not (negation). Примеры использования">
+    <meta name="keywords" content="Paul Radzkov, web-developer, blog, html, css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    
+    <meta name="generator" content="DocPad v6.78.4">
+
+    
+    <link rel="stylesheet" href="http://paulradzkov.github.io/css/template.css"><link rel="stylesheet" href="http://paulradzkov.github.io/css/caniuse.css">
+
+    
+    
+    <link rel="shortcut icon" href="http://paulradzkov.github.io/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://paulradzkov.github.io/atom.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://paulradzkov.github.io/rss.xml">
+    <link rel="canonical" href="http://paulradzkov.github.io/2014/negation_css_selector/">
+
+    <script type="text/javascript">!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var e=new XMLHttpRequest;e.open("GET",o,!0),e.onreadystatechange=function(){4===e.readyState&&(c(e.responseText),localStorage.font_css_cache=e.responseText,localStorage.font_css_cache_file=o)},e.send()}else{var n=document.createElement("link");n.href=o,n.rel="stylesheet",n.type="text/css",document.getElementsByTagName("head")[0].appendChild(n),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.setAttribute("type","text/css"),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="http://paulradzkov.github.io/fonts/webfonts.css?v=0.0.1";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script><meta property="og:title" content="CSS-селектор :not(). Полезные примеры">
+<meta property="og:description" content="CSS3 селектор :not (negation). Примеры использования">
+
+    <meta property="og:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+    <meta property="og:type" content="article">
+    <meta property="og:article:published_time" content="Sun Jan 19 2014 03:00:00 GMT+0300 (FET)">
+    
+    <meta property="og:article:author" content="Павел Радьков">
+    
+    
+    <meta property="og:article:tag" content="css, css">
+    
+
+<meta property="og:locale" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@paul_radzkov">
+<meta name="twitter:title" content="CSS-селектор :not(). Полезные примеры">
+<meta name="twitter:description" content="CSS3 селектор :not (negation). Примеры использования">
+
+<meta name="twitter:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+
+    
+    <script>!function(e,a,n,t,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(n),s=a.getElementsByTagName(n)[0],o.async=1,o.src=t,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-29416794-1","paulradzkov.com"),ga("send","pageview");</script></head><body class="layout-article">
+    
+    
+    <header class="page-header">
+        <nav class="read-siblings">
+            <div class="navlinks">
+  <a href="/2013/lists_and_floats/" title="Previous Post: Списки и картинки с флоатами" class="navlinks-prev">&laquo; Списки и картинки с флоатами</a>
+  <a href="/2014/visited_link_on_hover/" title="Next Post: Посещённая ссылка при наведении" class="navlinks-next">Посещённая ссылка при наведении &raquo;</a>
+</div>
+        </nav>
+        <nav class="site-navigation">
+            <a class="nav-icon nav-icon-centered js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null,this.src=&quot;/i/home.png&quot;"><span class="visuallyhidden">На главную</span></a>
+        </nav>
+        <aside class="nav-placeholder article-meta content-width">
+            
+            <p class="date"><time datetime="Sun Jan 19 2014 03:00:00 GMT+0300 (FET)">19 января 2014</time></p>
+            
+        </aside>
+        <div class="content-width">
+            <h1 class="article-title">CSS-селектор :not(). Полезные примеры</h1>
+        </div>
+        <aside class="article-meta content-width inlined">
+            
+            <span class="tags-list">
+                
+                    <a class="tag" href="/tags/css/">css</a>
+                
+            </span>
+            
+            
+            <span class="comments"><a href="#disqus_thread" data-disqus-identifier="negation-css-selector">Комментарии</a></span>
+            
+            <span class="pageviews" style="display:none"></span>
+        </aside>
+
+    </header>
+    
+    
+        <nav class="site-navigation sticky-nav" id="sticker">
+            <a class="nav-icon js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null,this.src=&quot;/i/home.png&quot;"><span class="visuallyhidden">На главную</span></a>
+        </nav>
+    
+    
+    <article class="nav-placeholder page-content content-width" role="main">
+        <p>В спецификации и блогах про селектор <code class="hljs-pseudo">:not</code> обычно приводят какие-то искусственные примеры, которые хоть и объясняют синтаксис и принцип действия, но не несут никакой идеи о том, как получить пользу от нового селектора.</p>
+
+
+
+<p>Например:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">p</span><span class="hljs-pseudo">:not(</span><span class="hljs-class">.classy</span>) <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> red</span></span>; <span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Ну окей, думаю я, в моей практике не встречались такие ситуации. Обходились мы ведь как-то раньше без <code class="hljs-pseudo">:not</code>. Приходилось немного переписать структуру селекторов или обнулить пару значений.</p>
+
+<h2>Пример 1. Элемент без класса</h2>
+
+<p>Селектор  <code class="hljs-pseudo">:not</code> может быть крайне полезен, когда нам нужно застилить контент сгенерированный пользователем (нет возможности расставить в нем классы), или когда у нас контента очень много и расставлять в нем классы слишком трудоёмко.</p>
+
+<p>Например, мы хотим на сайте сделать красивые буллиты для ненумерованных списков <code class="css"><span class="hljs-tag">ul li</span></code>. Мы пишем код:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">ul</span> <span class="hljs-tag">li</span> <span class="hljs-rules">{ <span class="hljs-comment">/* наши красивые стили */</span> <span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>В результате, наши красивые буллиты появляются не только в контенте, но и, например, в навигации, где тоже используются <code class="css"><span class="hljs-tag">ul li</span></code>.</p>
+
+<p>Мы ограничиваем область действия селектора:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.content</span> <span class="hljs-tag">ul</span> <span class="hljs-tag">li</span> <span class="hljs-rules">{ <span class="hljs-comment">/* красота */</span> <span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Навигацию мы спасли, но ненужные буллиты всё еще вылазят на слайдерах, списках новостей и других конструкциях внутри <code class="hljs-class">.content</code>, где тоже используются <code class="css"><span class="hljs-tag">ul li</span></code>.</p>
+
+<p>Далее у нас варианты:</p>
+
+<p>1) обнулить мешающие стили в слайдерах и других местах. Но это противоречит «<abbr title="Don't Repeat Yourself">DRY</abbr>» и является одним из <a href="http://csswizardry.com/2012/11/code-smells-in-css/" target="_blank">признаков «вонючего» кода</a>. К тому же не решает проблему раз и навсегда: добавите, например, аккордеон и списки в нем снова придется обнулять.</p>
+
+<p>2) пойти от обратного и ставить класс всем спискам, которые нужно стилизовать:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.textlist</span> <span class="hljs-tag">li</span> <span class="hljs-rules">{ <span class="hljs-comment">/* красота */</span> <span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Это добавляет лишней работы по расстановке классов в контенте. Иногда имеет смысл, но лишнюю работу никто не любит.</p>
+
+<p>3) стилизовать только те <code class="css"><span class="hljs-tag">ul li</span></code>, у которых нет никаких классов вообще:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">ul</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[class]</span>) <span class="hljs-tag">li</span> <span class="hljs-rules">{ <span class="hljs-comment">/* красота */</span> <span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Победа! Нам не нужно делать дополнительную работу по расстановке классов в контенте. А на слайдерах, аккордеонах и прочих конструкциях, которые не должны выглядеть как списки, но используют их в своей разметке, в 99% случаев уже будут свои классы, и наши стили их не затронут.</p>
+
+<p>Этот прием — «выбирать только элементы без класса» — очень полезен для оформления пользовательского контента и его можно применять не только к спискам, но и для других случаев.</p>
+
+<h2>Пример 2. Изменение внешнего вида всех элементов, кроме наведенного</h2>
+
+<figure>
+  <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank"><img src="/2014/negation_css_selector//sample2.gif" width="600" height="150" alt="Изменение внешнего вида всех элементов, кроме наведенного"></a>
+  <figcaption>
+    <p style="text-align: center"><a href="http://cssdeck.com/labs/dlg62kjv" class="link-to-demo" target="_blank">Пример</a></p>
+  </figcaption>
+</figure>
+
+<p>Такой эффект можно реализовать без <code class="hljs-pseudo">:not</code> путем перезаписи значений. И это будет работать в бо́льшем количестве браузеров.</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* с перезаписью свойств */</span>
+<span class="hljs-tag">ul</span><span class="hljs-pseudo">:hover</span> <span class="hljs-tag">li</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"><span class="hljs-number">0.5</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-tag">ul</span><span class="hljs-pseudo">:hover</span> <span class="hljs-tag">li</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"><span class="hljs-number">1</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Но если придется обнулять слишком много свойств, то есть смысл использовать <code class="hljs-pseudo">:not</code>.</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* используя :not() */</span>
+<span class="hljs-tag">ul</span><span class="hljs-pseudo">:hover</span> <span class="hljs-tag">li</span><span class="hljs-pseudo">:not(</span><span class="hljs-pseudo">:hover)</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"><span class="hljs-number">0.5</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<h2>Пример 3. Меню с разделителями между элементами</h2>
+<figure>
+    <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank"><img src="/2014/negation_css_selector//sample3.png" width="600" height="200" alt="Меню с разделителями между элементами"></a>
+  <figcaption>
+    <p style="text-align: center"><a href="http://cssdeck.com/labs/dlg62kjv" class="link-to-demo" target="_blank">Пример</a></p>
+  </figcaption>
+</figure>
+
+<p>Как и в предыдущем примере, желаемого можно добиться несколькими способами.</p>
+
+<p>Через перезапись свойств. Но тут два правила вместо одного, что не есть «<abbr title="Don't Repeat Yourself">DRY</abbr>».</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.menu-item</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">' | '</span></span></span>;
+<span class="hljs-rule">}</span></span>
+<span class="hljs-class">.menu-item</span><span class="hljs-pseudo">:last-child</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> none</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Через <code class="hljs-pseudo">:nth-last-child()</code>. Одно правило, но тяжело читается.</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.menu-item</span><span class="hljs-pseudo">:nth-last-child(n+2)</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">' | '</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Через <code class="hljs-pseudo">:not()</code> — самая короткая и понятная запись.</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.menu-item</span><span class="hljs-pseudo">:not(</span><span class="hljs-pseudo">:last-child)</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">' | '</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<h2>Пример 4. Debug css</h2>
+
+<p>Удобно для отладки и самоконтроля искать/подсвечивать картинки без alt, label без for и другие ошибки.</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* подсвечиваем теги без необходимых атрибутов */</span>
+<span class="hljs-tag">img</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[alt]</span>),
+<span class="hljs-tag">label</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[for]</span>),
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type=submit]</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[value]</span>) <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">outline</span>:<span class="hljs-value"><span class="hljs-number">2px</span> solid red</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* тревога, если первый child внутри списка не li и прочие похожие примеры */</span>
+<span class="hljs-tag">ul</span> &gt; *<span class="hljs-pseudo">:not(li)</span>,
+<span class="hljs-tag">ol</span> &gt; *<span class="hljs-pseudo">:not(li)</span>,
+<span class="hljs-tag">dl</span> &gt; *<span class="hljs-pseudo">:not(dt)</span><span class="hljs-pseudo">:not(dd)</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">outline</span>:<span class="hljs-value"><span class="hljs-number">2px</span> solid red</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<h2>Пример 5. Поля форм</h2>
+
+<p>Раньше текстовых полей форм было не много. Достаточно было написать:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">select</span>,
+<span class="hljs-tag">textarea</span>,
+<span class="hljs-attr_selector">[type="text"]</span>,
+<span class="hljs-attr_selector">[type="password"]</span> <span class="hljs-rules">{
+    <span class="hljs-comment">/* стили для текстовых полей ввода */</span>
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>С появлением новых типов полей в HTML5 этот список увеличился:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">select</span>,
+<span class="hljs-tag">textarea</span>,
+<span class="hljs-attr_selector">[type="text"]</span>,
+<span class="hljs-attr_selector">[type="password"]</span>,
+<span class="hljs-attr_selector">[type="color"]</span>,
+<span class="hljs-attr_selector">[type="date"]</span>,
+<span class="hljs-attr_selector">[type="datetime"]</span>,
+<span class="hljs-attr_selector">[type="datetime-local"]</span>,
+<span class="hljs-attr_selector">[type="email"]</span>,
+<span class="hljs-attr_selector">[type="number"]</span>,
+<span class="hljs-attr_selector">[type="search"]</span>,
+<span class="hljs-attr_selector">[type="tel"]</span>,
+<span class="hljs-attr_selector">[type="time"]</span>,
+<span class="hljs-attr_selector">[type="url"]</span>,
+<span class="hljs-attr_selector">[type="month"]</span>,
+<span class="hljs-attr_selector">[type="week"]</span> <span class="hljs-rules">{
+  <span class="hljs-comment">/* стили для текстовых полей ввода */</span>
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Вместо перечисления 14 типов инпутов можно исключить 8 из них:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">select</span>,
+<span class="hljs-tag">textarea</span>,
+<span class="hljs-attr_selector">[type]</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[type="checkbox"]</span>)<span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[type="radio"]</span>)<span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[type="button"]</span>)<span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[type="submit"]</span>)<span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[type="reset"]</span>)<span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[type="range"]</span>)<span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[type="file"]</span>)<span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[type="image"]</span>) <span class="hljs-rules">{
+  <span class="hljs-comment">/* стили для текстовых полей ввода */</span>
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+<p>Ладно, этот пример не очень красив, и я рекомендую всё же первый вариант с перечислением, он работает с IE8+, а второй вариант с IE9+.</p>
+
+<h2>Поддержка</h2>
+
+<p>Следует заметить, что согласно <a href="http://www.w3.org/TR/css3-selectors/#negation" target="_blank">спецификации</a> в скобках селектора <code class="hljs-pseudo">:not()</code> может стоять только <a href="http://www.w3.org/TR/css3-selectors/#simple-selectors-dfn" target="_blank">простой селектор</a> и в скобках нельзя использовать сам селектор <code class="hljs-pseudo">:not()</code>. Если нужно исключить несколько элементов, <code class="hljs-pseudo">:not()</code> можно повторить несолько раз, как в примере 5.</p>
+
+<div class="caniuse" data-feature="css-sel3"><a href="http://caniuse.com/#search=%3Anot" target="_blank">Поддержка браузерами</a></div>
+
+<p>Если очень нужны CSS3-селекторы в браузерах, которые их не поддерживают, можно использовать полифил <a href="http://selectivizr.com/" target="_blank">selectivizr</a>.</p>
+    </article>
+    <div class="likely-container content-width">
+    <div class="likely">
+        <div class="facebook">Поделиться</div>
+        <div class="twitter" data-via="paul_radzkov">Твитнуть</div>
+        <div class="gplus">Плюсануть</div>
+        <div class="vkontakte">Поделиться</div>
+    </div>
+</div>
+
+    <footer class="page-footer content-width">
+	<p class="copyrights">
+		© <a href="//plus.google.com/+ПавелРадьков?rel=author" class="author"><span class="author-label">Автор:</span>Павел Радьков</a>
+		
+			2014.
+		
+		
+	</p>
+</footer>
+
+    
+    <div class="disqus-wrapper">
+        <article id="disqus_thread" class="disqus-container"></article>
+    </div>
+    
+    
+    <nav class="read-next">
+        <h4 class="read-next-title">Читать дальше:</h4>
+        <div class="navlinks">
+  <a href="/2013/lists_and_floats/" title="Previous Post: Списки и картинки с флоатами" class="navlinks-prev">&laquo; Списки и картинки с флоатами</a>
+  <a href="/2014/visited_link_on_hover/" title="Next Post: Посещённая ссылка при наведении" class="navlinks-next">Посещённая ссылка при наведении &raquo;</a>
+</div>
+    </nav>
+    
+        <script src="http://paulradzkov.github.io/vendor/modernizr.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script>window.jQuery||document.write('<script src="http://paulradzkov.github.io/vendor/jquery.js"><\/script>');</script><script defer="defer" src="http://paulradzkov.github.io/js/output.min.js"></script><script defer="defer" src="http://paulradzkov.github.io/vendor/caniuse.js"></script><script type="text/javascript">var disqus_shortname="paulradzkov",disqus_url="http://paulradzkov.com/2014/negation_css_selector/",disqus_identifier="negation-css-selector",disqus_title="CSS-селектор :not(). Полезные примеры";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="http://"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}(),function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="http://"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script><script type="text/javascript">!function(t,e,a){(e[a]=e[a]||[]).push(function(){try{e.yaCounter22878469=new Ya.Metrika({id:22878469,webvisor:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(t){}});var c=t.getElementsByTagName("script")[0],n=t.createElement("script"),r=function(){c.parentNode.insertBefore(n,c)};n.type="text/javascript",n.async=!0,n.src=("https:"==t.location.protocol?"https:":"http:")+"//mc.yandex.ru/metrika/watch.js","[object Opera]"==e.opera?t.addEventListener("DOMContentLoaded",r,!1):r()}(document,window,"yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22878469" style="position:absolute; left:-1px;" alt="" /></div></noscript>
+    
+
+    <script>ChatraID="m55vjivb29JgQgbXL",function(t,a,e){var r=t.getElementsByTagName("script")[0],c=t.createElement("script");a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},c.async=!0,c.src=("https:"===t.location.protocol?"https:":"http:")+"//chat.chatra.io/chatra.js",r.parentNode.insertBefore(c,r)}(document,window,"Chatra");</script><script defer="defer" src="https://apis.google.com/js/client.js?onload=gapiInit"></script><script>function gapiInit(){gapi.client.setApiKey(apiKey),gapi.auth.authorize({client_id:clientId,scope:scopes,immediate:!0},handleAuthResult)}function handleAuthResult(e){e&&!e.error?gapi.client.load("analytics","v3",makeApiCall):console.log("Not authorized")}function makeApiCall(){var e=gapi.client.analytics.data.ga.get({ids:tableIDs,"start-date":startDate,"end-date":"today",metrics:"ga:pageviews",filters:searchFilters});e.execute(handleCoreReportingResults)}function handleCoreReportingResults(e){e.error?console.log("There was an error: "+e.message):(console.log("Total pageviews since "+startDate+" : "+e.rows),$(".pageviews").show().append("Просмотров: "+e.rows))}var apiKey="AIzaSyCHQx2_4Kc-GL0eRB1wH9EfnraIVyAQueA",clientId="666487715579-h8ds9j92rsfrjtqho1u1oqldda9gm0gm.apps.googleusercontent.com",scopes=["https://www.googleapis.com/auth/analytics.readonly"],tableIDs="ga:56553165",startDate="2014-01-19",searchFilters="ga:pagePath==/2014/negation_css_selector/";</script></body></html>

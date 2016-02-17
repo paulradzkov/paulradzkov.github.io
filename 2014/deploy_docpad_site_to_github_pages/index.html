@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    
+    <title>Деплой Docpad-сайта на GitHub Pages</title>
+    <meta name="description" content="Решение проблемы с абсолютными путями и автоматизация выкладки сайта на хостинг">
+    <meta name="keywords" content="Paul Radzkov, web-developer, blog, html, css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    
+    <meta name="generator" content="DocPad v6.78.4">
+
+    
+    <link rel="stylesheet" href="http://paulradzkov.github.io/css/template.css">
+
+    
+    
+    <link rel="shortcut icon" href="http://paulradzkov.github.io/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://paulradzkov.github.io/atom.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://paulradzkov.github.io/rss.xml">
+    <link rel="canonical" href="http://paulradzkov.github.io/2014/deploy_docpad_site_to_github_pages/">
+
+    <script type="text/javascript">!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var e=new XMLHttpRequest;e.open("GET",o,!0),e.onreadystatechange=function(){4===e.readyState&&(c(e.responseText),localStorage.font_css_cache=e.responseText,localStorage.font_css_cache_file=o)},e.send()}else{var n=document.createElement("link");n.href=o,n.rel="stylesheet",n.type="text/css",document.getElementsByTagName("head")[0].appendChild(n),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.setAttribute("type","text/css"),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="http://paulradzkov.github.io/fonts/webfonts.css?v=0.0.1";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script><meta property="og:title" content="Деплой Docpad-сайта на GitHub Pages">
+<meta property="og:description" content="Решение проблемы с абсолютными путями и автоматизация выкладки сайта на хостинг">
+
+    <meta property="og:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+    <meta property="og:type" content="article">
+    <meta property="og:article:published_time" content="Fri Apr 25 2014 03:00:00 GMT+0300 (FET)">
+    
+    <meta property="og:article:author" content="Павел Радьков">
+    
+    
+    <meta property="og:article:tag" content="docpad, github pages, docpad, github pages">
+    
+
+<meta property="og:locale" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@paul_radzkov">
+<meta name="twitter:title" content="Деплой Docpad-сайта на GitHub Pages">
+<meta name="twitter:description" content="Решение проблемы с абсолютными путями и автоматизация выкладки сайта на хостинг">
+
+<meta name="twitter:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+
+    
+    <script>!function(e,a,n,t,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(n),s=a.getElementsByTagName(n)[0],o.async=1,o.src=t,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-29416794-1","paulradzkov.com"),ga("send","pageview");</script></head><body class="layout-article">
+    
+    
+    <header class="page-header">
+        <nav class="read-siblings">
+            <div class="navlinks">
+  <a href="/2014/markdown_cheatsheet/" title="Previous Post: Краткое руководство по Маркдауну" class="navlinks-prev">&laquo; Краткое руководство по Маркдауну</a>
+  <a href="/2014/free_substitution_for_helvetica_neue/" title="Next Post: Бесплатная замена платному Helvetica Neue" class="navlinks-next">Бесплатная замена платному Helvetica Neue &raquo;</a>
+</div>
+        </nav>
+        <nav class="site-navigation">
+            <a class="nav-icon nav-icon-centered js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null,this.src=&quot;/i/home.png&quot;"><span class="visuallyhidden">На главную</span></a>
+        </nav>
+        <aside class="nav-placeholder article-meta content-width">
+            
+            <p class="date"><time datetime="Fri Apr 25 2014 03:00:00 GMT+0300 (FET)">25 апреля 2014</time></p>
+            
+        </aside>
+        <div class="content-width">
+            <h1 class="article-title">Деплой Docpad-сайта на GitHub Pages</h1>
+        </div>
+        <aside class="article-meta content-width inlined">
+            
+            <span class="tags-list">
+                
+                    <a class="tag" href="/tags/docpad/">docpad</a>
+                
+                    <a class="tag" href="/tags/github-pages/">github pages</a>
+                
+            </span>
+            
+            
+            <span class="comments"><a href="#disqus_thread" data-disqus-identifier="deploy_docpad_site_to_github_pages">Комментарии</a></span>
+            
+            <span class="pageviews" style="display:none"></span>
+        </aside>
+
+    </header>
+    
+    
+        <nav class="site-navigation sticky-nav" id="sticker">
+            <a class="nav-icon js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null,this.src=&quot;/i/home.png&quot;"><span class="visuallyhidden">На главную</span></a>
+        </nav>
+    
+    
+    <article class="nav-placeholder page-content content-width" role="main">
+        <p>При деплое <a href="http://docpad.org/">Docpad</a>-сайта на <a href="https://pages.github.com/">GitHub Pages</a> столкнулся с некоторыми проблемами.</p>
+<ol>
+<li>Проблема с абсолютными путями: докпад по-умолчанию использует пути к ресурсам от корня домена, а на GH Pages url проекта будет выглядеть так <code>http://username.github.io/repository/</code>. Т.е. сайт находится в папке, а не в корне, и все пути к ресурсам недействительны. Конечно, можно купить собственное доменное имя, но это не мой случай. Нужно, чтобы на локалхосте url оставались абсолютными, а при деплое заменялись с учетом папки, в которую сайт деплоится.</li>
+<li><a href="https://github.com/docpad/docpad-plugin-ghpages">Плагин для деплоя</a> не заработал сразу и без настроек, как обещает разработчик.</li>
+</ol>
+<p>Так как у меня не всё прошло гладко и очевидно, решил написать эту инструкцию.</p>
+
+<h2 id="-">Проблема с абсолютными путями</h2>
+<p>Сначала разберёмся с абсолютными путями в докпаде.</p>
+<p>Установим плагин <a href="https://github.com/Hypercubed/docpad-plugin-geturl/">Get Url Plugin for DocPad</a>.</p>
+<p>Если ещё не создана, сделаем в конфиге докпада переменную <code>@site.url</code>:</p>
+<pre class="highlight"><code class="hljs coffeescript">    <span class="hljs-attribute">templateData</span>:
+        <span class="hljs-attribute">site</span>:
+            <span class="hljs-comment"># The production url of our website. Used in sitemap and rss feed</span>
+            <span class="hljs-attribute">url</span>: <span class="hljs-string">"http://paulradzkov.github.io/docpad-simpleblog"</span>
+</code></pre>
+<p>И добавим отдельную конфигурацию для «development» окружения:</p>
+<pre class="highlight"><code class="hljs coffeescript">    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Environments</span>
+
+    <span class="hljs-attribute">environments</span>:
+        <span class="hljs-attribute">development</span>:
+            <span class="hljs-attribute">templateData</span>:
+                <span class="hljs-attribute">site</span>:
+                    <span class="hljs-attribute">url</span>: <span class="hljs-string">'http://localhost:9778'</span>
+</code></pre>
+<p>Эта переменная — <code>@site.url</code> — будет подставляться префиксом ко всем путям и ссылкам в зависимости от того, работаем мы на локалхосте или выкатываем сайт на хостинг.</p>
+<p>Теперь нужно добавить хелпер «<code>@getUrl()</code>» ко всем «<code>href</code>» и «<code>src</code>» в шаблоне, в документах — везде, где встречаются абсолютные пути.</p>
+<p>Например, было:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- DocPad Styles + Our Own --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">styles</span>")<span class="hljs-attribute">.add</span>(@<span class="hljs-attribute">site.styles</span>)<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/vendor/modernizr.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Стало:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- DocPad Styles + Our Own --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">styles</span>")<span class="hljs-attribute">.add</span>(@<span class="hljs-attribute">getUrl</span>(@<span class="hljs-attribute">site.styles</span>))<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"&lt;%= @getUrl('/vendor/modernizr.js') %&gt;"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Было:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav-list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/docs"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://github.com/paulradzkov/docpad-simpleblog/issues"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Issues<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://github.com/paulradzkov/docpad-simpleblog"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Source Code<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>Стало:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav-list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getUrl('/') %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getUrl('/docs') %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://github.com/paulradzkov/docpad-simpleblog/issues"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Issues<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://github.com/paulradzkov/docpad-simpleblog"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Source Code<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>Было:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"meta-data"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"comments"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @document.path %&gt;#disqus_thread"</span> <span class="hljs-attribute">data-disqus-identifier</span>=<span class="hljs-value">"&lt;%= @document.disqusid %&gt;"</span> &gt;</span>Комментарии<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tags-list"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">for</span> <span class="hljs-attribute">tag</span> <span class="hljs-attribute">in</span> @<span class="hljs-attribute">document.tags</span> <span class="hljs-attribute">:</span> %&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label-tag"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getTagUrl(tag) %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">tag</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">end</span> %&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>Стало:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"meta-data"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"comments"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getUrl(@document.path) %&gt;#disqus_thread"</span> <span class="hljs-attribute">data-disqus-identifier</span>=<span class="hljs-value">"&lt;%= @document.disqusid %&gt;"</span> &gt;</span>Комментарии<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tags-list"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">for</span> <span class="hljs-attribute">tag</span> <span class="hljs-attribute">in</span> @<span class="hljs-attribute">document.tags</span> <span class="hljs-attribute">:</span> %&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label-tag"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getUrl(@getTagUrl(tag)) %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">tag</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">end</span> %&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>И так далее.</p>
+<p>Теперь, когда мы запускаем <kbd class="cli" contenteditable="true">&zwj;<span contenteditable="false">docpad run</span>&zwj;</kbd>, ко всем путям подставляется <code>@site.url</code> из девелоперского окружения — <code>http://localhost:9778</code>. А когда <kbd class="cli" contenteditable="true">&zwj;<span contenteditable="false">docpad run --env static</span>&zwj;</kbd>, переменная <code>@site.url</code> равна нашему продакшен пути.</p>
+<h2 id="-github-pages">Деплой на GitHub Pages</h2>
+<p>В репозитории создадим ветку «<code>gh-pages</code>». По инструкции это должна быть пустая ветка без истории, но об этом в дальнейшем позаботится плагин для деплоя.</p>
+<figure>
+    <img src="new_branch_gh-pages.png" alt="В репозитории проекта создадим ветку с именем «gh-pages»">
+    <figcaption>В репозитории проекта создадим ветку с именем «<code>gh-pages</code>»</figcaption>
+</figure>
+
+<p>Установим <a href="https://github.com/docpad/docpad-plugin-ghpages">GitHub Pages Deployer Plugin for DocPad</a>.</p>
+<p>При попытке выполнить <kbd class="cli" contenteditable="true">&zwj;<span contenteditable="false">docpad deploy-ghpages --env static</span>&zwj;</kbd> у меня появляется ошибка:</p>
+<figure>
+    <img src="gh-pages_deploy_error.png" alt="could not read Username for ’http://github.com’: No such file or directory">
+    <figcaption><code>could not read Username for ’http://github.com’: No such file or directory</code></figcaption>
+</figure>
+
+<p>Плагин не смог соединиться с моим аккаунтом на гитхабе. Чтобы показать плагину правильный путь с логином и паролем, добавим новый «remote» для репозитория. Для этого в консоли git выполним:</p>
+<p><kbd class="cli" contenteditable="true">&zwj;<span contenteditable="false">git remote add deploy <span>https://</span>login:password@github.com/repo_owner/repo_name.git</span>&zwj;</kbd></p>
+
+<p>Где «<code>deploy</code>» — это название удаленного репозитория. Можно выбрать любое, но переопределять «origin» я бы не советовал: у меня от этого локальная копия репозитория потеряла связь с Гитхабом.</p>
+<p>«<code>login</code>» и «<code>password</code>» — данные вашего аккаунта на Гитхабе.</p>
+<p>«<code>github.com/repo_owner/repo_name.git</code>» — путь к репозиторию проекта, в котором у вас есть права на запись. Это не обязательно должен быть ваш репозиторий, если вы коллаборатор, и у вас есть доступ на запись — вы можете деплоить туда проект.</p>
+<figure>
+    <img src="adding_another_remote.png" alt="Добавление нового «remote» c логином и паролем">
+    <figcaption>Добавление нового «remote» c логином и паролем. Эту процедуру нужно выполнить один раз для каждого локального репозитория</figcaption>
+</figure>
+
+<p>А в конфиге докпада пропишем настройки для плагина:</p>
+<pre class="highlight"><code class="hljs coffeescript">    <span class="hljs-comment"># Plugins configurations</span>
+    <span class="hljs-attribute">plugins</span>:
+        <span class="hljs-attribute">ghpages</span>:
+            <span class="hljs-attribute">deployRemote</span>: <span class="hljs-string">'deploy'</span>
+            <span class="hljs-attribute">deployBranch</span>: <span class="hljs-string">'gh-pages'</span>
+</code></pre>
+<p>Теперь можно выкатывать сайт:</p>
+<p><kbd class="cli" contenteditable="true">&zwj;<span contenteditable="false">docpad deploy-ghpages --env static</span>&zwj;</kbd></p>
+
+    </article>
+    <div class="likely-container content-width">
+    <div class="likely">
+        <div class="facebook">Поделиться</div>
+        <div class="twitter" data-via="paul_radzkov">Твитнуть</div>
+        <div class="gplus">Плюсануть</div>
+        <div class="vkontakte">Поделиться</div>
+    </div>
+</div>
+
+    <footer class="page-footer content-width">
+	<p class="copyrights">
+		© <a href="//plus.google.com/+ПавелРадьков?rel=author" class="author"><span class="author-label">Автор:</span>Павел Радьков</a>
+		
+			2014.
+		
+		
+	</p>
+</footer>
+
+    
+    <div class="disqus-wrapper">
+        <article id="disqus_thread" class="disqus-container"></article>
+    </div>
+    
+    
+    <nav class="read-next">
+        <h4 class="read-next-title">Читать дальше:</h4>
+        <div class="navlinks">
+  <a href="/2014/markdown_cheatsheet/" title="Previous Post: Краткое руководство по Маркдауну" class="navlinks-prev">&laquo; Краткое руководство по Маркдауну</a>
+  <a href="/2014/free_substitution_for_helvetica_neue/" title="Next Post: Бесплатная замена платному Helvetica Neue" class="navlinks-next">Бесплатная замена платному Helvetica Neue &raquo;</a>
+</div>
+    </nav>
+    
+        <script src="http://paulradzkov.github.io/vendor/modernizr.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script>window.jQuery||document.write('<script src="http://paulradzkov.github.io/vendor/jquery.js"><\/script>');</script><script defer="defer" src="http://paulradzkov.github.io/js/output.min.js"></script><script type="text/javascript">var disqus_shortname="paulradzkov",disqus_url="http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/",disqus_identifier="deploy_docpad_site_to_github_pages",disqus_title="Деплой Docpad-сайта на GitHub Pages";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="http://"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}(),function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="http://"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script><script type="text/javascript">!function(t,e,a){(e[a]=e[a]||[]).push(function(){try{e.yaCounter22878469=new Ya.Metrika({id:22878469,webvisor:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(t){}});var c=t.getElementsByTagName("script")[0],n=t.createElement("script"),r=function(){c.parentNode.insertBefore(n,c)};n.type="text/javascript",n.async=!0,n.src=("https:"==t.location.protocol?"https:":"http:")+"//mc.yandex.ru/metrika/watch.js","[object Opera]"==e.opera?t.addEventListener("DOMContentLoaded",r,!1):r()}(document,window,"yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22878469" style="position:absolute; left:-1px;" alt="" /></div></noscript>
+    
+
+    <script>ChatraID="m55vjivb29JgQgbXL",function(t,a,e){var r=t.getElementsByTagName("script")[0],c=t.createElement("script");a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},c.async=!0,c.src=("https:"===t.location.protocol?"https:":"http:")+"//chat.chatra.io/chatra.js",r.parentNode.insertBefore(c,r)}(document,window,"Chatra");</script><script defer="defer" src="https://apis.google.com/js/client.js?onload=gapiInit"></script><script>function gapiInit(){gapi.client.setApiKey(apiKey),gapi.auth.authorize({client_id:clientId,scope:scopes,immediate:!0},handleAuthResult)}function handleAuthResult(e){e&&!e.error?gapi.client.load("analytics","v3",makeApiCall):console.log("Not authorized")}function makeApiCall(){var e=gapi.client.analytics.data.ga.get({ids:tableIDs,"start-date":startDate,"end-date":"today",metrics:"ga:pageviews",filters:searchFilters});e.execute(handleCoreReportingResults)}function handleCoreReportingResults(e){e.error?console.log("There was an error: "+e.message):(console.log("Total pageviews since "+startDate+" : "+e.rows),$(".pageviews").show().append("Просмотров: "+e.rows))}var apiKey="AIzaSyCHQx2_4Kc-GL0eRB1wH9EfnraIVyAQueA",clientId="666487715579-h8ds9j92rsfrjtqho1u1oqldda9gm0gm.apps.googleusercontent.com",scopes=["https://www.googleapis.com/auth/analytics.readonly"],tableIDs="ga:56553165",startDate="2014-04-25",searchFilters="ga:pagePath==/2014/deploy_docpad_site_to_github_pages/";</script></body></html>

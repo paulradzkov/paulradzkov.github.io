@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Site Properities -->
+    <title>Сниппеты</title>
+    <meta name="description" content="Блог Павла Радькова." />
+    <meta name="keywords" content="Paul Radzkov, web-developer, blog, html, css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <!-- DocPad Meta -->
+    <meta name="generator" content="DocPad v6.78.4" />
+
+    <!-- DocPad Styles + Our Own -->
+    <link  rel="stylesheet" href="http://paulradzkov.github.io/css/template.css" />
+
+    <!-- Icons -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://paulradzkov.github.io/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://paulradzkov.github.io/atom.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://paulradzkov.github.io/rss.xml">
+    <link rel="canonical" href="http://paulradzkov.github.io/demo/">
+
+    <script type="text/javascript">
+    (function () {
+      "use strict";
+      // once cached, the css file is stored on the client forever unless
+      // the URL below is changed. Any change will invalidate the cache
+      var css_href = 'http://paulradzkov.github.io/fonts/webfonts.css?v=0.0.1';
+      // a simple event handler wrapper
+      function on(el, ev, callback) {
+        if (el.addEventListener) {
+          el.addEventListener(ev, callback, false);
+        } else if (el.attachEvent) {
+          el.attachEvent("on" + ev, callback);
+        }
+      }
+
+      // if we have the fonts in localStorage or if we've cached them using the native batrowser cache
+      if ((window.localStorage && localStorage.font_css_cache) || document.cookie.indexOf('font_css_cache') > -1){
+        // just use the cached version
+        injectFontsStylesheet();
+      } else {
+       // otherwise, don't block the loading of the page; wait until it's done.
+        on(window, "load", injectFontsStylesheet);
+      }
+
+      // quick way to determine whether a css file has been cached locally
+      function fileIsCached(href) {
+        return window.localStorage && localStorage.font_css_cache && (localStorage.font_css_cache_file === href);
+      }
+
+      // time to get the actual css file
+      function injectFontsStylesheet() {
+       // if this is an older browser
+        if (!window.localStorage || !window.XMLHttpRequest) {
+          var stylesheet = document.createElement('link');
+          stylesheet.href = css_href;
+          stylesheet.rel = 'stylesheet';
+          stylesheet.type = 'text/css';
+          document.getElementsByTagName('head')[0].appendChild(stylesheet);
+          // just use the native browser cache
+          // this requires a good expires header on the server
+          document.cookie = "font_css_cache";
+
+        // if this isn't an old browser
+        } else {
+           // use the cached version if we already have it
+          if (fileIsCached(css_href)) {
+            injectRawStyle(localStorage.font_css_cache);
+          // otherwise, load it with ajax
+          } else {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", css_href, true);
+            // cater for IE8 which does not support addEventListener or attachEvent on XMLHttpRequest
+            xhr.onreadystatechange = function () {
+              if (xhr.readyState === 4) {
+                // once we have the content, quickly inject the css rules
+                injectRawStyle(xhr.responseText);
+                // and cache the text content for further use
+                // notice that this overwrites anything that might have already been previously cached
+                localStorage.font_css_cache = xhr.responseText;
+                localStorage.font_css_cache_file = css_href;
+              }
+            };
+            xhr.send();
+          }
+        }
+      }
+
+      // this is the simple utitily that injects the cached or loaded css text
+      function injectRawStyle(text) {
+        var style = document.createElement('style');
+        // cater for IE8 which doesn't support style.innerHTML
+        style.setAttribute("type", "text/css");
+        if (style.styleSheet) {
+            style.styleSheet.cssText = text;
+        } else {
+            style.innerHTML = text;
+        }
+        document.getElementsByTagName('head')[0].appendChild(style);
+      }
+
+    }());
+</script>
+
+
+    <meta property="og:title" content="Сниппеты" />
+<meta property="og:description" content="Блог Павла Радькова." />
+
+    <meta property="og:image" content="http://paulradzkov.github.io/i/og/og-index.png" />
+
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://paulradzkov.github.io" />
+    <meta property="og:site_name" content="Блог Павла Радькова" />
+
+<meta property="og:locale" content="ru_RU" />
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@paul_radzkov">
+<meta name="twitter:title" content="Сниппеты">
+<meta name="twitter:description" content="Блог Павла Радькова.">
+
+<meta name="twitter:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-29416794-1', 'paulradzkov.com');
+        ga('send', 'pageview');
+
+    </script>
+    
+
+</head>
+
+<body class="layout-">
+    
+        <header class="site-header content-width">
+            <div class="site-header-inner justified-blocks">
+
+	<p class="header-logo">
+		
+		<a class="logo" href="http://paulradzkov.github.io/">
+		
+
+			<span class="logo-icon">
+				<img
+				srcset="
+					http://paulradzkov.github.io/avatar/paulradzkov_120x120.jpg 2x,
+					http://paulradzkov.github.io/avatar/paulradzkov_240x240.jpg 4x
+					"
+				src="http://paulradzkov.github.io/avatar/paulradzkov_60x60.jpg"
+				width="60" height="60"
+				alt="Павел Радьков">
+			</span>
+			<span class="logo-txt">
+				<span class="logo-name">Павел&nbsp;Радьков</span>
+				<span class="logo-title">Веб-разработчик</span>
+			</span>
+
+		
+		</a>
+		
+	</p>
+
+	<p class="header-contacts">
+		<a class="header-contacts-item border-underline" href="mailto:radzkov@gmail.com">radzkov@gmail.com</a>
+		<a class="header-contacts-item border-underline" href="https://github.com/paulradzkov" target="_blank">GitHub</a>
+		<a class="header-contacts-item border-underline" href="https://www.linkedin.com/in/paulradzkov" target="_blank">LinkedIn</a>
+		<a class="header-contacts-item border-underline" href="https://twitter.com/paul_radzkov" target="_blank">Twitter</a>
+		<a class="header-contacts-item border-underline" href="https://www.instagram.com/paulradzkov/" target="_blank">Instagram</a>
+	</p>
+
+</div>
+
+        </header>
+    
+    
+    
+        <nav class="site-navigation sticky-nav" id="sticker">
+            <a class="nav-icon js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null; this.src='/i/home.png'" /><span class="visuallyhidden">На главную</span></a>
+        </nav>
+    
+    
+    <article class="nav-placeholder page-content content-width" role="main">
+        <h1>Сниппеты</h1>
+
+<p>Сниппеты, демки или просто куски полезного кода.</p>
+
+<p>
+	<a href="/static-site-generators/">Презентация про генераторы статических сайтов и DocPad</a>
+</p>
+<p><a href="/demo/lava_lamp_css_menu/index.html">«Lava-Lamp» меню на css</a></p>
+<p>
+	<a href="/demo/alignment/vertical-align.html">Вертикальное выравнивание блока произвольной высоты внутри блока заданной высоты</a><br/>
+	<a href="/demo/alignment/align-center.html">Центрирование блока произвольных размеров внутри блока заданных размеров</a>
+</p>
+<p>
+	<a href="/demo/crosswise/index.html">Перечёркивание крест-накрест</a>
+</p>
+<p>
+	<a href="/demo/box-shadow_instead_gradient/index.html">Имитация градиента при помощи box-shadow</a>
+</p>
+<p>
+	<a href="/demo/testimonials_slideshow/module-test-simple.html">Слайдшоу текстовых блоков. Модуль «Отзывы»</a>
+</p>
+
+    </article>
+    <div class="likely-container content-width">
+    <div class="likely">
+        <div class="facebook">Поделиться</div>
+        <div class="twitter" data-via="paul_radzkov">Твитнуть</div>
+        <div class="gplus">Плюсануть</div>
+        <div class="vkontakte">Поделиться</div>
+    </div>
+</div>
+
+    <footer class="page-footer content-width">
+	<p class="copyrights">
+		© <a href="//plus.google.com/+ПавелРадьков?rel=author" class="author"><span class="author-label">Автор:</span>Павел Радьков</a>
+		
+			2012&ndash;2016.
+		
+		
+			Блог работает на DocPad. <a href="https://github.com/paulradzkov/paulradzkov.com" target="_blank">Исходники</a> этого сайта на Гитхабе.
+		
+	</p>
+</footer>
+
+    
+    
+        <script src="http://paulradzkov.github.io/vendor/modernizr.js"></script>
+
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://paulradzkov.github.io/vendor/jquery.js"><\/script>')</script>
+
+    <!-- DocPad Scripts + Our Own -->
+    <script defer="defer"  src="http://paulradzkov.github.io/js/output.min.js"></script>
+
+    
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'paulradzkov'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var s = document.createElement('script'); s.async = true;
+                s.type = 'text/javascript';
+                s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+            }());
+        </script>
+    
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter22878469 = new Ya.Metrika({id:22878469,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/22878469" style="position:absolute; left:-1px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script>
+    ChatraID = 'm55vjivb29JgQgbXL';
+    (function(d, w, c) {
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//chat.chatra.io/chatra.js';
+        n.parentNode.insertBefore(s, n);
+    })(document, window, 'Chatra');
+</script>
+
+
+    
+
+</body>
+</html>

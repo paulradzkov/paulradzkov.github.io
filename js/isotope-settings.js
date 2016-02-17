@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=$(".js-isotope").isotope({itemSelector:".item",layoutMode:"vertical"});$("#filters").on("click",".btn",function(b){var c=$(this).attr("data-filter");a.isotope({filter:c})}),$('[name="view-options"]').change(function(){a.isotope("layout")})});

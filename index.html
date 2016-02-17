@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    
+    <title>Блог Павла Радькова</title>
+    <meta name="description" content="Заметки о вёрстке, дизайне, юзабилити, типографике, методологиях и процессах">
+    <meta name="keywords" content="Paul Radzkov, web-developer, blog, html, css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    
+    <meta name="generator" content="DocPad v6.78.4">
+
+    
+    <link rel="stylesheet" href="http://paulradzkov.github.io/css/template.css">
+
+    
+    
+    <link rel="shortcut icon" href="http://paulradzkov.github.io/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://paulradzkov.github.io/atom.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://paulradzkov.github.io/rss.xml">
+    <link rel="canonical" href="http://paulradzkov.github.io/">
+
+    <script type="text/javascript">!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var e=new XMLHttpRequest;e.open("GET",o,!0),e.onreadystatechange=function(){4===e.readyState&&(c(e.responseText),localStorage.font_css_cache=e.responseText,localStorage.font_css_cache_file=o)},e.send()}else{var n=document.createElement("link");n.href=o,n.rel="stylesheet",n.type="text/css",document.getElementsByTagName("head")[0].appendChild(n),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.setAttribute("type","text/css"),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="http://paulradzkov.github.io/fonts/webfonts.css?v=0.0.1";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script><meta property="og:title" content="Блог Павла Радькова">
+<meta property="og:description" content="Заметки о вёрстке, дизайне, юзабилити, типографике, методологиях и процессах">
+
+    <meta property="og:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://paulradzkov.github.io">
+    <meta property="og:site_name" content="Блог Павла Радькова">
+
+<meta property="og:locale" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@paul_radzkov">
+<meta name="twitter:title" content="Блог Павла Радькова">
+<meta name="twitter:description" content="Заметки о вёрстке, дизайне, юзабилити, типографике, методологиях и процессах">
+
+<meta name="twitter:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+
+    
+    <script>!function(e,a,n,t,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(n),s=a.getElementsByTagName(n)[0],o.async=1,o.src=t,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-29416794-1","paulradzkov.com"),ga("send","pageview");</script></head><body class="layout-">
+    
+        <header class="site-header content-width">
+            <div class="site-header-inner justified-blocks">
+
+	<p class="header-logo">
+		
+		<span class="logo">
+		
+
+			<span class="logo-icon">
+				<img srcset="
+					http://paulradzkov.github.io/avatar/paulradzkov_120x120.jpg 2x,
+					http://paulradzkov.github.io/avatar/paulradzkov_240x240.jpg 4x
+					" src="http://paulradzkov.github.io/avatar/paulradzkov_60x60.jpg" width="60" height="60" alt="Павел Радьков">
+			</span>
+			<span class="logo-txt">
+				<span class="logo-name">Павел&nbsp;Радьков</span>
+				<span class="logo-title">Веб-разработчик</span>
+			</span>
+
+		
+		</span>
+		
+	</p>
+
+	<p class="header-contacts">
+		<a class="header-contacts-item border-underline" href="mailto:radzkov@gmail.com">radzkov@gmail.com</a>
+		<a class="header-contacts-item border-underline" href="https://github.com/paulradzkov" target="_blank">GitHub</a>
+		<a class="header-contacts-item border-underline" href="https://www.linkedin.com/in/paulradzkov" target="_blank">LinkedIn</a>
+		<a class="header-contacts-item border-underline" href="https://twitter.com/paul_radzkov" target="_blank">Twitter</a>
+		<a class="header-contacts-item border-underline" href="https://www.instagram.com/paulradzkov/" target="_blank">Instagram</a>
+	</p>
+
+</div>
+
+        </header>
+    
+    
+    
+    
+    <article class="nav-placeholder page-content content-width" role="main">
+        <div class="justified-blocks">
+    <h1 class="blog-title">
+        Блог
+        <span class="rss"><a href="<%= @getUrl('/rss.xml') %>" class="border-underline" onclick="_gaq.push([&quot;_trackEvent&quot;,&quot;Feed&quot;,&quot;Open&quot;,&quot;RSS Feed&quot;])">Подписаться на RSS</a></span>
+    </h1>
+    <div class="view-toggle">
+        <form name="blogroll-view" class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="view-options" id="full-view" checked="checked">
+                <img src="<%= @getUrl('/i/th-list.svg') %>" class="btn-icon" width="14" height="14" alt=""><span class="btn-text">Подробно</span>
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="view-options" id="short-view">
+                <img src="<%= @getUrl('/i/list.svg') %>" class="btn-icon" width="14" height="14" alt=""><span class="btn-text">Кратко</span>
+            </label>
+        </form>
+        <div name="blogroll-view" class="btn-group" data-toggle="collapse" data-target=".filters-container">
+            <label for="view-all" class="btn btn-primary" data-toggle="button" autocomplete="off">
+                <img src="<%= @getUrl('/i/th-large.svg" class="btn-icon" width="14" height="14" alt=""><span class="btn-text">По тегам</span>
+            </label>
+        </div>
+        <a href="<%= @getUrl('/search') %>" class="btn">
+            <img src="<%= @getUrl('/i/search.svg') %>" class="btn-icon" width="14" height="14" alt=""><span class="btn-text">Поиск</span>
+        </a>
+    </div>
+</div>
+
+<div class="collapse filters-container">
+    <form class="filters btn-group tags-list" data-toggle="buttons" id="filters">
+        <span class="filter-legend">Фильтр по тегам:</span>
+        <label class="btn btn-label active" data-filter="*">
+            <input type="radio" name="filters-options" id="view-all" checked="checked">
+            <span class="not-tag">Показать все</span>
+        </label>
+        <% for tag, data of @getTagCloud(): %>
+            <label class="btn btn-label" data-filter=".<%= @wspToDash(tag) %>" data-tag-count="<%= data.count %>" data-tag-weight="<%= data.weight %>">
+                <input type="radio" name="filters-options">
+                <span class="tag"><%= tag %></span>
+            </label>
+        <% end %>
+    </form>
+</div>
+
+<div class="blogroll detailed-view js-isotope">
+    <% for page in @getCollection("articles").toJSON(): %>
+        <section class="post-tizer item <%= if page.id is @document.id then 'active' else 'inactive' %> <% for tag in page.tags : %> <%= @wspToDash(tag) %><% end %>">
+            <h2 class="linked-header"><a href="<%= page.url %>" class="border-underline"><u class="u"><%= page.title %></u></a></h2>
+            <div class="before-cut"><%- @cuttedContent page.contentRenderedWithoutLayouts %></div>
+
+            <aside class="blog-item-meta">
+                <ul class="meta-data">
+                    <li class="date"><time datetime="<%= page.created_at %>"><%=@moment(page.created_at).format('DD MMMM YYYY') %></time></li>
+                    <li class="comments"><a href="<%= page.url %>#disqus_thread" data-disqus-identifier="<%= page.disqusid %>">Комментарии</a></li>
+                    <li class="tags-list">
+                        <% for tag in page.tags : %>
+                        <a class="tag" href="<%= @getTagUrl(tag) %>"><span class="inner"><%= tag %></span></a>
+                        <% end %>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    <% end %>
+</div>
+    </article>
+    <div class="likely-container content-width">
+    <div class="likely">
+        <div class="facebook">Поделиться</div>
+        <div class="twitter" data-via="paul_radzkov">Твитнуть</div>
+        <div class="gplus">Плюсануть</div>
+        <div class="vkontakte">Поделиться</div>
+    </div>
+</div>
+
+    <footer class="page-footer content-width">
+	<p class="copyrights">
+		© <a href="//plus.google.com/+ПавелРадьков?rel=author" class="author"><span class="author-label">Автор:</span>Павел Радьков</a>
+		
+			2012&ndash;2016.
+		
+		
+			Блог работает на DocPad. <a href="https://github.com/paulradzkov/paulradzkov.com" target="_blank">Исходники</a> этого сайта на Гитхабе.
+		
+	</p>
+</footer>
+
+    
+    
+        <script src="http://paulradzkov.github.io/vendor/modernizr.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script>window.jQuery||document.write('<script src="http://paulradzkov.github.io/vendor/jquery.js"><\/script>');</script><script defer="defer" src="http://paulradzkov.github.io/js/output.min.js"></script><script defer="defer" src="http://paulradzkov.github.io/vendor/isotope.pkgd.min.js"></script><script defer="defer" src="http://paulradzkov.github.io/js/isotope-settings.js"></script><script type="text/javascript">var disqus_shortname="paulradzkov";!function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="http://"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script><script type="text/javascript">!function(t,e,a){(e[a]=e[a]||[]).push(function(){try{e.yaCounter22878469=new Ya.Metrika({id:22878469,webvisor:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(t){}});var c=t.getElementsByTagName("script")[0],n=t.createElement("script"),r=function(){c.parentNode.insertBefore(n,c)};n.type="text/javascript",n.async=!0,n.src=("https:"==t.location.protocol?"https:":"http:")+"//mc.yandex.ru/metrika/watch.js","[object Opera]"==e.opera?t.addEventListener("DOMContentLoaded",r,!1):r()}(document,window,"yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22878469" style="position:absolute; left:-1px;" alt="" /></div></noscript>
+    
+
+    <script>ChatraID="m55vjivb29JgQgbXL",function(t,a,e){var r=t.getElementsByTagName("script")[0],c=t.createElement("script");a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},c.async=!0,c.src=("https:"===t.location.protocol?"https:":"http:")+"//chat.chatra.io/chatra.js",r.parentNode.insertBefore(c,r)}(document,window,"Chatra");</script></body></html>

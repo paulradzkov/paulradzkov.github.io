@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    
+    <title>Pointer-events</title>
+    <meta name="description" content="Свойство pointer-events придет к нам с CSS4-UI модулем, но уже сейчас поддерживается более чем половиной браузеров. Если установить pointer-events: none, то элемент перестанет реагировать на hover, click и другие события мыши. Он станет «прозрачным» для взаимодействия, а hover и click будут передаваться элементу, лежащему под ним. Рассмотрим, для чего это можно использовать.">
+    <meta name="keywords" content="Paul Radzkov, web-developer, blog, html, css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    
+    <meta name="generator" content="DocPad v6.78.4">
+
+    
+    <link rel="stylesheet" href="http://paulradzkov.github.io/css/template.css"><link rel="stylesheet" href="http://paulradzkov.github.io/css/caniuse.css"><link rel="stylesheet" href="http://paulradzkov.github.io/2012/pointer-events/custom.css">
+
+    
+    
+    <link rel="shortcut icon" href="http://paulradzkov.github.io/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://paulradzkov.github.io/atom.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://paulradzkov.github.io/rss.xml">
+    <link rel="canonical" href="http://paulradzkov.github.io/2012/pointer-events/">
+
+    <script type="text/javascript">!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var e=new XMLHttpRequest;e.open("GET",o,!0),e.onreadystatechange=function(){4===e.readyState&&(c(e.responseText),localStorage.font_css_cache=e.responseText,localStorage.font_css_cache_file=o)},e.send()}else{var n=document.createElement("link");n.href=o,n.rel="stylesheet",n.type="text/css",document.getElementsByTagName("head")[0].appendChild(n),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.setAttribute("type","text/css"),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="http://paulradzkov.github.io/fonts/webfonts.css?v=0.0.1";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script><meta property="og:title" content="Pointer-events">
+<meta property="og:description" content="Свойство pointer-events придет к нам с CSS4-UI модулем, но уже сейчас поддерживается более чем половиной браузеров. Если установить pointer-events: none, то элемент перестанет реагировать на hover, click и другие события мыши. Он станет «прозрачным» для взаимодействия, а hover и click будут передаваться элементу, лежащему под ним. Рассмотрим, для чего это можно использовать.">
+
+    <meta property="og:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+    <meta property="og:type" content="article">
+    <meta property="og:article:published_time" content="Sun Dec 09 2012 03:00:00 GMT+0300 (FET)">
+    
+    <meta property="og:article:author" content="Павел Радьков">
+    
+    
+    <meta property="og:article:tag" content="css, progressive enhancement, css, progressive enhancement">
+    
+
+<meta property="og:locale" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@paul_radzkov">
+<meta name="twitter:title" content="Pointer-events">
+<meta name="twitter:description" content="Свойство pointer-events придет к нам с CSS4-UI модулем, но уже сейчас поддерживается более чем половиной браузеров. Если установить pointer-events: none, то элемент перестанет реагировать на hover, click и другие события мыши. Он станет «прозрачным» для взаимодействия, а hover и click будут передаваться элементу, лежащему под ним. Рассмотрим, для чего это можно использовать.">
+
+<meta name="twitter:image" content="http://paulradzkov.github.io/i/og/og-index.png">
+
+
+
+    
+    <script>!function(e,a,n,t,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(n),s=a.getElementsByTagName(n)[0],o.async=1,o.src=t,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-29416794-1","paulradzkov.com"),ga("send","pageview");</script></head><body class="layout-article">
+    
+    
+    <header class="page-header">
+        <nav class="read-siblings">
+            <div class="navlinks">
+  <a href="/2012/chrome_dev_tools/" title="Previous Post: Как отключить javascript в Google Chrome" class="navlinks-prev">&laquo; Как отключить javascript в Google Chrome</a>
+  <a href="/2013/lists_and_floats/" title="Next Post: Списки и картинки с флоатами" class="navlinks-next">Списки и картинки с флоатами &raquo;</a>
+</div>
+        </nav>
+        <nav class="site-navigation">
+            <a class="nav-icon nav-icon-centered js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null,this.src=&quot;/i/home.png&quot;"><span class="visuallyhidden">На главную</span></a>
+        </nav>
+        <aside class="nav-placeholder article-meta content-width">
+            
+            <p class="date"><time datetime="Sun Dec 09 2012 03:00:00 GMT+0300 (FET)">09 декабря 2012</time></p>
+            
+        </aside>
+        <div class="content-width">
+            <h1 class="article-title">Pointer-events</h1>
+        </div>
+        <aside class="article-meta content-width inlined">
+            
+            <span class="tags-list">
+                
+                    <a class="tag" href="/tags/css/">css</a>
+                
+                    <a class="tag" href="/tags/progressive-enhancement/">progressive enhancement</a>
+                
+            </span>
+            
+            
+            <span class="comments"><a href="#disqus_thread" data-disqus-identifier="pointer-events">Комментарии</a></span>
+            
+            <span class="pageviews" style="display:none"></span>
+        </aside>
+
+    </header>
+    
+    
+        <nav class="site-navigation sticky-nav" id="sticker">
+            <a class="nav-icon js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null,this.src=&quot;/i/home.png&quot;"><span class="visuallyhidden">На главную</span></a>
+        </nav>
+    
+    
+    <article class="nav-placeholder page-content content-width" role="main">
+        <p>Представим ситуацию, когда у нас один html-элемент расположен поверх другого. Но нам нужно, чтобы нижний элемент был кликабельным или реагировал на hover.</p>
+
+<p>В модуле «CSS4-UI» есть такое свойство — <code><a href="http://wiki.csswg.org/spec/css4-ui#pointer-events">pointer-events</a></code>.</p>
+
+
+
+<p><code class="hljs-rule"><span class="hljs-attribute">pointer-events</span>: <span class="hljs-value">none</span></code> — элемент перестанет реагировать на hover, click и другие события мыши. Он станет «прозрачным» для взаимодействия, а hover и click будут передаваться элементу, лежащему под ним.</p>
+
+<p><code class="hljs-rule"><span class="hljs-attribute">pointer-events</span>: <span class="hljs-value">auto</span></code> — (значение по-умолчанию) включает стандартное поведение элемента.</p>
+
+<p>Изначально свойство «pointer-events» было введено для SVG и должно было стать частью CSS3, но было перенесено в спецификацию CSS4. Кроме «none» и «auto» есть <a href="https://developer.mozilla.org/ru/docs/CSS/pointer-events">еще несколько значений</a>, но они применимы только к SVG, и мы не будем их рассматривать.</p>
+
+<p>Несмотря на то, что свойство относится к  CSS4, <a href="http://caniuse.com/pointer-events" title="Где работает pointer-events?">pointer-events поддерживается</a> уже большим количеством браузеров и довольно давно. Не работает в IE ниже 11 версии и в Opera Presto. А значит, его можно осторожно использовать для улучшения юзабилити в рамках прогрессивного улучшения.</p>
+
+<div class="caniuse" data-feature="pointer-events"></div>
+
+<p>Проверить, поддерживается ли это свойство браузером, можно с помощью <a href="https://github.com/ausi/Feature-detection-technique-for-pointer-events" title="Modernizr plugin feature detection for css property 'pointer-events'">специального теста для Modernizer</a>.</p>
+
+<h2>Пример 1</h2>
+
+<p>Рассмотрим на практике.</p>
+
+<div class="demo">
+
+    <div class="demo-card">
+    	<a href="#" class="demo-card-image-holder"><img src="http://placehold.it/300x200" alt=""></a>
+        <div class="demo-card-txt">
+            <h3 class="demo-card-title"><a href="#" class="demo-card-link">Pointer-events: none</a></h3>
+            <p class="demo-card-descr"><strong>Выдели меня курсором.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!</p>
+        </div>
+        <span class="demo-card-overlay" style="pointer-events:none"></span>
+    </div>
+    <div class="demo-card">
+    	<a href="#" class="demo-card-image-holder"><img src="http://placehold.it/300x200" alt=""></a>
+        <div class="demo-card-txt">
+            <h3 class="demo-card-title"><a href="#" class="demo-card-link">Pointer-events: auto</a></h3>
+            <p class="demo-card-descr"><strong>Выдели меня курсором.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!</p>
+        </div>
+        <span class="demo-card-overlay"></span>
+    </div>
+    <div class="clr"></div>
+</div>
+
+<p>В первом примере для белого градиента, накрывающего текст, <code class="hljs-rule"><span class="hljs-attribute">pointer-events</span></code> установлен в none. Текст легко выделяется мышью сквозь градиент. Даже курсор меняет свою форму со стрелки на выделение текста.</p>
+
+<p>Во втором примере <code class="hljs-rule"><span class="hljs-attribute">pointer-events</span></code> не задан, маска градиента не даёт выделить текст, курсор имеет форму стрелки, как для нетекстовых элементов.</p>
+
+<h2>Пример 2</h2>
+
+<p>Задача: сделать так, чтобы ссылка в меню становилась некликабельной, если она ведет на эту же страницу.</p>
+
+<div class="demo">
+
+    <ul class="demo-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blog" class="current">Blog</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#archive">Archive</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+    </ul>
+
+</div>
+
+<p>Обычно в CMS уже есть какой-либо класс для индикации текущей страницы в меню. Допишем ему pointer-events:</p>
+
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.demo-menu</span> <span class="hljs-tag">a</span><span class="hljs-class">.current</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#AAA</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#333</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">pointer-events</span>:<span class="hljs-value"> none</span></span>; <span class="hljs-comment">/* disables click event */</span>
+<span class="hljs-rule">}</span></span>
+</code></pre>
+
+
+    </article>
+    <div class="likely-container content-width">
+    <div class="likely">
+        <div class="facebook">Поделиться</div>
+        <div class="twitter" data-via="paul_radzkov">Твитнуть</div>
+        <div class="gplus">Плюсануть</div>
+        <div class="vkontakte">Поделиться</div>
+    </div>
+</div>
+
+    <footer class="page-footer content-width">
+	<p class="copyrights">
+		© <a href="//plus.google.com/+ПавелРадьков?rel=author" class="author"><span class="author-label">Автор:</span>Павел Радьков</a>
+		
+			2012.
+		
+		
+	</p>
+</footer>
+
+    
+    <div class="disqus-wrapper">
+        <article id="disqus_thread" class="disqus-container"></article>
+    </div>
+    
+    
+    <nav class="read-next">
+        <h4 class="read-next-title">Читать дальше:</h4>
+        <div class="navlinks">
+  <a href="/2012/chrome_dev_tools/" title="Previous Post: Как отключить javascript в Google Chrome" class="navlinks-prev">&laquo; Как отключить javascript в Google Chrome</a>
+  <a href="/2013/lists_and_floats/" title="Next Post: Списки и картинки с флоатами" class="navlinks-next">Списки и картинки с флоатами &raquo;</a>
+</div>
+    </nav>
+    
+        <script src="http://paulradzkov.github.io/vendor/modernizr.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script>window.jQuery||document.write('<script src="http://paulradzkov.github.io/vendor/jquery.js"><\/script>');</script><script defer="defer" src="http://paulradzkov.github.io/js/output.min.js"></script><script defer="defer" src="http://paulradzkov.github.io/vendor/caniuse.js"></script><script type="text/javascript">var disqus_shortname="paulradzkov",disqus_url="http://paulradzkov.com/2012/pointer-events/",disqus_identifier="pointer-events",disqus_title="Pointer-events";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="http://"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}(),function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="http://"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script><script type="text/javascript">!function(t,e,a){(e[a]=e[a]||[]).push(function(){try{e.yaCounter22878469=new Ya.Metrika({id:22878469,webvisor:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(t){}});var c=t.getElementsByTagName("script")[0],n=t.createElement("script"),r=function(){c.parentNode.insertBefore(n,c)};n.type="text/javascript",n.async=!0,n.src=("https:"==t.location.protocol?"https:":"http:")+"//mc.yandex.ru/metrika/watch.js","[object Opera]"==e.opera?t.addEventListener("DOMContentLoaded",r,!1):r()}(document,window,"yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22878469" style="position:absolute; left:-1px;" alt="" /></div></noscript>
+    
+
+    <script>ChatraID="m55vjivb29JgQgbXL",function(t,a,e){var r=t.getElementsByTagName("script")[0],c=t.createElement("script");a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},c.async=!0,c.src=("https:"===t.location.protocol?"https:":"http:")+"//chat.chatra.io/chatra.js",r.parentNode.insertBefore(c,r)}(document,window,"Chatra");</script><script defer="defer" src="https://apis.google.com/js/client.js?onload=gapiInit"></script><script>function gapiInit(){gapi.client.setApiKey(apiKey),gapi.auth.authorize({client_id:clientId,scope:scopes,immediate:!0},handleAuthResult)}function handleAuthResult(e){e&&!e.error?gapi.client.load("analytics","v3",makeApiCall):console.log("Not authorized")}function makeApiCall(){var e=gapi.client.analytics.data.ga.get({ids:tableIDs,"start-date":startDate,"end-date":"today",metrics:"ga:pageviews",filters:searchFilters});e.execute(handleCoreReportingResults)}function handleCoreReportingResults(e){e.error?console.log("There was an error: "+e.message):(console.log("Total pageviews since "+startDate+" : "+e.rows),$(".pageviews").show().append("Просмотров: "+e.rows))}var apiKey="AIzaSyCHQx2_4Kc-GL0eRB1wH9EfnraIVyAQueA",clientId="666487715579-h8ds9j92rsfrjtqho1u1oqldda9gm0gm.apps.googleusercontent.com",scopes=["https://www.googleapis.com/auth/analytics.readonly"],tableIDs="ga:56553165",startDate="2012-12-09",searchFilters="ga:pagePath==/2012/pointer-events/";</script></body></html>
