@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Блог Павла Радькова</title>
 	<subtitle>Заметки о веб-разработке Павла Радькова.</subtitle>
-	<link href="https://paulradzkov.github.io/atom.xml" rel="self" />
-	<link href="https://paulradzkov.github.io" />
-	<updated>2016-02-18T14:05:18.830Z</updated>
+	<link href="http://paulradzkov.com/atom.xml" rel="self" />
+	<link href="http://paulradzkov.com" />
+	<updated>2016-02-19T09:57:59.882Z</updated>
 	<id>https://paulradzkov.github.io</id>
 	<author>
 		<name>Павел Радьков</name>
@@ -14,9 +14,9 @@
 	
 		<entry>
 			<title>Как верстальщику получить код ревью</title>
-			<link href="https://paulradzkov.github.io/2016/code_review/"/>
+			<link href="http://paulradzkov.com/2016/code_review/"/>
 			<updated>2016-02-13T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2016/code_review/</id>
+			<id>http://paulradzkov.com/2016/code_review/</id>
 			<content type="html">&lt;p&gt;&lt;strong&gt;По мотивам вопроса на тостере «&lt;a href=&quot;https://toster.ru/q/289819&quot;&gt;Где найти того, кто оценит твой код?&lt;/a&gt;»&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Упростите жизнь ревьюверам. Постарайтесь, чтобы оценка кода занимала у них как можно меньше времени, а отправлять комментарии и исправления было легко. Чем меньше усилий потребуется со стороны ревьювера, тем выше шанс получить код ревью.&lt;/p&gt;
 &lt;!-- cut --&gt;
@@ -48,9 +48,9 @@
 	
 		<entry>
 			<title>Веб-лицензии для платных шрифтов могут стоить вам дорого</title>
-			<link href="https://paulradzkov.github.io/2014/web-fonts_license/"/>
+			<link href="http://paulradzkov.com/2014/web-fonts_license/"/>
 			<updated>2014-05-02T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/web-fonts_license/</id>
+			<id>http://paulradzkov.com/2014/web-fonts_license/</id>
 			<content type="html">&lt;p&gt;Использовать платные шрифты в вебе бывает неоправдано дорого. Веб-лицензия, в отличие от настольной лицензии, подразумевает не покупку файлов шрифта, а аренду @font-face версии этого шрифта, причем стоимость аренды зависит от посещаемости вашего сайта. Самая главная опасность платных шрифтов в том, что это не разовые, а &lt;em&gt;постоянные&lt;/em&gt; затраты.&lt;/p&gt;
 &lt;!-- cut --&gt;
 &lt;h2 id=&quot;-&quot;&gt;Отличия в лицензиях&lt;/h2&gt;
@@ -75,7 +75,7 @@
 &lt;p&gt;На &lt;a href=&quot;http://www.myfonts.com/fonts/linotype/neue-helvetica/buy.html&quot;&gt;MyFonts.com&lt;/a&gt; уже дешевле — 279$ за 1 500 000, что есть 3348$ в год.&lt;/p&gt;
 &lt;p&gt;В случае ежемесячной оплаты с ограничением по максимальному количеству &lt;a href=&quot;http://www.fonts.com/web-fonts/plans-and-pricing&quot;&gt;Fonts.com&lt;/a&gt; просит 78€ (100$) в месяц за 2,5 млн. просмотров.
 Уже лучше: мы не ограничены количеством начертаний, у нас есть запас на рост посещаемости и всё это стоит 1200$ в год.&lt;/p&gt;
-&lt;p&gt;Самым выгодным вариантом является &lt;a href=&quot;https://typekit.com/plans/business&quot;&gt;Adobe Typekit&lt;/a&gt; c его предложением 40$ в месяц за 2 млн. просмотров. Это 480$ в год. Цена уже более менее адекватная, но на неё всё равно согласится не каждый, учитывая, что можно найти &lt;a href=&quot;https://paulradzkov.github.io/2014/free_substitution_for_helvetica_neue/&quot;&gt;бесплатный аналог&lt;/a&gt; и избежать этих затрат.&lt;/p&gt;
+&lt;p&gt;Самым выгодным вариантом является &lt;a href=&quot;https://typekit.com/plans/business&quot;&gt;Adobe Typekit&lt;/a&gt; c его предложением 40$ в месяц за 2 млн. просмотров. Это 480$ в год. Цена уже более менее адекватная, но на неё всё равно согласится не каждый, учитывая, что можно найти &lt;a href=&quot;/2014/free_substitution_for_helvetica_neue/&quot;&gt;бесплатный аналог&lt;/a&gt; и избежать этих затрат.&lt;/p&gt;
 &lt;p&gt;Как видим, цены на одно и то же могут отличаться в 10 раз.&lt;/p&gt;
 &lt;div class=&quot;fotorama&quot;&gt;
     &lt;img src=&quot;linotype-helvetica-desktop.png&quot; alt=&quot;Настольная лицензия на сайте Linotype стоит 116€&quot;&gt;
@@ -104,9 +104,9 @@
 	
 		<entry>
 			<title>Бесплатная замена платному Helvetica Neue</title>
-			<link href="https://paulradzkov.github.io/2014/free_substitution_for_helvetica_neue/"/>
+			<link href="http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/"/>
 			<updated>2014-05-01T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/free_substitution_for_helvetica_neue/</id>
+			<id>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</id>
 			<content type="html">&lt;p&gt;Подбирал бесплатную замену платному Helvetica Neue. До финала дошли:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.fontsquirrel.com/fonts/TeX-Gyre-Heros&quot;&gt;TeX Gyre Heros&lt;/a&gt;&lt;/li&gt;
@@ -118,13 +118,13 @@
 &lt;p&gt;Победителем вышел &lt;strong&gt;TeX Gyre Heros&lt;/strong&gt;, т.к. он очень похож на Helvetica Neue, поддерживает кириллицу и дополнительно у него есть 4 condenced начертания. &lt;/p&gt;
 &lt;!-- cut --&gt;
 &lt;figure&gt;
-    &lt;a href=&quot;https://paulradzkov.github.io/demo/free_substitutes_for_helvetica_neue/&quot;&gt;
+    &lt;a href=&quot;/demo/free_substitutes_for_helvetica_neue/&quot;&gt;
     &lt;img src=&quot;helvetica-neue-vs-tex-gyre-heros.png&quot; alt=&quot;TeX Gyre Heros — бесплатная альтернатива Helvetica Neue&quot;&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;Слева Helvetica Neue, справа TeX Gyre Heros&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://paulradzkov.github.io/demo/free_substitutes_for_helvetica_neue/&quot; class=&quot;link-to-demo&quot;&gt;Сравнение шрифтов&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;/demo/free_substitutes_for_helvetica_neue/&quot; class=&quot;link-to-demo&quot;&gt;Сравнение шрифтов&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Если всё же нужно купить Helvetica Neue для веба, обратите внимание на &lt;a href=&quot;https://typekit.com/plans&quot;&gt;Adobe Typekit&lt;/a&gt;. У них дешевле.&lt;/p&gt;
 </content>
@@ -132,9 +132,9 @@
 	
 		<entry>
 			<title>Деплой Docpad-сайта на GitHub Pages</title>
-			<link href="https://paulradzkov.github.io/2014/deploy_docpad_site_to_github_pages/"/>
+			<link href="http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/"/>
 			<updated>2014-04-25T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/deploy_docpad_site_to_github_pages/</id>
+			<id>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</id>
 			<content type="html">&lt;p&gt;При деплое &lt;a href=&quot;http://docpad.org/&quot;&gt;Docpad&lt;/a&gt;-сайта на &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; столкнулся с некоторыми проблемами.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Проблема с абсолютными путями: докпад по-умолчанию использует пути к ресурсам от корня домена, а на GH Pages url проекта будет выглядеть так &lt;code&gt;http://username.github.io/repository/&lt;/code&gt;. Т.е. сайт находится в папке, а не в корне, и все пути к ресурсам недействительны. Конечно, можно купить собственное доменное имя, но это не мой случай. Нужно, чтобы на локалхосте url оставались абсолютными, а при деплое заменялись с учетом папки, в которую сайт деплоится.&lt;/li&gt;
@@ -256,9 +256,9 @@
 	
 		<entry>
 			<title>Краткое руководство по Маркдауну</title>
-			<link href="https://paulradzkov.github.io/2014/markdown_cheatsheet/"/>
+			<link href="http://paulradzkov.com/2014/markdown_cheatsheet/"/>
 			<updated>2014-04-07T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/markdown_cheatsheet/</id>
+			<id>http://paulradzkov.com/2014/markdown_cheatsheet/</id>
 			<content type="html">&lt;p&gt;&lt;strong&gt;12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее &lt;a href=&quot;http://codepen.io/paulradzkov/pen/ZGoLgr&quot; target=&quot;_blank&quot;&gt;руководство с традиционным Маркдауном&lt;/a&gt;.&lt;/strong&gt;
 &lt;/p&gt;
 
@@ -797,9 +797,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>О каких дизайнерах мечтают верстальщики</title>
-			<link href="https://paulradzkov.github.io/2014/designer-superstar/"/>
+			<link href="http://paulradzkov.com/2014/designer-superstar/"/>
 			<updated>2014-02-10T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/designer-superstar/</id>
+			<id>http://paulradzkov.com/2014/designer-superstar/</id>
 			<content type="html">&lt;p&gt;В &lt;a href=&quot;http://artgorbunov.ru/bb/soviet/20140206/&quot;&gt;совете&lt;/a&gt; Николай Товеровский классифицировал верстальщиков на три категории: «Неандертальцы», «Планктон» и «Суперзвёзды». &lt;/p&gt;
 &lt;p&gt;На мой взгляд, между «Планктоном» и «Суперзвёздами» должны быть «Мастера», которые замечают все проблемы, советуются с дизайнерами, предлагают варианты, но не требуют «нарисовать макетик» и, пока ещё, не берут на себя ответственность дорабатывать макет самостоятельно. Таким специалистам достаточно на словах объяснить, что будет в крайних ситуациях и как должны вести себя элементы сайта в непрорисованных состояниях. Они всё поймут и сделают как надо.&lt;/p&gt;
 &lt;p&gt;А вот о каких дизайнерах мечтают верстальщики…&lt;/p&gt;
@@ -817,9 +817,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Захват экрана в GIF</title>
-			<link href="https://paulradzkov.github.io/2014/capture_screen_to_gif/"/>
+			<link href="http://paulradzkov.com/2014/capture_screen_to_gif/"/>
 			<updated>2014-02-09T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/capture_screen_to_gif/</id>
+			<id>http://paulradzkov.com/2014/capture_screen_to_gif/</id>
 			<content type="html">&lt;p&gt;Рекомендую замечательную маленькую программку для записи области экрана в GIF — &lt;a href=&quot;http://www.cockos.com/licecap/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;LICEcap&lt;/strong&gt;&lt;/a&gt;. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.&lt;/p&gt; 
 
 &lt;p&gt;А ещё можно сохранять в гифки смешные моменты из фильмов.&lt;/p&gt;
@@ -829,7 +829,7 @@ Content Cell  | Content Cell
 &lt;p&gt;Пользоваться легко, смотрите сами:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;https://paulradzkov.github.io/2014/capture_screen_to_gif//licecap-demo.gif&quot; alt=&quot;LICEcap — захват экрана в GIF&quot;&gt;
+    &lt;img src=&quot;/2014/capture_screen_to_gif//licecap-demo.gif&quot; alt=&quot;LICEcap — захват экрана в GIF&quot;&gt;
     &lt;figcaption&gt;&lt;p&gt;Захват экрана в GIF в программе LICEcap&lt;/p&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -846,9 +846,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Font-weight: bolder для шрифтов со множеством начертаний</title>
-			<link href="https://paulradzkov.github.io/2014/font-weight_bolder/"/>
+			<link href="http://paulradzkov.com/2014/font-weight_bolder/"/>
 			<updated>2014-02-06T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/font-weight_bolder/</id>
+			<id>http://paulradzkov.com/2014/font-weight_bolder/</id>
 			<content type="html">&lt;p&gt;Если вы используете шрифт со множеством начертаний, то вам, вероятно, захочется, чтобы теги &lt;code class=&quot;hljs-tag&quot;&gt;strong&lt;/code&gt; и &lt;code class=&quot;hljs-tag&quot;&gt;b&lt;/code&gt; не увеличивали жирность шрифта до фиксированного значения &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;700&lt;/span&gt;&lt;/code&gt;, как это происходит по-умолчанию, а использовали промежуточные значения, рассчитанные исходя из жирности шрифта родительского элемента.&lt;/p&gt;
 &lt;p&gt;Ведь не очень красиво, когда в ультратонком шрифте появляются жирные кляксы тегов &lt;code class=&quot;hljs-tag&quot;&gt;strong&lt;/code&gt;.&lt;/p&gt;
 
@@ -857,7 +857,7 @@ Content Cell  | Content Cell
 &lt;p&gt;Возьмём для примера Open Sans.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;https://paulradzkov.github.io/2014/font-weight_bolder//open-sans.png&quot; width=&quot;847&quot; height=&quot;345&quot; alt=&quot;Open Sans и все его начертания&quot;&gt;
+  &lt;img src=&quot;/2014/font-weight_bolder//open-sans.png&quot; width=&quot;847&quot; height=&quot;345&quot; alt=&quot;Open Sans и все его начертания&quot;&gt;
   &lt;figcaption&gt;
   	&lt;p&gt;Open Sans имеет пять начертаний: Light 300, Normal 400, Semi-Bold 600, Bold 700 и Extra-Bold 800. &lt;br&gt; Цифры соответствуют значению &lt;code class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/code&gt;.&lt;/p&gt;
   &lt;/figcaption&gt;
@@ -956,7 +956,7 @@ Content Cell  | Content Cell
 &lt;p&gt;Теперь нам не придётся заботиться о вложенности элементов — каскад всё сделает автоматически. Мы можем вкладывать теги &lt;code class=&quot;hljs-tag&quot;&gt;strong&lt;/code&gt; друг в друга.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://cssdeck.com/labs/x20utix0&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://paulradzkov.github.io/2014/font-weight_bolder//nested-tags-with-font-weight-bolder.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://cssdeck.com/labs/x20utix0&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/2014/font-weight_bolder//nested-tags-with-font-weight-bolder.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
     &lt;figcaption&gt;
         &lt;p&gt;Вложенные теги «strong». Толщина шрифта определяется исходя из значения родительского элемента.&lt;/p&gt;
         &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://cssdeck.com/labs/x20utix0&quot; target=&quot;_blank&quot; class=&quot;link-to-demo&quot;&gt;Демка&lt;/a&gt;&lt;/p&gt;
@@ -989,9 +989,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Параметры subject и body в mailto ссылках</title>
-			<link href="https://paulradzkov.github.io/2014/mailto_parameters/"/>
+			<link href="http://paulradzkov.com/2014/mailto_parameters/"/>
 			<updated>2014-02-04T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/mailto_parameters/</id>
+			<id>http://paulradzkov.com/2014/mailto_parameters/</id>
 			<content type="html">&lt;p&gt;В письмах от сервисов и электронных магазинов, приходящих в ответ на заказ услуги или покупку товара, часто есть подобная фраза:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;«Если у Вас возникли любые вопросы касательно вашего заказа, пожалуйста, свяжитесь со Службой поддержки по телефону &lt;a href=&quot;tel:XXXX XXX XXXX&quot;&gt;XXXX XXX XXXX&lt;/a&gt; или напишите по адресу &lt;a href=&quot;mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;body=Мой номер заказа XXXXX&quot; class=&quot;breakall&quot;&gt;customerservices@sitename.com&lt;/a&gt;. Не забудьте сообщить ваш номер заказа.&lt;/p&gt;
@@ -1005,9 +1005,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Посещённая ссылка при наведении</title>
-			<link href="https://paulradzkov.github.io/2014/visited_link_on_hover/"/>
+			<link href="http://paulradzkov.com/2014/visited_link_on_hover/"/>
 			<updated>2014-01-26T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/visited_link_on_hover/</id>
+			<id>http://paulradzkov.com/2014/visited_link_on_hover/</id>
 			<content type="html">&lt;p&gt;Век живи — век учись. Недавно узнал, что можно задавать посещённой ссылке отдельный цвет при наведении комбинируя два псевдокласса: &lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:visited&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-hexcolor&quot;&gt;#9501B3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;}&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;То есть, что комбинировать псевдоклассы можно, я знал, но не догадывался попробовать провернуть это со ссылками и не ожидал, что это сработает.&lt;/p&gt;
@@ -1015,7 +1015,7 @@ Content Cell  | Content Cell
 &lt;!-- cut --&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://cssdeck.com/labs/visited_link_on_hover&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://paulradzkov.github.io/2014/visited_link_on_hover//sample.gif&quot; width=&quot;600&quot; height=&quot;150&quot; alt=&quot;Посещенная ссылка и не посещенная при наведении имеют разные цвета&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://cssdeck.com/labs/visited_link_on_hover&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/2014/visited_link_on_hover//sample.gif&quot; width=&quot;600&quot; height=&quot;150&quot; alt=&quot;Посещенная ссылка и не посещенная при наведении имеют разные цвета&quot;&gt;&lt;/a&gt;
   &lt;figcaption&gt;
     &lt;p style=&quot;text-align: center;&quot;&gt;Посещённая ссылка и не посещённая при наведении и фокусе имеют разные цвета&lt;/p&gt;
   &lt;/figcaption&gt;
@@ -1036,9 +1036,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>CSS-селектор :not(). Полезные примеры</title>
-			<link href="https://paulradzkov.github.io/2014/negation_css_selector/"/>
+			<link href="http://paulradzkov.com/2014/negation_css_selector/"/>
 			<updated>2014-01-19T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2014/negation_css_selector/</id>
+			<id>http://paulradzkov.com/2014/negation_css_selector/</id>
 			<content type="html">&lt;p&gt;В спецификации и блогах про селектор &lt;code class=&quot;hljs-pseudo&quot;&gt;:not&lt;/code&gt; обычно приводят какие-то искусственные примеры, которые хоть и объясняют синтаксис и принцип действия, но не несут никакой идеи о том, как получить пользу от нового селектора.&lt;/p&gt;
 
 &lt;!-- cut --&gt;
@@ -1091,7 +1091,7 @@ Content Cell  | Content Cell
 &lt;h2&gt;Пример 2. Изменение внешнего вида всех элементов, кроме наведенного&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://paulradzkov.github.io/2014/negation_css_selector//sample2.gif&quot; width=&quot;600&quot; height=&quot;150&quot; alt=&quot;Изменение внешнего вида всех элементов, кроме наведенного&quot;/&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/2014/negation_css_selector//sample2.gif&quot; width=&quot;600&quot; height=&quot;150&quot; alt=&quot;Изменение внешнего вида всех элементов, кроме наведенного&quot;/&gt;&lt;/a&gt;
   &lt;figcaption&gt;
     &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot;&gt;Пример&lt;/a&gt;&lt;/p&gt;
   &lt;/figcaption&gt;
@@ -1118,7 +1118,7 @@ Content Cell  | Content Cell
 
 &lt;h2&gt;Пример 3. Меню с разделителями между элементами&lt;/h2&gt;
 &lt;figure&gt;
-    &lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://paulradzkov.github.io/2014/negation_css_selector//sample3.png&quot; width=&quot;600&quot; height=&quot;200&quot; alt=&quot;Меню с разделителями между элементами&quot;/&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/2014/negation_css_selector//sample3.png&quot; width=&quot;600&quot; height=&quot;200&quot; alt=&quot;Меню с разделителями между элементами&quot;/&gt;&lt;/a&gt;
   &lt;figcaption&gt;
     &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot;&gt;Пример&lt;/a&gt;&lt;/p&gt;
   &lt;/figcaption&gt;
@@ -1225,9 +1225,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Списки и картинки с флоатами</title>
-			<link href="https://paulradzkov.github.io/2013/lists_and_floats/"/>
+			<link href="http://paulradzkov.com/2013/lists_and_floats/"/>
 			<updated>2013-01-24T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2013/lists_and_floats/</id>
+			<id>http://paulradzkov.com/2013/lists_and_floats/</id>
 			<content type="html">&lt;p&gt;&lt;strong&gt;Обновлено 12 декабря 2015. Спустя три года после написания этого поста в голову пришло более простое и стабильное решение.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Для дефолтных браузерных стилей характерно такое поведение: если картинка обтекает список слева, маркеры списка налазят на картинку. От этого можно избавиться незначительно переписав стили. &lt;/p&gt;
@@ -1236,7 +1236,7 @@ Content Cell  | Content Cell
 
 &lt;p&gt;&lt;a href=&quot;http://cssdeck.com/labs/floated-images-and-lists&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot;&gt;демка&lt;/a&gt;&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src=&quot;https://paulradzkov.github.io/2013/lists_and_floats//floated_images_and_lists_problem.png&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;Если картинка обтекает список, маркеры списка налазят на картинку&quot;/&gt;
+    &lt;img src=&quot;/2013/lists_and_floats//floated_images_and_lists_problem.png&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;Если картинка обтекает список, маркеры списка налазят на картинку&quot;/&gt;
     &lt;figcaption&gt;Проблема: если картинка обтекает список, то маркеры списка налазят на картинку&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1266,7 +1266,7 @@ Content Cell  | Content Cell
 &lt;p&gt;А всё остальное, чтобы отступы выглядели как раньше.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;https://paulradzkov.github.io/2013/lists_and_floats//floated_images_and_lists_solution.png&quot; width=&quot;800&quot; height=&quot;580&quot; alt=&quot;Маркеры списка не налазят на картинку&quot;/&gt;
+    &lt;img src=&quot;/2013/lists_and_floats//floated_images_and_lists_solution.png&quot; width=&quot;800&quot; height=&quot;580&quot; alt=&quot;Маркеры списка не налазят на картинку&quot;/&gt;
     &lt;figcaption&gt;Маркеры списка больше не налазят на картинку&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1289,7 +1289,7 @@ Content Cell  | Content Cell
 &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Списки, не имеющие класса, мы выбираем, чтобы не повредить меню, слайдеры и прочие конструкции, которые используют &lt;code class=&quot;hljs-tag nowrap&quot;&gt;ul li&lt;/code&gt; в своей структуре. Подробнее про это в посте &lt;a href=&quot;https://paulradzkov.github.io/2014/negation_css_selector/&quot;&gt;про селектор :not()&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Списки, не имеющие класса, мы выбираем, чтобы не повредить меню, слайдеры и прочие конструкции, которые используют &lt;code class=&quot;hljs-tag nowrap&quot;&gt;ul li&lt;/code&gt; в своей структуре. Подробнее про это в посте &lt;a href=&quot;/2014/negation_css_selector/&quot;&gt;про селектор :not()&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;В отличие от старого решения, элементы списка обтекают картинку естественным образом, не оставляя зазоров под картинкой.&lt;/p&gt;
 
@@ -1298,7 +1298,7 @@ Content Cell  | Content Cell
 &lt;p&gt;Живой пример:&lt;/p&gt;
 
 &lt;div class=&quot;demo&quot;&gt;
-    &lt;img src=&quot;https://paulradzkov.github.io//placehold.it/320x240&quot; style=&quot;float:left; margin-right:1em;&quot; alt=&quot;&quot;&gt;
+    &lt;img src=&quot;//placehold.it/320x240&quot; style=&quot;float:left; margin-right:1em;&quot; alt=&quot;&quot;&gt;
     &lt;p&gt;Lorem ipsum.&lt;/p&gt;
     &lt;ul&gt;
         &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat porro eligendi quod ratione quaerat dolores quia quasi provident. Veniam earum iste modi quam aliquam qui itaque corporis quia vel inventore.&lt;/li&gt;
@@ -1312,9 +1312,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Pointer-events</title>
-			<link href="https://paulradzkov.github.io/2012/pointer-events/"/>
+			<link href="http://paulradzkov.com/2012/pointer-events/"/>
 			<updated>2012-12-09T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2012/pointer-events/</id>
+			<id>http://paulradzkov.com/2012/pointer-events/</id>
 			<content type="html">&lt;p&gt;Представим ситуацию, когда у нас один html-элемент расположен поверх другого. Но нам нужно, чтобы нижний элемент был кликабельным или реагировал на hover.&lt;/p&gt;
 
 &lt;p&gt;В модуле «CSS4-UI» есть такое свойство — &lt;code&gt;&lt;a href=&quot;http://wiki.csswg.org/spec/css4-ui#pointer-events&quot;&gt;pointer-events&lt;/a&gt;&lt;/code&gt;.&lt;/p&gt;
@@ -1340,7 +1340,7 @@ Content Cell  | Content Cell
 &lt;div class=&quot;demo&quot;&gt;
 
     &lt;div class=&quot;demo-card&quot;&gt;
-    	&lt;a href=&quot;#&quot; class=&quot;demo-card-image-holder&quot;&gt;&lt;img src=&quot;https://paulradzkov.github.io//placehold.it/300x200&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    	&lt;a href=&quot;#&quot; class=&quot;demo-card-image-holder&quot;&gt;&lt;img src=&quot;//placehold.it/300x200&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
         &lt;div class=&quot;demo-card-txt&quot;&gt;
             &lt;h3 class=&quot;demo-card-title&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;demo-card-link&quot;&gt;Pointer-events: none&lt;/a&gt;&lt;/h3&gt;
             &lt;p class=&quot;demo-card-descr&quot;&gt;&lt;strong&gt;Выдели меня курсором.&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!&lt;/p&gt;
@@ -1348,7 +1348,7 @@ Content Cell  | Content Cell
         &lt;span class=&quot;demo-card-overlay&quot; style=&quot;pointer-events:none;&quot;&gt;&lt;!--gradient overlay--&gt;&lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&quot;demo-card&quot;&gt;
-    	&lt;a href=&quot;#&quot; class=&quot;demo-card-image-holder&quot;&gt;&lt;img src=&quot;https://paulradzkov.github.io//placehold.it/300x200&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    	&lt;a href=&quot;#&quot; class=&quot;demo-card-image-holder&quot;&gt;&lt;img src=&quot;//placehold.it/300x200&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
         &lt;div class=&quot;demo-card-txt&quot;&gt;
             &lt;h3 class=&quot;demo-card-title&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;demo-card-link&quot;&gt;Pointer-events: auto&lt;/a&gt;&lt;/h3&gt;
             &lt;p class=&quot;demo-card-descr&quot;&gt;&lt;strong&gt;Выдели меня курсором.&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!&lt;/p&gt;
@@ -1392,9 +1392,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Как отключить javascript в Google Chrome</title>
-			<link href="https://paulradzkov.github.io/2012/chrome_dev_tools/"/>
+			<link href="http://paulradzkov.com/2012/chrome_dev_tools/"/>
 			<updated>2012-11-27T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2012/chrome_dev_tools/</id>
+			<id>http://paulradzkov.com/2012/chrome_dev_tools/</id>
 			<content type="html">&lt;p&gt;&lt;em&gt;Статья обновлена 6 февраля 2014.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;В настройках Chrome Developer Tools запрятано много полезных, не сразу заметных, опций. Самые часто используемые — это отключение яваскрипта и отключение кэша.&lt;/p&gt;
 
@@ -1403,7 +1403,7 @@ Content Cell  | Content Cell
 &lt;p&gt;Чтобы попасть в настройки, откроем Developer Tools (&lt;kbd&gt;F12&lt;/kbd&gt;) и нажмем иконку шестеренки в заголовке справа (&lt;kbd&gt;F1&lt;/kbd&gt;).&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;https://paulradzkov.github.io/2012/chrome_dev_tools//disable_javascript_in_chome.gif&quot; width=&quot;830&quot; height=&quot;870&quot; alt=&quot;Как отлючить кэш и яваскрипт в Гугл Хроме&quot;/&gt;
+	&lt;img src=&quot;/2012/chrome_dev_tools//disable_javascript_in_chome.gif&quot; width=&quot;830&quot; height=&quot;870&quot; alt=&quot;Как отлючить кэш и яваскрипт в Гугл Хроме&quot;/&gt;
 	&lt;figcaption&gt;
         &lt;p&gt;Developer Tools (&lt;kbd&gt;F12&lt;/kbd&gt;) → General Settings (&lt;kbd&gt;F1&lt;/kbd&gt;). Настройки инспектора кода: отключение кэша и яваскрипта.&lt;/p&gt;
 	&lt;/figcaption&gt;
@@ -1411,7 +1411,7 @@ Content Cell  | Content Cell
 &lt;p&gt;Обратите внимание группу опций «Rendering». «Show paint rectangles» — позволяет увидеть, какие области перерисовывает браузер в ответ на какие-либо события или в результате работы скриптов. Полезно для профилирования и оптимизации.&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;img src=&quot;https://paulradzkov.github.io/2012/chrome_dev_tools//chome_devtools_shortkeys.png&quot; width=&quot;830&quot; height=&quot;1010&quot; alt=&quot;Горячие клавиши в инспекторе Гугл Хрома&quot;/&gt;
+	&lt;img src=&quot;/2012/chrome_dev_tools//chome_devtools_shortkeys.png&quot; width=&quot;830&quot; height=&quot;1010&quot; alt=&quot;Горячие клавиши в инспекторе Гугл Хрома&quot;/&gt;
 	&lt;figcaption&gt;
 		&lt;p&gt;Горячие клавиши Developers Tools.&lt;/p&gt;
 	&lt;/figcaption&gt;
@@ -1426,14 +1426,14 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Перечёркивание крест-накрест</title>
-			<link href="https://paulradzkov.github.io/2012/crosswise/"/>
+			<link href="http://paulradzkov.com/2012/crosswise/"/>
 			<updated>2012-10-28T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2012/crosswise/</id>
+			<id>http://paulradzkov.com/2012/crosswise/</id>
 			<content type="html">&lt;p&gt;Итак, задача: перечеркнуть слово или блок текста или картинку диагональными линиями крест-накрест. Нам поможет SVG.&lt;/p&gt;
 
 &lt;!-- cut --&gt;
 &lt;p&gt;
-    &lt;a href=&quot;https://paulradzkov.github.io/demo/crosswise/&quot; class=&quot;link-to-demo&quot;&gt;Демка&lt;/a&gt;
+    &lt;a href=&quot;/demo/crosswise/&quot; class=&quot;link-to-demo&quot;&gt;Демка&lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Напишем стили для строчного тега &lt;code class=&quot;hljs-tag&quot;&gt;del&lt;/code&gt; и подготовим класс для перечёркивания блочных элементов &lt;code class=&quot;hljs-class&quot;&gt;.del-cross&lt;/code&gt;.&lt;/p&gt;
@@ -1474,7 +1474,7 @@ Content Cell  | Content Cell
     &lt;div class=&quot;media&quot;&gt;
         &lt;figure class=&quot;img&quot;&gt;
             &lt;div class=&quot;del-cross&quot;&gt;
-                &lt;img src=&quot;https://paulradzkov.github.io//placehold.it/300x200&quot; width=&quot;300&quot; height=&quot;200&quot; alt=&quot;No kitten here&quot;/&gt;
+                &lt;img src=&quot;//placehold.it/300x200&quot; width=&quot;300&quot; height=&quot;200&quot; alt=&quot;No kitten here&quot;/&gt;
             &lt;/div&gt;
             &lt;figcaption&gt;&lt;p&gt;Image caption&lt;/p&gt;&lt;/figcaption&gt;
         &lt;/figure&gt;
@@ -1486,7 +1486,7 @@ Content Cell  | Content Cell
 &lt;/div&gt;
 &lt;p&gt;Для картинок класс &lt;code class=&quot;hljs-class&quot;&gt;.del-cross&lt;/code&gt; нужно ставить на их обёртку. Тег &lt;code class=&quot;hljs-tag&quot;&gt;img&lt;/code&gt; не имеет псевдокласса &lt;code class=&quot;hljs-pseudo&quot;&gt;:before&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;А теперь посмотрим, что внутри SVG-файла, и как настроить цвет и толщину линий.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://paulradzkov.github.io/demo/crosswise/cross_old.svg&quot;&gt;cross_old.svg&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/demo/crosswise/cross_old.svg&quot;&gt;cross_old.svg&lt;/a&gt;:&lt;/p&gt;
 
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;xmlns&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;http://www.w3.org/2000/svg&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;viewBox&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0 0 100 100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;preserveAspectRatio&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;none&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;stroke: rgba(255,0,0,0.9); stroke-width: 1.5&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt;   &lt;span class=&quot;hljs-attribute&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;vector-effect&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;non-scaling-stroke&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
@@ -1506,7 +1506,7 @@ Content Cell  | Content Cell
 
 &lt;p&gt;&lt;strong&gt;Обновлено 9 апреля 2013&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;В комментариях GreLI подсказал, что SVG-файл можно сократить до такого вида (&lt;a href=&quot;https://paulradzkov.github.io/2012/crosswise//cross.svg&quot;&gt;cross.svg&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;В комментариях GreLI подсказал, что SVG-файл можно сократить до такого вида (&lt;a href=&quot;/2012/crosswise//cross.svg&quot;&gt;cross.svg&lt;/a&gt;):&lt;/p&gt;
 
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;xmlns&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;http://www.w3.org/2000/svg&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;stroke: rgba(255,0,0,0.9); stroke-width: 1.5&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt;    &lt;span class=&quot;hljs-attribute&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100%&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100%&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
@@ -1517,15 +1517,15 @@ Content Cell  | Content Cell
 &lt;p&gt;Задавая координаты линий в процентах, мы избавляемся от необходимости применять &lt;code class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;vector-effect&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&amp;quot;non-scaling-stroke&amp;quot;&lt;/span&gt;&lt;/code&gt;, который не работает в IE9 и IE10.&lt;/p&gt;
 
 &lt;p&gt;
-    &lt;a href=&quot;https://paulradzkov.github.io/demo/crosswise/&quot; class=&quot;link-to-demo&quot;&gt;Демка&lt;/a&gt;
+    &lt;a href=&quot;/demo/crosswise/&quot; class=&quot;link-to-demo&quot;&gt;Демка&lt;/a&gt;
 &lt;/p&gt;</content>
 		</entry>
 	
 		<entry>
 			<title>Отладка мобильных сайтов в Webkit. Инспектор кода на мобильных устройствах</title>
-			<link href="https://paulradzkov.github.io/2012/mobile_developing/"/>
+			<link href="http://paulradzkov.com/2012/mobile_developing/"/>
 			<updated>2012-04-08T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2012/mobile_developing/</id>
+			<id>http://paulradzkov.com/2012/mobile_developing/</id>
 			<content type="html">&lt;p&gt;7 марта Abobe &lt;a href=&quot;http://tv.adobe.com/watch/adobe-technology-sneaks-2012/adobe-shadow&quot; title=&quot;Смотрим презентацию&quot; target=&quot;_blank&quot;&gt;представила&lt;/a&gt; замечательный комплекс программ, позволяющий синхронно просматривать и проводить отладку сайтов в браузерах Webkit на компе и нескольких планшетах и смартфонах одновременно. Количество подключаемых устройств не ограничено. Поддерживаются как iOS, так и Android.&lt;/p&gt;
 
 &lt;!-- cut --&gt;
@@ -1539,7 +1539,7 @@ Content Cell  | Content Cell
 &lt;p&gt;Теперь можно серфить по сайтам с основного компа, а на подключенных устройствах будут открываться те же страницы. При этом используется движок родного браузера iOS или Android, но внутри приложения Shadow.&lt;/p&gt;
 &lt;p&gt;Чтобы вызвать инспектор кода, нужно в выпадающем меню плагина Adobe Shadow кликнуть иконку &lt;strong&gt;&amp;lt;&amp;gt;&lt;/strong&gt; напротив интересующего устройства.&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;https://paulradzkov.github.io/2012/mobile_developing//adobe-shadow-plugin_small.jpg&quot; width=&quot;890&quot; height=&quot;619&quot; alt=&quot;Как открыть удаленный инспектор кода в Adobe Shadow&quot;/&gt;
+	&lt;img src=&quot;/2012/mobile_developing//adobe-shadow-plugin_small.jpg&quot; width=&quot;890&quot; height=&quot;619&quot; alt=&quot;Как открыть удаленный инспектор кода в Adobe Shadow&quot;/&gt;
 &lt;/figure&gt;
 &lt;p&gt;Можно проводить отладку сайтов на локалхосте. Только в браузере на компе нужно вводить не &lt;code&gt;http://localhost&lt;/code&gt;, а IP-адрес компьютера, например, &lt;code&gt;http://192.168.0.101:3000&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;А вот просто локальные файлы типа &lt;code&gt;file://website/index.html&lt;/code&gt; мобильное приложение не открывает. Нужно использовать или локальный веб-сервер, или поместить такие файлы, например, в паблик-папку dropbox и открывать их из интернета.&lt;/p&gt;
@@ -1548,9 +1548,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Горячие клавиши для выбора предыдущего и следующего слоя в Photoshop</title>
-			<link href="https://paulradzkov.github.io/2012/photoshop_next_and_previous_layer/"/>
+			<link href="http://paulradzkov.com/2012/photoshop_next_and_previous_layer/"/>
 			<updated>2012-03-18T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2012/photoshop_next_and_previous_layer/</id>
+			<id>http://paulradzkov.com/2012/photoshop_next_and_previous_layer/</id>
 			<content type="html">&lt;p&gt;При написании макросов в Фотошопе бывает нужно выбрать слой выше или ниже активного. Кликать в слой курсором плохой вариант, так как макрос запишет команду «Выбрать слой &quot;имя_слоя&quot;», т.е. будет выбираться конкретный слой, где бы он не находился, а не слой относительно текущего.&lt;/p&gt;
 &lt;p&gt;Нам помогут горячие клавиши: &lt;/p&gt;
 &lt;ul&gt;
@@ -1564,7 +1564,7 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Эти команды оперируют только с видимыми слоями и пропускают выключенные.&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img src=&quot;https://paulradzkov.github.io/2012/photoshop_next_and_previous_layer//photoshop_next_and_previous_layer.png&quot; width=&quot;531&quot; height=&quot;606&quot; alt=&quot;Горячие клавиши для выделения предыдущего и следующего слоя в Photoshop&quot;/&gt;
+	&lt;img src=&quot;/2012/photoshop_next_and_previous_layer//photoshop_next_and_previous_layer.png&quot; width=&quot;531&quot; height=&quot;606&quot; alt=&quot;Горячие клавиши для выделения предыдущего и следующего слоя в Photoshop&quot;/&gt;
 	&lt;figcaption&gt;
 		&lt;p&gt;&lt;kbd&gt;Alt + Shift + ]&lt;/kbd&gt; выберет слои «selihanov» и «glebov».&lt;/p&gt;
 		&lt;p&gt;&lt;kbd&gt;Alt + Shift + [&lt;/kbd&gt; выберет слои «selihanov» и «Layer&amp;nbsp;13», пропустив все невидимые слои.&lt;/p&gt;
@@ -1581,9 +1581,9 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>HTML-сущности и их UTF-коды</title>
-			<link href="https://paulradzkov.github.io/2012/html-entities_and_utf_codes/"/>
+			<link href="http://paulradzkov.com/2012/html-entities_and_utf_codes/"/>
 			<updated>2012-03-11T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2012/html-entities_and_utf_codes/</id>
+			<id>http://paulradzkov.com/2012/html-entities_and_utf_codes/</id>
 			<content type="html">&lt;p&gt;Генерируемое содержимое псевдоклассов &lt;code class=&quot;hljs-pseudo&quot;&gt;:before&lt;/code&gt; и &lt;code class=&quot;hljs-pseudo&quot;&gt;:after&lt;/code&gt; очень удобно использовать для создания иконок, буллитов, кавычек и в прочих декоративных целях.&lt;/p&gt;
 
 &lt;p&gt;Но свойство &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;'\203A'&lt;/span&gt;;&lt;/span&gt;&lt;/code&gt; отображает HTML-сущности так, как они записаны в CSS, не заменяет их на специальные символы. Например, напишем в CSS &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;'&amp;amp;rarr;'&lt;/span&gt;;&lt;/span&gt;&lt;/code&gt;, получим в браузере «&amp;amp;rarr;» вместо «&amp;rarr;». Поэтому писать спецальные символы в &lt;code class=&quot;hljs-attribute&quot;&gt;content&lt;/code&gt; нужно 4-значными UTF-кодами (UTF-16 hex), экранированными обратным слэшем.&lt;/p&gt;
@@ -1633,11 +1633,11 @@ Content Cell  | Content Cell
     &lt;form name=&quot;chars-options&quot; class=&quot;btn-group&quot; data-toggle=&quot;buttons&quot;&gt;
         &lt;label class=&quot;btn btn-primary active&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Плитка&quot;&gt;
             &lt;input type=&quot;radio&quot; name=&quot;chars-view&quot; id=&quot;tile-view&quot; checked&gt;
-            &lt;img src=&quot;https://paulradzkov.github.io/i/th-large.svg&quot; class=&quot;btn-icon&quot; width=&quot;14&quot; height=&quot;14&quot; alt=&quot;Плитка&quot;&gt;
+            &lt;img src=&quot;/i/th-large.svg&quot; class=&quot;btn-icon&quot; width=&quot;14&quot; height=&quot;14&quot; alt=&quot;Плитка&quot;&gt;
         &lt;/label&gt;
         &lt;label class=&quot;btn btn-primary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Таблица&quot;&gt;
             &lt;input type=&quot;radio&quot; name=&quot;chars-view&quot; id=&quot;table-view&quot;&gt;
-            &lt;img src=&quot;https://paulradzkov.github.io/i/list.svg&quot; class=&quot;btn-icon&quot; width=&quot;14&quot; height=&quot;14&quot; alt=&quot;Таблица&quot;&gt;
+            &lt;img src=&quot;/i/list.svg&quot; class=&quot;btn-icon&quot; width=&quot;14&quot; height=&quot;14&quot; alt=&quot;Таблица&quot;&gt;
         &lt;/label&gt;
     &lt;/form&gt;
 &lt;/div&gt;
@@ -3272,13 +3272,13 @@ Content Cell  | Content Cell
 	
 		<entry>
 			<title>Нарезка в Photoshop — New Layer Based Slice</title>
-			<link href="https://paulradzkov.github.io/2012/photoshop_new_layer_based_slice/"/>
+			<link href="http://paulradzkov.com/2012/photoshop_new_layer_based_slice/"/>
 			<updated>2012-02-22T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2012/photoshop_new_layer_based_slice/</id>
+			<id>http://paulradzkov.com/2012/photoshop_new_layer_based_slice/</id>
 			<content type="html">&lt;p&gt;Открыл для себя недавно полезную команду в фотошопе — меню «Layer» &amp;rarr; «New Layer Based Slice», — которая создаёт слайс по границам выделенного слоя. В случае выделения нескольких слоёв, создает слайс по границам каждого слоя. Это в несколько раз ускоряется нарезку графики с тенями, свечением и контурами.&lt;/p&gt;
 &lt;!-- cut --&gt;
 &lt;figure&gt;
-    &lt;img src=&quot;https://paulradzkov.github.io/2012/photoshop_new_layer_based_slice//Photoshop-New-Layer-Based-Slice.png&quot; width=&quot;875&quot; height=&quot;735&quot; alt=&quot;New Layer Based Slice&quot;/&gt;
+    &lt;img src=&quot;/2012/photoshop_new_layer_based_slice//Photoshop-New-Layer-Based-Slice.png&quot; width=&quot;875&quot; height=&quot;735&quot; alt=&quot;New Layer Based Slice&quot;/&gt;
     &lt;figcaption&gt;Layer &amp;rarr; New Layer Based Slice (Alt+L)+(Alt+B)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -3286,16 +3286,16 @@ Content Cell  | Content Cell
 &lt;p&gt;New Layer Based Slice захватывает и границы эффектов тоже. То, на что раньше требовалось до нескольких минут, можно сделать двумя нажатиями клавиш.&lt;/p&gt;
 &lt;p&gt;Для ускорения процесса нарезки на это действие можно повесить своё сочетание горячих клавиш, но лучше привыкнуть к двум стандартными сочетаниями: &lt;kbd&gt;(Alt+L)+(Alt+B)&lt;/kbd&gt;.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src=&quot;https://paulradzkov.github.io/2012/photoshop_new_layer_based_slice//Photoshop-Layer-with-Shadow.png&quot; width=&quot;570&quot; height=&quot;565&quot; alt=&quot;Layer with Shadow&quot;/&gt;
+    &lt;img src=&quot;/2012/photoshop_new_layer_based_slice//Photoshop-Layer-with-Shadow.png&quot; width=&quot;570&quot; height=&quot;565&quot; alt=&quot;Layer with Shadow&quot;/&gt;
     &lt;figcaption&gt;Слой со смещенной тенью шириной в 30px. Рамкой трансформации выделены границы самого слоя. Слайс создан по границам тени.&lt;/figcaption&gt;
 &lt;/figure&gt;</content>
 		</entry>
 	
 		<entry>
 			<title>Автозаполнение форм в Google Chrome</title>
-			<link href="https://paulradzkov.github.io/2012/autocomplete/"/>
+			<link href="http://paulradzkov.com/2012/autocomplete/"/>
 			<updated>2012-02-12T00:00:00.000Z</updated>
-			<id>https://paulradzkov.github.io/2012/autocomplete/</id>
+			<id>http://paulradzkov.com/2012/autocomplete/</id>
 			<content type="html">&lt;p&gt;В Google Chrome в user agent stylesheet для полей с автозаполнением прописан желтый фон (#FAFFBD) и черный цвет текста, причем оба правила усилены с помощью &lt;code class=&quot;hljs-important&quot;&gt;!important&lt;/code&gt; и переопределить их в своей CSS нельзя. Но есть способы решить эту проблему обходными путями.&lt;/p&gt;
 &lt;!-- cut --&gt;
 &lt;p&gt;В трекере описан этот &lt;a href=&quot;http://code.google.com/p/chromium/issues/detail?id=46543&quot;&gt;баг&lt;/a&gt;, но &lt;time datetime=&quot;2012-10-30&quot;&gt;пока&lt;/time&gt; решения нет.&lt;/p&gt;
@@ -3315,7 +3315,7 @@ Content Cell  | Content Cell
                   inset &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;   &lt;span class=&quot;hljs-number&quot;&gt;50px&lt;/span&gt; white&lt;/span&gt;&lt;/span&gt;;  &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет вашего фона */&lt;/span&gt;
     &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-text-fill-color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; black&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет текста */&lt;/span&gt;
 &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;При помощи нескольких теней можно &lt;a href=&quot;https://paulradzkov.github.io/demo/box-shadow_instead_gradient/&quot;&gt;имитировать градиент&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;При помощи нескольких теней можно &lt;a href=&quot;/demo/box-shadow_instead_gradient/&quot;&gt;имитировать градиент&lt;/a&gt;.&lt;/p&gt;
 </content>
 		</entry>
 	

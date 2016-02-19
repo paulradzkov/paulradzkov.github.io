@@ -3,7 +3,7 @@
 	<channel>
 		
 		<title>Блог Павла Радькова</title>
-		<link>https://paulradzkov.github.io</link>
+		<link>http://paulradzkov.com</link>
 		<description>Заметки о веб-разработке Павла Радькова.</description>
 		<lastBuildDate>Sat, 13 Feb 2016 00:00:00 GMT</lastBuildDate>
 		<language>ru</language>
@@ -12,7 +12,7 @@
 		
 			<item>
 				<title>Как верстальщику получить код ревью</title>
-				<link>https://paulradzkov.github.io/2016/code_review/</link>
+				<link>http://paulradzkov.com/2016/code_review/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p><strong>По мотивам вопроса на тостере «<a href="https://toster.ru/q/289819">Где найти того, кто оценит твой код?</a>»</strong></p>
@@ -44,13 +44,13 @@
 ]]>
 				</content:encoded>
 				<pubDate>Sat, 13 Feb 2016 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2016/code_review/</guid>
-				<comments>https://paulradzkov.github.io/2016/code_review/#comments</comments>
+				<guid>http://paulradzkov.com/2016/code_review/</guid>
+				<comments>http://paulradzkov.com/2016/code_review/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Веб-лицензии для платных шрифтов могут стоить вам дорого</title>
-				<link>https://paulradzkov.github.io/2014/web-fonts_license/</link>
+				<link>http://paulradzkov.com/2014/web-fonts_license/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Использовать платные шрифты в вебе бывает неоправдано дорого. Веб-лицензия, в отличие от настольной лицензии, подразумевает не покупку файлов шрифта, а аренду @font-face версии этого шрифта, причем стоимость аренды зависит от посещаемости вашего сайта. Самая главная опасность платных шрифтов в том, что это не разовые, а <em>постоянные</em> затраты.</p>
@@ -104,13 +104,13 @@
 ]]>
 				</content:encoded>
 				<pubDate>Fri, 02 May 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/web-fonts_license/</guid>
-				<comments>https://paulradzkov.github.io/2014/web-fonts_license/#comments</comments>
+				<guid>http://paulradzkov.com/2014/web-fonts_license/</guid>
+				<comments>http://paulradzkov.com/2014/web-fonts_license/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Бесплатная замена платному Helvetica Neue</title>
-				<link>https://paulradzkov.github.io/2014/free_substitution_for_helvetica_neue/</link>
+				<link>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Подбирал бесплатную замену платному Helvetica Neue. До финала дошли:</p>
@@ -136,13 +136,13 @@
 ]]>
 				</content:encoded>
 				<pubDate>Thu, 01 May 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/free_substitution_for_helvetica_neue/</guid>
-				<comments>https://paulradzkov.github.io/2014/free_substitution_for_helvetica_neue/#comments</comments>
+				<guid>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</guid>
+				<comments>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Деплой Docpad-сайта на GitHub Pages</title>
-				<link>https://paulradzkov.github.io/2014/deploy_docpad_site_to_github_pages/</link>
+				<link>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>При деплое <a href="http://docpad.org/">Docpad</a>-сайта на <a href="https://pages.github.com/">GitHub Pages</a> столкнулся с некоторыми проблемами.</p>
@@ -264,13 +264,13 @@
 ]]>
 				</content:encoded>
 				<pubDate>Fri, 25 Apr 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/deploy_docpad_site_to_github_pages/</guid>
-				<comments>https://paulradzkov.github.io/2014/deploy_docpad_site_to_github_pages/#comments</comments>
+				<guid>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</guid>
+				<comments>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Краткое руководство по Маркдауну</title>
-				<link>https://paulradzkov.github.io/2014/markdown_cheatsheet/</link>
+				<link>http://paulradzkov.com/2014/markdown_cheatsheet/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p><strong>12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее <a href="http://codepen.io/paulradzkov/pen/ZGoLgr" target="_blank">руководство с традиционным Маркдауном</a>.</strong>
@@ -809,13 +809,13 @@ Content Cell  | Content Cell
 </ul>]]>
 				</content:encoded>
 				<pubDate>Mon, 07 Apr 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/markdown_cheatsheet/</guid>
-				<comments>https://paulradzkov.github.io/2014/markdown_cheatsheet/#comments</comments>
+				<guid>http://paulradzkov.com/2014/markdown_cheatsheet/</guid>
+				<comments>http://paulradzkov.com/2014/markdown_cheatsheet/#comments</comments>
 			</item>
 		
 			<item>
 				<title>О каких дизайнерах мечтают верстальщики</title>
-				<link>https://paulradzkov.github.io/2014/designer-superstar/</link>
+				<link>http://paulradzkov.com/2014/designer-superstar/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>В <a href="http://artgorbunov.ru/bb/soviet/20140206/">совете</a> Николай Товеровский классифицировал верстальщиков на три категории: «Неандертальцы», «Планктон» и «Суперзвёзды». </p>
@@ -833,13 +833,13 @@ Content Cell  | Content Cell
 ]]>
 				</content:encoded>
 				<pubDate>Mon, 10 Feb 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/designer-superstar/</guid>
-				<comments>https://paulradzkov.github.io/2014/designer-superstar/#comments</comments>
+				<guid>http://paulradzkov.com/2014/designer-superstar/</guid>
+				<comments>http://paulradzkov.com/2014/designer-superstar/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Захват экрана в GIF</title>
-				<link>https://paulradzkov.github.io/2014/capture_screen_to_gif/</link>
+				<link>http://paulradzkov.com/2014/capture_screen_to_gif/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Рекомендую замечательную маленькую программку для записи области экрана в GIF — <a href="http://www.cockos.com/licecap/" target="_blank"><strong>LICEcap</strong></a>. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.</p> 
@@ -866,13 +866,13 @@ Content Cell  | Content Cell
 </p>]]>
 				</content:encoded>
 				<pubDate>Sun, 09 Feb 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/capture_screen_to_gif/</guid>
-				<comments>https://paulradzkov.github.io/2014/capture_screen_to_gif/#comments</comments>
+				<guid>http://paulradzkov.com/2014/capture_screen_to_gif/</guid>
+				<comments>http://paulradzkov.com/2014/capture_screen_to_gif/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Font-weight: bolder для шрифтов со множеством начертаний</title>
-				<link>https://paulradzkov.github.io/2014/font-weight_bolder/</link>
+				<link>http://paulradzkov.com/2014/font-weight_bolder/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Если вы используете шрифт со множеством начертаний, то вам, вероятно, захочется, чтобы теги <code class="hljs-tag">strong</code> и <code class="hljs-tag">b</code> не увеличивали жирность шрифта до фиксированного значения <code class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-number">700</span></code>, как это происходит по-умолчанию, а использовали промежуточные значения, рассчитанные исходя из жирности шрифта родительского элемента.</p>
@@ -1013,13 +1013,13 @@ Content Cell  | Content Cell
 </code></pre>]]>
 				</content:encoded>
 				<pubDate>Thu, 06 Feb 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/font-weight_bolder/</guid>
-				<comments>https://paulradzkov.github.io/2014/font-weight_bolder/#comments</comments>
+				<guid>http://paulradzkov.com/2014/font-weight_bolder/</guid>
+				<comments>http://paulradzkov.com/2014/font-weight_bolder/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Параметры subject и body в mailto ссылках</title>
-				<link>https://paulradzkov.github.io/2014/mailto_parameters/</link>
+				<link>http://paulradzkov.com/2014/mailto_parameters/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>В письмах от сервисов и электронных магазинов, приходящих в ответ на заказ услуги или покупку товара, часто есть подобная фраза:</p>
@@ -1033,13 +1033,13 @@ Content Cell  | Content Cell
 ]]>
 				</content:encoded>
 				<pubDate>Tue, 04 Feb 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/mailto_parameters/</guid>
-				<comments>https://paulradzkov.github.io/2014/mailto_parameters/#comments</comments>
+				<guid>http://paulradzkov.com/2014/mailto_parameters/</guid>
+				<comments>http://paulradzkov.com/2014/mailto_parameters/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Посещённая ссылка при наведении</title>
-				<link>https://paulradzkov.github.io/2014/visited_link_on_hover/</link>
+				<link>http://paulradzkov.com/2014/visited_link_on_hover/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Век живи — век учись. Недавно узнал, что можно задавать посещённой ссылке отдельный цвет при наведении комбинируя два псевдокласса: <code class="css"><span class="hljs-tag">a</span><span class="hljs-pseudo">:visited</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"><span class="hljs-hexcolor">#9501B3</span></span></span></span>}</code>.</p>
@@ -1068,13 +1068,13 @@ Content Cell  | Content Cell
 <p><a href="http://cssdeck.com/labs/visited_link_on_hover" target="_blank" class="link-to-demo">Пример</a></p>]]>
 				</content:encoded>
 				<pubDate>Sun, 26 Jan 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/visited_link_on_hover/</guid>
-				<comments>https://paulradzkov.github.io/2014/visited_link_on_hover/#comments</comments>
+				<guid>http://paulradzkov.com/2014/visited_link_on_hover/</guid>
+				<comments>http://paulradzkov.com/2014/visited_link_on_hover/#comments</comments>
 			</item>
 		
 			<item>
 				<title>CSS-селектор :not(). Полезные примеры</title>
-				<link>https://paulradzkov.github.io/2014/negation_css_selector/</link>
+				<link>http://paulradzkov.com/2014/negation_css_selector/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>В спецификации и блогах про селектор <code class="hljs-pseudo">:not</code> обычно приводят какие-то искусственные примеры, которые хоть и объясняют синтаксис и принцип действия, но не несут никакой идеи о том, как получить пользу от нового селектора.</p>
@@ -1261,13 +1261,13 @@ Content Cell  | Content Cell
 <p>Если очень нужны CSS3-селекторы в браузерах, которые их не поддерживают, можно использовать полифил <a href="http://selectivizr.com/" target="_blank">selectivizr</a>.</p>]]>
 				</content:encoded>
 				<pubDate>Sun, 19 Jan 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2014/negation_css_selector/</guid>
-				<comments>https://paulradzkov.github.io/2014/negation_css_selector/#comments</comments>
+				<guid>http://paulradzkov.com/2014/negation_css_selector/</guid>
+				<comments>http://paulradzkov.com/2014/negation_css_selector/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Списки и картинки с флоатами</title>
-				<link>https://paulradzkov.github.io/2013/lists_and_floats/</link>
+				<link>http://paulradzkov.com/2013/lists_and_floats/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p><strong>Обновлено 12 декабря 2015. Спустя три года после написания этого поста в голову пришло более простое и стабильное решение.</strong></p>
@@ -1352,13 +1352,13 @@ Content Cell  | Content Cell
 </div>]]>
 				</content:encoded>
 				<pubDate>Thu, 24 Jan 2013 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2013/lists_and_floats/</guid>
-				<comments>https://paulradzkov.github.io/2013/lists_and_floats/#comments</comments>
+				<guid>http://paulradzkov.com/2013/lists_and_floats/</guid>
+				<comments>http://paulradzkov.com/2013/lists_and_floats/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Pointer-events</title>
-				<link>https://paulradzkov.github.io/2012/pointer-events/</link>
+				<link>http://paulradzkov.com/2012/pointer-events/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Представим ситуацию, когда у нас один html-элемент расположен поверх другого. Но нам нужно, чтобы нижний элемент был кликабельным или реагировал на hover.</p>
@@ -1436,13 +1436,13 @@ Content Cell  | Content Cell
 ]]>
 				</content:encoded>
 				<pubDate>Sun, 09 Dec 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2012/pointer-events/</guid>
-				<comments>https://paulradzkov.github.io/2012/pointer-events/#comments</comments>
+				<guid>http://paulradzkov.com/2012/pointer-events/</guid>
+				<comments>http://paulradzkov.com/2012/pointer-events/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Как отключить javascript в Google Chrome</title>
-				<link>https://paulradzkov.github.io/2012/chrome_dev_tools/</link>
+				<link>http://paulradzkov.com/2012/chrome_dev_tools/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p><em>Статья обновлена 6 февраля 2014.</em></p>
@@ -1474,13 +1474,13 @@ Content Cell  | Content Cell
 </ul>]]>
 				</content:encoded>
 				<pubDate>Tue, 27 Nov 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2012/chrome_dev_tools/</guid>
-				<comments>https://paulradzkov.github.io/2012/chrome_dev_tools/#comments</comments>
+				<guid>http://paulradzkov.com/2012/chrome_dev_tools/</guid>
+				<comments>http://paulradzkov.com/2012/chrome_dev_tools/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Перечёркивание крест-накрест</title>
-				<link>https://paulradzkov.github.io/2012/crosswise/</link>
+				<link>http://paulradzkov.com/2012/crosswise/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Итак, задача: перечеркнуть слово или блок текста или картинку диагональными линиями крест-накрест. Нам поможет SVG.</p>
@@ -1575,13 +1575,13 @@ Content Cell  | Content Cell
 </p>]]>
 				</content:encoded>
 				<pubDate>Sun, 28 Oct 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2012/crosswise/</guid>
-				<comments>https://paulradzkov.github.io/2012/crosswise/#comments</comments>
+				<guid>http://paulradzkov.com/2012/crosswise/</guid>
+				<comments>http://paulradzkov.com/2012/crosswise/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Отладка мобильных сайтов в Webkit. Инспектор кода на мобильных устройствах</title>
-				<link>https://paulradzkov.github.io/2012/mobile_developing/</link>
+				<link>http://paulradzkov.com/2012/mobile_developing/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>7 марта Abobe <a href="http://tv.adobe.com/watch/adobe-technology-sneaks-2012/adobe-shadow" title="Смотрим презентацию" target="_blank">представила</a> замечательный комплекс программ, позволяющий синхронно просматривать и проводить отладку сайтов в браузерах Webkit на компе и нескольких планшетах и смартфонах одновременно. Количество подключаемых устройств не ограничено. Поддерживаются как iOS, так и Android.</p>
@@ -1604,13 +1604,13 @@ Content Cell  | Content Cell
 <p>В общем, рекомендую Adobe Shadow всем разработчикам, кто верстает под различные устройства. Успехов в создании сайтов с отзывчивой вёрсткой!</p>]]>
 				</content:encoded>
 				<pubDate>Sun, 08 Apr 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2012/mobile_developing/</guid>
-				<comments>https://paulradzkov.github.io/2012/mobile_developing/#comments</comments>
+				<guid>http://paulradzkov.com/2012/mobile_developing/</guid>
+				<comments>http://paulradzkov.com/2012/mobile_developing/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Горячие клавиши для выбора предыдущего и следующего слоя в Photoshop</title>
-				<link>https://paulradzkov.github.io/2012/photoshop_next_and_previous_layer/</link>
+				<link>http://paulradzkov.com/2012/photoshop_next_and_previous_layer/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>При написании макросов в Фотошопе бывает нужно выбрать слой выше или ниже активного. Кликать в слой курсором плохой вариант, так как макрос запишет команду «Выбрать слой "имя_слоя"», т.е. будет выбираться конкретный слой, где бы он не находился, а не слой относительно текущего.</p>
@@ -1641,13 +1641,13 @@ Content Cell  | Content Cell
 </ul>]]>
 				</content:encoded>
 				<pubDate>Sun, 18 Mar 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2012/photoshop_next_and_previous_layer/</guid>
-				<comments>https://paulradzkov.github.io/2012/photoshop_next_and_previous_layer/#comments</comments>
+				<guid>http://paulradzkov.com/2012/photoshop_next_and_previous_layer/</guid>
+				<comments>http://paulradzkov.com/2012/photoshop_next_and_previous_layer/#comments</comments>
 			</item>
 		
 			<item>
 				<title>HTML-сущности и их UTF-коды</title>
-				<link>https://paulradzkov.github.io/2012/html-entities_and_utf_codes/</link>
+				<link>http://paulradzkov.com/2012/html-entities_and_utf_codes/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Генерируемое содержимое псевдоклассов <code class="hljs-pseudo">:before</code> и <code class="hljs-pseudo">:after</code> очень удобно использовать для создания иконок, буллитов, кавычек и в прочих декоративных целях.</p>
@@ -3336,13 +3336,13 @@ Content Cell  | Content Cell
 </div>]]>
 				</content:encoded>
 				<pubDate>Sun, 11 Mar 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2012/html-entities_and_utf_codes/</guid>
-				<comments>https://paulradzkov.github.io/2012/html-entities_and_utf_codes/#comments</comments>
+				<guid>http://paulradzkov.com/2012/html-entities_and_utf_codes/</guid>
+				<comments>http://paulradzkov.com/2012/html-entities_and_utf_codes/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Нарезка в Photoshop — New Layer Based Slice</title>
-				<link>https://paulradzkov.github.io/2012/photoshop_new_layer_based_slice/</link>
+				<link>http://paulradzkov.com/2012/photoshop_new_layer_based_slice/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Открыл для себя недавно полезную команду в фотошопе — меню «Layer» &rarr; «New Layer Based Slice», — которая создаёт слайс по границам выделенного слоя. В случае выделения нескольких слоёв, создает слайс по границам каждого слоя. Это в несколько раз ускоряется нарезку графики с тенями, свечением и контурами.</p>
@@ -3361,13 +3361,13 @@ Content Cell  | Content Cell
 </figure>]]>
 				</content:encoded>
 				<pubDate>Wed, 22 Feb 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2012/photoshop_new_layer_based_slice/</guid>
-				<comments>https://paulradzkov.github.io/2012/photoshop_new_layer_based_slice/#comments</comments>
+				<guid>http://paulradzkov.com/2012/photoshop_new_layer_based_slice/</guid>
+				<comments>http://paulradzkov.com/2012/photoshop_new_layer_based_slice/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Автозаполнение форм в Google Chrome</title>
-				<link>https://paulradzkov.github.io/2012/autocomplete/</link>
+				<link>http://paulradzkov.com/2012/autocomplete/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>В Google Chrome в user agent stylesheet для полей с автозаполнением прописан желтый фон (#FAFFBD) и черный цвет текста, причем оба правила усилены с помощью <code class="hljs-important">!important</code> и переопределить их в своей CSS нельзя. Но есть способы решить эту проблему обходными путями.</p>
@@ -3393,8 +3393,8 @@ Content Cell  | Content Cell
 ]]>
 				</content:encoded>
 				<pubDate>Sun, 12 Feb 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.github.io/2012/autocomplete/</guid>
-				<comments>https://paulradzkov.github.io/2012/autocomplete/#comments</comments>
+				<guid>http://paulradzkov.com/2012/autocomplete/</guid>
+				<comments>http://paulradzkov.com/2012/autocomplete/#comments</comments>
 			</item>
 		
 	</channel>
