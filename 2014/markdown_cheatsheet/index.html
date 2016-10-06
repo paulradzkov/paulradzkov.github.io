@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- Site Properities -->
-    <title>Краткое руководство по Маркдауну</title>
-    <meta name="description" content="Шпаргалка по синтаксису Маркдауна" />
+    <title>Краткое руководство по Маркдауну</title>
+    <meta name="description" content="Шпаргалка по синтаксису Маркдауна" />
     <meta name="keywords" content="Paul Radzkov, web-developer, blog, html, css" />
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
@@ -19,10 +19,18 @@
 
     <!-- Icons -->
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=A0RJW2vMdo">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=A0RJW2vMdo" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=A0RJW2vMdo" sizes="16x16">
+    <link rel="manifest" href="/manifest.json?v=A0RJW2vMdo">
+    <link rel="shortcut icon" href="/favicon.ico?v=A0RJW2vMdo">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Feeds -->
     <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
     <link rel="canonical" href="http://paulradzkov.com/2014/markdown_cheatsheet/">
+    <meta property="fb:pages" content="297287297277384" />
 
     <script type="text/javascript">
     (function () {
@@ -107,9 +115,8 @@
     }());
 </script>
 
-
-    <meta property="og:title" content="Краткое руководство по Маркдауну" />
-<meta property="og:description" content="Шпаргалка по синтаксису Маркдауна" />
+    <meta property="og:title" content="Краткое руководство по Маркдауну" />
+<meta property="og:description" content="Шпаргалка по синтаксису Маркдауна" />
 
     <meta property="og:image" content="https://paulradzkov.github.io/i/og/og-index.png" />
 
@@ -127,74 +134,73 @@
 
     <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@paul_radzkov">
-<meta name="twitter:title" content="Краткое руководство по Маркдауну">
-<meta name="twitter:description" content="Шпаргалка по синтаксису Маркдауна">
+<meta name="twitter:title" content="Краткое руководство по Маркдауну">
+<meta name="twitter:description" content="Шпаргалка по синтаксису Маркдауна">
 
 <meta name="twitter:image" content="https://paulradzkov.github.io/i/og/og-index.png">
 
 
-
     
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-29416794-1', 'paulradzkov.com');
-        ga('send', 'pageview');
+    ga('create', 'UA-29416794-1', 'paulradzkov.com');
+    ga('send', 'pageview');
 
-    </script>
-    
+</script>
+
 
 </head>
-
-<body class="layout-article">
+<body class="allpage allpage-max-width allpage-stickyfooter layout-article">
     
     
-    <header class="page-header">
-        <nav class="read-siblings">
-            <div class="navlinks">
-  <a href="/2014/designer-superstar/" title="Previous Post: О каких дизайнерах мечтают верстальщики" class="navlinks-prev">&laquo; О каких дизайнерах мечтают верстальщики</a>
-  <a href="/2014/deploy_docpad_site_to_github_pages/" title="Next Post: Деплой Docpad-сайта на GitHub Pages" class="navlinks-next">Деплой Docpad-сайта на GitHub Pages &raquo;</a>
+    <header class="allpage--header page-header">
+        <div class="article-nav">
+            <nav class="read-siblings">
+                <div class="navlinks">
+  <a href="/2014/designer-superstar/" title="О каких дизайнерах мечтают верстальщики" class="navlinks-prev">О каких дизайнерах мечтают верстальщики</a>
+  <a href="/2014/deploy_docpad_site_to_github_pages/" title="Деплой Docpad-сайта на GitHub Pages" class="navlinks-next">Деплой Docpad-сайта на GitHub Pages</a>
 </div>
-        </nav>
-        <nav class="site-navigation">
-            <a class="nav-icon nav-icon-centered js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null; this.src='/i/home.png'" /><span class="visuallyhidden">На главную</span></a>
-        </nav>
-        <aside class="nav-placeholder article-meta content-width">
+            </nav>
+            <nav class="site-navigation sticky-nav" id="sticker">
+                <a class="nav-icon nav-icon-centered js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null; this.src='/i/home.png'" /><span class="visuallyhidden">На главную</span></a>
+            </nav>
+        </div>
+        <aside class="nav-placeholder content-width">
+            <div class="article-meta ">
             
-            <p class="date"><time datetime="Mon Apr 07 2014 03:00:00 GMT+0300 (FET)">07 апреля 2014</time></p>
+                <p class="date"><time datetime="Mon Apr 07 2014 03:00:00 GMT+0300 (FET)">07 апреля 2014</time></p>
             
+            </div>
         </aside>
         <div class="content-width">
-            <h1 class="article-title">Краткое руководство по Маркдауну</h1>
+            <h1 class="article-title">Краткое руководство по Маркдауну</h1>
         </div>
-        <aside class="article-meta content-width inlined">
-            
-            <span class="tags-list">
+        <aside class="content-width">
+            <div class="article-meta inlined">
                 
-                    <a class="tag" href="/tags/tools/">tools</a>
+                <span class="tags-list">
+                    
+                        <a class="tag" href="/tags/tools/">tools</a>
+                    
+                        <a class="tag" href="/tags/markdown/">markdown</a>
+                    
+                </span>
                 
-                    <a class="tag" href="/tags/markdown/">markdown</a>
                 
-            </span>
-            
-            
-            <span class="comments"><a href="#disqus_thread" data-disqus-identifier="markdown_cheatsheet" >Комментарии</a></span>
-            
-            <span class="pageviews" style="display:none"></span>
+                <span class="comments"><a href="#disqus_thread" data-disqus-identifier="markdown_cheatsheet" >Комментарии</a></span>
+                
+                <span class="pageviews" style="display:none"></span>
+            </div>
         </aside>
 
     </header>
     
     
-        <nav class="site-navigation sticky-nav" id="sticker">
-            <a class="nav-icon js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null; this.src='/i/home.png'" /><span class="visuallyhidden">На главную</span></a>
-        </nav>
-    
-    
-    <article class="nav-placeholder page-content content-width" role="main">
+    <article class="allpage--body nav-placeholder content-width" role="main">
         <p><strong>12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее <a href="http://codepen.io/paulradzkov/pen/ZGoLgr" target="_blank">руководство с традиционным Маркдауном</a>.</strong>
 </p>
 
@@ -741,8 +747,8 @@ Content Cell  | Content Cell
     </div>
 </div>
 
-    <footer class="page-footer content-width">
-	<p class="copyrights">
+    <footer class="allpage--footere page-footer content-width">
+	<p>
 		© <a href="//plus.google.com/+ПавелРадьков?rel=author" class="author"><span class="author-label">Автор:</span>Павел Радьков</a>
 		
 			2014.
@@ -757,11 +763,11 @@ Content Cell  | Content Cell
     </div>
     
     
+    <h4 class="read-next-title">Читать дальше:</h4>
     <nav class="read-next">
-        <h4 class="read-next-title">Читать дальше:</h4>
         <div class="navlinks">
-  <a href="/2014/designer-superstar/" title="Previous Post: О каких дизайнерах мечтают верстальщики" class="navlinks-prev">&laquo; О каких дизайнерах мечтают верстальщики</a>
-  <a href="/2014/deploy_docpad_site_to_github_pages/" title="Next Post: Деплой Docpad-сайта на GitHub Pages" class="navlinks-next">Деплой Docpad-сайта на GitHub Pages &raquo;</a>
+  <a href="/2014/designer-superstar/" title="О каких дизайнерах мечтают верстальщики" class="navlinks-prev">О каких дизайнерах мечтают верстальщики</a>
+  <a href="/2014/deploy_docpad_site_to_github_pages/" title="Деплой Docpad-сайта на GitHub Pages" class="navlinks-next">Деплой Docpad-сайта на GitHub Pages</a>
 </div>
     </nav>
     
@@ -781,7 +787,7 @@ Content Cell  | Content Cell
             //var disqus_developer = 1; // developer mode is on
             var disqus_url = 'http://paulradzkov.com/2014/markdown_cheatsheet/';
             var disqus_identifier = 'markdown_cheatsheet';
-            var disqus_title = 'Краткое руководство по Маркдауну';
+            var disqus_title = 'Краткое руководство по Маркдауну';
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {
@@ -825,22 +831,6 @@ Content Cell  | Content Cell
     </script>
     <noscript><div><img src="//mc.yandex.ru/watch/22878469" style="position:absolute; left:-1px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-
-    <script>
-    ChatraID = 'm55vjivb29JgQgbXL';
-    (function(d, w, c) {
-        var n = d.getElementsByTagName('script')[0],
-            s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
-            + '//chat.chatra.io/chatra.js';
-        n.parentNode.insertBefore(s, n);
-    })(document, window, 'Chatra');
-</script>
-
 
     
         <script defer src="https://apis.google.com/js/client.js?onload=gapiInit"></script>
@@ -900,22 +890,6 @@ Content Cell  | Content Cell
             }
         </script>
     
-
-        <script src="/upup.min.js"></script>
-    <script>
-        UpUp.start({
-            'content-url': '/offline/',
-            'assets': [
-                '/css/template.css',
-                '/avatar/paulradzkov_60x60.jpg',
-                '/avatar/paulradzkov_120x120.jpg',
-                '/avatar/paulradzkov_240x240.jpg',
-                '/vendor/fotorama/fotorama.css',
-                '/2014/markdown_cheatsheet/markdown_cheatsheet.css'
-
-            ]
-        });
-    </script>
 
 </body>
 </html>

@@ -19,10 +19,18 @@
 
     <!-- Icons -->
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=A0RJW2vMdo">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=A0RJW2vMdo" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=A0RJW2vMdo" sizes="16x16">
+    <link rel="manifest" href="/manifest.json?v=A0RJW2vMdo">
+    <link rel="shortcut icon" href="/favicon.ico?v=A0RJW2vMdo">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Feeds -->
     <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
     <link rel="canonical" href="http://paulradzkov.com/demo/">
+    <meta property="fb:pages" content="297287297277384" />
 
     <script type="text/javascript">
     (function () {
@@ -107,7 +115,6 @@
     }());
 </script>
 
-
     <meta property="og:title" content="Сниппеты" />
 <meta property="og:description" content="Блог Павла Радькова." />
 
@@ -128,28 +135,26 @@
 <meta name="twitter:image" content="https://paulradzkov.github.io/i/og/og-index.png">
 
 
-
     
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-29416794-1', 'paulradzkov.com');
-        ga('send', 'pageview');
+    ga('create', 'UA-29416794-1', 'paulradzkov.com');
+    ga('send', 'pageview');
 
-    </script>
-    
+</script>
+
 
 </head>
-
-<body class="layout-">
+<body class="allpage allpage-max-width allpage-stickyfooter layout-">
     
         <header class="site-header content-width">
             <div class="site-header-inner justified-blocks">
 
-	<p class="header-logo">
+	<p class="site-header-logo">
 		
 		<a class="logo" href="/">
 			
@@ -177,6 +182,7 @@
 	<p class="header-contacts">
 		<a class="header-contacts-item border-underline" href="mailto:radzkov@gmail.com">radzkov@gmail.com</a>
 		<a class="header-contacts-item border-underline" href="https://github.com/paulradzkov" target="_blank">GitHub</a>
+		<a class="header-contacts-item border-underline" href="https://codepen.io/paulradzkov/" target="_blank">Codepen</a>
 		<a class="header-contacts-item border-underline" href="https://www.linkedin.com/in/paulradzkov" target="_blank">LinkedIn</a>
 		<a class="header-contacts-item border-underline" href="https://twitter.com/paul_radzkov" target="_blank">Twitter</a>
 		<a class="header-contacts-item border-underline" href="https://www.instagram.com/paulradzkov/" target="_blank">Instagram</a>
@@ -188,12 +194,7 @@
     
     
     
-        <nav class="site-navigation sticky-nav" id="sticker">
-            <a class="nav-icon js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null; this.src='/i/home.png'" /><span class="visuallyhidden">На главную</span></a>
-        </nav>
-    
-    
-    <article class="nav-placeholder page-content content-width" role="main">
+    <article class="allpage--body nav-placeholder content-width" role="main">
         <h1>Сниппеты</h1>
 
 <p>Сниппеты, демки или просто куски полезного кода.</p>
@@ -228,8 +229,8 @@
     </div>
 </div>
 
-    <footer class="page-footer content-width">
-	<p class="copyrights">
+    <footer class="allpage--footere page-footer content-width">
+	<p>
 		© <a href="//plus.google.com/+ПавелРадьков?rel=author" class="author"><span class="author-label">Автор:</span>Павел Радьков</a>
 		
 			2012&ndash;2016.
@@ -294,39 +295,7 @@
     <noscript><div><img src="//mc.yandex.ru/watch/22878469" style="position:absolute; left:-1px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <script>
-    ChatraID = 'm55vjivb29JgQgbXL';
-    (function(d, w, c) {
-        var n = d.getElementsByTagName('script')[0],
-            s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
-            + '//chat.chatra.io/chatra.js';
-        n.parentNode.insertBefore(s, n);
-    })(document, window, 'Chatra');
-</script>
-
-
     
-
-        <script src="/upup.min.js"></script>
-    <script>
-        UpUp.start({
-            'content-url': '/offline/',
-            'assets': [
-                '/css/template.css',
-                '/avatar/paulradzkov_60x60.jpg',
-                '/avatar/paulradzkov_120x120.jpg',
-                '/avatar/paulradzkov_240x240.jpg',
-                '/vendor/fotorama/fotorama.css',
-                '/2014/markdown_cheatsheet/markdown_cheatsheet.css'
-
-            ]
-        });
-    </script>
 
 </body>
 </html>

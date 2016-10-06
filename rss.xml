@@ -11,7 +11,7 @@
 		<sy:updateFrequency>1</sy:updateFrequency>
 		
 			<item>
-				<title>Как верстальщику получить код ревью</title>
+				<title>Как верстальщику получить код ревью</title>
 				<link>http://paulradzkov.com/2016/code_review/</link>
 				<description></description>
 				<content:encoded>
@@ -49,7 +49,7 @@
 			</item>
 		
 			<item>
-				<title>Веб-лицензии для платных шрифтов могут стоить вам дорого</title>
+				<title>Веб-лицензии для платных шрифтов могут стоить вам дорого</title>
 				<link>http://paulradzkov.com/2014/web-fonts_license/</link>
 				<description></description>
 				<content:encoded>
@@ -109,7 +109,7 @@
 			</item>
 		
 			<item>
-				<title>Бесплатная замена платному Helvetica Neue</title>
+				<title>Бесплатная замена платному Helvetica Neue</title>
 				<link>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</link>
 				<description></description>
 				<content:encoded>
@@ -121,7 +121,7 @@
 <li><a href="https://www.google.com/fonts/specimen/Lato">Lato</a></li>
 <li><a href="https://www.google.com/fonts/specimen/Roboto">Roboto</a></li>
 </ul>
-<p>Победителем вышел <strong>TeX Gyre Heros</strong>, т.к. он очень похож на Helvetica Neue, поддерживает кириллицу и дополнительно у него есть 4 condenced начертания. </p>
+<p>Победителем вышел <strong>TeX Gyre Heros</strong>, т.к. он очень похож на Helvetica Neue, поддерживает кириллицу и дополнительно у него есть 4 condenced начертания.</p>
 <!-- cut -->
 <figure>
     <a href="/demo/free_substitutes_for_helvetica_neue/">
@@ -141,7 +141,7 @@
 			</item>
 		
 			<item>
-				<title>Деплой Docpad-сайта на GitHub Pages</title>
+				<title>Деплой Docpad-сайта на GitHub Pages</title>
 				<link>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</link>
 				<description></description>
 				<content:encoded>
@@ -269,7 +269,7 @@
 			</item>
 		
 			<item>
-				<title>Краткое руководство по Маркдауну</title>
+				<title>Краткое руководство по Маркдауну</title>
 				<link>http://paulradzkov.com/2014/markdown_cheatsheet/</link>
 				<description></description>
 				<content:encoded>
@@ -814,20 +814,20 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>О каких дизайнерах мечтают верстальщики</title>
+				<title>О каких дизайнерах мечтают верстальщики</title>
 				<link>http://paulradzkov.com/2014/designer-superstar/</link>
 				<description></description>
 				<content:encoded>
-					<![CDATA[<p>В <a href="http://artgorbunov.ru/bb/soviet/20140206/">совете</a> Николай Товеровский классифицировал верстальщиков на три категории: «Неандертальцы», «Планктон» и «Суперзвёзды». </p>
+					<![CDATA[<p>В <a href="http://artgorbunov.ru/bb/soviet/20140206/">совете</a> Николай Товеровский классифицировал верстальщиков на три категории: «Неандертальцы», «Планктон» и «Суперзвёзды».</p>
 <p>На мой взгляд, между «Планктоном» и «Суперзвёздами» должны быть «Мастера», которые замечают все проблемы, советуются с дизайнерами, предлагают варианты, но не требуют «нарисовать макетик» и, пока ещё, не берут на себя ответственность дорабатывать макет самостоятельно. Таким специалистам достаточно на словах объяснить, что будет в крайних ситуациях и как должны вести себя элементы сайта в непрорисованных состояниях. Они всё поймут и сделают как надо.</p>
 <p>А вот о каких дизайнерах мечтают верстальщики…</p>
 <!-- cut -->
 <hr>
 <p>Бывает дизайнер-Суперзвезда, который отдаёт 15 страниц макета и страницу, на которой прорисованы все базовые элементы: заголовки, списки, цитаты, таблички, формы с полями ввода, чекбоксами и кнопочками.</p>
-<p>Сверстаешь такую страницу, а дальше все остальные пятнадцать страниц автоматически «собираются» пиксель-в-пиксель как на макете, только теги добавляй и новые стили дописывай. И в стилях при этом ничего не приходится обнулять, переписывать, идти на компромисcы. </p>
-<p>И каждая страница макета согласуется с сеткой, которую выбрал для сайта дизайнер, и тебе не приходится подгонять размеры элементов от страницы к странице. А на полях макетов прорисованы разные состояния элементов. </p>
+<p>Сверстаешь такую страницу, а дальше все остальные пятнадцать страниц автоматически «собираются» пиксель-в-пиксель как на макете, только теги добавляй и новые стили дописывай. И в стилях при этом ничего не приходится обнулять, переписывать, идти на компромисcы.</p>
+<p>И каждая страница макета согласуется с сеткой, которую выбрал для сайта дизайнер, и тебе не приходится подгонять размеры элементов от страницы к странице. А на полях макетов прорисованы разные состояния элементов.</p>
 <p>И ты знаешь, что если в исходнике растровый слой, его надо нарезать картинкой, а если векторный — верстать, используя CSS. И каждый растровый элемент сайта или склеен в один слой, или является смарт-объектом. И нет в макете скрытых слоёв, которые не пригодились дизайнеру, а все растровые фоны даны с запасом на резину. И все шейпы попадают в пиксели. И тени на элементах в нормальном режиме наложения, а не каком-нибудь «Multiply». И вообще в слоях порядок.</p>
-<p>Плюс ко всему этому прилагаются нестандартные шрифты из макета, чтобы верстальщик не искал их двадцать минут в интернете, и сторонние иконки, чтобы не нарезать их снова. </p>
+<p>Плюс ко всему этому прилагаются нестандартные шрифты из макета, чтобы верстальщик не искал их двадцать минут в интернете, и сторонние иконки, чтобы не нарезать их снова.</p>
 <p>И оказывается, что 15 страниц — не так уж много. И верстаются они легко и быстро, что даже кажется, будто тебя обманули, что этот проект уже когда-то был свёрстан, а потом дизайнер его заскриншотил и заново отрисовал.</p>
 <p>Такой дизайнер способен подтянуть верстальщика на новый уровень всего за несколько проектов.</p>
 ]]>
@@ -838,11 +838,11 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>Захват экрана в GIF</title>
+				<title>Захват экрана в GIF</title>
 				<link>http://paulradzkov.com/2014/capture_screen_to_gif/</link>
 				<description></description>
 				<content:encoded>
-					<![CDATA[<p>Рекомендую замечательную маленькую программку для записи области экрана в GIF — <a href="http://www.cockos.com/licecap/" target="_blank"><strong>LICEcap</strong></a>. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.</p> 
+					<![CDATA[<p>Рекомендую замечательную маленькую программку для записи области экрана в GIF — <a href="http://www.cockos.com/licecap/" target="_blank"><strong>LICEcap</strong></a>. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.</p>
 
 <p>А ещё можно сохранять в гифки смешные моменты из фильмов.</p>
 
@@ -871,7 +871,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>Font-weight: bolder для шрифтов со множеством начертаний</title>
+				<title>Font-weight: bolder для шрифтов со множеством начертаний</title>
 				<link>http://paulradzkov.com/2014/font-weight_bolder/</link>
 				<description></description>
 				<content:encoded>
@@ -1018,7 +1018,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>Параметры subject и body в mailto ссылках</title>
+				<title>Параметры subject и body в mailto ссылках</title>
 				<link>http://paulradzkov.com/2014/mailto_parameters/</link>
 				<description></description>
 				<content:encoded>
@@ -1038,7 +1038,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>Посещённая ссылка при наведении</title>
+				<title>Посещённая ссылка при наведении</title>
 				<link>http://paulradzkov.com/2014/visited_link_on_hover/</link>
 				<description></description>
 				<content:encoded>
@@ -1073,7 +1073,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>CSS-селектор :not(). Полезные примеры</title>
+				<title>CSS-селектор :not. Полезные примеры</title>
 				<link>http://paulradzkov.com/2014/negation_css_selector/</link>
 				<description></description>
 				<content:encoded>
@@ -1266,7 +1266,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>Списки и картинки с флоатами</title>
+				<title>Списки и картинки с флоатами</title>
 				<link>http://paulradzkov.com/2013/lists_and_floats/</link>
 				<description></description>
 				<content:encoded>
@@ -1441,7 +1441,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>Как отключить javascript в Google Chrome</title>
+				<title>Как отключить javascript в Google Chrome</title>
 				<link>http://paulradzkov.com/2012/chrome_dev_tools/</link>
 				<description></description>
 				<content:encoded>
@@ -1580,7 +1580,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>Отладка мобильных сайтов в Webkit. Инспектор кода на мобильных устройствах</title>
+				<title>Отладка мобильных сайтов в Webkit. Инспектор кода на мобильных устройствах</title>
 				<link>http://paulradzkov.com/2012/mobile_developing/</link>
 				<description></description>
 				<content:encoded>
@@ -1609,7 +1609,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>Горячие клавиши для выбора предыдущего и следующего слоя в Photoshop</title>
+				<title>Горячие клавиши для выбора предыдущего и следующего слоя в Photoshop</title>
 				<link>http://paulradzkov.com/2012/photoshop_next_and_previous_layer/</link>
 				<description></description>
 				<content:encoded>
@@ -1646,7 +1646,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>HTML-сущности и их UTF-коды</title>
+				<title>HTML-сущности и их UTF-коды</title>
 				<link>http://paulradzkov.com/2012/html-entities_and_utf_codes/</link>
 				<description></description>
 				<content:encoded>
@@ -3366,7 +3366,7 @@ Content Cell  | Content Cell
 			</item>
 		
 			<item>
-				<title>Автозаполнение форм в Google Chrome</title>
+				<title>Как перекрасить поля с автозаполнением в Google Chrome</title>
 				<link>http://paulradzkov.com/2012/autocomplete/</link>
 				<description></description>
 				<content:encoded>
@@ -3376,6 +3376,11 @@ Content Cell  | Content Cell
 <p>Автозаполнение можно выключить с помощью <code class="hljs-tag"><span class="hljs-attribute">autocomplete</span>=<span class="hljs-value">&quot;off&quot;</span></code>:</p>
 <pre class="highlight"><code class="hljs nimrod">&lt;form action=<span class="hljs-string">"…"</span> <span class="hljs-keyword">method</span>=<span class="hljs-string">"post"</span> autocomplete=<span class="hljs-string">"off"</span>&gt;
 </code></pre><p><strong>Обновлено 30 октября 2012.</strong></p>
+<figure>
+    <img src="chrome-autocomplete-recolor.gif" width="998" height="659" alt="Жёлтые поля ввода можно перекрасить с помощью box-shadow"/>
+    <figcaption>Жёлтые поля ввода можно перекрасить при помощи <code class="hljs-attribute">box-shadow</code></figcaption>
+</figure>
+
 <p>Поля c автокомплитом можно перекрасить при помощи трюка с <code class="hljs-attribute">box-shadow</code>:</p>
 <pre class="highlight"><code class="hljs css"><span class="hljs-tag">input</span><span class="hljs-pseudo">:-webkit-autofill</span> <span class="hljs-rules">{
         <span class="hljs-rule"><span class="hljs-attribute">-webkit-box-shadow</span>:<span class="hljs-value"> inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">50px</span> white</span></span>; <span class="hljs-comment">/* цвет вашего фона */</span>
