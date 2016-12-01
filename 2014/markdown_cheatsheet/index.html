@@ -15,7 +15,8 @@
     <meta name="generator" content="DocPad v6.78.4" />
 
     <!-- DocPad Styles + Our Own -->
-    <link  rel="stylesheet" href="/css/template.css" /><link  rel="stylesheet" href="/vendor/base16-light.css" /><link  rel="stylesheet" href="/vendor/codemirror/lib/codemirror.css" /><link  rel="stylesheet" href="/vendor/default.css" /><link  rel="stylesheet" href="/2014/markdown_cheatsheet/markdown_cheatsheet.css" />
+    <link rel="stylesheet" href="/css/article.css">
+    <link  rel="stylesheet" href="/vendor/base16-light.css" /><link  rel="stylesheet" href="/vendor/codemirror/lib/codemirror.css" /><link  rel="stylesheet" href="/vendor/default.css" /><link  rel="stylesheet" href="/2014/markdown_cheatsheet/markdown_cheatsheet.css" />
 
     <!-- Icons -->
     <!-- Favicon -->
@@ -122,7 +123,7 @@
 
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content="Mon Apr 07 2014 03:00:00 GMT+0300 (FET)" />
+    <meta property="og:article:published_time" content="Mon Apr 07 2014 03:00:00 GMT+0300 (+03)" />
     
     <meta property="og:article:author" content="Павел Радьков" />
     
@@ -155,9 +156,7 @@
 
 
 </head>
-<body class="allpage allpage-max-width allpage-stickyfooter layout-article">
-    
-    
+<body class="allpage allpage-max-width allpage-stickyfooter layout-article" id="top">
     <header class="allpage--header page-header">
         <div class="article-nav">
             <nav class="read-siblings">
@@ -167,39 +166,62 @@
 </div>
             </nav>
             <nav class="site-navigation sticky-nav" id="sticker">
-                <a class="nav-icon nav-icon-centered js-menu-trigger" href="/" data-toggle="tooltip" data-placement="right" title="На главную"><img src="/i/home.svg" width="28" height="28" alt="На главную" onerror="this.onerror=null; this.src='/i/home.png'" /><span class="visuallyhidden">На главную</span></a>
+                <div class="nav-icon nav-icon-centered">
+                    <a class="nav-icon-home" href="/" data-toggle="tooltip" data-placement="right" title="На главную">
+                        <svg id="ic-arrow-back-24px" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                        </svg>
+                        <span class="visuallyhidden">На главную</span>
+                    </a>
+                    <a class="nav-icon-top" href="#top" data-toggle="tooltip" data-placement="right" title="Наверх">
+                        <svg id="ic-arrow-upward-24px" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+                        </svg>
+                        <span class="visuallyhidden">Наверх</span>
+                    </a>
+                </div>
             </nav>
         </div>
         <aside class="nav-placeholder content-width">
             <div class="article-meta ">
             
-                <p class="date"><time datetime="Mon Apr 07 2014 03:00:00 GMT+0300 (FET)">07 апреля 2014</time></p>
+                <p class="date"><time datetime="Mon Apr 07 2014 03:00:00 GMT+0300 (+03)">07 апреля 2014</time></p>
             
             </div>
         </aside>
         <div class="content-width">
             <h1 class="article-title">Краткое руководство по Маркдауну</h1>
         </div>
-        <aside class="content-width">
-            <div class="article-meta inlined">
-                
-                <span class="tags-list">
-                    
-                        <a class="tag" href="/tags/tools/">tools</a>
-                    
-                        <a class="tag" href="/tags/markdown/">markdown</a>
-                    
-                </span>
-                
-                
-                <span class="comments"><a href="#disqus_thread" data-disqus-identifier="markdown_cheatsheet" >Комментарии</a></span>
-                
-                <span class="pageviews" style="display:none"></span>
-            </div>
-        </aside>
+        <div class="likely-container content-width">
+    
+    <div class="likely likely-big" data-url="http://paulradzkov.com/2014/markdown_cheatsheet/">
+    
+        <div class="facebook"></div>
+        <div class="twitter" data-via="paul_radzkov"></div>
+        <div class="gplus"></div>
+        <div class="vkontakte"></div>
+        <div class="telegram"></div>
+    </div>
+</div>
 
     </header>
-    
+    <aside class="content-width" style="display:none">
+        <div class="article-meta inlined">
+            
+            <span class="tags-list">
+                
+                <a class="tag" href="/tags/tools/">tools</a>
+                
+                <a class="tag" href="/tags/markdown/">markdown</a>
+                
+            </span>
+            
+            
+            <span class="comments"><a href="#disqus_thread" data-disqus-identifier="markdown_cheatsheet" >Комментарии</a></span>
+            
+            <span class="pageviews" style="display:none"></span>
+        </div>
+    </aside>
     
     <article class="allpage--body nav-placeholder content-width" role="main">
         <p><strong>12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее <a href="http://codepen.io/paulradzkov/pen/ZGoLgr" target="_blank">руководство с традиционным Маркдауном</a>.</strong>
@@ -737,18 +759,10 @@ Content Cell  | Content Cell
   <li>Контент файла сохраняется в URL, чтобы можно было поделиться ссылкой.</li>
 </ul>
     </article>
-    <div class="likely-container content-width">
-    
-    <div class="likely" data-url="http://paulradzkov.com/2014/markdown_cheatsheet/">
-    
-        <div class="facebook">Поделиться</div>
-        <div class="twitter" data-via="paul_radzkov">Твитнуть</div>
-        <div class="gplus">Плюсануть</div>
-        <div class="vkontakte">Поделиться</div>
-    </div>
-</div>
-
-    <footer class="allpage--footere page-footer content-width">
+    <div class="content-width allpage--article-footer">
+        <div class="row row-between-xs row-center-xs">
+            <div class="col-xs-12 col-sm-shrink col-zero-gutter">
+                <footer class="allpage--footer page-footer content-width">
 	<p>
 		© <a href="//plus.google.com/+ПавелРадьков?rel=author" class="author"><span class="author-label">Автор:</span>Павел Радьков</a>
 		
@@ -758,20 +772,32 @@ Content Cell  | Content Cell
 	</p>
 </footer>
 
+            </div>
+            <div class="col-xs-12 col-sm-shrink col-zero-gutter">
+                <div class="likely-container content-width">
     
+    <div class="likely" data-url="http://paulradzkov.com/2014/markdown_cheatsheet/">
+    
+        <div class="facebook">Поделиться</div>
+        <div class="twitter" data-via="paul_radzkov">Твитнуть</div>
+        <div class="gplus">Плюсануть</div>
+        <div class="vkontakte">Поделиться</div>
+        <div class="telegram">Телеграфировать</div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
     <div class="disqus-wrapper">
         <article id="disqus_thread" class="disqus-container"></article>
     </div>
-    
-    
-    <h4 class="read-next-title">Читать дальше:</h4>
     <nav class="read-next">
         <div class="navlinks">
   <a href="/2014/designer-superstar/" title="О каких дизайнерах мечтают верстальщики" class="navlinks-prev">О каких дизайнерах мечтают верстальщики</a>
   <a href="/2014/deploy_docpad_site_to_github_pages/" title="Деплой Docpad-сайта на GitHub Pages" class="navlinks-next">Деплой Docpad-сайта на GitHub Pages</a>
 </div>
     </nav>
-    
         <script src="/vendor/modernizr.js"></script>
 
     <!-- jQuery -->
