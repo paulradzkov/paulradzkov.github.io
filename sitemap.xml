@@ -3,11 +3,11 @@
 <url> <loc>http://paulradzkov.com/2013/gaussian_blur/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/demo/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://paulradzkov.com/2014/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2013/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://paulradzkov.com/2016/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/search/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2012/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://paulradzkov.com/2014/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://paulradzkov.com/2016/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2012/autocomplete/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2012/chrome_dev_tools/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -29,11 +29,11 @@
 <url> <loc>http://paulradzkov.com/2014/visited_link_on_hover/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2014/web-fonts_license/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2016/code_review/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://paulradzkov.com/tags/chrome/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/css/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/svg/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://paulradzkov.com/tags/tools/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://paulradzkov.com/tags/chrome/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/photoshop/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://paulradzkov.com/tags/tools/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/progressive-enhancement/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/typography/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/docpad/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -42,7 +42,7 @@
 <url> <loc>http://paulradzkov.com/tags/people/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/html/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/usability/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://paulradzkov.com/tags/markdown/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/faq/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/code-review/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://paulradzkov.com/tags/markdown/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
