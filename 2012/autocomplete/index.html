@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     
-    <meta name="generator" content="DocPad v6.78.4">
+    <meta name="generator" content="DocPad v6.79.4">
 
     
     <link rel="stylesheet" href="/css/article.css">
@@ -65,7 +65,7 @@
             <nav class="read-siblings">
                 <div class="navlinks">
   
-  <a href="/2012/photoshop_new_layer_based_slice/" title="Нарезка в Photoshop — New Layer Based Slice" class="navlinks-next">Нарезка в Photoshop — New Layer Based Slice</a>
+  <a href="/2012/photoshop_new_layer_based_slice/" title="Next Post: Нарезка в Photoshop — New Layer Based Slice" class="navlinks-next">Нарезка в Photoshop — New Layer Based Slice &raquo;</a>
 </div>
             </nav>
             <nav class="site-navigation sticky-nav" id="sticker">
@@ -129,27 +129,28 @@
 
 <p>В трекере описан этот <a href="http://code.google.com/p/chromium/issues/detail?id=46543">баг</a>, но <time datetime="2012-10-30">пока</time> решения нет.</p>
 <p>Автозаполнение можно выключить с помощью <code class="hljs-tag"><span class="hljs-attribute">autocomplete</span>=<span class="hljs-value">&quot;off&quot;</span></code>:</p>
-<pre class="highlight"><code class="hljs nimrod">&lt;form action=<span class="hljs-string">"…"</span> <span class="hljs-keyword">method</span>=<span class="hljs-string">"post"</span> autocomplete=<span class="hljs-string">"off"</span>&gt;
-</code></pre><p><strong>Обновлено 30 октября 2012.</strong></p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"…"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">autocomplete</span>=<span class="hljs-value">"off"</span>&gt;</span>
+</code></pre>
+<p><strong>Обновлено 30 октября 2012.</strong></p>
 <figure>
-    <img src="chrome-autocomplete-recolor.gif" width="998" height="659" alt="Жёлтые поля ввода можно перекрасить с помощью box-shadow">
+    <img src="/2012/autocomplete/chrome-autocomplete-recolor.gif" width="998" height="659" alt="Жёлтые поля ввода можно перекрасить с помощью box-shadow">
     <figcaption>Жёлтые поля ввода можно перекрасить при помощи <code class="hljs-attribute">box-shadow</code></figcaption>
 </figure>
 
 <p>Поля c автокомплитом можно перекрасить при помощи трюка с <code class="hljs-attribute">box-shadow</code>:</p>
 <pre class="highlight"><code class="hljs css"><span class="hljs-tag">input</span><span class="hljs-pseudo">:-webkit-autofill</span> <span class="hljs-rules">{
-        <span class="hljs-rule"><span class="hljs-attribute">-webkit-box-shadow</span>:<span class="hljs-value"> inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">50px</span> white</span></span>; <span class="hljs-comment">/* цвет вашего фона */</span>
-        <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>; <span class="hljs-comment">/* цвет текста */</span>
-    <span class="hljs-rule">}</span></span></code></pre>
-
-
+    <span class="hljs-rule"><span class="hljs-attribute">-webkit-box-shadow</span>:<span class="hljs-value"> inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">50px</span> white</span></span>; <span class="hljs-comment">/* цвет вашего фона */</span>
+    <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>; <span class="hljs-comment">/* цвет текста */</span>
+<span class="hljs-rule">}</span></span>
+</code></pre>
 <p>Если вы для <code class="hljs-pseudo">:focus</code> состояния задавали стили с использованием <code class="hljs-attribute">box-shadow</code>, то вам придется заново их переопределить:</p>
 <pre class="highlight"><code class="hljs css"><span class="hljs-tag">input</span><span class="hljs-pseudo">:-webkit-autofill</span><span class="hljs-pseudo">:focus</span> <span class="hljs-rules">{
     <span class="hljs-rule"><span class="hljs-attribute">-webkit-box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">0</span>    blue,   <span class="hljs-comment">/* ваш box-shadow для :focus */</span>
                   inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>   <span class="hljs-number">50px</span> white</span></span>;  <span class="hljs-comment">/* цвет вашего фона */</span>
-    <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>; <span class="hljs-comment">/* цвет текста */</span>
+    <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>;          <span class="hljs-comment">/* цвет текста */</span>
 <span class="hljs-rule">}</span></span>
-</code></pre><p>При помощи нескольких теней можно <a href="/demo/box-shadow_instead_gradient/">имитировать градиент</a>.</p>
+</code></pre>
+<p>При помощи нескольких теней можно <a href="/demo/box-shadow_instead_gradient/">имитировать градиент</a>.</p>
 
     </article>
     <div class="content-width allpage--article-footer">

@@ -80,12 +80,12 @@
 <p>Самым выгодным вариантом является <a href="https://typekit.com/plans/business">Adobe Typekit</a> c его предложением 40$ в месяц за 2 млн. просмотров. Это 480$ в год. Цена уже более менее адекватная, но на неё всё равно согласится не каждый, учитывая, что можно найти <a href="/2014/free_substitution_for_helvetica_neue/">бесплатный аналог</a> и избежать этих затрат.</p>
 <p>Как видим, цены на одно и то же могут отличаться в 10 раз.</p>
 <div class="fotorama">
-    <img src="linotype-helvetica-desktop.png" alt="Настольная лицензия на сайте Linotype стоит 116€">
-    <img src="linotype-helvetica-web.png" alt="Веб-шрифт на Linotype стоит 309€ за 1,5 млн. просмотров">
-    <img src="myfonts-helvetica-1500000.png" alt="Цены на Helvetica на MyFonts.com">
-    <img src="font-com-pricing.png" alt="Тарифные планы на Fonts.com">
-    <img src="typekit-annual-pricing.png" alt="У Adobe Typekit можно взять недорогой план для сайтов с малым посещением">
-    <img src="typekit-business-pricing.png" alt="Самым выгодным вариантом является Adobe Typekit c его предложением 40$ в месяц за 2 млн. просмотров">
+    <img src="/2014/web-fonts_license/linotype-helvetica-desktop.png" alt="Настольная лицензия на сайте Linotype стоит 116€">
+    <img src="/2014/web-fonts_license/linotype-helvetica-web.png" alt="Веб-шрифт на Linotype стоит 309€ за 1,5 млн. просмотров">
+    <img src="/2014/web-fonts_license/myfonts-helvetica-1500000.png" alt="Цены на Helvetica на MyFonts.com">
+    <img src="/2014/web-fonts_license/font-com-pricing.png" alt="Тарифные планы на Fonts.com">
+    <img src="/2014/web-fonts_license/typekit-annual-pricing.png" alt="У Adobe Typekit можно взять недорогой план для сайтов с малым посещением">
+    <img src="/2014/web-fonts_license/typekit-business-pricing.png" alt="Самым выгодным вариантом является Adobe Typekit c его предложением 40$ в месяц за 2 млн. просмотров">
 </div>
 
 <h2 id="-">Выводы</h2>
@@ -125,7 +125,7 @@
 <!-- cut -->
 <figure>
     <a href="/demo/free_substitutes_for_helvetica_neue/">
-    <img src="helvetica-neue-vs-tex-gyre-heros.png" alt="TeX Gyre Heros — бесплатная альтернатива Helvetica Neue">
+    <img src="/2014/free_substitution_for_helvetica_neue/helvetica-neue-vs-tex-gyre-heros.png" alt="TeX Gyre Heros — бесплатная альтернатива Helvetica Neue">
     </a>
     <figcaption>Слева Helvetica Neue, справа TeX Gyre Heros</figcaption>
 </figure>
@@ -230,14 +230,14 @@
 <h2 id="-github-pages">Деплой на GitHub Pages</h2>
 <p>В репозитории создадим ветку «<code>gh-pages</code>». По инструкции это должна быть пустая ветка без истории, но об этом в дальнейшем позаботится плагин для деплоя.</p>
 <figure>
-    <img src="new_branch_gh-pages.png" alt="В репозитории проекта создадим ветку с именем «gh-pages»">
+    <img src="/2014/deploy_docpad_site_to_github_pages/new_branch_gh-pages.png" alt="В репозитории проекта создадим ветку с именем «gh-pages»">
     <figcaption>В репозитории проекта создадим ветку с именем «<code>gh-pages</code>»</figcaption>
 </figure>
 
 <p>Установим <a href="https://github.com/docpad/docpad-plugin-ghpages">GitHub Pages Deployer Plugin for DocPad</a>.</p>
 <p>При попытке выполнить <kbd class="cli" contenteditable="true">&zwj;<span contenteditable="false">docpad deploy-ghpages --env static</span>&zwj;</kbd> у меня появляется ошибка:</p>
 <figure>
-    <img src="gh-pages_deploy_error.png" alt="could not read Username for ’http://github.com’: No such file or directory">
+    <img src="/2014/deploy_docpad_site_to_github_pages/gh-pages_deploy_error.png" alt="could not read Username for ’http://github.com’: No such file or directory">
     <figcaption><code>could not read Username for ’http://github.com’: No such file or directory</code></figcaption>
 </figure>
 
@@ -248,7 +248,7 @@
 <p>«<code>login</code>» и «<code>password</code>» — данные вашего аккаунта на Гитхабе.</p>
 <p>«<code>github.com/repo_owner/repo_name.git</code>» — путь к репозиторию проекта, в котором у вас есть права на запись. Это не обязательно должен быть ваш репозиторий, если вы коллаборатор, и у вас есть доступ на запись — вы можете деплоить туда проект.</p>
 <figure>
-    <img src="adding_another_remote.png" alt="Добавление нового «remote» c логином и паролем">
+    <img src="/2014/deploy_docpad_site_to_github_pages/adding_another_remote.png" alt="Добавление нового «remote» c логином и паролем">
     <figcaption>Добавление нового «remote» c логином и паролем. Эту процедуру нужно выполнить один раз для каждого локального репозитория</figcaption>
 </figure>
 
@@ -851,7 +851,7 @@ Content Cell  | Content Cell
 <p>Пользоваться легко, смотрите сами:</p>
 
 <figure>
-    <img src="/2014/capture_screen_to_gif//licecap-demo.gif" alt="LICEcap — захват экрана в GIF">
+    <img src="/2014/capture_screen_to_gif/licecap-demo.gif" alt="LICEcap — захват экрана в GIF">
     <figcaption><p>Захват экрана в GIF в программе LICEcap</p></figcaption>
 </figure>
 
@@ -883,7 +883,7 @@ Content Cell  | Content Cell
 <p>Возьмём для примера Open Sans.</p>
 
 <figure>
-  <img src="/2014/font-weight_bolder//open-sans.png" width="847" height="345" alt="Open Sans и все его начертания">
+  <img src="/2014/font-weight_bolder/open-sans.png" width="847" height="345" alt="Open Sans и все его начертания">
   <figcaption>
   	<p>Open Sans имеет пять начертаний: Light 300, Normal 400, Semi-Bold 600, Bold 700 и Extra-Bold 800. <br> Цифры соответствуют значению <code class="hljs-attribute">font-weight</code>.</p>
   </figcaption>
@@ -982,7 +982,7 @@ Content Cell  | Content Cell
 <p>Теперь нам не придётся заботиться о вложенности элементов — каскад всё сделает автоматически. Мы можем вкладывать теги <code class="hljs-tag">strong</code> друг в друга.</p>
 
 <figure>
-    <a href="http://cssdeck.com/labs/x20utix0" target="_blank"><img src="/2014/font-weight_bolder//nested-tags-with-font-weight-bolder.png" alt=""></a>
+    <a href="http://cssdeck.com/labs/x20utix0" target="_blank"><img src="/2014/font-weight_bolder/nested-tags-with-font-weight-bolder.png" alt=""></a>
     <figcaption>
         <p>Вложенные теги «strong». Толщина шрифта определяется исходя из значения родительского элемента.</p>
         <p style="text-align: center;"><a href="http://cssdeck.com/labs/x20utix0" target="_blank" class="link-to-demo">Демка</a></p>
@@ -1049,7 +1049,7 @@ Content Cell  | Content Cell
 <!-- cut -->
 
 <figure>
-  <a href="http://cssdeck.com/labs/visited_link_on_hover" target="_blank"><img src="/2014/visited_link_on_hover//sample.gif" width="600" height="150" alt="Посещенная ссылка и не посещенная при наведении имеют разные цвета"></a>
+  <a href="http://cssdeck.com/labs/visited_link_on_hover" target="_blank"><img src="/2014/visited_link_on_hover/sample.gif" width="600" height="150" alt="Посещенная ссылка и не посещенная при наведении имеют разные цвета"></a>
   <figcaption>
     <p style="text-align: center;">Посещённая ссылка и не посещённая при наведении и фокусе имеют разные цвета</p>
   </figcaption>
@@ -1129,7 +1129,7 @@ Content Cell  | Content Cell
 <h2>Пример 2. Изменение внешнего вида всех элементов, кроме наведенного</h2>
 
 <figure>
-  <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank"><img src="/2014/negation_css_selector//sample2.gif" width="600" height="150" alt="Изменение внешнего вида всех элементов, кроме наведенного"/></a>
+  <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank"><img src="/2014/negation_css_selector/sample2.gif" width="600" height="150" alt="Изменение внешнего вида всех элементов, кроме наведенного"/></a>
   <figcaption>
     <p style="text-align: center;"><a href="http://cssdeck.com/labs/dlg62kjv" class="link-to-demo" target="_blank">Пример</a></p>
   </figcaption>
@@ -1156,7 +1156,7 @@ Content Cell  | Content Cell
 
 <h2>Пример 3. Меню с разделителями между элементами</h2>
 <figure>
-    <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank"><img src="/2014/negation_css_selector//sample3.png" width="600" height="200" alt="Меню с разделителями между элементами"/></a>
+    <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank"><img src="/2014/negation_css_selector/sample3.png" width="600" height="200" alt="Меню с разделителями между элементами"/></a>
   <figcaption>
     <p style="text-align: center;"><a href="http://cssdeck.com/labs/dlg62kjv" class="link-to-demo" target="_blank">Пример</a></p>
   </figcaption>
@@ -1278,7 +1278,7 @@ Content Cell  | Content Cell
 
 <p><a href="http://cssdeck.com/labs/floated-images-and-lists" class="link-to-demo" target="_blank">демка</a></p>
 <figure>
-    <img src="/2013/lists_and_floats//floated_images_and_lists_problem.png" width="800" height="560" alt="Если картинка обтекает список, маркеры списка налазят на картинку"/>
+    <img src="/2013/lists_and_floats/floated_images_and_lists_problem.png" width="800" height="560" alt="Если картинка обтекает список, маркеры списка налазят на картинку"/>
     <figcaption>Проблема: если картинка обтекает список, то маркеры списка налазят на картинку</figcaption>
 </figure>
 
@@ -1308,7 +1308,7 @@ Content Cell  | Content Cell
 <p>А всё остальное, чтобы отступы выглядели как раньше.</p>
 
 <figure>
-    <img src="/2013/lists_and_floats//floated_images_and_lists_solution.png" width="800" height="580" alt="Маркеры списка не налазят на картинку"/>
+    <img src="/2013/lists_and_floats/floated_images_and_lists_solution.png" width="800" height="580" alt="Маркеры списка не налазят на картинку"/>
     <figcaption>Маркеры списка больше не налазят на картинку</figcaption>
 </figure>
 
@@ -1339,17 +1339,10 @@ Content Cell  | Content Cell
 
 <p>Живой пример:</p>
 
-<div class="demo">
-    <img src="//placehold.it/320x240" style="float:left; margin-right:1em;" alt="">
-    <p>Lorem ipsum.</p>
-    <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat porro eligendi quod ratione quaerat dolores quia quasi provident. Veniam earum iste modi quam aliquam qui itaque corporis quia vel inventore.</li>
-        <li>In dapibus dapibus risus in molestie. Vestibulum vestibulum, orci a aliquam iaculis, diam quam ultrices lacus, sed tincidunt augue elit vitae eros. </li>
-        <li>Nunc id mauris sit amet orci rhoncus lobortis eu mollis justo. Phasellus enim dolor, pretium sed commodo vitae, ultrices ac nibh. Vivamus et turpis odio, ac ultricies nibh. Donec erat augue, tempus et aliquet et, porttitor vitae ante. </li>
-        <li>Quisque eu ante in nisl rutrum facilisis nec sed orci. Integer vel nibh sit amet libero convallis tempus sit amet a enim. Nullam felis velit, auctor eu tristique eu, lacinia vitae turpis. </li>
-        <li>Praesent nisl felis, aliquet quis volutpat id, pretium sit amet elit. Mauris consequat vestibulum purus sit amet ornare. In euismod hendrerit quam vitae vehicula.</li>
-    </ul>
-</div>]]>
+<figure>
+    <p data-height="600" data-theme-id="16915" data-slug-hash="PmQMby" data-default-tab="result" data-user="paulradzkov" data-embed-version="2" data-pen-title="2013-lists-and-floats" class="codepen">See the Pen <a href="https://codepen.io/paulradzkov/pen/PmQMby/">2013-lists-and-floats</a> by Paul Radzkov (<a href="http://codepen.io/paulradzkov">@paulradzkov</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</figure>]]>
 				</content:encoded>
 				<pubDate>Thu, 24 Jan 2013 00:00:00 GMT</pubDate>
 				<guid>http://paulradzkov.com/2013/lists_and_floats/</guid>
@@ -1383,26 +1376,11 @@ Content Cell  | Content Cell
 
 <p>Рассмотрим на практике.</p>
 
-<div class="demo">
+<figure>
+    <p data-height="600" data-theme-id="16915" data-slug-hash="bWLPYM" data-default-tab="result" data-user="paulradzkov" data-embed-version="2" data-pen-title="2012-pointer-events-1" class="codepen">See the Pen <a href="https://codepen.io/paulradzkov/pen/bWLPYM/">2012-pointer-events-1</a> by Paul Radzkov (<a href="http://codepen.io/paulradzkov">@paulradzkov</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</figure>
 
-    <div class="demo-card">
-    	<a href="#" class="demo-card-image-holder"><img src="//placehold.it/300x200" alt=""></a>
-        <div class="demo-card-txt">
-            <h3 class="demo-card-title"><a href="#" class="demo-card-link">Pointer-events: none</a></h3>
-            <p class="demo-card-descr"><strong>Выдели меня курсором.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!</p>
-        </div>
-        <span class="demo-card-overlay" style="pointer-events:none;"><!--gradient overlay--></span>
-    </div>
-    <div class="demo-card">
-    	<a href="#" class="demo-card-image-holder"><img src="//placehold.it/300x200" alt=""></a>
-        <div class="demo-card-txt">
-            <h3 class="demo-card-title"><a href="#" class="demo-card-link">Pointer-events: auto</a></h3>
-            <p class="demo-card-descr"><strong>Выдели меня курсором.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!</p>
-        </div>
-        <span class="demo-card-overlay"><!--gradient overlay--></span>
-    </div>
-    <div class="clr"></div>
-</div>
 
 <p>В первом примере для белого градиента, накрывающего текст, <code class="hljs-rule"><span class="hljs-attribute">pointer-events</span></code> установлен в none. Текст легко выделяется мышью сквозь градиент. Даже курсор меняет свою форму со стрелки на выделение текста.</p>
 
@@ -1412,17 +1390,10 @@ Content Cell  | Content Cell
 
 <p>Задача: сделать так, чтобы ссылка в меню становилась некликабельной, если она ведет на эту же страницу.</p>
 
-<div class="demo">
-
-    <ul class="demo-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#blog" class="current">Blog</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#archive">Archive</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-    </ul>
-
-</div>
+<figure>
+    <p data-height="300" data-theme-id="16915" data-slug-hash="oWErMY" data-default-tab="result" data-user="paulradzkov" data-embed-version="2" data-pen-title="2012-pointer-events-demo-2" class="codepen ">See the Pen <a href="https://codepen.io/paulradzkov/pen/oWErMY/">2012-pointer-events-demo-2</a> by Paul Radzkov (<a href="http://codepen.io/paulradzkov">@paulradzkov</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</figure>
 
 <p>Обычно в CMS уже есть какой-либо класс для индикации текущей страницы в меню. Допишем ему pointer-events:</p>
 
@@ -1453,7 +1424,7 @@ Content Cell  | Content Cell
 <p>Чтобы попасть в настройки, откроем Developer Tools (<kbd>F12</kbd>) и нажмем иконку шестеренки в заголовке справа (<kbd>F1</kbd>).</p>
 
 <figure>
-	<img src="/2012/chrome_dev_tools//disable_javascript_in_chome.gif" width="830" height="870" alt="Как отлючить кэш и яваскрипт в Гугл Хроме"/>
+	<img src="/2012/chrome_dev_tools/disable_javascript_in_chome.gif" width="830" height="870" alt="Как отлючить кэш и яваскрипт в Гугл Хроме"/>
 	<figcaption>
         <p>Developer Tools (<kbd>F12</kbd>) → General Settings (<kbd>F1</kbd>). Настройки инспектора кода: отключение кэша и яваскрипта.</p>
 	</figcaption>
@@ -1461,7 +1432,7 @@ Content Cell  | Content Cell
 <p>Обратите внимание группу опций «Rendering». «Show paint rectangles» — позволяет увидеть, какие области перерисовывает браузер в ответ на какие-либо события или в результате работы скриптов. Полезно для профилирования и оптимизации.</p>
 
 <figure>
-	<img src="/2012/chrome_dev_tools//chome_devtools_shortkeys.png" width="830" height="1010" alt="Горячие клавиши в инспекторе Гугл Хрома"/>
+	<img src="/2012/chrome_dev_tools/chome_devtools_shortkeys.png" width="830" height="1010" alt="Горячие клавиши в инспекторе Гугл Хрома"/>
 	<figcaption>
 		<p>Горячие клавиши Developers Tools.</p>
 	</figcaption>
@@ -1523,21 +1494,13 @@ Content Cell  | Content Cell
 </aside>
 
 <p>Пример:</p>
-<div class="demo">
-    <div style="font:bold 18px/1.2 Arial;">components / com_content / <del class="cross">views</del> / category / <del class="cross">tmpl</del> / blog.php <span>&rarr;</span> components / com_content /  category / blog.php</div>
-    <div class="media">
-        <figure class="img">
-            <div class="del-cross">
-                <img src="//placehold.it/300x200" width="300" height="200" alt="No kitten here"/>
-            </div>
-            <figcaption><p>Image caption</p></figcaption>
-        </figure>
-        <div class="bd">
-            <p class="del-cross">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet lectus in ante lobortis suscipit. Nullam sed augue id ante tempor ultrices ut eget nibh. Donec ultrices aliquam aliquet. Sed non velit at enim auctor euismod ut eget dolor. Sed rutrum lacinia tellus porta suscipit. Nam tincidunt odio sed ipsum faucibus semper. Fusce malesuada justo ut turpis fringilla a egestas sem scelerisque. Cras ligula neque, pellentesque a eleifend vitae, vulputate id sapien. Aliquam vestibulum aliquam pretium. Proin ut nulla dui.</p>
-            <p class="del-cross">Cras placerat elit sed nisi accumsan at porta elit lacinia. Aliquam erat volutpat. Mauris eu ipsum in urna gravida tristique rutrum ac est. Phasellus vulputate sagittis congue. Aenean nec justo eu neque vehicula imperdiet. Nunc eleifend, diam eu aliquam ullamcorper, ligula felis interdum nunc, ut tincidunt enim erat at orci.</p>
-        </div>
-    </div>
-</div>
+
+<figure>
+    <p data-height="600" data-theme-id="16915" data-slug-hash="GmERJb" data-default-tab="result" data-user="paulradzkov" data-embed-version="2" data-pen-title="2012-crosswise-demo" data-preview="false" class="codepen">See the Pen <a href="https://codepen.io/paulradzkov/pen/GmERJb/">2012-crosswise-demo</a> by Paul Radzkov (<a href="http://codepen.io/paulradzkov">@paulradzkov</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</figure>
+
+
 <p>Для картинок класс <code class="hljs-class">.del-cross</code> нужно ставить на их обёртку. Тег <code class="hljs-tag">img</code> не имеет псевдокласса <code class="hljs-pseudo">:before</code>.</p>
 <p>А теперь посмотрим, что внутри SVG-файла, и как настроить цвет и толщину линий.</p>
 <p><a href="/demo/crosswise/cross_old.svg">cross_old.svg</a>:</p>
@@ -1568,11 +1531,7 @@ Content Cell  | Content Cell
 <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
 </code></pre>
 
-<p>Задавая координаты линий в процентах, мы избавляемся от необходимости применять <code class="hljs-tag"><span class="hljs-attribute">vector-effect</span>=<span class="hljs-value">&quot;non-scaling-stroke&quot;</span></code>, который не работает в IE9 и IE10.</p>
-
-<p>
-    <a href="/demo/crosswise/" class="link-to-demo">Демка</a>
-</p>]]>
+<p>Задавая координаты линий в процентах, мы избавляемся от необходимости применять <code class="hljs-tag"><span class="hljs-attribute">vector-effect</span>=<span class="hljs-value">&quot;non-scaling-stroke&quot;</span></code>, который не работает в IE9 и IE10.</p>]]>
 				</content:encoded>
 				<pubDate>Sun, 28 Oct 2012 00:00:00 GMT</pubDate>
 				<guid>http://paulradzkov.com/2012/crosswise/</guid>
@@ -1597,7 +1556,7 @@ Content Cell  | Content Cell
 <p>Теперь можно серфить по сайтам с основного компа, а на подключенных устройствах будут открываться те же страницы. При этом используется движок родного браузера iOS или Android, но внутри приложения Shadow.</p>
 <p>Чтобы вызвать инспектор кода, нужно в выпадающем меню плагина Adobe Shadow кликнуть иконку <strong>&lt;&gt;</strong> напротив интересующего устройства.</p>
 <figure>
-	<img src="/2012/mobile_developing//adobe-shadow-plugin_small.jpg" width="890" height="619" alt="Как открыть удаленный инспектор кода в Adobe Shadow"/>
+	<img src="/2012/mobile_developing/adobe-shadow-plugin_small.jpg" width="890" height="619" alt="Как открыть удаленный инспектор кода в Adobe Shadow"/>
 </figure>
 <p>Можно проводить отладку сайтов на локалхосте. Только в браузере на компе нужно вводить не <code>http://localhost</code>, а IP-адрес компьютера, например, <code>http://192.168.0.101:3000</code>.</p>
 <p>А вот просто локальные файлы типа <code>file://website/index.html</code> мобильное приложение не открывает. Нужно использовать или локальный веб-сервер, или поместить такие файлы, например, в паблик-папку dropbox и открывать их из интернета.</p>
@@ -1626,7 +1585,7 @@ Content Cell  | Content Cell
 
 <p>Эти команды оперируют только с видимыми слоями и пропускают выключенные.</p>
 <figure>
-	<img src="/2012/photoshop_next_and_previous_layer//photoshop_next_and_previous_layer.png" width="531" height="606" alt="Горячие клавиши для выделения предыдущего и следующего слоя в Photoshop"/>
+	<img src="/2012/photoshop_next_and_previous_layer/photoshop_next_and_previous_layer.png" width="531" height="606" alt="Горячие клавиши для выделения предыдущего и следующего слоя в Photoshop"/>
 	<figcaption>
 		<p><kbd>Alt + Shift + ]</kbd> выберет слои «selihanov» и «glebov».</p>
 		<p><kbd>Alt + Shift + [</kbd> выберет слои «selihanov» и «Layer&nbsp;13», пропустив все невидимые слои.</p>
@@ -3348,7 +3307,7 @@ Content Cell  | Content Cell
 					<![CDATA[<p>Открыл для себя недавно полезную команду в фотошопе — меню «Layer» &rarr; «New Layer Based Slice», — которая создаёт слайс по границам выделенного слоя. В случае выделения нескольких слоёв, создает слайс по границам каждого слоя. Это в несколько раз ускоряется нарезку графики с тенями, свечением и контурами.</p>
 <!-- cut -->
 <figure>
-    <img src="/2012/photoshop_new_layer_based_slice//Photoshop-New-Layer-Based-Slice.png" width="875" height="735" alt="New Layer Based Slice"/>
+    <img src="/2012/photoshop_new_layer_based_slice/Photoshop-New-Layer-Based-Slice.png" width="875" height="735" alt="New Layer Based Slice"/>
     <figcaption>Layer &rarr; New Layer Based Slice (Alt+L)+(Alt+B)</figcaption>
 </figure>
 
@@ -3356,7 +3315,7 @@ Content Cell  | Content Cell
 <p>New Layer Based Slice захватывает и границы эффектов тоже. То, на что раньше требовалось до нескольких минут, можно сделать двумя нажатиями клавиш.</p>
 <p>Для ускорения процесса нарезки на это действие можно повесить своё сочетание горячих клавиш, но лучше привыкнуть к двум стандартными сочетаниями: <kbd>(Alt+L)+(Alt+B)</kbd>.</p>
 <figure>
-    <img src="/2012/photoshop_new_layer_based_slice//Photoshop-Layer-with-Shadow.png" width="570" height="565" alt="Layer with Shadow"/>
+    <img src="/2012/photoshop_new_layer_based_slice/Photoshop-Layer-with-Shadow.png" width="570" height="565" alt="Layer with Shadow"/>
     <figcaption>Слой со смещенной тенью шириной в 30px. Рамкой трансформации выделены границы самого слоя. Слайс создан по границам тени.</figcaption>
 </figure>]]>
 				</content:encoded>
@@ -3374,27 +3333,28 @@ Content Cell  | Content Cell
 <!-- cut -->
 <p>В трекере описан этот <a href="http://code.google.com/p/chromium/issues/detail?id=46543">баг</a>, но <time datetime="2012-10-30">пока</time> решения нет.</p>
 <p>Автозаполнение можно выключить с помощью <code class="hljs-tag"><span class="hljs-attribute">autocomplete</span>=<span class="hljs-value">&quot;off&quot;</span></code>:</p>
-<pre class="highlight"><code class="hljs nimrod">&lt;form action=<span class="hljs-string">"…"</span> <span class="hljs-keyword">method</span>=<span class="hljs-string">"post"</span> autocomplete=<span class="hljs-string">"off"</span>&gt;
-</code></pre><p><strong>Обновлено 30 октября 2012.</strong></p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"…"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">autocomplete</span>=<span class="hljs-value">"off"</span>&gt;</span>
+</code></pre>
+<p><strong>Обновлено 30 октября 2012.</strong></p>
 <figure>
-    <img src="chrome-autocomplete-recolor.gif" width="998" height="659" alt="Жёлтые поля ввода можно перекрасить с помощью box-shadow"/>
+    <img src="/2012/autocomplete/chrome-autocomplete-recolor.gif" width="998" height="659" alt="Жёлтые поля ввода можно перекрасить с помощью box-shadow"/>
     <figcaption>Жёлтые поля ввода можно перекрасить при помощи <code class="hljs-attribute">box-shadow</code></figcaption>
 </figure>
 
 <p>Поля c автокомплитом можно перекрасить при помощи трюка с <code class="hljs-attribute">box-shadow</code>:</p>
 <pre class="highlight"><code class="hljs css"><span class="hljs-tag">input</span><span class="hljs-pseudo">:-webkit-autofill</span> <span class="hljs-rules">{
-        <span class="hljs-rule"><span class="hljs-attribute">-webkit-box-shadow</span>:<span class="hljs-value"> inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">50px</span> white</span></span>; <span class="hljs-comment">/* цвет вашего фона */</span>
-        <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>; <span class="hljs-comment">/* цвет текста */</span>
-    <span class="hljs-rule">}</span></span></code></pre>
-
-
+    <span class="hljs-rule"><span class="hljs-attribute">-webkit-box-shadow</span>:<span class="hljs-value"> inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">50px</span> white</span></span>; <span class="hljs-comment">/* цвет вашего фона */</span>
+    <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>; <span class="hljs-comment">/* цвет текста */</span>
+<span class="hljs-rule">}</span></span>
+</code></pre>
 <p>Если вы для <code class="hljs-pseudo">:focus</code> состояния задавали стили с использованием <code class="hljs-attribute">box-shadow</code>, то вам придется заново их переопределить:</p>
 <pre class="highlight"><code class="hljs css"><span class="hljs-tag">input</span><span class="hljs-pseudo">:-webkit-autofill</span><span class="hljs-pseudo">:focus</span> <span class="hljs-rules">{
     <span class="hljs-rule"><span class="hljs-attribute">-webkit-box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">0</span>    blue,   <span class="hljs-comment">/* ваш box-shadow для :focus */</span>
                   inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>   <span class="hljs-number">50px</span> white</span></span>;  <span class="hljs-comment">/* цвет вашего фона */</span>
-    <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>; <span class="hljs-comment">/* цвет текста */</span>
+    <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>;          <span class="hljs-comment">/* цвет текста */</span>
 <span class="hljs-rule">}</span></span>
-</code></pre><p>При помощи нескольких теней можно <a href="/demo/box-shadow_instead_gradient/">имитировать градиент</a>.</p>
+</code></pre>
+<p>При помощи нескольких теней можно <a href="/demo/box-shadow_instead_gradient/">имитировать градиент</a>.</p>
 ]]>
 				</content:encoded>
 				<pubDate>Sun, 12 Feb 2012 00:00:00 GMT</pubDate>

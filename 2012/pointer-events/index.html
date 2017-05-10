@@ -12,11 +12,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     
-    <meta name="generator" content="DocPad v6.78.4">
+    <meta name="generator" content="DocPad v6.79.4">
 
     
     <link rel="stylesheet" href="/css/article.css">
-    <link rel="stylesheet" href="/css/caniuse.css"><link rel="stylesheet" href="/2012/pointer-events/custom.css">
+    <link rel="stylesheet" href="/css/caniuse.css">
 
     
     
@@ -64,8 +64,8 @@
         <div class="article-nav">
             <nav class="read-siblings">
                 <div class="navlinks">
-  <a href="/2012/chrome_dev_tools/" title="Как отключить javascript в Google Chrome" class="navlinks-prev">Как отключить javascript в Google Chrome</a>
-  <a href="/2013/lists_and_floats/" title="Списки и картинки с флоатами" class="navlinks-next">Списки и картинки с флоатами</a>
+  <a href="/2012/chrome_dev_tools/" title="Previous Post: Как отключить javascript в Google Chrome" class="navlinks-prev">&laquo; Как отключить javascript в Google Chrome</a>
+  <a href="/2013/lists_and_floats/" title="Next Post: Списки и картинки с флоатами" class="navlinks-next">Списки и картинки с флоатами &raquo;</a>
 </div>
             </nav>
             <nav class="site-navigation sticky-nav" id="sticker">
@@ -149,28 +149,9 @@
 
 <p>Рассмотрим на практике.</p>
 
-<div class="demo">
-
-    <div class="demo-card">
-    	<a href="#" class="demo-card-image-holder"><img src="//placehold.it/300x200" alt=""></a>
-        <div class="demo-card-txt">
-            <h3 class="demo-card-title"><a href="#" class="demo-card-link">Pointer-events: none</a></h3>
-            <p class="demo-card-descr"><strong>Выдели меня курсором.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!</p>
-        </div>
-        <span class="demo-card-overlay" style="pointer-events:none"></span>
-    </div>
-    <div class="demo-card">
-    	<a href="#" class="demo-card-image-holder"><img src="//placehold.it/300x200" alt=""></a>
-        <div class="demo-card-txt">
-            <h3 class="demo-card-title"><a href="#" class="demo-card-link">Pointer-events: auto</a></h3>
-            <p class="demo-card-descr"><strong>Выдели меня курсором.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore! Mollitia praesentium. Impedit ullam minus a ipsum eum rerum eaque maxime amet beatae modi qui incidunt voluptas quis maiores quos autem inventore!</p>
-        </div>
-        <span class="demo-card-overlay"></span>
-    </div>
-    <div class="clr"></div>
-</div>
-
-<p>В первом примере для белого градиента, накрывающего текст, <code class="hljs-rule"><span class="hljs-attribute">pointer-events</span></code> установлен в none. Текст легко выделяется мышью сквозь градиент. Даже курсор меняет свою форму со стрелки на выделение текста.</p>
+<figure>
+    <p data-height="600" data-theme-id="16915" data-slug-hash="bWLPYM" data-default-tab="result" data-user="paulradzkov" data-embed-version="2" data-pen-title="2012-pointer-events-1" class="codepen">See the Pen <a href="https://codepen.io/paulradzkov/pen/bWLPYM/">2012-pointer-events-1</a> by Paul Radzkov (<a href="http://codepen.io/paulradzkov">@paulradzkov</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></figure><p>В первом примере для белого градиента, накрывающего текст, <code class="hljs-rule"><span class="hljs-attribute">pointer-events</span></code> установлен в none. Текст легко выделяется мышью сквозь градиент. Даже курсор меняет свою форму со стрелки на выделение текста.</p>
 
 <p>Во втором примере <code class="hljs-rule"><span class="hljs-attribute">pointer-events</span></code> не задан, маска градиента не даёт выделить текст, курсор имеет форму стрелки, как для нетекстовых элементов.</p>
 
@@ -178,19 +159,9 @@
 
 <p>Задача: сделать так, чтобы ссылка в меню становилась некликабельной, если она ведет на эту же страницу.</p>
 
-<div class="demo">
-
-    <ul class="demo-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#blog" class="current">Blog</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#archive">Archive</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-    </ul>
-
-</div>
-
-<p>Обычно в CMS уже есть какой-либо класс для индикации текущей страницы в меню. Допишем ему pointer-events:</p>
+<figure>
+    <p data-height="300" data-theme-id="16915" data-slug-hash="oWErMY" data-default-tab="result" data-user="paulradzkov" data-embed-version="2" data-pen-title="2012-pointer-events-demo-2" class="codepen">See the Pen <a href="https://codepen.io/paulradzkov/pen/oWErMY/">2012-pointer-events-demo-2</a> by Paul Radzkov (<a href="http://codepen.io/paulradzkov">@paulradzkov</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></figure><p>Обычно в CMS уже есть какой-либо класс для индикации текущей страницы в меню. Допишем ему pointer-events:</p>
 
 <pre class="highlight"><code class="hljs css"><span class="hljs-class">.demo-menu</span> <span class="hljs-tag">a</span><span class="hljs-class">.current</span> <span class="hljs-rules">{
     <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#AAA</span></span></span>;

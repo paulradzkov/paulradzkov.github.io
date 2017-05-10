@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     
-    <meta name="generator" content="DocPad v6.78.4">
+    <meta name="generator" content="DocPad v6.79.4">
 
     
     <link rel="stylesheet" href="/css/article.css">
@@ -64,8 +64,8 @@
         <div class="article-nav">
             <nav class="read-siblings">
                 <div class="navlinks">
-  <a href="/2014/markdown_cheatsheet/" title="Краткое руководство по Маркдауну" class="navlinks-prev">Краткое руководство по Маркдауну</a>
-  <a href="/2014/free_substitution_for_helvetica_neue/" title="Бесплатная замена платному Helvetica Neue" class="navlinks-next">Бесплатная замена платному Helvetica Neue</a>
+  <a href="/2014/markdown_cheatsheet/" title="Previous Post: Краткое руководство по Маркдауну" class="navlinks-prev">&laquo; Краткое руководство по Маркдауну</a>
+  <a href="/2014/free_substitution_for_helvetica_neue/" title="Next Post: Бесплатная замена платному Helvetica Neue" class="navlinks-next">Бесплатная замена платному Helvetica Neue &raquo;</a>
 </div>
             </nav>
             <nav class="site-navigation sticky-nav" id="sticker">
@@ -212,14 +212,14 @@
 <h2 id="-github-pages">Деплой на GitHub Pages</h2>
 <p>В репозитории создадим ветку «<code>gh-pages</code>». По инструкции это должна быть пустая ветка без истории, но об этом в дальнейшем позаботится плагин для деплоя.</p>
 <figure>
-    <img src="new_branch_gh-pages.png" alt="В репозитории проекта создадим ветку с именем «gh-pages»">
+    <img src="/2014/deploy_docpad_site_to_github_pages/new_branch_gh-pages.png" alt="В репозитории проекта создадим ветку с именем «gh-pages»">
     <figcaption>В репозитории проекта создадим ветку с именем «<code>gh-pages</code>»</figcaption>
 </figure>
 
 <p>Установим <a href="https://github.com/docpad/docpad-plugin-ghpages">GitHub Pages Deployer Plugin for DocPad</a>.</p>
 <p>При попытке выполнить <kbd class="cli" contenteditable="true">&zwj;<span contenteditable="false">docpad deploy-ghpages --env static</span>&zwj;</kbd> у меня появляется ошибка:</p>
 <figure>
-    <img src="gh-pages_deploy_error.png" alt="could not read Username for ’http://github.com’: No such file or directory">
+    <img src="/2014/deploy_docpad_site_to_github_pages/gh-pages_deploy_error.png" alt="could not read Username for ’http://github.com’: No such file or directory">
     <figcaption><code>could not read Username for ’http://github.com’: No such file or directory</code></figcaption>
 </figure>
 
@@ -230,7 +230,7 @@
 <p>«<code>login</code>» и «<code>password</code>» — данные вашего аккаунта на Гитхабе.</p>
 <p>«<code>github.com/repo_owner/repo_name.git</code>» — путь к репозиторию проекта, в котором у вас есть права на запись. Это не обязательно должен быть ваш репозиторий, если вы коллаборатор, и у вас есть доступ на запись — вы можете деплоить туда проект.</p>
 <figure>
-    <img src="adding_another_remote.png" alt="Добавление нового «remote» c логином и паролем">
+    <img src="/2014/deploy_docpad_site_to_github_pages/adding_another_remote.png" alt="Добавление нового «remote» c логином и паролем">
     <figcaption>Добавление нового «remote» c логином и паролем. Эту процедуру нужно выполнить один раз для каждого локального репозитория</figcaption>
 </figure>
 
