@@ -4,10 +4,10 @@
         <description><![CDATA[Заметки о веб-разработке Павла Радькова.]]></description>
         <link>http://paulradzkov.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 10 May 2017 22:46:42 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 27 May 2017 21:45:30 GMT</lastBuildDate>
         <atom:link href="http://paulradzkov.com/newrss.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Павел Радьков]]></author>
-        <pubDate>Wed, 10 May 2017 22:46:14 GMT</pubDate>
+        <pubDate>Sat, 27 May 2017 21:45:04 GMT</pubDate>
         <item>
             <title><![CDATA[Как верстальщику получить код ревью]]></title>
             <description><![CDATA[<p><strong>По мотивам вопроса на тостере «<a href="https://toster.ru/q/289819">Где найти того, кто оценит твой код?</a>»</strong></p>
