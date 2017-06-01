@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    
+    <title>Используйте локальные переменные в LESS и SASS, чтобы избежать хаоса</title>
+    <meta name="description" content="История архитектурной ошибки, её последствия и три правила, благодаря которым вы начнёте писать более стабильный, понятный и легко-поддерживаемый код.">
+    <meta name="keywords" content="Paul Radzkov, web-developer, blog, html, css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    
+    <meta name="generator" content="DocPad v6.79.4">
+
+    
+    <link rel="stylesheet" href="/css/article.css">
+    
+
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=A0RJW2vMdo">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=A0RJW2vMdo" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=A0RJW2vMdo" sizes="16x16">
+    <link rel="manifest" href="/manifest.json?v=A0RJW2vMdo">
+    <link rel="shortcut icon" href="/favicon.ico?v=A0RJW2vMdo">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+    <link rel="canonical" href="http://paulradzkov.com/2017/local_variables/">
+    <meta property="fb:pages" content="297287297277384">
+
+    <script type="text/javascript">!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var e=new XMLHttpRequest;e.open("GET",o,!0),e.onreadystatechange=function(){4===e.readyState&&(c(e.responseText),localStorage.font_css_cache=e.responseText,localStorage.font_css_cache_file=o)},e.send()}else{var n=document.createElement("link");n.href=o,n.rel="stylesheet",n.type="text/css",document.getElementsByTagName("head")[0].appendChild(n),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.setAttribute("type","text/css"),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="/fonts/webfonts.css?v=0.0.1";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script><meta property="og:title" content="Используйте локальные переменные в LESS и SASS, чтобы избежать хаоса">
+<meta property="og:description" content="История архитектурной ошибки, её последствия и три правила, благодаря которым вы начнёте писать более стабильный, понятный и легко-поддерживаемый код.">
+
+    <meta property="og:image" content="http://paulradzkov.com/i/og/og-paulradzkov-2017-local_variables.png">
+
+
+    <meta property="og:type" content="article">
+    <meta property="og:article:published_time" content="Thu Jun 01 2017 03:00:00 GMT+0300 (+03)">
+    
+    <meta property="og:article:author" content="Павел Радьков">
+    
+    
+    <meta property="og:article:tag" content="">
+    
+
+<meta property="og:locale" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@paul_radzkov">
+<meta name="twitter:title" content="Используйте локальные переменные в LESS и SASS, чтобы избежать хаоса">
+<meta name="twitter:description" content="История архитектурной ошибки, её последствия и три правила, благодаря которым вы начнёте писать более стабильный, понятный и легко-поддерживаемый код.">
+
+<meta name="twitter:image" content="http://paulradzkov.com/i/og/og-paulradzkov-2017-local_variables.png">
+
+
+    
+<script>!function(e,a,n,t,c,i,o){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,i=a.createElement(n),o=a.getElementsByTagName(n)[0],i.async=1,i.src=t,o.parentNode.insertBefore(i,o)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-29416794-1","auto"),ga("require","linkid"),ga("send","pageview");</script></head><body class="allpage allpage-max-width allpage-stickyfooter layout-article" id="top">
+    <header class="allpage--header page-header">
+        <div class="article-nav">
+            <nav class="read-siblings">
+                
+            </nav>
+            <nav class="site-navigation sticky-nav" id="sticker">
+                <div class="nav-icon nav-icon-centered">
+                    <a class="nav-icon-home" href="/" data-toggle="tooltip" data-placement="right" title="На главную">
+                        <svg id="ic-arrow-back-24px" viewbox="0 0 24 24" width="24" height="24">
+                            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z">
+                        </svg>
+                        <span class="visuallyhidden">На главную</span>
+                    </a>
+                    <a class="nav-icon-top" href="#top" data-toggle="tooltip" data-placement="right" title="Наверх">
+                        <svg id="ic-arrow-upward-24px" viewbox="0 0 24 24" width="24" height="24">
+                            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z">
+                        </svg>
+                        <span class="visuallyhidden">Наверх</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <aside class="nav-placeholder content-width">
+            <div class="article-meta">
+            
+                <p class="date"><time datetime="Thu Jun 01 2017 03:00:00 GMT+0300 (+03)">01 июня 2017</time></p>
+            
+            </div>
+        </aside>
+        <div class="content-width">
+            <h1 class="article-title">Используйте локальные переменные в LESS и SASS, чтобы избежать хаоса</h1>
+        </div>
+        <div class="likely-container content-width">
+    
+    <div class="likely likely-big" data-url="http://paulradzkov.com/2017/local_variables/">
+    
+        <div class="facebook" tabindex="0" role="link" aria-label="Поделиться в Фейсбуке"></div>
+        <div class="twitter" tabindex="0" role="link" aria-label="Поделиться в Твиттере" data-via="paul_radzkov"></div>
+        <div class="gplus" tabindex="0" role="link" aria-label="Поделиться в Гугл Плюсе"></div>
+        <div class="vkontakte" tabindex="0" role="link" aria-label="Поделиться в Контакте"></div>
+        <div class="telegram" tabindex="0" role="link" aria-label="Поделиться в Телеграме"></div>
+    </div>
+</div>
+
+    </header>
+    <aside class="content-width" style="display:none">
+        <div class="article-meta inlined">
+            
+            <span class="tags-list">
+                
+            </span>
+            
+            
+            <span class="comments"><a href="#disqus_thread" data-disqus-identifier="local_variables">Комментарии</a></span>
+            
+            <span class="pageviews" style="display:none"></span>
+        </div>
+    </aside>
+    
+    <article class="allpage--body nav-placeholder content-width" role="main">
+        <p>История архитектурной ошибки, её последствия и три правила, благодаря которым вы начнёте писать более стабильный, понятный и легко-поддерживаемый код.</p>
+
+<h1 id="-">Предыстория</h1>
+<p>В 2014 году в компании начали редизайн проекта и в основу вёрстки мы положили свежий на тот момент Bootstrap 3.0.1. Использовали мы его не как отдельную стороннюю библиотеку, а тесно заинтегрировали с нашим собственным кодом: отредактировали переменные под наш дизайн и компилировали кастомизированный Бутстрап из LESS исходников самостоятельно. Проект оброс собственными модулями, которые использовали бутстраповские переменные и добавляли в файл с настройками свои новые переменные.</p>
+<p>В тот момент я думал, что это правильный подход. Ведь код сразу компилируется с нужными значениями без переопределения стилей. CSS чистый, компактный и без повторений. Компоненты стилизованы с помощью глобальных настроек.</p>
+<p>Через год с небольшим редизайн закончился, проект вышел в продакшн, и мы взялись за технический долг. При попытке обновить Бутстрап до версии 3.6.x выяснилось, что смержить новый variables.less с нашим файлом настроек будет нелегко. В Бутстрапе переименовали или убрали часть переменных, добавили новые. Собственные компоненты Бутстрапа обновились без проблем, а вот наши компоненты падали при компиляции из-за этих изменений.</p>
+<p>Мы проанализировали ситуацию и сформулировали проблемы.</p>
+<h1 id="-">Проблемы</h1>
+<ol>
+<li><p><strong>Слишком связанный код.</strong></p>
+<p>Сами компоненты лежали в отдельных файлах. Это создавало иллюзию, что компоненты независимые. Но компоненты использовали переменные, объявленные в отдельном файле variables.less, и без этого файла не работали. Нельзя было просто так взять и переместить компонент в другой проект. Приходилось тянуть за собой файл с настройками, который со временем превратился в помойку.</p>
+</li>
+<li><p><strong>Слишком много глобальных переменных</strong>.</p>
+<p>У Бутстрапа было ≈400 переменных. Мы отключили неиспользуемые компоненты Бутстрапа, но переменные оставили в конфиге на случай, если снова понадобятся. Еще мы добавили сотню или полторы своих переменных. Все названия не запомнить, трудно быстро находить нужные. Даже с правилами именования и комментариями ориентироваться в конфиге из 500+ переменных тяжело.</p>
+</li>
+<li><p><strong>Имена глобальных переменных вышли из-под контроля</strong>.</p>
+<p>Одна и та же переменная могла использоваться в разных файлах и отслеживать все её появления в коде было долго и трудно. Когда меняли значение переменной в одном компоненте, был риск поломать другие компоненты. Разработчики хардкодили, создавали новые переменные с похожими названиями и значениями и уже не следили за логикой именования.</p>
+</li>
+</ol>
+<h1 id="-">Что делать</h1>
+<ol>
+<li><p><strong>Переменная используется только в том файле, в котором объявлена.</strong></p>
+<p>Правильно создавать все нужные переменные в файле самого компонента и не использовать переменные из других файлов. Тогда компоненты станут независимыми, их можно будет подключать и перемещать между проектами без поломок при компиляции. У каждого компонента собственный набор переменных, которые запрещено использовать в других компонентах и вызывать в других файлах. Когда переменные не выходят за пределы одного файла, легко увидеть, как они используются и на что влияют.</p>
+</li>
+<li><p><strong>Все переменные внутри компонента — локальные.</strong></p>
+<p>Раз у каждого компонента свои переменные, пусть они будут локальными. Это избавит от проблем с именованием: в компонентах можно использовать переменные с одинаковыми именами и разными значениями — они не будут конфликтовать друг с другом.</p>
+</li>
+<li><p><strong>Глобальные переменные не используются внутри компонентов.</strong></p>
+<p>Благодаря первым двум правилам мы сильно сократим количество глобальных переменных, но они всё равно нужны. Глобальные переменные объявляются в главном файле проекта или в файле типа config.less. К ним тоже применяется правило №1 — переменные не используются за пределами этого файла. Зато существует способ не нарушая первого правила прокинуть значение глобальной переменной внутрь компонента и не использовать имя этой переменной в другом файле.</p>
+</li>
+</ol>
+<p>Рассмотрим на практике.</p>
+<h1 id="-less">Реализация на LESS</h1>
+<p>Представим компонент для стилизации страницы:</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* page.css */</span>
+<span class="hljs-class">.page</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">40px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#000</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Применим правило №1 и создадим переменные внутри файла компонента:</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less</span>
+
+<span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
+<span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
+<span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+
+<span class="hljs-class">.page</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
+}
+</code></pre>
+<p>В примере выше мы объявили переменные в глобальной области видимости и из-за этого они подвержены конфликту имён. Если в соседнем компоненте мы создадим переменную с таким же именем, то получим нежелательный результат.</p>
+<h2 id="-">Локальные переменные</h2>
+<p><strong>Область видимости</strong> — это «пространство» между фигурными скобками селектора: { и } . Объявленные внутри фигурных скобок переменные работают только внутри этих скобок и внутри дочерних скобок, но их нельзя использовать снаружи.</p>
+<p>Если скобок вокруг нет, то это самый верхний уровень — <strong>глобальная область видимости</strong>.</p>
+<p>У переменной из дочерней области видимости приоритет выше, чем у одноименной переменной из родительской области видимости. У глобальных переменных самый низкий приоритет при совпадении имён.</p>
+<p>По правилу №2 сделаем переменные локальными —  переместим их внутрь селектора:</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less</span>
+
+<span class="hljs-class">.page</span> {
+  <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
+  <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
+  <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
+}
+</code></pre>
+<p>Теперь конфликта имен с другими компонентами не будет. Мы решили первую и вторую проблемы: получился изолированный сниппет без внешних зависимостей. Но я не знаю способа переопределить локальные переменные компонента в таком виде извне. Поэтому, чтобы кастомизировать компоненты глобальными переменными проекта, придумал другую форму записи.</p>
+<h2 id="-">Миксины как функции</h2>
+<p>В LESS можно использовать миксины как функции.
+<a href="http://lesscss.org/features/#mixins-as-functions-feature">http://lesscss.org/features/#mixins-as-functions-feature</a></p>
+<p>Если внутри миксина создать переменные, а потом вызвать миксин внутри селектора, то переменные будут доступны в области видимости этого селектора.</p>
+<p>Вынесем объявление переменных внутрь миксина .page-settings(), а потом вызовем его внутри селектора .page:</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less</span>
+<span class="hljs-class">.page-settings</span>() {
+  <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
+  <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
+  <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+}
+
+<span class="hljs-class">.page</span> {
+  <span class="hljs-class">.page-settings</span>();
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
+}
+</code></pre>
+<p>Переменные локализованы внутри глобального миксина. Когда мы вызвали миксин в коде, переменные стали доступны в области видимости селектора .page, но по прежнему остались локальными.</p>
+<p>Такой миксин не генерирует CSS код, его единственная задача — доставить переменные в нужную область видимости. Если вызвать этот миксин в глобальной области видимости, то и переменные станут глобальными. Но  это то же самое, что сразу объявить переменные глобально.</p>
+<p>Вместо нескольких глобальных переменных с распространёнными именами мы создали один глобальный миксин. в проекте не должно быть двух одноименных компонентов, значит имя миксина будет уникальным.</p>
+<h2 id="-">Слияние миксинов</h2>
+<p>В CSS два одинаковых селектора, написанных в разных местах кода, объединяют свои свойства в CSSOM. в случае одинаковых свойств, у последнего по следованию в коде приоритет выше. Оно переопределяет предыдущее значение этого свойства.</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-class">.page</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-hexcolor">#000</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-hexcolor">#fff</span>;
+}
+
+<span class="hljs-comment">// some lines below</span>
+
+<span class="hljs-class">.page</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">background-color</span>: darkblue;
+}
+</code></pre>
+<p>↓ эквивалентно</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-class">.page</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">background-color</span>: darkblue;
+}
+</code></pre>
+<p>Точно так же ведут себя миксины в LESS. Если два раза объявить миксин с одним и тем же именем, то они объединяют свои внутренности. А если внутри миксинов одинаковые переменные, то второй миксин переопределит значения переменных первого миксина.</p>
+<p>Рассмотрим три файла. в главном файле проекта мы импортируем компоненты и файл с конфигурацией:</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-comment">// projectname.less</span>
+<span class="hljs-at_rule">@import</span> <span class="hljs-string">'typography.less'</span>;
+<span class="hljs-at_rule">@import</span> <span class="hljs-string">'page.less'</span>;
+<span class="hljs-comment">// other files here...</span>
+
+<span class="hljs-at_rule">@import</span> <span class="hljs-string">'config.less'</span>;
+<span class="hljs-comment">// end of file projectname.less</span>
+</code></pre>
+<p>Сам компонент остался без изменений:</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less</span>
+<span class="hljs-class">.page-settings</span>() {
+  <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
+  <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
+  <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+}
+
+<span class="hljs-class">.page</span> {
+  <span class="hljs-class">.page-settings</span>();
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
+}
+<span class="hljs-comment">// end of file page.less</span>
+</code></pre>
+<p>В конфиге мы создали глобальные переменные, повторно объявили миксин настроек нашего компонента, в котором переопределили локальные переменные значениями глобальных:</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-comment">// config.less</span>
+
+<span class="hljs-variable">@glob-text-color:</span> white;
+<span class="hljs-variable">@glob-bg-color:</span> darkblue;
+
+<span class="hljs-comment">// customizing</span>
+<span class="hljs-class">.page-settings</span>() {
+  <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@glob-text-color</span>;
+  <span class="hljs-variable">@bg-color:</span> <span class="hljs-variable">@glob-bg-color</span>;
+}
+
+<span class="hljs-comment">// end of file config.less</span>
+</code></pre>
+<p>Миксин .page-settings объявлен два раза. Первый раз внутри файла page.less, второй — в файле config.less. На этапе компиляции миксины склеиваются, переменные переопределяются и CSS рендерится с новыми значениями из файла конфигурации.</p>
+<p>Обратите внимание, что config.less инклюдится последним в списке. Это нужно, чтобы объявление миксина в конфиге имело больший приоритет, чем исходное объявление в файле самого компонента. Настройки не применятся, если поставить config.less до компонента.</p>
+<p>Таким способом мы прокинули значения глобальных переменных внутрь файла компонента, не меняя исходный код компонента. При этом были соблюдены все три правила:</p>
+<ol>
+<li>переменные использовались только в своём файле, даже глобальные переменные не вызывались за пределами файла config.less;</li>
+<li>переменные компонента остались локальными и не засорили глобальную область видимости;</li>
+<li>глобальные переменные не использовались внутри компонента напрямую, но значения глобальных переменных хитрым способом попали внутрь компонента.</li>
+</ol>
+<h2 id="-">Ограничения</h2>
+<p>Нельзя, чтобы имя глобальной переменной совпадало с именем локальной, иначе получим рекурсию и CSS не скомпилируется.</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-comment">// так нельзя</span>
+<span class="hljs-variable">@txt-color:</span> white;
+
+<span class="hljs-class">.page-settings</span>() {
+  <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@txt-color</span>; <span class="hljs-comment">//тут рекурсия и ошибка компиляции</span>
+}
+</code></pre>
+<p>Чтобы не ошибиться, лучше все глобальные переменные записывать с префиксом:</p>
+<pre class="highlight"><code class="hljs less"><span class="hljs-comment">// правильно — с префиксом</span>
+<span class="hljs-variable">@glob-txt-color:</span> white;
+
+<span class="hljs-class">.page-settings</span>() {
+  <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@glob-txt-color</span>; <span class="hljs-comment">//всё в порядке</span>
+}
+</code></pre>
+<h1 id="-sass">Реализация в SASS</h1>
+<p>SASS отличается от LESS и больше похож на скриптовый язык программирования: переменная должна быть объявлена до её использования в коде; переопределять переменные тоже нужно до их использования. Трюк с миксинами, как в LESS, не пройдет. Но есть другие пути решения.</p>
+<blockquote>
+<p>Я на SASS каждый день не пишу и всех тонкостей языка не знаю, возможно, есть способ реализовать эту методологию более красивым способом.</p>
+</blockquote>
+<p>Наборы переменных для настройки компонента удобно хранить в map-объектах. Это массив из пар «ключ: значение». Метод <strong>map-get</strong> извлекает конкретное значение из массива, метод <strong>map-merge</strong> объединяет два массива в один, дополняя или переписывая исходный массив.</p>
+<p>Простейший компонент без возможности переопределения извне будет выглядеть так:</p>
+<pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// page.scss</span>
+
+<span class="hljs-variable">$page-settings</span><span class="hljs-value">: (
+    padding: <span class="hljs-number">40px</span>,
+    bg-color: <span class="hljs-hexcolor">#fff</span>,
+    text-color: <span class="hljs-hexcolor">#000</span>,
+);</span>
+
+<span class="hljs-class">.page</span> {
+    <span class="hljs-attribute">padding</span><span class="hljs-value">:          <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, padding);</span>
+    <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, bg-color);</span>
+    <span class="hljs-attribute">color</span><span class="hljs-value">:            <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, text-color);</span>
+}
+</code></pre>
+<p>Чтобы настраивать компонент из другого файла, нужно предусмотреть возможность смержить внешний конфиг с исходными настройками.</p>
+<p>Рассмотрим три файла. в главном файле проекта мы сначала импортируем конфигурацию, а затем файлы компонентов:</p>
+<pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// projectname.scss</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'config'</span>;</span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'typography'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'page'</span>;</span>
+</code></pre>
+<p>В конфиге мы объявляем глобальные переменные, а потом переопределяем ими ключи в массиве настроек компонента:</p>
+<pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// config.scss</span>
+<span class="hljs-variable">$glob-text-color</span><span class="hljs-value">: white;</span>
+<span class="hljs-variable">$glob-bg-color</span><span class="hljs-value">: darkblue;</span>
+
+<span class="hljs-variable">$page-settings</span><span class="hljs-value">: (
+    bg-color: <span class="hljs-variable">$glob-bg-color</span>,
+    text-color: <span class="hljs-variable">$glob-text-color</span>,
+);</span>
+<span class="hljs-comment">// eof config.scss</span>
+</code></pre>
+<p>В файл компонента придется добавить чуть больше логики:</p>
+<pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// page.scss</span>
+
+<span class="hljs-variable">$page-override</span><span class="hljs-value">: ( );</span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">if</span><span class="hljs-preprocessor"> variable-exists</span>(<span class="hljs-keyword">page</span>-settings) {</span>
+    <span class="hljs-variable">$page-override</span><span class="hljs-value">: <span class="hljs-variable">$page-settings</span>;</span>
+}
+
+<span class="hljs-variable">$page-settings</span><span class="hljs-value">:  <span class="hljs-function">map-merge</span>((
+    padding: <span class="hljs-number">40px</span>,
+    bg-color: <span class="hljs-hexcolor">#fff</span>,
+    text-color: <span class="hljs-hexcolor">#000</span>,
+), <span class="hljs-variable">$page-override</span>);</span>
+
+<span class="hljs-class">.page</span> {
+    <span class="hljs-attribute">padding</span><span class="hljs-value">:          <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, padding);</span>
+    <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, bg-color);</span>
+    <span class="hljs-attribute">color</span><span class="hljs-value">:            <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, text-color);</span>
+}
+</code></pre>
+<p>Сначала объявили переменную с пустым массивом  <code>$page-override: ( );</code>
+Потом проверили, а не существует ли уже переменная  <code>$page-settings</code>. и если она уже существует,  а именно была объявлена в конфиге, то присвоили её значение переменной <code>$page-override</code>.</p>
+<p>И потом смержили исходный конфиг и <code>$page-override</code> в переменную <code>$page-settings</code>.</p>
+<p>Если <code>$page-settings</code> не был определен ранее, то в переменной <code>$page-override</code> будет пустой массив и в результате в настройках останутся исходные значения.</p>
+<p>Если <code>$page-settings</code> был объявлен ранее в глобальном конфиге, то <code>$page-override</code> уже не будет пустым перепишет настройки при слиянии.</p>
+<p>В результате мы получаем всё те же преимущества, только нам приходится создавать две глобальные переменные на модуль и переопределять все настройки до их непосредственного использования в коде.</p>
+<h1 id="-">Выводы</h1>
+<p>Не важно на чем вы пишете — на LESS, SASS или Javascript — глобальных переменных должно быть как можно меньше.</p>
+<p>С CSS препроцессорами используйте три правила, которые помогут избежать хаоса:</p>
+<ol>
+<li>Переменная используется только в том файле, в котором объявлена.</li>
+<li>Все переменные внутри компонента — локальные.</li>
+<li>Использовать глобальные переменные внутри компонентов запрещено.</li>
+</ol>
+<p>Третье правило избыточное. Соблюдая первые два, вы автоматически соблюдаете третье. Но в реальной жизни есть очень большой соблазн пойти по простейшему пути, не создавать локальную переменную, а по-быстрому использовать глобальную. Третье правило напоминает, что так делать вредно.</p>
+<p>Чтобы прокинуть глобальные настройки внутрь компонента, собирайте переменные в миксин (LESS) или map-объект (SASS).</p>
+<p>Переопределяйте настройки в правильном месте: в LESS — после инклюда, в SASS — перед инклюдом.</p>
+<h1 id="-">Реальные примеры</h1>
+<p>Я сформулировал эту методологию в декабре 2015 года для LESS и с тех пор применяю её на рабочих и личных проектах.</p>
+<p>За полтора года появилось несколько публичных npm-пакетов. Посмотрите исходный код для лучшего понимания, как работает эта методология в реальных ситуациях.</p>
+<p><a href="https://github.com/paulradzkov/bettertext.css/blob/master/bettertext.less">bettertext.css</a> — типографика для сайтов. Настраивается при помощи 11 переменных, остальные 40 вычисляются по формулам. Вычисления идут отдельными миксином, чтобы была возможность переопределять формулы.  У компонента нет ни одного класса, все стили применяются к тегам. Чтобы создать локальную область видимости, я поместил все селекторы по тегам в переменную — в LESS это называется «detached ruleset».</p>
+<p><a href="https://github.com/paulradzkov/links.less/blob/master/links.less">links.less</a> — стили для ссылок с фокусом, анимацией и бледным подчеркиванием. У компонента кроме миксина с настройками есть дополнительные глобальные миксины для раскрашивания ссылок внутри ваших собственных селекторов.</p>
+<p><a href="https://github.com/paulradzkov/flxgrid.css/blob/master/flxgrid.less">flxgrid.css</a> — генератор HTML-сеток на флексах. Настраивается при помощи 5 переменных, генерирует классы для адаптивной сетки с любыми брейкпоинтами и любым количеством колонок. в компоненте вычисления и служебные миксины спрятаны внутрь локальной области видимости. Глобально виден только миксин с настройками.</p>
+<p><a href="https://github.com/paulradzkov/space.less/blob/master/space.less">space.less</a> — инструмент для управления отступами в вёрстке. Создан, чтобы работать в паре с сеткой flxgrid.css, и адаптивность у них настраивается одинаково. Но space.less использует собственный миксин настройки и собственные локальные переменные — в коде space.less никак не связан с flxgrid.css.</p>
+<h1 id="-">«Бонус-трек»</h1>
+<p>Если бы мне сейчас понадобилось использовать на новом проекте Bootstrap 3.x.x — тот, который на LESS, — я бы все импорты Бутстрапа завернул в переменную (это называется «detached ruleset»), а все настройки в миксин bootsrtap-settings. Это сделает все глобальные переменные Бутстрапа изолированными внутри этой переменной, чтобы они не смешивались с переменными проекта и их невозможно было использовать внутри собственного кода. Настройки Бутстрапа я бы кастомизировал по мере необходимости, вызывая миксин bootsrtap-settings в конфиге проекта, как в примерах в этой статье. Тогда при обновлениях Бутстрапа пришлось бы переписать только миксин с кастомизированными настройкам. Вся проблема была бы сосредоточена внутри одного файла.</p>
+
+    </article>
+    <div class="content-width allpage--article-footer">
+        <div class="row row-between-xs row-center-xs">
+            <div class="col-xs-12 col-sm-shrink col-zero-gutter">
+                <footer class="allpage--footer page-footer content-width copyright">
+	<p class="space-out-bottom-mili-xs">
+		© Павел Радьков
+		
+			2017.
+		
+        <br>
+		
+	</p>
+</footer>
+
+            </div>
+            <div class="col-xs-12 col-sm-shrink col-zero-gutter">
+                <div class="likely-container content-width">
+    
+    <div class="likely" data-url="http://paulradzkov.com/2017/local_variables/">
+    
+        <div class="facebook" tabindex="0" role="link" aria-label="Поделиться в Фейсбуке">Поделиться</div>
+        <div class="twitter" tabindex="0" role="link" aria-label="Поделиться в Твиттере" data-via="paul_radzkov">Твитнуть</div>
+        <div class="gplus" tabindex="0" role="link" aria-label="Поделиться в Гугл Плюсе">Плюсануть</div>
+        <div class="vkontakte" tabindex="0" role="link" aria-label="Поделиться в Контакте">Поделиться</div>
+        <div class="telegram" tabindex="0" role="link" aria-label="Поделиться в Телеграме">Телеграфировать</div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="disqus-wrapper">
+        <article id="disqus_thread" class="disqus-container"></article>
+    </div>
+    
+    <nav class="navigation row">
+    
+        <section class="col-xs-min navigation-item inactive faq code-review">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sat Feb 13 2016 03:00:00 GMT+0300 (+03)">13 февраля 2016</time></li>
+            </ul>
+            <p><a href="/2016/code_review/">Как верстальщику получить код ревью</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive fonts typography">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Fri May 02 2014 03:00:00 GMT+0300 (+03)">02 мая 2014</time></li>
+            </ul>
+            <p><a href="/2014/web-fonts_license/">Веб-лицензии для платных шрифтов могут стоить вам дорого</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive fonts typography">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Thu May 01 2014 03:00:00 GMT+0300 (+03)">01 мая 2014</time></li>
+            </ul>
+            <p><a href="/2014/free_substitution_for_helvetica_neue/">Бесплатная замена платному Helvetica Neue</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive docpad github-pages">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Fri Apr 25 2014 03:00:00 GMT+0300 (+03)">25 апреля 2014</time></li>
+            </ul>
+            <p><a href="/2014/deploy_docpad_site_to_github_pages/">Деплой Docpad-сайта на GitHub Pages</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive tools markdown">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Mon Apr 07 2014 03:00:00 GMT+0300 (+03)">07 апреля 2014</time></li>
+            </ul>
+            <p><a href="/2014/markdown_cheatsheet/">Краткое руководство по Маркдауну</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive people">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Mon Feb 10 2014 03:00:00 GMT+0300 (+03)">10 февраля 2014</time></li>
+            </ul>
+            <p><a href="/2014/designer-superstar/">О каких дизайнерах мечтают верстальщики</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive tools">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sun Feb 09 2014 03:00:00 GMT+0300 (+03)">09 февраля 2014</time></li>
+            </ul>
+            <p><a href="/2014/capture_screen_to_gif/">Захват экрана в GIF</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive css typography">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Thu Feb 06 2014 03:00:00 GMT+0300 (+03)">06 февраля 2014</time></li>
+            </ul>
+            <p><a href="/2014/font-weight_bolder/">Font-weight: bolder для шрифтов со множеством начертаний</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive html usability">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Tue Feb 04 2014 03:00:00 GMT+0300 (+03)">04 февраля 2014</time></li>
+            </ul>
+            <p><a href="/2014/mailto_parameters/">Параметры subject и body в mailto ссылках</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive css">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sun Jan 26 2014 03:00:00 GMT+0300 (+03)">26 января 2014</time></li>
+            </ul>
+            <p><a href="/2014/visited_link_on_hover/">Посещённая ссылка при наведении</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive css">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sun Jan 19 2014 03:00:00 GMT+0300 (+03)">19 января 2014</time></li>
+            </ul>
+            <p><a href="/2014/negation_css_selector/">CSS-селектор :not. Полезные примеры</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive css typography">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Thu Jan 24 2013 03:00:00 GMT+0300 (+03)">24 января 2013</time></li>
+            </ul>
+            <p><a href="/2013/lists_and_floats/">Списки и картинки с флоатами</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive css progressive-enhancement">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sun Dec 09 2012 03:00:00 GMT+0300 (+03)">09 декабря 2012</time></li>
+            </ul>
+            <p><a href="/2012/pointer-events/">Pointer-events</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive Chrome">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Tue Nov 27 2012 03:00:00 GMT+0300 (+03)">27 ноября 2012</time></li>
+            </ul>
+            <p><a href="/2012/chrome_dev_tools/">Как отключить javascript в Google Chrome</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive svg css">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sun Oct 28 2012 03:00:00 GMT+0300 (+03)">28 октября 2012</time></li>
+            </ul>
+            <p><a href="/2012/crosswise/">Перечёркивание крест-накрест</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive tools">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sun Apr 08 2012 03:00:00 GMT+0300 (+03)">08 апреля 2012</time></li>
+            </ul>
+            <p><a href="/2012/mobile_developing/">Отладка мобильных сайтов в Webkit. Инспектор кода на мобильных устройствах</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive photoshop">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sun Mar 18 2012 03:00:00 GMT+0300 (+03)">18 марта 2012</time></li>
+            </ul>
+            <p><a href="/2012/photoshop_next_and_previous_layer/">Горячие клавиши для выбора предыдущего и следующего слоя в Photoshop</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive css">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sun Mar 11 2012 03:00:00 GMT+0300 (+03)">11 марта 2012</time></li>
+            </ul>
+            <p><a href="/2012/html-entities_and_utf_codes/">HTML-сущности и их UTF-коды</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive photoshop">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Wed Feb 22 2012 03:00:00 GMT+0300 (+03)">22 февраля 2012</time></li>
+            </ul>
+            <p><a href="/2012/photoshop_new_layer_based_slice/">Нарезка в Photoshop — New Layer Based Slice</a></p>
+        </section>
+    
+        <section class="col-xs-min navigation-item inactive css">
+            <ul class="meta-data meta-data-badge">
+                <li class="date"><time datetime="Sun Feb 12 2012 03:00:00 GMT+0300 (+03)">12 февраля 2012</time></li>
+            </ul>
+            <p><a href="/2012/autocomplete/">Как перекрасить поля с автозаполнением в Google Chrome</a></p>
+        </section>
+    
+</nav>
+
+        <script src="/vendor/modernizr.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script>window.jQuery||document.write('<script src="/vendor/jquery.js"><\/script>');</script><script src="/js/article.min.js"></script><script defer="defer" src="/js/output.min.js"></script><script type="text/javascript">var disqus_shortname="paulradzkov",disqus_url="http://paulradzkov.com/2017/local_variables/",disqus_identifier="local_variables",disqus_title="Используйте локальные переменные в LESS и SASS, чтобы избежать хаоса";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}(),function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="https://"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script><script type="text/javascript">!function(t,e,a){(e[a]=e[a]||[]).push(function(){try{e.yaCounter22878469=new Ya.Metrika({id:22878469,webvisor:!0,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})}catch(t){}});var c=t.getElementsByTagName("script")[0],n=t.createElement("script"),r=function(){c.parentNode.insertBefore(n,c)};n.type="text/javascript",n.async=!0,n.src=("https:"==t.location.protocol?"https:":"http:")+"//mc.yandex.ru/metrika/watch.js","[object Opera]"==e.opera?t.addEventListener("DOMContentLoaded",r,!1):r()}(document,window,"yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22878469" style="position:absolute; left:-1px;" alt="" /></div></noscript>
+
+
+</body>
+</html>
