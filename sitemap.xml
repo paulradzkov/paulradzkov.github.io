@@ -10,8 +10,8 @@
 <url> <loc>http://paulradzkov.com/search/</loc> <lastmod>2017-06-01</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2014/</loc> <lastmod>2017-06-01</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2012/autocomplete/</loc> <lastmod>2017-06-01</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://paulradzkov.com/2012/chrome_dev_tools/</loc> <lastmod>2017-06-01</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2012/crosswise/</loc> <lastmod>2017-06-01</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://paulradzkov.com/2012/chrome_dev_tools/</loc> <lastmod>2017-06-01</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2012/html-entities_and_utf_codes/</loc> <lastmod>2017-06-01</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2012/mobile_developing/</loc> <lastmod>2017-06-01</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2012/photoshop_new_layer_based_slice/</loc> <lastmod>2017-06-01</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -32,8 +32,8 @@
 <url> <loc>http://paulradzkov.com/2017/local_variables/</loc> <lastmod>2017-06-11</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/2013/lists_and_floats/</loc> <lastmod>2017-06-11</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/css/</loc> <lastmod>2017-06-11</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://paulradzkov.com/tags/chrome/</loc> <lastmod>2017-06-11</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/svg/</loc> <lastmod>2017-06-11</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://paulradzkov.com/tags/chrome/</loc> <lastmod>2017-06-11</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/tools/</loc> <lastmod>2017-06-11</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/photoshop/</loc> <lastmod>2017-06-11</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://paulradzkov.com/tags/progressive-enhancement/</loc> <lastmod>2017-06-11</lastmod> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
