@@ -4,7 +4,7 @@
     <subtitle>Заметки о веб-разработке Павла Радькова.</subtitle>
     <link href="http://paulradzkov.com/atom.xml" rel="self" />
     <link href="http://paulradzkov.com" />
-    <updated>2017-06-08T19:10:30.014Z</updated>
+    <updated>2017-06-10T22:07:19.450Z</updated>
     <id>http://paulradzkov.com</id>
     <author>
         <name>Павел Радьков</name>
@@ -1240,7 +1240,7 @@ Content Cell  | Content Cell
 
 &lt;!-- cut --&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://cssdeck.com/labs/floated-images-and-lists&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot;&gt;демка&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://codepen.io/paulradzkov/full/PmQMby/&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot;&gt;демка&lt;/a&gt;&lt;/p&gt;
 &lt;figure&gt;
     &lt;img src=&quot;/2013/lists_and_floats/floated_images_and_lists_problem.png&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;Если картинка обтекает список, маркеры списка налазят на картинку&quot;/&gt;
     &lt;figcaption&gt;Проблема: если картинка обтекает список, то маркеры списка налазят на картинку&lt;/figcaption&gt;
@@ -1282,6 +1282,8 @@ Content Cell  | Content Cell
 
 &lt;h2&gt;Новое решение&lt;/h2&gt;
 
+&lt;p&gt;&lt;strong&gt;Обновлено 11 июня 2017. Пофикшен баг с наплывом маркеров на картинку при первой загрузке или когда выключен кэш.&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;Для списков, у которых нет классов, перенесём дефолтный отступ 2.5em с левого края на правый, а сами &lt;code class=&quot;hljs-tag nowrap&quot;&gt;li&lt;/code&gt; сдвинем на те же 2.5em вправо при помощи &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;transform&lt;/span&gt;: &lt;span class=&quot;hljs-value&quot;&gt;translateX(2.5em)&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[class]&lt;/span&gt;),
@@ -1292,14 +1294,24 @@ Content Cell  | Content Cell
 &lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[class]&lt;/span&gt;) &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt;,
 &lt;span class=&quot;hljs-tag&quot;&gt;ol&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[class]&lt;/span&gt;) &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
     &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;transform&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-function&quot;&gt;translateX&lt;/span&gt;(&lt;span class=&quot;hljs-number&quot;&gt;2.5em&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;animation&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; fixlists &lt;span class=&quot;hljs-number&quot;&gt;1s&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
 &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;keyframes&lt;/span&gt; fixlists &lt;/span&gt;{
+    0% &lt;span class=&quot;hljs-rules&quot;&gt;{
+        &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;text-indent&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; -&lt;span class=&quot;hljs-number&quot;&gt;0.001em&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+    100% &lt;span class=&quot;hljs-rules&quot;&gt;{
+        &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;text-indent&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Списки, не имеющие класса, мы выбираем, чтобы не повредить меню, слайдеры и прочие конструкции, которые используют &lt;code class=&quot;hljs-tag nowrap&quot;&gt;ul li&lt;/code&gt; в своей структуре. Подробнее про это в посте &lt;a href=&quot;/2014/negation_css_selector/&quot;&gt;про селектор :not()&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;В отличие от старого решения, элементы списка обтекают картинку естественным образом, не оставляя зазоров под картинкой.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://cssdeck.com/labs/floated-images-and-lists&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot;&gt;демка&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Чтобы починить &lt;a href=&quot;https://github.com/paulradzkov/bettertext.css/issues/4&quot; target=&quot;_blank&quot;&gt;баг&lt;/a&gt; в Хроме, Опере и других браузерах на движке Blink, пришлось добавить невидимую анимацию. Она заставляет браузер пересчитать размеры элементов списка и поставить маркеры на место.&lt;/p&gt;
 
 &lt;p&gt;Живой пример:&lt;/p&gt;
 
