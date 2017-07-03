@@ -4,7 +4,7 @@
     <subtitle>Заметки о веб-разработке Павла Радькова.</subtitle>
     <link href="http://paulradzkov.com/atom.xml" rel="self" />
     <link href="http://paulradzkov.com" />
-    <updated>2017-06-19T21:45:48.830Z</updated>
+    <updated>2017-07-03T22:02:53.978Z</updated>
     <id>http://paulradzkov.com</id>
     <author>
         <name>Павел Радьков</name>
@@ -17,6 +17,508 @@
         <id>http://paulradzkov.com/rss.xml</id>
         <content type="html">Эта лента мертва! Если тут еще есть кто-то живой, переподпишитесь на http://paulradzkov.com/rss.xml</content>
     </entry>
+    
+        <entry>
+            <title>Как правильно использовать переменные в препроцессорах LESS и SASS</title>
+            <link href="http://paulradzkov.com/2017/local_variables/"/>
+            <updated>2017-07-04T00:00:00.000Z</updated>
+            <id>http://paulradzkov.com/2017/local_variables/</id>
+            <content type="html">&lt;p&gt;История архитектурной ошибки, её последствия, и три правила, благодаря которым вы сможете держать исходный код в порядке и снизить стоимость внесения изменений.&lt;/p&gt;
+&lt;!-- cut --&gt;
+&lt;p&gt;&lt;a name=&quot;prehistory&quot; id=&quot;prehistory&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;aside class=&quot;article-grid--incut article-grid--incut-row-3 space-out-top-mega-xl&quot;&gt;
+    &lt;ol class=&quot;local-nav&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#prehistory&quot;&gt;Предыстория&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#problems&quot;&gt;Проблемы&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#solutions&quot;&gt;Как решать&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#onLESS&quot;&gt;Реализация на LESS&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#onSASS&quot;&gt;Реализация в SASS&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#conclusion&quot;&gt;Выводы&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#examples&quot;&gt;Реальные примеры&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#bonus&quot;&gt;Бонус-трек&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#disqus_thread&quot; data-disqus-identifier=&quot;local_variables&quot;&gt;Комментарии&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&quot;-&quot;&gt;Предыстория&lt;/h2&gt;
+&lt;p&gt;В 2014 году в компании начали редизайн проекта и в основу вёрстки мы положили свежий на тот момент Bootstrap 3.0.1. Использовали мы его не как отдельную стороннюю библиотеку, а тесно заинтегрировали с нашим собственным кодом: отредактировали переменные под наш дизайн и компилировали кастомизированный Бутстрап из LESS исходников самостоятельно. Проект оброс собственными модулями, которые использовали бутстраповские переменные и добавляли в файл с настройками свои новые переменные.&lt;/p&gt;
+&lt;p&gt;В тот момент я думал, что это правильный подход. Ведь код сразу компилируется с нужными значениями без переопределения стилей. CSS чистый, компактный и без повторений. Компоненты стилизованы с помощью глобальных настроек.&lt;/p&gt;
+&lt;p&gt;Через год с небольшим редизайн закончился, проект вышел в продакшн, и мы взялись за технический долг. При попытке обновить Бутстрап до версии 3.6.x выяснилось, что смержить новый variables.less с нашим файлом настроек будет нелегко. В Бутстрапе переименовали или убрали часть переменных, добавили новые. Собственные компоненты Бутстрапа обновились без проблем, а вот наши компоненты падали при компиляции из-за этих изменений.&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;problems&quot; id=&quot;problems&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Проблемы&lt;/h2&gt;
+&lt;p&gt;Мы проанализировали ситуацию и сформулировали проблемы.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Слишком связанный код.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Сами компоненты лежали в отдельных файлах. Это создавало иллюзию, что компоненты независимые. Но компоненты использовали переменные, объявленные в отдельном файле variables.less, и без этого файла не работали. Нельзя было просто так взять и переместить компонент в другой проект. Приходилось тянуть за собой файл с настройками, который со временем превратился в помойку.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Слишком много глобальных переменных&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;У Бутстрапа было ≈400 переменных. Мы отключили неиспользуемые компоненты Бутстрапа, но переменные оставили в конфиге на случай, если снова понадобятся. Еще мы добавили сотню или полторы своих переменных. Все названия не запомнить, трудно быстро находить нужные. Даже с правилами именования и комментариями ориентироваться в конфиге из 500+ переменных тяжело.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Имена глобальных переменных вышли из-под контроля&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Одна и та же переменная могла использоваться в разных файлах и отслеживать все её появления в коде было долго и трудно. Когда меняли значение переменной в одном компоненте, был риск поломать другие компоненты. Разработчики хардкодили, создавали новые переменные с похожими названиями и значениями и уже не следили за логикой именования.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a name=&quot;solutions&quot; id=&quot;solutions&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Как решать&lt;/h2&gt;
+&lt;p&gt;Я придумал три правила, которые помогли побороть наши проблемы:&lt;/p&gt;
+&lt;ol class=&quot;ol-important space-in-h-zero-xs space-in-h-base-sm&quot;&gt;
+    &lt;li&gt;
+        &lt;p class=&quot;text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm &quot; data-number=&quot;1&quot;&gt;&lt;strong&gt;Переменная используется только в том файле, в котором объявлена.&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Правильно создавать все нужные переменные в файле самого компонента и не использовать переменные из других файлов. Тогда компоненты станут независимыми, их можно будет подключать и перемещать между проектами без поломок при компиляции. У каждого компонента собственный набор переменных, которые запрещено использовать в других компонентах и вызывать в других файлах. Когда переменные не выходят за пределы одного файла, легко увидеть, как они используются и на что влияют.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p class=&quot;text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm &quot; data-number=&quot;2&quot;&gt;&lt;strong&gt;Все переменные внутри компонента — локальные.&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Раз у каждого компонента свои переменные, пусть они будут локальными. Это избавит от проблем с именованием: в компонентах можно использовать переменные с одинаковыми именами и разными значениями — они не будут конфликтовать друг с другом.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p class=&quot;text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm &quot; data-number=&quot;3&quot;&gt;&lt;strong&gt;Глобальные переменные используются только внутри файла настроек.&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Благодаря первым двум правилам мы сильно сократим количество глобальных переменных, но они всё равно нужны. Глобальные переменные объявляются в главном файле проекта или в файле типа config.less. К ним тоже применяется правило №1 — переменные не используются за пределами своего файла. Это значит, что нельзя использовать глобальные переменные внутри файлов компонентов. Но существует способ не нарушая первого правила прокинуть значение глобальной переменной внутрь компонента. Как это сделать мы рассмотрим на примерах далее.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Третье правило избыточное. Соблюдая первые два, вы автоматически соблюдаете третье. Но в реальной жизни есть очень большой соблазн пойти по простейшему пути, не создавать локальную переменную, а по-быстрому использовать глобальную. Третье правило напоминает, что так делать вредно, что это создаёт ненужные зависимости и приводит к связыванию кода.&lt;/p&gt;
+&lt;p&gt;Применим правила на практике.&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;onLESS&quot; id=&quot;onLESS&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-less&quot;&gt;Реализация на LESS&lt;/h2&gt;
+&lt;p&gt;Представим простейший компонент для стилизации страницы. Согласно правилу №1 создадим переменные внутри файла компонента.&lt;/p&gt;
+&lt;aside class=&quot;article-grid--aside txt-aside&quot;&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;Правило 1&lt;/dt&gt;
+        &lt;dd&gt;Переменная используется только в том файле, в котором объявлена.&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/aside&gt;
+
+&lt;figure class=&quot;space-out-h-kilo-xl&quot;&gt;
+    &lt;div class=&quot;row row-middle-xs&quot;&gt;
+        &lt;section class=&quot;col-xs-12 col-md space-minus-right-giga-md&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;page.css&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;/* page.css */&lt;/span&gt;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
+    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
+    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
+&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption&gt;&lt;strong&gt;Было.&lt;/strong&gt; Пример кода компонента.&lt;/figcaption&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md-1&quot;&gt;
+            &lt;p&gt;↓&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.1&lt;/span&gt;
+
+&lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
+&lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
+&lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Переменные объявлены в глобальной области видимости и у них слишком общие имена. Это плохо.&lt;/figcaption&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;В примере выше мы объявили переменные в глобальной области видимости и из-за этого они подвержены конфликту имён. Если в соседнем компоненте появится переменная с таким же именем, то компоненты поломают друг друга.&lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;Локальные переменные&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Область видимости&lt;/strong&gt; — это «пространство» между фигурными скобками селектора: { и } . Объявленные внутри фигурных скобок переменные работают только внутри этих скобок и внутри дочерних скобок, но их нельзя использовать снаружи.&lt;/p&gt;
+&lt;p&gt;Если скобок вокруг нет, то это самый верхний уровень — &lt;strong&gt;глобальная область видимости&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;У переменной из дочерней области видимости приоритет выше, чем у одноименной переменной из родительской области видимости. У глобальных переменных самый низкий приоритет при совпадении имён.&lt;/p&gt;
+&lt;p&gt;По правилу №2 сделаем переменные локальными — переместим их внутрь селектора.&lt;/p&gt;
+&lt;aside class=&quot;article-grid--aside txt-aside&quot;&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;Правило 2&lt;/dt&gt;
+        &lt;dd&gt;Все переменные внутри компонента — локальные.&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/aside&gt;
+
+&lt;figure class=&quot;space-out-h-kilo-xl&quot;&gt;
+    &lt;div class=&quot;row row-middle-xs&quot;&gt;
+        &lt;section class=&quot;col-xs-12 col-md space-minus-right-giga-md space-auto-top-md&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.1&lt;/span&gt;
+
+&lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
+&lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
+&lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption&gt;&lt;strong&gt;Было.&lt;/strong&gt; Глобальные переменные.&lt;/figcaption&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md-1&quot;&gt;
+            &lt;p&gt;↓&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.2&lt;/span&gt;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Переменные объявлены внутри селектора и не создают конфликта имён, потому что теперь они локальные.&lt;/figcaption&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Теперь конфликта имен с другими компонентами не будет. Мы решили первую и вторую проблемы: получился изолированный сниппет без внешних зависимостей. Но я не знаю способа переопределить локальные переменные компонента в таком виде извне. Поэтому, чтобы кастомизировать компоненты глобальными переменными проекта, придумал другую форму записи.&lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;Миксины как функции&lt;/h3&gt;
+&lt;p&gt;В LESS можно использовать миксины как функции. Если внутри миксина создать переменные, а потом вызвать миксин внутри селектора, то переменные будут доступны в области видимости этого селектора.&lt;/p&gt;
+&lt;aside class=&quot;article-grid--aside txt-aside&quot;&gt;
+    &lt;p&gt;Читайте про &lt;a href=&quot;http://lesscss.org/features/#mixins-as-functions-feature&quot; target='_blank'&gt;миксины как функции&lt;/a&gt; в документации LESS.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;Вынесем объявление переменных внутрь миксина &lt;code&gt;.page-settings()&lt;/code&gt;, а потом вызовем его внутри селектора &lt;code&gt;.page&lt;/code&gt;:&lt;/p&gt;
+&lt;figure class=&quot;space-out-h-kilo-xl&quot;&gt;
+    &lt;div class=&quot;row row-middle-xs&quot;&gt;
+        &lt;section class=&quot;col-xs-12 col-md space-minus-right-giga-md&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.2&lt;/span&gt;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption&gt;&lt;strong&gt;Было.&lt;/strong&gt; Локальные переменные внутри селектора.&lt;/figcaption&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md-1&quot;&gt;
+            &lt;p&gt;↓&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.3&lt;/span&gt;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+    &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+}
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;();
+
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Миксин доставляет переменные в зону видимости селектора.&lt;/figcaption&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Переменные локализованы внутри глобального миксина. Когда мы вызвали миксин в коде, переменные стали доступны в области видимости селектора &lt;code&gt;.page&lt;/code&gt;, но по прежнему остались локальными.&lt;/p&gt;
+&lt;p&gt;Такой миксин не генерирует CSS код, его единственная задача — доставить переменные в нужную область видимости. Например, если вызвать этот миксин в глобальной области видимости, то и переменные станут глобальными. Но это то же самое, что сразу объявить переменные глобально.&lt;/p&gt;
+&lt;p&gt;Вместо нескольких глобальных переменных с распространёнными именами мы создали один глобальный миксин. В проекте не должно быть двух одноименных компонентов, значит имя миксина будет уникальным.&lt;/p&gt;
+&lt;h3 id=&quot;-&quot;&gt;Слияние миксинов&lt;/h3&gt;
+&lt;p&gt;В LESS существует «ленивое вычисление» переменных: не обязательно объявлять LESS-переменную перед её использованием, можно объявить после. В момент компиляции парсер LESS найдет определение переменной и отрендерит значение этой переменной в CSS.&lt;/p&gt;
+&lt;aside class=&quot;article-grid--aside article-grid--aside-row-2 txt-aside&quot;&gt;
+    &lt;p&gt;Смотрите &lt;a href=&quot;http://lesscss.org/features/#variables-feature-lazy-evaluation&quot; target='_blank'&gt;примеры «Lazy Evaluation»&lt;/a&gt; и &lt;a href=&quot;http://lesscss.org/features/#variables-feature-default-variables&quot; target='_blank'&gt;переопределения дефолтных переменных&lt;/a&gt; в документации LESS.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;Если переопределить переменную, то во всех местах её использования в силу вступит значение из самого последнего определения, так как оно приоритетнее по порядку следования в исходном коде. В этом смысле переменные ведут себя как константы.&lt;/p&gt;
+&lt;p&gt;Итак, переменные можно объявлять и до, и после использования, а миксины — это разновидность переменных. Если создать два миксина с одним и тем же именем и разным содержанием, то они объединяют свои внутренности. А если внутри миксинов есть переменные с одинаковыми именами, то происходит переопределение. Приоритет выше у последнего миксина.&lt;/p&gt;
+&lt;p&gt;Рассмотрим три файла:&lt;/p&gt;
+&lt;figure class=&quot;space-out-h-kilo-xl&quot;&gt;
+    &lt;div class=&quot;row row-bottom-xs row-center-xs row-middle-lg&quot;&gt;
+        &lt;section class=&quot;col-xs-12 col-md-6 col-lg col-xl space-minus-right-kilo-lg&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;projectname.less&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// projectname.less&lt;/span&gt;
+
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'normalize.css'&lt;/span&gt;;
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'typography.less'&lt;/span&gt;;
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'page.less'&lt;/span&gt;;
+&lt;span class=&quot;hljs-comment&quot;&gt;// и много других компонентов...&lt;/span&gt;
+
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'config.less'&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Главный файл.&lt;/strong&gt;&lt;br&gt; Импортируем компоненты и конфиг. Конфиг — последним.&lt;/figcaption&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md-6 col-lg-shrink col-xl space-minus-right-kilo-lg&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.3&lt;/span&gt;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+    &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+}
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;();
+
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Компонент.&lt;/strong&gt;&lt;br&gt; Все переменные локальные и хранятся в миксине.&lt;/figcaption&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md-shrink col-lg-shrink col-xl&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;config.less&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// config.less&lt;/span&gt;
+
+&lt;span class=&quot;hljs-variable&quot;&gt;@glob-text-color:&lt;/span&gt; white;
+&lt;span class=&quot;hljs-variable&quot;&gt;@glob-bg-color:&lt;/span&gt; darkblue;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;// кастомизация компонентов&lt;/span&gt;
+&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@glob-text-color&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@glob-bg-color&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Конфиг проекта.&lt;/strong&gt;&lt;br&gt; Переопределяем параметры компонента с помощью миксина настроек.&lt;/figcaption&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Всё самое интересное происходит в конфиге. Мы создали глобальные переменные и использовали их в этом же файле для кастомизации компонента.&lt;/p&gt;
+&lt;p&gt;Миксин &lt;code&gt;.page-settings()&lt;/code&gt; объявлен два раза. Первый раз внутри файла &lt;code&gt;page.less&lt;/code&gt; с дефолтными значениями, второй раз в файле &lt;code&gt;config.less&lt;/code&gt; с новыми значениями. На этапе компиляции миксины склеиваются, новые переменные переопределяют дефолтные и CSS рендерится с новыми значениями из файла конфигурации.&lt;/p&gt;
+&lt;aside class=&quot;article-grid--aside txt-aside&quot;&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;Правило 3&lt;/dt&gt;
+        &lt;dd&gt;Глобальные переменные используются только внутри файла настроек.&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;Обратите внимание, что &lt;code&gt;config.less&lt;/code&gt; инклюдится последним в списке. Это нужно, чтобы объявление миксина в конфиге имело больший приоритет, чем исходное объявление в файле самого компонента. Настройки не применятся, если поставить &lt;code&gt;config.less&lt;/code&gt; до компонента, потому что на миксины тоже действуют правило «последнее определение — самое сильное».&lt;/p&gt;
+&lt;p&gt;Таким способом мы прокинули значения глобальных переменных внутрь файла компонента, не меняя исходный код компонента. При этом были соблюдены все три правила:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;переменные использовались только в своём файле, даже глобальные переменные не вызывались за пределами файла &lt;code&gt;config.less&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;переменные компонента остались локальными и не засорили глобальную область видимости;&lt;/li&gt;
+&lt;li&gt;глобальные переменные не использовались внутри компонента напрямую, но значения глобальных переменных хитрым способом попали внутрь компонента.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;-&quot;&gt;Ограничения&lt;/h3&gt;
+&lt;p&gt;Нельзя, чтобы имя глобальной переменной совпадало с именем локальной — получим рекурсию и CSS не скомпилируется.
+Чтобы не ошибиться, лучше все глобальные переменные записывать с префиксом.&lt;/p&gt;
+&lt;figure class=&quot;space-out-h-kilo-xl&quot;&gt;
+    &lt;div class=&quot;row row-middle-xs&quot;&gt;
+        &lt;section class=&quot;col-xs-12 col-md space-minus-right-mega-md&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;config.less&quot; style=&quot;background-color: #fff4f4;&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// так нельзя&lt;/span&gt;
+
+&lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; white;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+    &lt;span class=&quot;hljs-comment&quot;&gt;// тут рекурсия и ошибка компиляции&lt;/span&gt;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption&gt;&lt;strong&gt;Неправильно.&lt;/strong&gt; Рекурсивное определение переменной вызывает ошибку компиляции.&lt;/figcaption&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md-1&quot;&gt;
+            &lt;p&gt;↓&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;config.less&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// правильно — с префиксом&lt;/span&gt;
+
+&lt;span class=&quot;hljs-variable&quot;&gt;@glob-txt-color:&lt;/span&gt; white;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+    &lt;span class=&quot;hljs-comment&quot;&gt;// всё в порядке&lt;/span&gt;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@glob-txt-color&lt;/span&gt;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption&gt;&lt;strong&gt;Правильно.&lt;/strong&gt; У глобальных переменных свой префикс &lt;code&gt;glob-&lt;/code&gt;, что исключает совпадение имён.&lt;/figcaption&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a name=&quot;onSASS&quot; id=&quot;onSASS&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-sass&quot;&gt;Реализация в SASS&lt;/h2&gt;
+&lt;p&gt;SASS отличается от LESS и больше похож на скриптовый язык программирования: нет «ленивых вычислений» и переменная должна быть обязательно объявлена до её использования в коде. Если определить переменную и использовать её в коде, а потом переопределить и использовать ещё раз, то в первый вызов получим исходное значение в CSS, а во второй вызов новое значение. Трюк с миксинами, как в LESS, не пройдет. Но есть другие пути решения.&lt;/p&gt;
+&lt;p&gt;Наборы переменных для настройки компонента удобно хранить в &lt;dfn&gt;map-объектах&lt;/dfn&gt;. Это массив из пар «ключ: значение». Метод &lt;dfn&gt;map-get&lt;/dfn&gt; извлекает конкретное значение из массива, метод &lt;dfn&gt;map-merge&lt;/dfn&gt; объединяет два массива в один, дополняя или переписывая исходный массив.&lt;/p&gt;
+&lt;aside class=&quot;article-grid--aside txt-aside&quot;&gt;
+ &lt;p&gt;Читайте &lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps&quot; target=&quot;_blank&quot;&gt;про Maps&lt;/a&gt; в документации SASS.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;Простейший компонент без возможности переопределения извне будет выглядеть так:&lt;/p&gt;
+&lt;figure class=&quot;space-auto-h-xs&quot; style=&quot;max-width: 50em;&quot;&gt;
+    &lt;div class=&quot;row row-middle-xs&quot;&gt;
+        &lt;section class=&quot;col-xs-12&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;page.scss&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs scss&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.scss v0.1&lt;/span&gt;
+
+&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: (
+    padding: &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;,
+    bg-color: &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;,
+    text-color: &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;,
+);&lt;/span&gt;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:          &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, padding);&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, bg-color);&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:            &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, text-color);&lt;/span&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption&gt;Настройки хранятся в &lt;strong&gt;map&lt;/strong&gt;-объекте и вызываются в коде с помощью &lt;strong&gt;map-get&lt;/strong&gt;&lt;/figcaption&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Чтобы настраивать компонент из другого файла, нужно предусмотреть возможность смержить внешний конфиг с исходными настройками. Рассмотрим три файла:&lt;/p&gt;
+&lt;figure class=&quot;space-out-h-kilo-xl&quot;&gt;
+    &lt;div class=&quot;row row-bottom-xs row-center-xs&quot;&gt;
+        &lt;section class=&quot;col-xs-12 col-md-6 space-minus-right-kilo-md&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;projectname.scss&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs scss&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// projectname.scss&lt;/span&gt;
+
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'config'&lt;/span&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'normalize'&lt;/span&gt;;&lt;/span&gt;
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'typography'&lt;/span&gt;;&lt;/span&gt;
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'page'&lt;/span&gt;;&lt;/span&gt;
+&lt;span class=&quot;hljs-comment&quot;&gt;// и много других компонентов...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Главный файл.&lt;/strong&gt;&lt;br&gt; Сначала импортируем конфиг, потом компоненты.&lt;/figcaption&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md col-lg-6&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;config.scss&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs scss&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// config.scss&lt;/span&gt;
+
+&lt;span class=&quot;hljs-variable&quot;&gt;$glob-text-color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: white;&lt;/span&gt;
+&lt;span class=&quot;hljs-variable&quot;&gt;$glob-bg-color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: darkblue;&lt;/span&gt;
+
+&lt;span class=&quot;hljs-comment&quot;&gt;// кастомизируем&lt;/span&gt;
+&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: (
+    bg-color: &lt;span class=&quot;hljs-variable&quot;&gt;$glob-bg-color&lt;/span&gt;,
+    text-color: &lt;span class=&quot;hljs-variable&quot;&gt;$glob-text-color&lt;/span&gt;,
+);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Настройки.&lt;/strong&gt;&lt;br&gt; Создаём глобальные переменные и переопределяем параметры компонента.&lt;/figcaption&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;col-xs-12 col-md-shrink&quot;&gt;
+            &lt;div class=&quot;browserframe&quot; data-title=&quot;page.scss&quot;&gt;
+                &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs scss&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.scss v0.2&lt;/span&gt;
+
+&lt;span class=&quot;hljs-variable&quot;&gt;$page-override&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: ( );&lt;/span&gt; &lt;span class=&quot;hljs-comment&quot;&gt;// [1]&lt;/span&gt;
+
+&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;hljs-preprocessor&quot;&gt; variable-exists&lt;/span&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;page&lt;/span&gt;-settings) {&lt;/span&gt;
+    &lt;span class=&quot;hljs-variable&quot;&gt;$page-override&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;;&lt;/span&gt; &lt;span class=&quot;hljs-comment&quot;&gt;// [2]&lt;/span&gt;
+}
+
+&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:  &lt;span class=&quot;hljs-function&quot;&gt;map-merge&lt;/span&gt;((
+    padding: &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;,
+    bg-color: &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;,
+    text-color: &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;,
+), &lt;span class=&quot;hljs-variable&quot;&gt;$page-override&lt;/span&gt;);&lt;/span&gt; &lt;span class=&quot;hljs-comment&quot;&gt;// [3]&lt;/span&gt;
+
+&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:          &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, padding);&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, bg-color);&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:            &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, text-color);&lt;/span&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            &lt;/div&gt;
+            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Компонент.&lt;/strong&gt;&lt;br&gt; Добавили проверку: а не существуют ли уже настройки, чтобы переопределить компонент?&lt;/figcaption&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;code&gt;[1]&lt;/code&gt; — В компоненте мы сначала объявили переменную с пустым массивом  &lt;code&gt;$page-override&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[2]&lt;/code&gt; — Потом проверили, а не существует ли уже переменная &lt;code&gt;$page-settings&lt;/code&gt;. И если она уже была объявлена в конфиге, то присвоили её значение переменной &lt;code&gt;$page-override&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[3]&lt;/code&gt; — И потом смержили исходный конфиг и &lt;code&gt;$page-override&lt;/code&gt; в переменную &lt;code&gt;$page-settings&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Если массив &lt;code&gt;$page-settings&lt;/code&gt; был объявлен ранее в глобальном конфиге, то &lt;code&gt;$page-override&lt;/code&gt; перепишет настройки при слиянии. Иначе в переменной &lt;code&gt;$page-override&lt;/code&gt; будет пустой массив, и в настройках останутся исходные значения.&lt;/p&gt;
+&lt;aside class=&quot;article-grid--aside article-grid--aside-row-2 txt-aside&quot;&gt;
+    &lt;p&gt;Я не знаю всех тонкостей SASS, может есть способ реализовать эту методику более красивым способом.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;В результате, мы получаем всё те же преимущества, только в отличие от LESS нам приходится переопределять все настройки заранее, перед их использованием в коде.&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;conclusion&quot; id=&quot;conclusion&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Выводы&lt;/h2&gt;
+&lt;p&gt;Не важно на чем вы пишете — на LESS, SASS, CSS c кастомными свойствами или Javascript — глобальных переменных должно быть как можно меньше.&lt;/p&gt;
+&lt;p&gt;С CSS препроцессорами используйте три правила, которые помогут избежать хаоса:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Переменная используется только в том файле, в котором объявлена.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Все переменные внутри компонента — локальные.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Глобальные переменные используются только внутри файла настроек.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Чтобы прокинуть глобальные настройки внутрь компонента, собирайте переменные в миксин (LESS) или map-объект (SASS).&lt;/p&gt;
+&lt;p&gt;Переопределяйте настройки в правильном месте: в LESS — после инклюда, в SASS — перед инклюдом.&lt;/p&gt;
+&lt;figure class=&quot;article-grid--fullscreen&quot;&gt;
+    &lt;img src=&quot;/2017/local_variables/local_variables_less@1x.png&quot; width=&quot;1440&quot; height=&quot;720&quot;
+        srcset=&quot;/2017/local_variables/local_variables_less@05x.png 0.5x,
+        /2017/local_variables/local_variables_less@1x.png 1x,
+        /2017/local_variables/local_variables_less@2x.png 2x&quot;
+        alt=&quot;Правила управления переменными в препроцессорах и методика переопределения настроек в одной картинке&quot;&gt;
+    &lt;figcaption&gt;
+        &lt;p class=&quot;text-center space-out-bottom-mili-xs&quot;&gt;Правила управления переменными в препроцессорах и методика переопределения настроек&lt;/p&gt;
+        &lt;div class=&quot;likely likely-big&quot; data-title=&quot;Правила управления переменными в препроцессорах и методика переопределения настроек&quot; data-url=&quot;http://paulradzkov.com/2017/local_variables/local_variables_less@1x.png&quot;&gt;
+            &lt;div class=&quot;twitter&quot; data-via=&quot;paul_radzkov&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Tweet on Twitter&quot;&gt;Твитнуть картинку&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;a name=&quot;examples&quot; id=&quot;examples&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Реальные примеры&lt;/h2&gt;
+&lt;p&gt;Я сформулировал эту методику в декабре 2015 года для LESS и с тех пор применяю её на рабочих и личных проектах.&lt;/p&gt;
+&lt;p&gt;За полтора года появилось несколько публичных npm-пакетов. Посмотрите исходный код для лучшего понимания, как работает эта методика в реальных ситуациях.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/paulradzkov/bettertext.css/blob/master/bettertext.less&quot;&gt;bettertext.css&lt;/a&gt; — типографика для сайтов. Настраивается при помощи 11 переменных, остальные 40 вычисляются по формулам. Вычисления идут отдельными миксином, чтобы была возможность переопределять формулы. У компонента нет ни одного класса, все стили применяются к тегам. Чтобы создать локальную область видимости, я поместил все селекторы по тегам в переменную — в LESS это называется «detached ruleset».&lt;/p&gt;
+&lt;aside class=&quot;article-grid--aside txt-aside space-auto-top-xl space-in-bottom-nano-xl&quot;&gt;
+    &lt;p&gt;Читайте про &lt;a href=&quot;http://lesscss.org/features/#detached-rulesets-feature&quot; target='_blank'&gt;detached ruleset&lt;/a&gt; в документации LESS.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/paulradzkov/links.less/blob/master/links.less&quot;&gt;links.less&lt;/a&gt; — стили для ссылок с фокусом, анимацией и бледным подчеркиванием. У компонента кроме миксина с настройками есть дополнительные глобальные миксины для раскрашивания ссылок внутри ваших собственных селекторов.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/paulradzkov/flxgrid.css/blob/master/flxgrid.less&quot;&gt;flxgrid.css&lt;/a&gt; — генератор HTML-сеток на флексах. Настраивается при помощи 5 переменных, генерирует классы для адаптивной сетки с любыми брейкпоинтами и любым количеством колонок. В компоненте вычисления и служебные миксины спрятаны внутрь локальной области видимости. Глобально виден только миксин с настройками.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/paulradzkov/space.less/blob/master/space.less&quot;&gt;space.less&lt;/a&gt; — инструмент для управления отступами в вёрстке. Создан, чтобы работать в паре с сеткой flxgrid.css. Адаптивность у них настраивается одинаково, но space.less использует собственный миксин настройки и собственные локальные переменные — в коде space.less никак не связан с flxgrid.css.&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;bonus&quot; id=&quot;bonus&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;«Бонус-трек»&lt;/h2&gt;
+&lt;p&gt;Если бы мне сейчас понадобилось использовать на новом проекте Bootstrap 3.x.x — тот, который на LESS, — я бы все импортируемые модули Бутстрапа завернул в переменную (в «detached ruleset»), а все настройки из файла &lt;code&gt;variables.less&lt;/code&gt; в миксин &lt;code&gt;bootsrtap-settings&lt;/code&gt;. Глобальные переменные Бутстрапа перестали бы быть глобальными и их невозможно было бы использовать внутри собственного кода. Настройки Бутстрапа я бы кастомизировал по мере необходимости, вызывая миксин &lt;code&gt;bootsrtap-settings&lt;/code&gt; в конфиге проекта, так же как в примерах выше. Тогда при обновлениях Бутстрапа пришлось бы поправить только миксин с кастомизированными настройкам.&lt;/p&gt;
+</content>
+        </entry>
     
         <entry>
             <title>Как верстальщику получить код ревью</title>

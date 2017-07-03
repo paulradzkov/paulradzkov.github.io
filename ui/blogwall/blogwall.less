@@ -3,7 +3,7 @@
     @blogwall-background-color: #FFF;
     @blogwall-star-color: #FFB300;
     @blogwall-border-width: 1px;
-    @blogwall-cell-height: 200px;
+    @blogwall-cell-height: 210px;
     @blogwall-cell-focus-color: #2b9aff;
     @blogwall-cell-focus-bxshadow: inset 0 0 0 4px fade(@blogwall-cell-focus-color, 20%);
 
@@ -56,6 +56,7 @@
     }
 
     &-gridcell {
+        box-sizing: border-box;
         border-style: inherit;
         border-width: @blogwall-border-width;
         border-top-color: transparent;
@@ -73,7 +74,7 @@
             position: relative;
             z-index: 1;
             border-color: @blogwall-cell-focus-color;
-            box-shadow: @blogwall-cell-focus-bxshadow;
+            //box-shadow: @blogwall-cell-focus-bxshadow;
             transition: box-shadow 0s, border-color 0s, z-index 0s;
         }
 
@@ -102,11 +103,12 @@
         &-promo {
             @media (min-width: @blogwall-screen-breakpoint-1) {
                 width: ~"calc(100% + @{blogwall-border-width})";
-                height: (@blogwall-cell-height * 2 + @blogwall-border-width);
+                height: auto;
             }
 
             @media (min-width: @blogwall-screen-breakpoint-2) {
                 width: ~"calc(66.666% + @{blogwall-border-width})";
+                height: (@blogwall-cell-height * 3 + @blogwall-border-width);
             }
 
             @media (min-width: @blogwall-screen-breakpoint-3) {
@@ -130,6 +132,11 @@
     &-fauxlink {
         position: relative;
 
+        &:hover &--overlay {
+            border-color: fade(@blogwall-cell-focus-color, 20%);
+            box-shadow: @blogwall-cell-focus-bxshadow;
+        }
+
         &--overlay {
             position: absolute;
             left: 0;
@@ -149,6 +156,7 @@
             }
         }
 
+        [role="link"],
         a:not(.blogwall-fauxlink--overlay) {
             position: relative;
             z-index: 2;
@@ -206,7 +214,12 @@
             &-promo {
                 @media (min-width: @blogwall-screen-breakpoint-1) {
                     grid-column: span 2;
-                    grid-row:    span 2;
+                    grid-row:    span 1;
+                }
+
+                @media (min-width: @blogwall-screen-breakpoint-2) {
+                    grid-column: span 2;
+                    grid-row:    span 3;
                 }
             }
         }
