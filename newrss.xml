@@ -4,10 +4,10 @@
         <description><![CDATA[Заметки о веб-разработке Павла Радькова.]]></description>
         <link>http://paulradzkov.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 03 Jul 2017 22:03:25 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jul 2017 22:29:11 GMT</lastBuildDate>
         <atom:link href="http://paulradzkov.com/newrss.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Павел Радьков]]></author>
-        <pubDate>Mon, 03 Jul 2017 22:02:53 GMT</pubDate>
+        <pubDate>Mon, 03 Jul 2017 22:28:39 GMT</pubDate>
         <item>
             <title><![CDATA[Как правильно использовать переменные в препроцессорах LESS и SASS]]></title>
             <description><![CDATA[<p>История архитектурной ошибки, её последствия, и три правила, благодаря которым вы сможете держать исходный код в порядке и снизить стоимость внесения изменений.</p>
@@ -481,10 +481,7 @@
         /2017/local_variables/local_variables_less@2x.png 2x"
         alt="Правила управления переменными в препроцессорах и методика переопределения настроек в одной картинке">
     <figcaption>
-        <p class="text-center space-out-bottom-mili-xs">Правила управления переменными в препроцессорах и методика переопределения настроек</p>
-        <div class="likely likely-big" data-title="Правила управления переменными в препроцессорах и методика переопределения настроек" data-url="http://paulradzkov.com/2017/local_variables/local_variables_less@1x.png">
-            <div class="twitter" data-via="paul_radzkov" tabindex="0" role="link" aria-label="Tweet on Twitter">Твитнуть картинку</div>
-        </div>
+        <p>Правила управления переменными в препроцессорах и методика переопределения настроек</p>
     </figcaption>
 </figure>
 
@@ -508,7 +505,7 @@
             <link>http://paulradzkov.com/2017/local_variables/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2017/local_variables/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Mon, 03 Jul 2017 19:00:51 GMT</pubDate>
+            <pubDate>Mon, 03 Jul 2017 22:27:51 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Как верстальщику получить код ревью]]></title>

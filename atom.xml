@@ -4,7 +4,7 @@
     <subtitle>Заметки о веб-разработке Павла Радькова.</subtitle>
     <link href="http://paulradzkov.com/atom.xml" rel="self" />
     <link href="http://paulradzkov.com" />
-    <updated>2017-07-03T22:02:53.978Z</updated>
+    <updated>2017-07-03T22:28:39.739Z</updated>
     <id>http://paulradzkov.com</id>
     <author>
         <name>Павел Радьков</name>
@@ -494,10 +494,7 @@
         /2017/local_variables/local_variables_less@2x.png 2x&quot;
         alt=&quot;Правила управления переменными в препроцессорах и методика переопределения настроек в одной картинке&quot;&gt;
     &lt;figcaption&gt;
-        &lt;p class=&quot;text-center space-out-bottom-mili-xs&quot;&gt;Правила управления переменными в препроцессорах и методика переопределения настроек&lt;/p&gt;
-        &lt;div class=&quot;likely likely-big&quot; data-title=&quot;Правила управления переменными в препроцессорах и методика переопределения настроек&quot; data-url=&quot;http://paulradzkov.com/2017/local_variables/local_variables_less@1x.png&quot;&gt;
-            &lt;div class=&quot;twitter&quot; data-via=&quot;paul_radzkov&quot; tabindex=&quot;0&quot; role=&quot;link&quot; aria-label=&quot;Tweet on Twitter&quot;&gt;Твитнуть картинку&lt;/div&gt;
-        &lt;/div&gt;
+        &lt;p&gt;Правила управления переменными в препроцессорах и методика переопределения настроек&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
