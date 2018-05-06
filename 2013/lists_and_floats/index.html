@@ -145,17 +145,17 @@
 
 <p>Эту проблему можно решить, но придется переписать все отступы для тегов <code class="hljs-tag">ul</code>, <code class="hljs-tag">ol</code> и <code class="hljs-tag">li</code>. Так как <code class="hljs-tag nobr">ul > li</code> могут использоваться не только для текста с маркерами, но и для менюшек, слайдеров, списков новостей и других семантических конструкций, задавать стили напрямую тегам <code class="hljs-tag">ol</code>, <code class="hljs-tag">ul</code> и <code class="hljs-tag">li</code> опасно. Иначе в дальнейшем придется слишком часто эти стили обнулять. Поэтому создадим отдельный класс <code class="hljs-class">.textlist</code>, чтобы ставить его на наши <code class="hljs-tag">ul</code> и <code class="hljs-tag">ol</code>.</p>
 
-<pre class="highlight"><code class="hljs css"><span class="hljs-class">.textlist</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-<span class="hljs-rule">}</span></span>
-<span class="hljs-class">.textlist</span> &gt; <span class="hljs-tag">li</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value"> <span class="hljs-number">2em</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">list-style-position</span>:<span class="hljs-value"> inside</span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">text-indent</span>:<span class="hljs-value">-<span class="hljs-number">1em</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">overflow</span>:<span class="hljs-value"> hidden</span></span>;
-<span class="hljs-rule">}</span></span>
+<pre class="highlight"><code class="hljs css"><span class="hljs-selector-class">.textlist</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.textlist</span> &gt; <span class="hljs-selector-tag">li</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">2em</span>;
+    <span class="hljs-attribute">list-style-position</span>: inside;
+    <span class="hljs-attribute">text-indent</span>:-<span class="hljs-number">1em</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
+}
 </code></pre>
 
 <p><code class="hljs-rule"><span class="hljs-attribute">overflow</span>: <span class="hljs-value">hidden</span></code>  тут нам нужен для того, чтобы запретить тексту обтекание картинки по строкам внутри <code class="hljs-tag">li</code>. Теперь каждая <code class="hljs-tag">li</code> обтекает картинку как прямоугольный блок.</p>
@@ -179,24 +179,24 @@
 
 <p>Для списков, у которых нет классов, перенесём дефолтный отступ 2.5em с левого края на правый, а сами <code class="hljs-tag nowrap">li</code> сдвинем на те же 2.5em вправо при помощи <code class="hljs-rule"><span class="hljs-attribute">transform</span>: <span class="hljs-value">translateX(2.5em)</span></code>.</p>
 
-<pre class="highlight"><code class="hljs css"><span class="hljs-tag">ul</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[class]</span>),
-<span class="hljs-tag">ol</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[class]</span>) <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">padding-right</span>:<span class="hljs-value"> <span class="hljs-number">2.5em</span></span></span>;
-<span class="hljs-rule">}</span></span>
-<span class="hljs-tag">ul</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[class]</span>) <span class="hljs-tag">li</span>,
-<span class="hljs-tag">ol</span><span class="hljs-pseudo">:not(</span><span class="hljs-attr_selector">[class]</span>) <span class="hljs-tag">li</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">transform</span>:<span class="hljs-value"> <span class="hljs-function">translateX</span>(<span class="hljs-number">2.5em</span>)</span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">animation</span>:<span class="hljs-value"> fixlists <span class="hljs-number">1s</span></span></span>;
-<span class="hljs-rule">}</span></span>
+<pre class="highlight"><code class="hljs css"><span class="hljs-selector-tag">ul</span><span class="hljs-selector-pseudo">:not(</span><span class="hljs-selector-attr">[class]</span>),
+<span class="hljs-selector-tag">ol</span><span class="hljs-selector-pseudo">:not(</span><span class="hljs-selector-attr">[class]</span>) {
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">2.5em</span>;
+}
+<span class="hljs-selector-tag">ul</span><span class="hljs-selector-pseudo">:not(</span><span class="hljs-selector-attr">[class]</span>) <span class="hljs-selector-tag">li</span>,
+<span class="hljs-selector-tag">ol</span><span class="hljs-selector-pseudo">:not(</span><span class="hljs-selector-attr">[class]</span>) <span class="hljs-selector-tag">li</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(2.5em);
+    <span class="hljs-attribute">animation</span>: fixlists <span class="hljs-number">1s</span>;
+}
 
-<span class="hljs-at_rule">@<span class="hljs-keyword">keyframes</span> fixlists </span>{
-    0% <span class="hljs-rules">{
-        <span class="hljs-rule"><span class="hljs-attribute">text-indent</span>:<span class="hljs-value"> -<span class="hljs-number">0.001em</span></span></span>;
-    <span class="hljs-rule">}</span></span>
-    100% <span class="hljs-rules">{
-        <span class="hljs-rule"><span class="hljs-attribute">text-indent</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
-    <span class="hljs-rule">}</span></span>
+@<span class="hljs-keyword">keyframes</span> fixlists {
+    0% {
+        <span class="hljs-attribute">text-indent</span>: -<span class="hljs-number">0.001em</span>;
+    }
+    100% {
+        <span class="hljs-attribute">text-indent</span>: <span class="hljs-number">0</span>;
+    }
 }
 </code></pre>
 

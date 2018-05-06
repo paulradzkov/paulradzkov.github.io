@@ -4,10 +4,10 @@
         <description><![CDATA[Заметки о веб-разработке Павла Радькова.]]></description>
         <link>http://paulradzkov.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 10 Jul 2017 14:09:22 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 06 May 2018 20:15:26 GMT</lastBuildDate>
         <atom:link href="http://paulradzkov.com/newrss.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Павел Радьков]]></author>
-        <pubDate>Mon, 10 Jul 2017 14:08:50 GMT</pubDate>
+        <pubDate>Sun, 06 May 2018 20:14:57 GMT</pubDate>
         <item>
             <title><![CDATA[Как правильно использовать переменные в препроцессорах Less и Sass]]></title>
             <description><![CDATA[<p>История архитектурной ошибки, её последствия, и три правила, благодаря которым вы сможете держать исходный код в порядке и снизить стоимость внесения изменений.</p>
@@ -81,11 +81,11 @@
             <div class="browserframe" data-title="page.css">
                 <pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* page.css */</span>
 
-<span class="hljs-class">.page</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">40px</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#000</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
-<span class="hljs-rule">}</span></span>
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+}
 </code></pre>
 
             </div>
@@ -99,10 +99,10 @@
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.1</span>
 
 <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-<span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-<span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+<span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+<span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 
-<span class="hljs-class">.page</span> {
+<span class="hljs-selector-class">.page</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
@@ -135,10 +135,10 @@
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.1</span>
 
 <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-<span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-<span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+<span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+<span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 
-<span class="hljs-class">.page</span> {
+<span class="hljs-selector-class">.page</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
@@ -155,10 +155,10 @@
             <div class="browserframe" data-title="page.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.2</span>
 
-<span class="hljs-class">.page</span> {
+<span class="hljs-selector-class">.page</span> {
     <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-    <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-    <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+    <span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+    <span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
@@ -186,10 +186,10 @@
             <div class="browserframe" data-title="page.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.2</span>
 
-<span class="hljs-class">.page</span> {
+<span class="hljs-selector-class">.page</span> {
     <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-    <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-    <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+    <span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+    <span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
@@ -207,14 +207,14 @@
             <div class="browserframe" data-title="page.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.3</span>
 
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-    <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-    <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+    <span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+    <span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 }
 
-<span class="hljs-class">.page</span> {
-    <span class="hljs-class">.page-settings</span>();
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-selector-class">.page-settings</span>();
 
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
@@ -246,12 +246,12 @@
             <div class="browserframe" data-title="projectname.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// projectname.less</span>
 
-<span class="hljs-at_rule">@import</span> <span class="hljs-string">'normalize.css'</span>;
-<span class="hljs-at_rule">@import</span> <span class="hljs-string">'typography.less'</span>;
-<span class="hljs-at_rule">@import</span> <span class="hljs-string">'page.less'</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">'normalize.css'</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">'typography.less'</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">'page.less'</span>;
 <span class="hljs-comment">// и много других компонентов...</span>
 
-<span class="hljs-at_rule">@import</span> <span class="hljs-string">'config.less'</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">'config.less'</span>;
 </code></pre>
 
             </div>
@@ -261,14 +261,14 @@
             <div class="browserframe" data-title="page.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.3</span>
 
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-    <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-    <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+    <span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+    <span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 }
 
-<span class="hljs-class">.page</span> {
-    <span class="hljs-class">.page-settings</span>();
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-selector-class">.page-settings</span>();
 
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
@@ -287,7 +287,7 @@
 <span class="hljs-variable">@glob-bg-color:</span> darkblue;
 
 <span class="hljs-comment">// кастомизация компонентов</span>
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@glob-text-color</span>;
     <span class="hljs-variable">@bg-color:</span> <span class="hljs-variable">@glob-bg-color</span>;
 }
@@ -326,7 +326,7 @@
 
 <span class="hljs-variable">@txt-color:</span> white;
 
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-comment">// тут рекурсия и ошибка компиляции</span>
     <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@txt-color</span>;
 }
@@ -344,7 +344,7 @@
 
 <span class="hljs-variable">@glob-txt-color:</span> white;
 
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-comment">// всё в порядке</span>
     <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@glob-txt-color</span>;
 }
@@ -371,16 +371,16 @@
             <div class="browserframe" data-title="page.scss">
                 <pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// page.scss v0.1</span>
 
-<span class="hljs-variable">$page-settings</span><span class="hljs-value">: (
+<span class="hljs-variable">$page-settings</span>: (
     padding: <span class="hljs-number">40px</span>,
-    bg-color: <span class="hljs-hexcolor">#fff</span>,
-    text-color: <span class="hljs-hexcolor">#000</span>,
-);</span>
+    bg-color: <span class="hljs-number">#fff</span>,
+    text-color: <span class="hljs-number">#000</span>,
+);
 
-<span class="hljs-class">.page</span> {
-    <span class="hljs-attribute">padding</span><span class="hljs-value">:          <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, padding);</span>
-    <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, bg-color);</span>
-    <span class="hljs-attribute">color</span><span class="hljs-value">:            <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, text-color);</span>
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-attribute">padding</span>:          map-get(<span class="hljs-variable">$page-settings</span>, padding);
+    <span class="hljs-attribute">background-color</span>: map-get(<span class="hljs-variable">$page-settings</span>, bg-color);
+    <span class="hljs-attribute">color</span>:            map-get(<span class="hljs-variable">$page-settings</span>, text-color);
 }
 </code></pre>
 
@@ -397,11 +397,11 @@
             <div class="browserframe" data-title="projectname.scss">
                 <pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// projectname.scss</span>
 
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'config'</span>;</span>
+@<span class="hljs-keyword">import</span>: <span class="hljs-string">'config'</span>;
 
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'normalize'</span>;</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'typography'</span>;</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'page'</span>;</span>
+@<span class="hljs-keyword">import</span>: <span class="hljs-string">'normalize'</span>;
+@<span class="hljs-keyword">import</span>: <span class="hljs-string">'typography'</span>;
+@<span class="hljs-keyword">import</span>: <span class="hljs-string">'page'</span>;
 <span class="hljs-comment">// и много других компонентов...</span>
 </code></pre>
 
@@ -412,14 +412,14 @@
             <div class="browserframe" data-title="config.scss">
                 <pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// config.scss</span>
 
-<span class="hljs-variable">$glob-text-color</span><span class="hljs-value">: white;</span>
-<span class="hljs-variable">$glob-bg-color</span><span class="hljs-value">: darkblue;</span>
+<span class="hljs-variable">$glob-text-color</span>: white;
+<span class="hljs-variable">$glob-bg-color</span>: darkblue;
 
 <span class="hljs-comment">// кастомизируем</span>
-<span class="hljs-variable">$page-settings</span><span class="hljs-value">: (
+<span class="hljs-variable">$page-settings</span>: (
     bg-color: <span class="hljs-variable">$glob-bg-color</span>,
     text-color: <span class="hljs-variable">$glob-text-color</span>,
-);</span>
+);
 </code></pre>
 
             </div>
@@ -429,22 +429,22 @@
             <div class="browserframe" data-title="page.scss">
                 <pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// page.scss v0.2</span>
 
-<span class="hljs-variable">$page-override</span><span class="hljs-value">: ( );</span> <span class="hljs-comment">// [1]</span>
+<span class="hljs-variable">$page-override</span>: ( ); <span class="hljs-comment">// [1]</span>
 
-<span class="hljs-at_rule">@<span class="hljs-keyword">if</span><span class="hljs-preprocessor"> variable-exists</span>(<span class="hljs-keyword">page</span>-settings) {</span>
-    <span class="hljs-variable">$page-override</span><span class="hljs-value">: <span class="hljs-variable">$page-settings</span>;</span> <span class="hljs-comment">// [2]</span>
+@<span class="hljs-keyword">if</span> variable-exists(<span class="hljs-keyword">page</span>-settings) {
+    <span class="hljs-variable">$page-override</span>: <span class="hljs-variable">$page-settings</span>; <span class="hljs-comment">// [2]</span>
 }
 
-<span class="hljs-variable">$page-settings</span><span class="hljs-value">:  <span class="hljs-function">map-merge</span>((
+<span class="hljs-variable">$page-settings</span>:  map-merge((
     padding: <span class="hljs-number">40px</span>,
-    bg-color: <span class="hljs-hexcolor">#fff</span>,
-    text-color: <span class="hljs-hexcolor">#000</span>,
-), <span class="hljs-variable">$page-override</span>);</span> <span class="hljs-comment">// [3]</span>
+    bg-color: <span class="hljs-number">#fff</span>,
+    text-color: <span class="hljs-number">#000</span>,
+), <span class="hljs-variable">$page-override</span>); <span class="hljs-comment">// [3]</span>
 
-<span class="hljs-class">.page</span> {
-    <span class="hljs-attribute">padding</span><span class="hljs-value">:          <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, padding);</span>
-    <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, bg-color);</span>
-    <span class="hljs-attribute">color</span><span class="hljs-value">:            <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, text-color);</span>
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-attribute">padding</span>:          map-get(<span class="hljs-variable">$page-settings</span>, padding);
+    <span class="hljs-attribute">background-color</span>: map-get(<span class="hljs-variable">$page-settings</span>, bg-color);
+    <span class="hljs-attribute">color</span>:            map-get(<span class="hljs-variable">$page-settings</span>, text-color);
 }
 </code></pre>
 
@@ -631,6 +631,7 @@
 <ol>
 <li>Проблема с абсолютными путями: докпад по-умолчанию использует пути к ресурсам от корня домена, а на GH Pages url проекта будет выглядеть так <code>http://username.github.io/repository/</code>. Т.е. сайт находится в папке, а не в корне, и все пути к ресурсам недействительны. Конечно, можно купить собственное доменное имя, но это не мой случай. Нужно, чтобы на локалхосте url оставались абсолютными, а при деплое заменялись с учетом папки, в которую сайт деплоится.</li>
 <li><a href="https://github.com/docpad/docpad-plugin-ghpages">Плагин для деплоя</a> не заработал сразу и без настроек, как обещает разработчик.</li>
+<li><strong>Добавлено 6 мая 2018</strong>: деплой из командной строки сломался после включения двухфакторной аутентификации на Гитхабе.</li>
 </ol>
 <p>Так как у меня не всё прошло гладко и очевидно, решил написать эту инструкцию.</p>
 <!-- cut -->
@@ -638,74 +639,74 @@
 <p>Сначала разберёмся с абсолютными путями в докпаде.</p>
 <p>Установим плагин <a href="https://github.com/Hypercubed/docpad-plugin-geturl/">Get Url Plugin for DocPad</a>.</p>
 <p>Если ещё не создана, сделаем в конфиге докпада переменную <code>@site.url</code>:</p>
-<pre class="highlight"><code class="hljs coffeescript">    <span class="hljs-attribute">templateData</span>:
-        <span class="hljs-attribute">site</span>:
+<pre class="highlight"><code class="hljs coffeescript">    templateData:
+        site:
             <span class="hljs-comment"># The production url of our website. Used in sitemap and rss feed</span>
-            <span class="hljs-attribute">url</span>: <span class="hljs-string">"http://paulradzkov.github.io/docpad-simpleblog"</span>
+            url: <span class="hljs-string">"http://paulradzkov.github.io/docpad-simpleblog"</span>
 </code></pre>
 <p>И добавим отдельную конфигурацию для «development» окружения:</p>
 <pre class="highlight"><code class="hljs coffeescript">    <span class="hljs-comment"># =================================</span>
     <span class="hljs-comment"># Environments</span>
 
-    <span class="hljs-attribute">environments</span>:
-        <span class="hljs-attribute">development</span>:
-            <span class="hljs-attribute">templateData</span>:
-                <span class="hljs-attribute">site</span>:
-                    <span class="hljs-attribute">url</span>: <span class="hljs-string">'http://localhost:9778'</span>
+    environments:
+        development:
+            templateData:
+                site:
+                    url: <span class="hljs-string">'http://localhost:9778'</span>
 </code></pre>
 <p>Эта переменная — <code>@site.url</code> — будет подставляться префиксом ко всем путям и ссылкам в зависимости от того, работаем мы на локалхосте или выкатываем сайт на хостинг.</p>
 <p>Теперь нужно добавить хелпер «<code>@getUrl()</code>» ко всем «<code>href</code>» и «<code>src</code>» в шаблоне, в документах — везде, где встречаются абсолютные пути.</p>
 <p>Например, было:</p>
 <pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- DocPad Styles + Our Own --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">styles</span>")<span class="hljs-attribute">.add</span>(@<span class="hljs-attribute">site.styles</span>)<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">%-</span> @<span class="hljs-attr">getBlock</span>("<span class="hljs-attr">styles</span>")<span class="hljs-attr">.add</span>(@<span class="hljs-attr">site.styles</span>)<span class="hljs-attr">.toHTML</span>() %&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/vendor/modernizr.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/vendor/modernizr.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <p>Стало:</p>
 <pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- DocPad Styles + Our Own --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">styles</span>")<span class="hljs-attribute">.add</span>(@<span class="hljs-attribute">getUrl</span>(@<span class="hljs-attribute">site.styles</span>))<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">%-</span> @<span class="hljs-attr">getBlock</span>("<span class="hljs-attr">styles</span>")<span class="hljs-attr">.add</span>(@<span class="hljs-attr">getUrl</span>(@<span class="hljs-attr">site.styles</span>))<span class="hljs-attr">.toHTML</span>() %&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"&lt;%= @getUrl('/vendor/modernizr.js') %&gt;"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;%= @getUrl('/vendor/modernizr.js') %&gt;"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <p>Было:</p>
-<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav-list"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/docs"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://github.com/paulradzkov/docpad-simpleblog/issues"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Issues<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://github.com/paulradzkov/docpad-simpleblog"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Source Code<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/paulradzkov/docpad-simpleblog/issues"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Issues<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/paulradzkov/docpad-simpleblog"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Source Code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 </code></pre>
 <p>Стало:</p>
-<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav-list"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getUrl('/') %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getUrl('/docs') %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://github.com/paulradzkov/docpad-simpleblog/issues"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Issues<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://github.com/paulradzkov/docpad-simpleblog"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Source Code<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @getUrl('/') %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @getUrl('/docs') %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/paulradzkov/docpad-simpleblog/issues"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Issues<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/paulradzkov/docpad-simpleblog"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Source Code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 </code></pre>
 <p>Было:</p>
-<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"meta-data"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"comments"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @document.path %&gt;#disqus_thread"</span> <span class="hljs-attribute">data-disqus-identifier</span>=<span class="hljs-value">"&lt;%= @document.disqusid %&gt;"</span> &gt;</span>Комментарии<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tags-list"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">for</span> <span class="hljs-attribute">tag</span> <span class="hljs-attribute">in</span> @<span class="hljs-attribute">document.tags</span> <span class="hljs-attribute">:</span> %&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label-tag"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getTagUrl(tag) %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">tag</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">end</span> %&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"meta-data"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"comments"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @document.path %&gt;#disqus_thread"</span> <span class="hljs-attr">data-disqus-identifier</span>=<span class="hljs-string">"&lt;%= @document.disqusid %&gt;"</span> &gt;</span>Комментарии<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tags-list"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">%</span> <span class="hljs-attr">for</span> <span class="hljs-attr">tag</span> <span class="hljs-attr">in</span> @<span class="hljs-attr">document.tags</span> <span class="hljs-attr">:</span> %&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label-tag"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @getTagUrl(tag) %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span> <span class="hljs-attr">tag</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">%</span> <span class="hljs-attr">end</span> %&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 </code></pre>
 <p>Стало:</p>
-<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"meta-data"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"comments"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getUrl(@document.path) %&gt;#disqus_thread"</span> <span class="hljs-attribute">data-disqus-identifier</span>=<span class="hljs-value">"&lt;%= @document.disqusid %&gt;"</span> &gt;</span>Комментарии<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tags-list"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">for</span> <span class="hljs-attribute">tag</span> <span class="hljs-attribute">in</span> @<span class="hljs-attribute">document.tags</span> <span class="hljs-attribute">:</span> %&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label-tag"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= @getUrl(@getTagUrl(tag)) %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">tag</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">end</span> %&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"meta-data"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"comments"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @getUrl(@document.path) %&gt;#disqus_thread"</span> <span class="hljs-attr">data-disqus-identifier</span>=<span class="hljs-string">"&lt;%= @document.disqusid %&gt;"</span> &gt;</span>Комментарии<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tags-list"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">%</span> <span class="hljs-attr">for</span> <span class="hljs-attr">tag</span> <span class="hljs-attr">in</span> @<span class="hljs-attr">document.tags</span> <span class="hljs-attr">:</span> %&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label-tag"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @getUrl(@getTagUrl(tag)) %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span> <span class="hljs-attr">tag</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">%</span> <span class="hljs-attr">end</span> %&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 </code></pre>
 <p>И так далее.</p>
 <p>Теперь, когда мы запускаем <kbd class="cli" contenteditable="true" >&zwj;<span contenteditable="false">docpad run</span>&zwj;</kbd>, ко всем путям подставляется <code>@site.url</code> из девелоперского окружения — <code>http://localhost:9778</code>. А когда <kbd class="cli" contenteditable="true" >&zwj;<span contenteditable="false">docpad run --env static</span>&zwj;</kbd>, переменная <code>@site.url</code> равна нашему продакшен пути.</p>
@@ -736,18 +737,32 @@
 
 <p>А в конфиге докпада пропишем настройки для плагина:</p>
 <pre class="highlight"><code class="hljs coffeescript">    <span class="hljs-comment"># Plugins configurations</span>
-    <span class="hljs-attribute">plugins</span>:
-        <span class="hljs-attribute">ghpages</span>:
-            <span class="hljs-attribute">deployRemote</span>: <span class="hljs-string">'deploy'</span>
-            <span class="hljs-attribute">deployBranch</span>: <span class="hljs-string">'gh-pages'</span>
+    plugins:
+        ghpages:
+            deployRemote: <span class="hljs-string">'deploy'</span>
+            deployBranch: <span class="hljs-string">'gh-pages'</span>
 </code></pre>
 <p>Теперь можно выкатывать сайт:</p>
 <p><kbd class="cli" contenteditable="true" >&zwj;<span contenteditable="false">docpad deploy-ghpages --env static</span>&zwj;</kbd></p>
+<h2 id="-">Двухфакторная аутентификация</h2>
+<p><strong>Добавлено 6 мая 2018</strong></p>
+<p>Когда я включил двухфакторную аутентификацию на Гитхабе, деплой из командной строки перестал работать. Чтобы починить, вместо вашего пароля в настройках remote нужно подставить сгенерированный токен. Сгенерируйте его по этой <a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/">инструкции</a>. Если кратко:</p>
+<ol>
+<li>На Гитхабе кликните по вашему аватару, потом <strong>Settings</strong> → <strong>Developer settings</strong> → <strong>Personal access tokens</strong> → <strong>Generate new token</strong>.</li>
+<li>Дайте токену любое имя, например, «Mac terminal» или «Windows cmd».</li>
+<li>Поставьте уровень доступа <strong>repo</strong>.</li>
+<li>Нажмите <strong>Generate token</strong>.</li>
+<li>Скопируйте полученный токен. Когда вы уйдете с этой страницы, токен уже нельзя будет посмотреть.</li>
+</ol>
+<p>Вам нужно добавить новый «remote» (или заменить существующий) с токеном вместо пароля:</p>
+<p><kbd class="cli" contenteditable="true" >&zwj;<span contenteditable="false">git remote add deploy <span>https://</span>login:<mark>token</mark>@github.com/repo_owner/repo_name.git</span>&zwj;</kbd></p>
+
+<p>И всё снова заработает.</p>
 ]]></description>
             <link>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Wed, 31 May 2017 20:59:38 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 19:39:31 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Краткое руководство по Маркдауну]]></title>
@@ -771,9 +786,9 @@
 
 <div class="raw-output">
 <pre class="highlight"><code class="hljs markdown">
-<span class="hljs-header"># GitHub-Flavored Markdown</span>
+<span class="hljs-section"># GitHub-Flavored Markdown</span>
 
-<span class="hljs-header">## Краткое руководство</span>
+<span class="hljs-section">## Краткое руководство</span>
 
 Абзацы создаются при помощи пустой строки. Если вокруг текста сверху и снизу есть пустые строки, то текст превращается в абзац.
 
@@ -782,16 +797,16 @@
 
 Заголовки отмечаются диезом <span class="hljs-code">`#`</span> в начале строки, от одного до шести. Например:
 
-<span class="hljs-header"># Заголовок первого уровня #</span>
-<span class="hljs-header">## Заголовок h2</span>
-<span class="hljs-header">### Заголовок h3</span>
-<span class="hljs-header">#### Заголовок h4</span>
-<span class="hljs-header">##### Заголовок h5</span>
-<span class="hljs-header">###### Заголовок h6</span>
+<span class="hljs-section"># Заголовок первого уровня #</span>
+<span class="hljs-section">## Заголовок h2</span>
+<span class="hljs-section">### Заголовок h3</span>
+<span class="hljs-section">#### Заголовок h4</span>
+<span class="hljs-section">##### Заголовок h5</span>
+<span class="hljs-section">###### Заголовок h6</span>
 
 В декоративных целях заголовки можно «закрывать» с обратной стороны.
 
-<span class="hljs-header">### Списки</span>
+<span class="hljs-section">### Списки</span>
 
 Для разметки неупорядоченных списков можно использовать или <span class="hljs-code">`*`</span>, или <span class="hljs-code">`-`</span>, или <span class="hljs-code">`+`</span>:
 
@@ -833,48 +848,48 @@
 
 <span class="hljs-code">    Четыре абзац (Четыре пробела в начале или один tab).</span>
 
-<span class="hljs-header">### Цитаты</span>
+<span class="hljs-section">### Цитаты</span>
 
 Цитаты оформляются как в емейлах, с помощью символа <span class="hljs-code">`&gt;`</span>.
 
-<span class="hljs-blockquote">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</span>
-<span class="hljs-blockquote">&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.</span>
-<span class="hljs-blockquote">&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</span>
+<span class="hljs-quote">&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.</span>
+<span class="hljs-quote">&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</span>
+<span class="hljs-quote">&gt;
 &gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse</span>
-<span class="hljs-blockquote">&gt; id sem consectetuer libero luctus adipiscing.</span>
+<span class="hljs-quote">&gt; id sem consectetuer libero luctus adipiscing.</span>
 
 Или более ленивым способом, когда знак <span class="hljs-code">`&gt;`</span> ставится перед каждым элементом цитаты, будь то абзац, заголовок или пустая строка:
 
-<span class="hljs-blockquote">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</span>
+<span class="hljs-quote">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</span>
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt;
 &gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse</span>
 id sem consectetuer libero luctus adipiscing.
 
 В цитаты можно помещать всё что угодно, в том числе вложенные цитаты:
 
-<span class="hljs-blockquote">&gt; ## This is a header.</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt; ## This is a header.</span>
+<span class="hljs-quote">&gt;
 &gt; 1.   This is the first list item.</span>
-<span class="hljs-blockquote">&gt; 2.   This is the second list item.</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt; 2.   This is the second list item.</span>
+<span class="hljs-quote">&gt;
 &gt; &gt; Вложенная цитата.</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt;
 &gt; Here's some example code:</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt;
 &gt;     return shell_exec("echo $input | $markdown_script");</span>
 
-<span class="hljs-header">### Исходный код</span>
+<span class="hljs-section">### Исходный код</span>
 
 В чистом Маркдауне блоки кода отбиваются 4 пробелами в начале каждой строки.
 
 Но в GitHub-Flavored Markdown (сокращенно GFM) есть более удобный способ: ставим по три апострофа (на букве Ё) до и после кода. Также можно указать язык исходного кода.
 
 <span class="hljs-code">` `</span> `html
-<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-primary"</span>&gt;</span></span>
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav nav-primary"</span>&gt;</span></span>
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span></span>
 <span class="hljs-code">    &lt;li class="tab-conversation active"&gt;</span>
 <span class="hljs-code">      &lt;a href="#" data-role="post-count" class="publisher-nav-color" data-nav="conversation"&gt;</span>
 <span class="hljs-code">        &lt;span class="comment-count"&gt;0 комментариев&lt;/span&gt;</span>
@@ -891,50 +906,50 @@ id sem consectetuer libero luctus adipiscing.
 <span class="hljs-code">        &lt;span class="caret"&gt;&lt;/span&gt;</span>
 <span class="hljs-code">      &lt;/a&gt;</span>
 <span class="hljs-code">    &lt;/li&gt;</span>
-  <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span></span>
+  <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></span>
 <span class="hljs-code">` `</span> `
 
 Самое приятное, что в коде не нужно заменять угловые скобки <span class="hljs-code">`&lt; &gt;`</span> и амперсанд <span class="hljs-code">`&amp;`</span> на их html-сущности.
 
-<span class="hljs-header">### Инлайн код</span>
+<span class="hljs-section">### Инлайн код</span>
 
 Для вставки кода внутри предложений нужно заключать этот код в апострофы (на букве Ё). Пример: <span class="hljs-code">`&lt;html class="ie no-js"&gt;`</span>.
 
 Если внутри кода есть апостроф, то код надо обрамить двойными апострофами: <span class="hljs-code">``There is a literal backtick (`</span>) here.``
 
-<span class="hljs-header">### Горизонтальная черта</span>
+<span class="hljs-section">### Горизонтальная черта</span>
 
 <span class="hljs-code">`hr`</span> создается тремя звездочками или тремя дефисами.
 
 <span class="hljs-emphasis">***</span>
 
-<span class="hljs-header">### Ссылки</span>
+<span class="hljs-section">### Ссылки</span>
 
-Это встроенная [<span class="hljs-link_label">ссылка с title элементом</span>](<span class="hljs-link_url">http://example.com/link "Я ссылка"</span>). Это — [<span class="hljs-link_label">без title</span>](<span class="hljs-link_url">http://example.com/link</span>).
+Это встроенная [<span class="hljs-string">ссылка с title элементом</span>](<span class="hljs-link">http://example.com/link "Я ссылка"</span>). Это — [<span class="hljs-string">без title</span>](<span class="hljs-link">http://example.com/link</span>).
 
-А вот [<span class="hljs-link_label">пример</span>][<span class="hljs-link_reference">1</span>] [<span class="hljs-link_label">нескольких</span>][<span class="hljs-link_reference">2</span>] [<span class="hljs-link_label">ссылок</span>][<span class="hljs-link_reference">id</span>] с разметкой как у сносок. Прокатит и [<span class="hljs-link_label">короткая запись</span>][<span class="hljs-link_reference"></span>] без указания id.
+А вот [<span class="hljs-string">пример</span>][<span class="hljs-symbol">1</span>] [<span class="hljs-string">нескольких</span>][<span class="hljs-symbol">2</span>] [<span class="hljs-string">ссылок</span>][<span class="hljs-symbol">id</span>] с разметкой как у сносок. Прокатит и [<span class="hljs-string">короткая запись</span>][<span class="hljs-symbol"></span>] без указания id.
 
-[<span class="hljs-link_reference">1</span>]:<span class="hljs-link_url"> http://example.com/ "Optional Title Here"</span>
-[<span class="hljs-link_reference">2</span>]:<span class="hljs-link_url"> http://example.com/some</span>
-[<span class="hljs-link_reference">id</span>]:<span class="hljs-link_url"> http://example.com/links (Optional Title Here)</span>
-[<span class="hljs-link_reference">короткая запись</span>]:<span class="hljs-link_url"> http://example.com/short</span>
+[<span class="hljs-symbol">1</span>]: <span class="hljs-link">http://example.com/ "Optional Title Here"</span>
+[<span class="hljs-symbol">2</span>]: <span class="hljs-link">http://example.com/some</span>
+[<span class="hljs-symbol">id</span>]: <span class="hljs-link">http://example.com/links (Optional Title Here)</span>
+[<span class="hljs-symbol">короткая запись</span>]: <span class="hljs-link">http://example.com/short</span>
 
 Вынос длинных урлов из предложения способствует сохранению читабельности исходника. Сноски можно располагать в любом месте документа.
 
-<span class="hljs-header">### Emphasis</span>
+<span class="hljs-section">### Emphasis</span>
 
 Выделять слова можно при помощи <span class="hljs-code">`*`</span> и <span class="hljs-code">`_`</span>. Одним символ для наклонного текста, два символа для жирного текста, три — для наклонного и жирного одновременно.
 
 Например, это <span class="hljs-emphasis">_italic_</span> и это тоже <span class="hljs-emphasis">*italic*</span>. А вот так уже <span class="hljs-strong">__strong__</span>, и так тоже <span class="hljs-strong">**strong**</span>. А так <span class="hljs-strong">***жирный и наклонный**</span>* одновременно.
 
-<span class="hljs-header">### Зачеркивание</span>
+<span class="hljs-section">### Зачеркивание</span>
 
 В GFM добавлено зачеркивание текста: две тильды <span class="hljs-code">`~`</span> до и после текста.
 
 ~~Зачеркнуто~~
 
-<span class="hljs-header">## Картинки</span>
+<span class="hljs-section">## Картинки</span>
 
 Картинка без <span class="hljs-code">`alt`</span> текста
 
@@ -942,47 +957,47 @@ id sem consectetuer libero luctus adipiscing.
 
 Картинка с альтом и тайтлом:
 
-![<span class="hljs-link_label">Alt text</span>](<span class="hljs-link_url">http://placehold.it/150x100 "Можно задать title"</span>)
+![<span class="hljs-string">Alt text</span>](<span class="hljs-link">http://placehold.it/150x100 "Можно задать title"</span>)
 
 Запомнить просто: синтаксис как у ссылок, только перед открывающей квадратной скобкой ставится восклицательный знак.
 
 Картинки «сноски»:
 
-![<span class="hljs-link_label">Картинка</span>][<span class="hljs-link_reference">image1</span>]
-![<span class="hljs-link_label">Картинка</span>][<span class="hljs-link_reference">image2</span>]
-![<span class="hljs-link_label">Картинка</span>][<span class="hljs-link_reference">image3</span>]
+![<span class="hljs-string">Картинка</span>][<span class="hljs-symbol">image1</span>]
+![<span class="hljs-string">Картинка</span>][<span class="hljs-symbol">image2</span>]
+![<span class="hljs-string">Картинка</span>][<span class="hljs-symbol">image3</span>]
 
-[<span class="hljs-link_reference">image1</span>]:<span class="hljs-link_url"> http://placehold.it/250x100</span>
-[<span class="hljs-link_reference">image2</span>]:<span class="hljs-link_url"> http://placehold.it/200x100</span>
-[<span class="hljs-link_reference">image3</span>]:<span class="hljs-link_url"> http://placehold.it/150x100</span>
+[<span class="hljs-symbol">image1</span>]: <span class="hljs-link">http://placehold.it/250x100</span>
+[<span class="hljs-symbol">image2</span>]: <span class="hljs-link">http://placehold.it/200x100</span>
+[<span class="hljs-symbol">image3</span>]: <span class="hljs-link">http://placehold.it/150x100</span>
 
 Картинки-ссылки:
 
-[<span class="hljs-link_label">![Alt text</span>](<span class="hljs-link_url">http://placehold.it/150x100</span>)](<span class="hljs-link_url">http://example.com/</span>)
+[<span class="hljs-string">![Alt text</span>](<span class="hljs-link">http://placehold.it/150x100</span>)](<span class="hljs-link">http://example.com/</span>)
 
 
-<span class="hljs-header">## Использование HTML внутри Markdown</span>
+<span class="hljs-section">## Использование HTML внутри Markdown</span>
 
 Mожно смешивать Markdown и HTML. Если на какие-то элементы нужно поставить классы или атрибуты, смело используем HTML:
 
-<span class="hljs-blockquote">&gt; Выделять слова можно при помощи * и _ . Например, это &lt;em class="a1"&gt;italic&lt;/em&gt; и это тоже &lt;i class="a1"&gt;italic&lt;/i&gt;. А вот так уже &lt;b&gt;strong&lt;/b&gt;, и так тоже &lt;strong&gt;strong&lt;/strong&gt;.</span>
+<span class="hljs-quote">&gt; Выделять слова можно при помощи * и _ . Например, это &lt;em class="a1"&gt;italic&lt;/em&gt; и это тоже &lt;i class="a1"&gt;italic&lt;/i&gt;. А вот так уже &lt;b&gt;strong&lt;/b&gt;, и так тоже &lt;strong&gt;strong&lt;/strong&gt;.</span>
 
 Можно и наоборот, внутри HTML-тегов использовать Маркдаун.
 
-<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"someclass"</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"someclass"</span>&gt;</span></span>
 
-<span class="hljs-header">### Пример Маркдауна внутри HTML</span>
+<span class="hljs-section">### Пример Маркдауна внутри HTML</span>
 
 Выделять слова можно при помощи <span class="hljs-code">`*`</span> и <span class="hljs-code">`_`</span> . Например, это <span class="hljs-emphasis">_italic_</span> и это тоже <span class="hljs-emphasis">*italic*</span>. А вот так уже <span class="hljs-strong">__strong__</span>, и так тоже <span class="hljs-strong">**strong**</span>.
 
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span>
 
-<span class="hljs-header">### Таблицы</span>
+<span class="hljs-section">### Таблицы</span>
 
 В чистом Маркдауне нет синтаксиса для таблиц, а в GFM есть.
 
 First Header  | Second Header
-<span class="hljs-horizontal_rule">------------- | -------------</span>
+------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 
@@ -1357,26 +1372,26 @@ Content Cell  | Content Cell
 
 <p>Основной текст имеет начертание Light 300, заголовки и цитаты — Normal 400, а промо-блок — Semi-Bold 600:</p>
 
-<pre class="highlight"><code class="hljs css"><span class="hljs-tag">body</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">'Open Sans'</span>, sans-serif</span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">300</span></span></span>;
-<span class="hljs-rule">}</span></span>
-<span class="hljs-tag">h1</span>, <span class="hljs-tag">h2</span>, <span class="hljs-tag">h3</span>, <span class="hljs-tag">h4</span>, <span class="hljs-tag">h5</span>, <span class="hljs-tag">h6</span>,
-<span class="hljs-tag">blockquote</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">400</span></span></span>;
-<span class="hljs-rule">}</span></span>
-<span class="hljs-class">.promo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">600</span></span></span>;
-<span class="hljs-rule">}</span></span>
+<pre class="highlight"><code class="hljs css"><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Open Sans'</span>, sans-serif;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+}
+<span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span>,
+<span class="hljs-selector-tag">blockquote</span> {
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+}
+<span class="hljs-selector-class">.promo</span> {
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+}
 </code></pre>
 
 <p>Тег <code class="hljs-tag">strong</code> может встечаться и в основном тексте, и в цитатах, и промо-блоке. Надо это учесть.</p>
 
 <p>По-умолчанию:</p>
 
-<pre class="highlight"><code class="hljs css"><span class="hljs-tag">strong</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bold</span></span>; <span class="hljs-comment">/* bold = 700 */</span>
-<span class="hljs-rule">}</span></span>
+<pre class="highlight"><code class="hljs css"><span class="hljs-selector-tag">strong</span>, <span class="hljs-selector-tag">b</span> {
+    <span class="hljs-attribute">font-weight</span>: bold; <span class="hljs-comment">/* bold = 700 */</span>
+}
 </code></pre>
 
 <p>А нам хочется, чтобы у <code class="hljs-tag">strong</code> и <code class="hljs-tag">b</code> для основного текста было Normal 400, для цитат и заголовков — Bold 700, а для промо блока — Extra-Bold 800. Это сохранит контраст между жирным и нежирным текстом примерно равным во всех случаях.</p>
@@ -1433,14 +1448,14 @@ Content Cell  | Content Cell
 
 <pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* сбрасываем стандартное «bold»,
 шрифт становится таким же как его родительский элемент */</span>
-<span class="hljs-tag">strong</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> inherit</span></span>;
-<span class="hljs-rule">}</span></span>
+<span class="hljs-selector-tag">strong</span>, <span class="hljs-selector-tag">b</span> {
+  <span class="hljs-attribute">font-weight</span>: inherit;
+}
 
 <span class="hljs-comment">/* теперь bolder будет вычисляться исходя из веса шрифта родительского элемента */</span>
-<span class="hljs-tag">strong</span>, <span class="hljs-tag">b</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bolder</span></span>;
-<span class="hljs-rule">}</span></span>
+<span class="hljs-selector-tag">strong</span>, <span class="hljs-selector-tag">b</span> {
+  <span class="hljs-attribute">font-weight</span>: bolder;
+}
 </code></pre>
 
 <p>Именно так, как два отдельных правила. Первое обнуляет значение <code class="hljs-attribute">font-weight</code> из браузерной таблицы стилей, второе задаёт жирность уже в относительных, а не абсолютных единицах.</p>
@@ -1468,14 +1483,14 @@ Content Cell  | Content Cell
 
 <p>Если у вас шрифт установлен в системе, но не подключен через <code class="hljs-at_rule">@<span class="hljs-keyword">font-face</span></code>, то Google Chrome определяет только Normal и Bold начертания шрифта. Чтобы локальный шрифт заработал, нужно дополнительно указать его <code class="hljs-attribute">font-family</code>.</p>
 
-<pre class="highlight"><code class="hljs css"><span class="hljs-class">.fw300</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">"Open Sans Light"</span>, <span class="hljs-string">"Open Sans"</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">300</span></span></span>;
-<span class="hljs-rule">}</span></span>
-<span class="hljs-class">.fw600</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">"Open Sans SemiBold"</span>, <span class="hljs-string">"Open Sans"</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> <span class="hljs-number">600</span></span></span>;
-<span class="hljs-rule">}</span></span>
+<pre class="highlight"><code class="hljs css"><span class="hljs-selector-class">.fw300</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Open Sans Light"</span>, <span class="hljs-string">"Open Sans"</span>;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">300</span>;
+}
+<span class="hljs-selector-class">.fw600</span> {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"Open Sans SemiBold"</span>, <span class="hljs-string">"Open Sans"</span>;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+}
 </code></pre>]]></description>
             <link>http://paulradzkov.com/2014/font-weight_bolder/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/font-weight_bolder/</guid>
@@ -1489,7 +1504,7 @@ Content Cell  | Content Cell
 <p>«Если у Вас возникли любые вопросы касательно вашего заказа, пожалуйста, свяжитесь со Службой поддержки по телефону <a href="tel:XXXX XXX XXXX">XXXX XXX XXXX</a> или напишите по адресу <a href="mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;body=Мой номер заказа XXXXX" class="breakall">customerservices@sitename.com</a>. Не забудьте сообщить ваш номер заказа.</p>
 </blockquote>
 <p>Создавая шаблоны для таких писем, не поленитесь прописать этот самый номер заказа (и любую другую нужную службе поддержки информацию) в параметры mailto ссылки:</p>
-<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;body=Мой номер заказа XXXXX"</span>&gt;</span>customerservices@sitename.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;body=Мой номер заказа XXXXX"</span>&gt;</span>customerservices@sitename.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre><p>Теперь при клике на адрес электронной почты в новом сообщении номер заказа подставится и в тему письма, и в текст сообщения.</p>
 <p>Мелочь, но она сэкономит вашим покупателям пару лишних действий. Особенно актуально это для тех, кто пишет письмо с мобильника.</p>
 ]]></description>

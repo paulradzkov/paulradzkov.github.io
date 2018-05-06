@@ -129,7 +129,7 @@
 
 <p>В трекере описан этот <a href="http://code.google.com/p/chromium/issues/detail?id=46543">баг</a>, но <time datetime="2012-10-30">пока</time> решения нет.</p>
 <p>Автозаполнение можно выключить с помощью <code class="hljs-tag"><span class="hljs-attribute">autocomplete</span>=<span class="hljs-value">&quot;off&quot;</span></code>:</p>
-<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"…"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">autocomplete</span>=<span class="hljs-value">"off"</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"…"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string">"off"</span>&gt;</span>
 </code></pre>
 <p><strong>Обновлено 30 октября 2012.</strong></p>
 <figure>
@@ -138,17 +138,17 @@
 </figure>
 
 <p>Поля c автокомплитом можно перекрасить при помощи трюка с <code class="hljs-attribute">box-shadow</code>:</p>
-<pre class="highlight"><code class="hljs css"><span class="hljs-tag">input</span><span class="hljs-pseudo">:-webkit-autofill</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">-webkit-box-shadow</span>:<span class="hljs-value"> inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">50px</span> white</span></span>; <span class="hljs-comment">/* цвет вашего фона */</span>
-    <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>; <span class="hljs-comment">/* цвет текста */</span>
-<span class="hljs-rule">}</span></span>
+<pre class="highlight"><code class="hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">:-webkit-autofill</span> {
+    <span class="hljs-attribute">-webkit-box-shadow</span>: inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">50px</span> white; <span class="hljs-comment">/* цвет вашего фона */</span>
+    <span class="hljs-attribute">-webkit-text-fill-color</span>: black; <span class="hljs-comment">/* цвет текста */</span>
+}
 </code></pre>
 <p>Если вы для <code class="hljs-pseudo">:focus</code> состояния задавали стили с использованием <code class="hljs-attribute">box-shadow</code>, то вам придется заново их переопределить:</p>
-<pre class="highlight"><code class="hljs css"><span class="hljs-tag">input</span><span class="hljs-pseudo">:-webkit-autofill</span><span class="hljs-pseudo">:focus</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">-webkit-box-shadow</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">0</span>    blue,   <span class="hljs-comment">/* ваш box-shadow для :focus */</span>
-                  inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>   <span class="hljs-number">50px</span> white</span></span>;  <span class="hljs-comment">/* цвет вашего фона */</span>
-    <span class="hljs-rule"><span class="hljs-attribute">-webkit-text-fill-color</span>:<span class="hljs-value"> black</span></span>;          <span class="hljs-comment">/* цвет текста */</span>
-<span class="hljs-rule">}</span></span>
+<pre class="highlight"><code class="hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">:-webkit-autofill</span><span class="hljs-selector-pseudo">:focus</span> {
+    <span class="hljs-attribute">-webkit-box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">0</span>    blue,   <span class="hljs-comment">/* ваш box-shadow для :focus */</span>
+                  inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>   <span class="hljs-number">50px</span> white;  <span class="hljs-comment">/* цвет вашего фона */</span>
+    <span class="hljs-attribute">-webkit-text-fill-color</span>: black;          <span class="hljs-comment">/* цвет текста */</span>
+}
 </code></pre>
 <p>При помощи нескольких теней можно <a href="/demo/box-shadow_instead_gradient/">имитировать градиент</a>.</p>
 

@@ -4,7 +4,7 @@
     <subtitle>Заметки о веб-разработке Павла Радькова.</subtitle>
     <link href="http://paulradzkov.com/atom.xml" rel="self" />
     <link href="http://paulradzkov.com" />
-    <updated>2017-07-10T14:08:50.367Z</updated>
+    <updated>2018-05-06T20:14:57.573Z</updated>
     <id>http://paulradzkov.com</id>
     <author>
         <name>Павел Радьков</name>
@@ -94,11 +94,11 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;page.css&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;/* page.css */&lt;/span&gt;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
@@ -112,10 +112,10 @@
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.1&lt;/span&gt;
 
 &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
-&lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
-&lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+&lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;;
+&lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page&lt;/span&gt; {
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
@@ -148,10 +148,10 @@
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.1&lt;/span&gt;
 
 &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
-&lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
-&lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+&lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;;
+&lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page&lt;/span&gt; {
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
@@ -168,10 +168,10 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.2&lt;/span&gt;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page&lt;/span&gt; {
     &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
-    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
-    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;;
 
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
@@ -199,10 +199,10 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.2&lt;/span&gt;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page&lt;/span&gt; {
     &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
-    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
-    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;;
 
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
@@ -220,14 +220,14 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.3&lt;/span&gt;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;() {
     &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
-    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
-    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;;
 }
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
-    &lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;();
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;();
 
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
@@ -259,12 +259,12 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;projectname.less&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// projectname.less&lt;/span&gt;
 
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'normalize.css'&lt;/span&gt;;
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'typography.less'&lt;/span&gt;;
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'page.less'&lt;/span&gt;;
+&lt;span class=&quot;hljs-keyword&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'normalize.css'&lt;/span&gt;;
+&lt;span class=&quot;hljs-keyword&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'typography.less'&lt;/span&gt;;
+&lt;span class=&quot;hljs-keyword&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'page.less'&lt;/span&gt;;
 &lt;span class=&quot;hljs-comment&quot;&gt;// и много других компонентов...&lt;/span&gt;
 
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'config.less'&lt;/span&gt;;
+&lt;span class=&quot;hljs-keyword&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'config.less'&lt;/span&gt;;
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
@@ -274,14 +274,14 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.less v0.3&lt;/span&gt;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;() {
     &lt;span class=&quot;hljs-variable&quot;&gt;@padding:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
-    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;;
-    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;;
+    &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;;
 }
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
-    &lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;();
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;();
 
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
@@ -300,7 +300,7 @@
 &lt;span class=&quot;hljs-variable&quot;&gt;@glob-bg-color:&lt;/span&gt; darkblue;
 
 &lt;span class=&quot;hljs-comment&quot;&gt;// кастомизация компонентов&lt;/span&gt;
-&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;() {
     &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@glob-text-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@glob-bg-color&lt;/span&gt;;
 }
@@ -339,7 +339,7 @@
 
 &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; white;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;() {
     &lt;span class=&quot;hljs-comment&quot;&gt;// тут рекурсия и ошибка компиляции&lt;/span&gt;
     &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
 }
@@ -357,7 +357,7 @@
 
 &lt;span class=&quot;hljs-variable&quot;&gt;@glob-txt-color:&lt;/span&gt; white;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page-settings&lt;/span&gt;() {
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;() {
     &lt;span class=&quot;hljs-comment&quot;&gt;// всё в порядке&lt;/span&gt;
     &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@glob-txt-color&lt;/span&gt;;
 }
@@ -384,16 +384,16 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;page.scss&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs scss&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.scss v0.1&lt;/span&gt;
 
-&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: (
+&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;: (
     padding: &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;,
-    bg-color: &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;,
-    text-color: &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;,
-);&lt;/span&gt;
+    bg-color: &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;,
+    text-color: &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;,
+);
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
-    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:          &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, padding);&lt;/span&gt;
-    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, bg-color);&lt;/span&gt;
-    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:            &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, text-color);&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;:          map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, padding);
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, bg-color);
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:            map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, text-color);
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -410,11 +410,11 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;projectname.scss&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs scss&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// projectname.scss&lt;/span&gt;
 
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'config'&lt;/span&gt;;&lt;/span&gt;
+@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'config'&lt;/span&gt;;
 
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'normalize'&lt;/span&gt;;&lt;/span&gt;
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'typography'&lt;/span&gt;;&lt;/span&gt;
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'page'&lt;/span&gt;;&lt;/span&gt;
+@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'normalize'&lt;/span&gt;;
+@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'typography'&lt;/span&gt;;
+@&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'page'&lt;/span&gt;;
 &lt;span class=&quot;hljs-comment&quot;&gt;// и много других компонентов...&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -425,14 +425,14 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;config.scss&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs scss&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// config.scss&lt;/span&gt;
 
-&lt;span class=&quot;hljs-variable&quot;&gt;$glob-text-color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: white;&lt;/span&gt;
-&lt;span class=&quot;hljs-variable&quot;&gt;$glob-bg-color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: darkblue;&lt;/span&gt;
+&lt;span class=&quot;hljs-variable&quot;&gt;$glob-text-color&lt;/span&gt;: white;
+&lt;span class=&quot;hljs-variable&quot;&gt;$glob-bg-color&lt;/span&gt;: darkblue;
 
 &lt;span class=&quot;hljs-comment&quot;&gt;// кастомизируем&lt;/span&gt;
-&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: (
+&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;: (
     bg-color: &lt;span class=&quot;hljs-variable&quot;&gt;$glob-bg-color&lt;/span&gt;,
     text-color: &lt;span class=&quot;hljs-variable&quot;&gt;$glob-text-color&lt;/span&gt;,
-);&lt;/span&gt;
+);
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
@@ -442,22 +442,22 @@
             &lt;div class=&quot;browserframe&quot; data-title=&quot;page.scss&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs scss&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// page.scss v0.2&lt;/span&gt;
 
-&lt;span class=&quot;hljs-variable&quot;&gt;$page-override&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: ( );&lt;/span&gt; &lt;span class=&quot;hljs-comment&quot;&gt;// [1]&lt;/span&gt;
+&lt;span class=&quot;hljs-variable&quot;&gt;$page-override&lt;/span&gt;: ( ); &lt;span class=&quot;hljs-comment&quot;&gt;// [1]&lt;/span&gt;
 
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;hljs-preprocessor&quot;&gt; variable-exists&lt;/span&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;page&lt;/span&gt;-settings) {&lt;/span&gt;
-    &lt;span class=&quot;hljs-variable&quot;&gt;$page-override&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;;&lt;/span&gt; &lt;span class=&quot;hljs-comment&quot;&gt;// [2]&lt;/span&gt;
+@&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; variable-exists(&lt;span class=&quot;hljs-keyword&quot;&gt;page&lt;/span&gt;-settings) {
+    &lt;span class=&quot;hljs-variable&quot;&gt;$page-override&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;// [2]&lt;/span&gt;
 }
 
-&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:  &lt;span class=&quot;hljs-function&quot;&gt;map-merge&lt;/span&gt;((
+&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;:  map-merge((
     padding: &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;,
-    bg-color: &lt;span class=&quot;hljs-hexcolor&quot;&gt;#fff&lt;/span&gt;,
-    text-color: &lt;span class=&quot;hljs-hexcolor&quot;&gt;#000&lt;/span&gt;,
-), &lt;span class=&quot;hljs-variable&quot;&gt;$page-override&lt;/span&gt;);&lt;/span&gt; &lt;span class=&quot;hljs-comment&quot;&gt;// [3]&lt;/span&gt;
+    bg-color: &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;,
+    text-color: &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;,
+), &lt;span class=&quot;hljs-variable&quot;&gt;$page-override&lt;/span&gt;); &lt;span class=&quot;hljs-comment&quot;&gt;// [3]&lt;/span&gt;
 
-&lt;span class=&quot;hljs-class&quot;&gt;.page&lt;/span&gt; {
-    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:          &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, padding);&lt;/span&gt;
-    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;: &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, bg-color);&lt;/span&gt;
-    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;hljs-value&quot;&gt;:            &lt;span class=&quot;hljs-function&quot;&gt;map-get&lt;/span&gt;(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, text-color);&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.page&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;:          map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, padding);
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, bg-color);
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:            map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, text-color);
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -644,6 +644,7 @@
 &lt;ol&gt;
 &lt;li&gt;Проблема с абсолютными путями: докпад по-умолчанию использует пути к ресурсам от корня домена, а на GH Pages url проекта будет выглядеть так &lt;code&gt;http://username.github.io/repository/&lt;/code&gt;. Т.е. сайт находится в папке, а не в корне, и все пути к ресурсам недействительны. Конечно, можно купить собственное доменное имя, но это не мой случай. Нужно, чтобы на локалхосте url оставались абсолютными, а при деплое заменялись с учетом папки, в которую сайт деплоится.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/docpad/docpad-plugin-ghpages&quot;&gt;Плагин для деплоя&lt;/a&gt; не заработал сразу и без настроек, как обещает разработчик.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Добавлено 6 мая 2018&lt;/strong&gt;: деплой из командной строки сломался после включения двухфакторной аутентификации на Гитхабе.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Так как у меня не всё прошло гладко и очевидно, решил написать эту инструкцию.&lt;/p&gt;
 &lt;!-- cut --&gt;
@@ -651,74 +652,74 @@
 &lt;p&gt;Сначала разберёмся с абсолютными путями в докпаде.&lt;/p&gt;
 &lt;p&gt;Установим плагин &lt;a href=&quot;https://github.com/Hypercubed/docpad-plugin-geturl/&quot;&gt;Get Url Plugin for DocPad&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Если ещё не создана, сделаем в конфиге докпада переменную &lt;code&gt;@site.url&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs coffeescript&quot;&gt;    &lt;span class=&quot;hljs-attribute&quot;&gt;templateData&lt;/span&gt;:
-        &lt;span class=&quot;hljs-attribute&quot;&gt;site&lt;/span&gt;:
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs coffeescript&quot;&gt;    templateData:
+        site:
             &lt;span class=&quot;hljs-comment&quot;&gt;# The production url of our website. Used in sitemap and rss feed&lt;/span&gt;
-            &lt;span class=&quot;hljs-attribute&quot;&gt;url&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;http://paulradzkov.github.io/docpad-simpleblog&quot;&lt;/span&gt;
+            url: &lt;span class=&quot;hljs-string&quot;&gt;&quot;http://paulradzkov.github.io/docpad-simpleblog&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;И добавим отдельную конфигурацию для «development» окружения:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs coffeescript&quot;&gt;    &lt;span class=&quot;hljs-comment&quot;&gt;# =================================&lt;/span&gt;
     &lt;span class=&quot;hljs-comment&quot;&gt;# Environments&lt;/span&gt;
 
-    &lt;span class=&quot;hljs-attribute&quot;&gt;environments&lt;/span&gt;:
-        &lt;span class=&quot;hljs-attribute&quot;&gt;development&lt;/span&gt;:
-            &lt;span class=&quot;hljs-attribute&quot;&gt;templateData&lt;/span&gt;:
-                &lt;span class=&quot;hljs-attribute&quot;&gt;site&lt;/span&gt;:
-                    &lt;span class=&quot;hljs-attribute&quot;&gt;url&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'http://localhost:9778'&lt;/span&gt;
+    environments:
+        development:
+            templateData:
+                site:
+                    url: &lt;span class=&quot;hljs-string&quot;&gt;'http://localhost:9778'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Эта переменная — &lt;code&gt;@site.url&lt;/code&gt; — будет подставляться префиксом ко всем путям и ссылкам в зависимости от того, работаем мы на локалхосте или выкатываем сайт на хостинг.&lt;/p&gt;
 &lt;p&gt;Теперь нужно добавить хелпер «&lt;code&gt;@getUrl()&lt;/code&gt;» ко всем «&lt;code&gt;href&lt;/code&gt;» и «&lt;code&gt;src&lt;/code&gt;» в шаблоне, в документах — везде, где встречаются абсолютные пути.&lt;/p&gt;
 &lt;p&gt;Например, было:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!-- DocPad Styles + Our Own --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;%-&lt;/span&gt; @&lt;span class=&quot;hljs-attribute&quot;&gt;getBlock&lt;/span&gt;(&quot;&lt;span class=&quot;hljs-attribute&quot;&gt;styles&lt;/span&gt;&quot;)&lt;span class=&quot;hljs-attribute&quot;&gt;.add&lt;/span&gt;(@&lt;span class=&quot;hljs-attribute&quot;&gt;site.styles&lt;/span&gt;)&lt;span class=&quot;hljs-attribute&quot;&gt;.toHTML&lt;/span&gt;() %&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%-&lt;/span&gt; @&lt;span class=&quot;hljs-attr&quot;&gt;getBlock&lt;/span&gt;(&quot;&lt;span class=&quot;hljs-attr&quot;&gt;styles&lt;/span&gt;&quot;)&lt;span class=&quot;hljs-attr&quot;&gt;.add&lt;/span&gt;(@&lt;span class=&quot;hljs-attr&quot;&gt;site.styles&lt;/span&gt;)&lt;span class=&quot;hljs-attr&quot;&gt;.toHTML&lt;/span&gt;() %&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;/vendor/modernizr.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;/vendor/modernizr.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Стало:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!-- DocPad Styles + Our Own --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;%-&lt;/span&gt; @&lt;span class=&quot;hljs-attribute&quot;&gt;getBlock&lt;/span&gt;(&quot;&lt;span class=&quot;hljs-attribute&quot;&gt;styles&lt;/span&gt;&quot;)&lt;span class=&quot;hljs-attribute&quot;&gt;.add&lt;/span&gt;(@&lt;span class=&quot;hljs-attribute&quot;&gt;getUrl&lt;/span&gt;(@&lt;span class=&quot;hljs-attribute&quot;&gt;site.styles&lt;/span&gt;))&lt;span class=&quot;hljs-attribute&quot;&gt;.toHTML&lt;/span&gt;() %&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%-&lt;/span&gt; @&lt;span class=&quot;hljs-attr&quot;&gt;getBlock&lt;/span&gt;(&quot;&lt;span class=&quot;hljs-attr&quot;&gt;styles&lt;/span&gt;&quot;)&lt;span class=&quot;hljs-attr&quot;&gt;.add&lt;/span&gt;(@&lt;span class=&quot;hljs-attr&quot;&gt;getUrl&lt;/span&gt;(@&lt;span class=&quot;hljs-attr&quot;&gt;site.styles&lt;/span&gt;))&lt;span class=&quot;hljs-attr&quot;&gt;.toHTML&lt;/span&gt;() %&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;&amp;lt;%= @getUrl('/vendor/modernizr.js') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl('/vendor/modernizr.js') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Было:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;nav-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;/&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Blog&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;/docs&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Documentation&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog/issues&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Issues&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Source Code&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;nav-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;/&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Blog&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;/docs&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Documentation&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog/issues&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Issues&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Source Code&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Стало:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;nav-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;&amp;lt;%= @getUrl('/') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Blog&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;&amp;lt;%= @getUrl('/docs') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Documentation&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog/issues&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Issues&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Source Code&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;nav-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl('/') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Blog&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl('/docs') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Documentation&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog/issues&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Issues&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Source Code&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Было:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;meta-data&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;comments&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;&amp;lt;%= @document.path %&amp;gt;#disqus_thread&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;data-disqus-identifier&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;&amp;lt;%= @document.disqusid %&amp;gt;&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;Комментарии&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;tags-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;in&lt;/span&gt; @&lt;span class=&quot;hljs-attribute&quot;&gt;document.tags&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;:&lt;/span&gt; %&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;label-tag&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;&amp;lt;%= @getTagUrl(tag) %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;%=&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;tag&lt;/span&gt; %&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;end&lt;/span&gt; %&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;meta-data&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;comments&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @document.path %&amp;gt;#disqus_thread&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;data-disqus-identifier&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @document.disqusid %&amp;gt;&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;Комментарии&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;tags-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;in&lt;/span&gt; @&lt;span class=&quot;hljs-attr&quot;&gt;document.tags&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;:&lt;/span&gt; %&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;label-tag&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getTagUrl(tag) %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%=&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;tag&lt;/span&gt; %&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;end&lt;/span&gt; %&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Стало:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;meta-data&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;comments&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;&amp;lt;%= @getUrl(@document.path) %&amp;gt;#disqus_thread&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;data-disqus-identifier&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;&amp;lt;%= @document.disqusid %&amp;gt;&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;Комментарии&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;tags-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;in&lt;/span&gt; @&lt;span class=&quot;hljs-attribute&quot;&gt;document.tags&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;:&lt;/span&gt; %&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;label-tag&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;&amp;lt;%= @getUrl(@getTagUrl(tag)) %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;%=&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;tag&lt;/span&gt; %&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;end&lt;/span&gt; %&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;meta-data&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;comments&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl(@document.path) %&amp;gt;#disqus_thread&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;data-disqus-identifier&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @document.disqusid %&amp;gt;&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;Комментарии&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;tags-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;in&lt;/span&gt; @&lt;span class=&quot;hljs-attr&quot;&gt;document.tags&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;:&lt;/span&gt; %&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;label-tag&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl(@getTagUrl(tag)) %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%=&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;tag&lt;/span&gt; %&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;end&lt;/span&gt; %&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;И так далее.&lt;/p&gt;
 &lt;p&gt;Теперь, когда мы запускаем &lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot; &gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;docpad run&lt;/span&gt;&amp;zwj;&lt;/kbd&gt;, ко всем путям подставляется &lt;code&gt;@site.url&lt;/code&gt; из девелоперского окружения — &lt;code&gt;http://localhost:9778&lt;/code&gt;. А когда &lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot; &gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;docpad run --env static&lt;/span&gt;&amp;zwj;&lt;/kbd&gt;, переменная &lt;code&gt;@site.url&lt;/code&gt; равна нашему продакшен пути.&lt;/p&gt;
@@ -749,13 +750,27 @@
 
 &lt;p&gt;А в конфиге докпада пропишем настройки для плагина:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs coffeescript&quot;&gt;    &lt;span class=&quot;hljs-comment&quot;&gt;# Plugins configurations&lt;/span&gt;
-    &lt;span class=&quot;hljs-attribute&quot;&gt;plugins&lt;/span&gt;:
-        &lt;span class=&quot;hljs-attribute&quot;&gt;ghpages&lt;/span&gt;:
-            &lt;span class=&quot;hljs-attribute&quot;&gt;deployRemote&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'deploy'&lt;/span&gt;
-            &lt;span class=&quot;hljs-attribute&quot;&gt;deployBranch&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'gh-pages'&lt;/span&gt;
+    plugins:
+        ghpages:
+            deployRemote: &lt;span class=&quot;hljs-string&quot;&gt;'deploy'&lt;/span&gt;
+            deployBranch: &lt;span class=&quot;hljs-string&quot;&gt;'gh-pages'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Теперь можно выкатывать сайт:&lt;/p&gt;
 &lt;p&gt;&lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot; &gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;docpad deploy-ghpages --env static&lt;/span&gt;&amp;zwj;&lt;/kbd&gt;&lt;/p&gt;
+&lt;h2 id=&quot;-&quot;&gt;Двухфакторная аутентификация&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Добавлено 6 мая 2018&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Когда я включил двухфакторную аутентификацию на Гитхабе, деплой из командной строки перестал работать. Чтобы починить, вместо вашего пароля в настройках remote нужно подставить сгенерированный токен. Сгенерируйте его по этой &lt;a href=&quot;https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/&quot;&gt;инструкции&lt;/a&gt;. Если кратко:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;На Гитхабе кликните по вашему аватару, потом &lt;strong&gt;Settings&lt;/strong&gt; → &lt;strong&gt;Developer settings&lt;/strong&gt; → &lt;strong&gt;Personal access tokens&lt;/strong&gt; → &lt;strong&gt;Generate new token&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Дайте токену любое имя, например, «Mac terminal» или «Windows cmd».&lt;/li&gt;
+&lt;li&gt;Поставьте уровень доступа &lt;strong&gt;repo&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Нажмите &lt;strong&gt;Generate token&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Скопируйте полученный токен. Когда вы уйдете с этой страницы, токен уже нельзя будет посмотреть.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Вам нужно добавить новый «remote» (или заменить существующий) с токеном вместо пароля:&lt;/p&gt;
+&lt;p&gt;&lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot; &gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;git remote add deploy &lt;span&gt;https://&lt;/span&gt;login:&lt;mark&gt;token&lt;/mark&gt;@github.com/repo_owner/repo_name.git&lt;/span&gt;&amp;zwj;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;p&gt;И всё снова заработает.&lt;/p&gt;
 </content>
         </entry>
     
@@ -784,9 +799,9 @@
 
 &lt;div class=&quot;raw-output&quot;&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs markdown&quot;&gt;
-&lt;span class=&quot;hljs-header&quot;&gt;# GitHub-Flavored Markdown&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;# GitHub-Flavored Markdown&lt;/span&gt;
 
-&lt;span class=&quot;hljs-header&quot;&gt;## Краткое руководство&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;## Краткое руководство&lt;/span&gt;
 
 Абзацы создаются при помощи пустой строки. Если вокруг текста сверху и снизу есть пустые строки, то текст превращается в абзац.
 
@@ -795,16 +810,16 @@
 
 Заголовки отмечаются диезом &lt;span class=&quot;hljs-code&quot;&gt;`#`&lt;/span&gt; в начале строки, от одного до шести. Например:
 
-&lt;span class=&quot;hljs-header&quot;&gt;# Заголовок первого уровня #&lt;/span&gt;
-&lt;span class=&quot;hljs-header&quot;&gt;## Заголовок h2&lt;/span&gt;
-&lt;span class=&quot;hljs-header&quot;&gt;### Заголовок h3&lt;/span&gt;
-&lt;span class=&quot;hljs-header&quot;&gt;#### Заголовок h4&lt;/span&gt;
-&lt;span class=&quot;hljs-header&quot;&gt;##### Заголовок h5&lt;/span&gt;
-&lt;span class=&quot;hljs-header&quot;&gt;###### Заголовок h6&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;# Заголовок первого уровня #&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;## Заголовок h2&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Заголовок h3&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;#### Заголовок h4&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;##### Заголовок h5&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;###### Заголовок h6&lt;/span&gt;
 
 В декоративных целях заголовки можно «закрывать» с обратной стороны.
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Списки&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Списки&lt;/span&gt;
 
 Для разметки неупорядоченных списков можно использовать или &lt;span class=&quot;hljs-code&quot;&gt;`*`&lt;/span&gt;, или &lt;span class=&quot;hljs-code&quot;&gt;`-`&lt;/span&gt;, или &lt;span class=&quot;hljs-code&quot;&gt;`+`&lt;/span&gt;:
 
@@ -846,48 +861,48 @@
 
 &lt;span class=&quot;hljs-code&quot;&gt;    Четыре абзац (Четыре пробела в начале или один tab).&lt;/span&gt;
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Цитаты&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Цитаты&lt;/span&gt;
 
 Цитаты оформляются как в емейлах, с помощью символа &lt;span class=&quot;hljs-code&quot;&gt;`&amp;gt;`&lt;/span&gt;.
 
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,&lt;/span&gt;
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.&lt;/span&gt;
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/span&gt;
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,&lt;/span&gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.&lt;/span&gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/span&gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt;
 &amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse&lt;/span&gt;
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt; id sem consectetuer libero luctus adipiscing.&lt;/span&gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt; id sem consectetuer libero luctus adipiscing.&lt;/span&gt;
 
 Или более ленивым способом, когда знак &lt;span class=&quot;hljs-code&quot;&gt;`&amp;gt;`&lt;/span&gt; ставится перед каждым элементом цитаты, будь то абзац, заголовок или пустая строка:
 
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,&lt;/span&gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,&lt;/span&gt;
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt;
 &amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse&lt;/span&gt;
 id sem consectetuer libero luctus adipiscing.
 
 В цитаты можно помещать всё что угодно, в том числе вложенные цитаты:
 
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt; ## This is a header.&lt;/span&gt;
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt; ## This is a header.&lt;/span&gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt;
 &amp;gt; 1.   This is the first list item.&lt;/span&gt;
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt; 2.   This is the second list item.&lt;/span&gt;
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt; 2.   This is the second list item.&lt;/span&gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt;
 &amp;gt; &amp;gt; Вложенная цитата.&lt;/span&gt;
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt;
 &amp;gt; Here's some example code:&lt;/span&gt;
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt;
 &amp;gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);&lt;/span&gt;
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Исходный код&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Исходный код&lt;/span&gt;
 
 В чистом Маркдауне блоки кода отбиваются 4 пробелами в начале каждой строки.
 
 Но в GitHub-Flavored Markdown (сокращенно GFM) есть более удобный способ: ставим по три апострофа (на букве Ё) до и после кода. Также можно указать язык исходного кода.
 
 &lt;span class=&quot;hljs-code&quot;&gt;` `&lt;/span&gt; `html
-&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;nav&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;nav nav-primary&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;nav&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;nav nav-primary&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;hljs-code&quot;&gt;    &amp;lt;li class=&quot;tab-conversation active&quot;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;hljs-code&quot;&gt;      &amp;lt;a href=&quot;#&quot; data-role=&quot;post-count&quot; class=&quot;publisher-nav-color&quot; data-nav=&quot;conversation&quot;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;hljs-code&quot;&gt;        &amp;lt;span class=&quot;comment-count&quot;&amp;gt;0 комментариев&amp;lt;/span&amp;gt;&lt;/span&gt;
@@ -904,50 +919,50 @@ id sem consectetuer libero luctus adipiscing.
 &lt;span class=&quot;hljs-code&quot;&gt;        &amp;lt;span class=&quot;caret&quot;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;hljs-code&quot;&gt;      &amp;lt;/a&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;hljs-code&quot;&gt;    &amp;lt;/li&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;nav&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;nav&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;hljs-code&quot;&gt;` `&lt;/span&gt; `
 
 Самое приятное, что в коде не нужно заменять угловые скобки &lt;span class=&quot;hljs-code&quot;&gt;`&amp;lt; &amp;gt;`&lt;/span&gt; и амперсанд &lt;span class=&quot;hljs-code&quot;&gt;`&amp;amp;`&lt;/span&gt; на их html-сущности.
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Инлайн код&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Инлайн код&lt;/span&gt;
 
 Для вставки кода внутри предложений нужно заключать этот код в апострофы (на букве Ё). Пример: &lt;span class=&quot;hljs-code&quot;&gt;`&amp;lt;html class=&quot;ie no-js&quot;&amp;gt;`&lt;/span&gt;.
 
 Если внутри кода есть апостроф, то код надо обрамить двойными апострофами: &lt;span class=&quot;hljs-code&quot;&gt;``There is a literal backtick (`&lt;/span&gt;) here.``
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Горизонтальная черта&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Горизонтальная черта&lt;/span&gt;
 
 &lt;span class=&quot;hljs-code&quot;&gt;`hr`&lt;/span&gt; создается тремя звездочками или тремя дефисами.
 
 &lt;span class=&quot;hljs-emphasis&quot;&gt;***&lt;/span&gt;
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Ссылки&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Ссылки&lt;/span&gt;
 
-Это встроенная [&lt;span class=&quot;hljs-link_label&quot;&gt;ссылка с title элементом&lt;/span&gt;](&lt;span class=&quot;hljs-link_url&quot;&gt;http://example.com/link &quot;Я ссылка&quot;&lt;/span&gt;). Это — [&lt;span class=&quot;hljs-link_label&quot;&gt;без title&lt;/span&gt;](&lt;span class=&quot;hljs-link_url&quot;&gt;http://example.com/link&lt;/span&gt;).
+Это встроенная [&lt;span class=&quot;hljs-string&quot;&gt;ссылка с title элементом&lt;/span&gt;](&lt;span class=&quot;hljs-link&quot;&gt;http://example.com/link &quot;Я ссылка&quot;&lt;/span&gt;). Это — [&lt;span class=&quot;hljs-string&quot;&gt;без title&lt;/span&gt;](&lt;span class=&quot;hljs-link&quot;&gt;http://example.com/link&lt;/span&gt;).
 
-А вот [&lt;span class=&quot;hljs-link_label&quot;&gt;пример&lt;/span&gt;][&lt;span class=&quot;hljs-link_reference&quot;&gt;1&lt;/span&gt;] [&lt;span class=&quot;hljs-link_label&quot;&gt;нескольких&lt;/span&gt;][&lt;span class=&quot;hljs-link_reference&quot;&gt;2&lt;/span&gt;] [&lt;span class=&quot;hljs-link_label&quot;&gt;ссылок&lt;/span&gt;][&lt;span class=&quot;hljs-link_reference&quot;&gt;id&lt;/span&gt;] с разметкой как у сносок. Прокатит и [&lt;span class=&quot;hljs-link_label&quot;&gt;короткая запись&lt;/span&gt;][&lt;span class=&quot;hljs-link_reference&quot;&gt;&lt;/span&gt;] без указания id.
+А вот [&lt;span class=&quot;hljs-string&quot;&gt;пример&lt;/span&gt;][&lt;span class=&quot;hljs-symbol&quot;&gt;1&lt;/span&gt;] [&lt;span class=&quot;hljs-string&quot;&gt;нескольких&lt;/span&gt;][&lt;span class=&quot;hljs-symbol&quot;&gt;2&lt;/span&gt;] [&lt;span class=&quot;hljs-string&quot;&gt;ссылок&lt;/span&gt;][&lt;span class=&quot;hljs-symbol&quot;&gt;id&lt;/span&gt;] с разметкой как у сносок. Прокатит и [&lt;span class=&quot;hljs-string&quot;&gt;короткая запись&lt;/span&gt;][&lt;span class=&quot;hljs-symbol&quot;&gt;&lt;/span&gt;] без указания id.
 
-[&lt;span class=&quot;hljs-link_reference&quot;&gt;1&lt;/span&gt;]:&lt;span class=&quot;hljs-link_url&quot;&gt; http://example.com/ &quot;Optional Title Here&quot;&lt;/span&gt;
-[&lt;span class=&quot;hljs-link_reference&quot;&gt;2&lt;/span&gt;]:&lt;span class=&quot;hljs-link_url&quot;&gt; http://example.com/some&lt;/span&gt;
-[&lt;span class=&quot;hljs-link_reference&quot;&gt;id&lt;/span&gt;]:&lt;span class=&quot;hljs-link_url&quot;&gt; http://example.com/links (Optional Title Here)&lt;/span&gt;
-[&lt;span class=&quot;hljs-link_reference&quot;&gt;короткая запись&lt;/span&gt;]:&lt;span class=&quot;hljs-link_url&quot;&gt; http://example.com/short&lt;/span&gt;
+[&lt;span class=&quot;hljs-symbol&quot;&gt;1&lt;/span&gt;]: &lt;span class=&quot;hljs-link&quot;&gt;http://example.com/ &quot;Optional Title Here&quot;&lt;/span&gt;
+[&lt;span class=&quot;hljs-symbol&quot;&gt;2&lt;/span&gt;]: &lt;span class=&quot;hljs-link&quot;&gt;http://example.com/some&lt;/span&gt;
+[&lt;span class=&quot;hljs-symbol&quot;&gt;id&lt;/span&gt;]: &lt;span class=&quot;hljs-link&quot;&gt;http://example.com/links (Optional Title Here)&lt;/span&gt;
+[&lt;span class=&quot;hljs-symbol&quot;&gt;короткая запись&lt;/span&gt;]: &lt;span class=&quot;hljs-link&quot;&gt;http://example.com/short&lt;/span&gt;
 
 Вынос длинных урлов из предложения способствует сохранению читабельности исходника. Сноски можно располагать в любом месте документа.
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Emphasis&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Emphasis&lt;/span&gt;
 
 Выделять слова можно при помощи &lt;span class=&quot;hljs-code&quot;&gt;`*`&lt;/span&gt; и &lt;span class=&quot;hljs-code&quot;&gt;`_`&lt;/span&gt;. Одним символ для наклонного текста, два символа для жирного текста, три — для наклонного и жирного одновременно.
 
 Например, это &lt;span class=&quot;hljs-emphasis&quot;&gt;_italic_&lt;/span&gt; и это тоже &lt;span class=&quot;hljs-emphasis&quot;&gt;*italic*&lt;/span&gt;. А вот так уже &lt;span class=&quot;hljs-strong&quot;&gt;__strong__&lt;/span&gt;, и так тоже &lt;span class=&quot;hljs-strong&quot;&gt;**strong**&lt;/span&gt;. А так &lt;span class=&quot;hljs-strong&quot;&gt;***жирный и наклонный**&lt;/span&gt;* одновременно.
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Зачеркивание&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Зачеркивание&lt;/span&gt;
 
 В GFM добавлено зачеркивание текста: две тильды &lt;span class=&quot;hljs-code&quot;&gt;`~`&lt;/span&gt; до и после текста.
 
 ~~Зачеркнуто~~
 
-&lt;span class=&quot;hljs-header&quot;&gt;## Картинки&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;## Картинки&lt;/span&gt;
 
 Картинка без &lt;span class=&quot;hljs-code&quot;&gt;`alt`&lt;/span&gt; текста
 
@@ -955,47 +970,47 @@ id sem consectetuer libero luctus adipiscing.
 
 Картинка с альтом и тайтлом:
 
-![&lt;span class=&quot;hljs-link_label&quot;&gt;Alt text&lt;/span&gt;](&lt;span class=&quot;hljs-link_url&quot;&gt;http://placehold.it/150x100 &quot;Можно задать title&quot;&lt;/span&gt;)
+![&lt;span class=&quot;hljs-string&quot;&gt;Alt text&lt;/span&gt;](&lt;span class=&quot;hljs-link&quot;&gt;http://placehold.it/150x100 &quot;Можно задать title&quot;&lt;/span&gt;)
 
 Запомнить просто: синтаксис как у ссылок, только перед открывающей квадратной скобкой ставится восклицательный знак.
 
 Картинки «сноски»:
 
-![&lt;span class=&quot;hljs-link_label&quot;&gt;Картинка&lt;/span&gt;][&lt;span class=&quot;hljs-link_reference&quot;&gt;image1&lt;/span&gt;]
-![&lt;span class=&quot;hljs-link_label&quot;&gt;Картинка&lt;/span&gt;][&lt;span class=&quot;hljs-link_reference&quot;&gt;image2&lt;/span&gt;]
-![&lt;span class=&quot;hljs-link_label&quot;&gt;Картинка&lt;/span&gt;][&lt;span class=&quot;hljs-link_reference&quot;&gt;image3&lt;/span&gt;]
+![&lt;span class=&quot;hljs-string&quot;&gt;Картинка&lt;/span&gt;][&lt;span class=&quot;hljs-symbol&quot;&gt;image1&lt;/span&gt;]
+![&lt;span class=&quot;hljs-string&quot;&gt;Картинка&lt;/span&gt;][&lt;span class=&quot;hljs-symbol&quot;&gt;image2&lt;/span&gt;]
+![&lt;span class=&quot;hljs-string&quot;&gt;Картинка&lt;/span&gt;][&lt;span class=&quot;hljs-symbol&quot;&gt;image3&lt;/span&gt;]
 
-[&lt;span class=&quot;hljs-link_reference&quot;&gt;image1&lt;/span&gt;]:&lt;span class=&quot;hljs-link_url&quot;&gt; http://placehold.it/250x100&lt;/span&gt;
-[&lt;span class=&quot;hljs-link_reference&quot;&gt;image2&lt;/span&gt;]:&lt;span class=&quot;hljs-link_url&quot;&gt; http://placehold.it/200x100&lt;/span&gt;
-[&lt;span class=&quot;hljs-link_reference&quot;&gt;image3&lt;/span&gt;]:&lt;span class=&quot;hljs-link_url&quot;&gt; http://placehold.it/150x100&lt;/span&gt;
+[&lt;span class=&quot;hljs-symbol&quot;&gt;image1&lt;/span&gt;]: &lt;span class=&quot;hljs-link&quot;&gt;http://placehold.it/250x100&lt;/span&gt;
+[&lt;span class=&quot;hljs-symbol&quot;&gt;image2&lt;/span&gt;]: &lt;span class=&quot;hljs-link&quot;&gt;http://placehold.it/200x100&lt;/span&gt;
+[&lt;span class=&quot;hljs-symbol&quot;&gt;image3&lt;/span&gt;]: &lt;span class=&quot;hljs-link&quot;&gt;http://placehold.it/150x100&lt;/span&gt;
 
 Картинки-ссылки:
 
-[&lt;span class=&quot;hljs-link_label&quot;&gt;![Alt text&lt;/span&gt;](&lt;span class=&quot;hljs-link_url&quot;&gt;http://placehold.it/150x100&lt;/span&gt;)](&lt;span class=&quot;hljs-link_url&quot;&gt;http://example.com/&lt;/span&gt;)
+[&lt;span class=&quot;hljs-string&quot;&gt;![Alt text&lt;/span&gt;](&lt;span class=&quot;hljs-link&quot;&gt;http://placehold.it/150x100&lt;/span&gt;)](&lt;span class=&quot;hljs-link&quot;&gt;http://example.com/&lt;/span&gt;)
 
 
-&lt;span class=&quot;hljs-header&quot;&gt;## Использование HTML внутри Markdown&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;## Использование HTML внутри Markdown&lt;/span&gt;
 
 Mожно смешивать Markdown и HTML. Если на какие-то элементы нужно поставить классы или атрибуты, смело используем HTML:
 
-&lt;span class=&quot;hljs-blockquote&quot;&gt;&amp;gt; Выделять слова можно при помощи * и _ . Например, это &amp;lt;em class=&quot;a1&quot;&amp;gt;italic&amp;lt;/em&amp;gt; и это тоже &amp;lt;i class=&quot;a1&quot;&amp;gt;italic&amp;lt;/i&amp;gt;. А вот так уже &amp;lt;b&amp;gt;strong&amp;lt;/b&amp;gt;, и так тоже &amp;lt;strong&amp;gt;strong&amp;lt;/strong&amp;gt;.&lt;/span&gt;
+&lt;span class=&quot;hljs-quote&quot;&gt;&amp;gt; Выделять слова можно при помощи * и _ . Например, это &amp;lt;em class=&quot;a1&quot;&amp;gt;italic&amp;lt;/em&amp;gt; и это тоже &amp;lt;i class=&quot;a1&quot;&amp;gt;italic&amp;lt;/i&amp;gt;. А вот так уже &amp;lt;b&amp;gt;strong&amp;lt;/b&amp;gt;, и так тоже &amp;lt;strong&amp;gt;strong&amp;lt;/strong&amp;gt;.&lt;/span&gt;
 
 Можно и наоборот, внутри HTML-тегов использовать Маркдаун.
 
-&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;section&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;someclass&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;section&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;someclass&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Пример Маркдауна внутри HTML&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Пример Маркдауна внутри HTML&lt;/span&gt;
 
 Выделять слова можно при помощи &lt;span class=&quot;hljs-code&quot;&gt;`*`&lt;/span&gt; и &lt;span class=&quot;hljs-code&quot;&gt;`_`&lt;/span&gt; . Например, это &lt;span class=&quot;hljs-emphasis&quot;&gt;_italic_&lt;/span&gt; и это тоже &lt;span class=&quot;hljs-emphasis&quot;&gt;*italic*&lt;/span&gt;. А вот так уже &lt;span class=&quot;hljs-strong&quot;&gt;__strong__&lt;/span&gt;, и так тоже &lt;span class=&quot;hljs-strong&quot;&gt;**strong**&lt;/span&gt;.
 
-&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;section&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;section&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-header&quot;&gt;### Таблицы&lt;/span&gt;
+&lt;span class=&quot;hljs-section&quot;&gt;### Таблицы&lt;/span&gt;
 
 В чистом Маркдауне нет синтаксиса для таблиц, а в GFM есть.
 
 First Header  | Second Header
-&lt;span class=&quot;hljs-horizontal_rule&quot;&gt;------------- | -------------&lt;/span&gt;
+------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 
@@ -1370,26 +1385,26 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Основной текст имеет начертание Light 300, заголовки и цитаты — Normal 400, а промо-блок — Semi-Bold 600:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-family&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;'Open Sans'&lt;/span&gt;, sans-serif&lt;/span&gt;&lt;/span&gt;;
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;300&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;h1&lt;/span&gt;, &lt;span class=&quot;hljs-tag&quot;&gt;h2&lt;/span&gt;, &lt;span class=&quot;hljs-tag&quot;&gt;h3&lt;/span&gt;, &lt;span class=&quot;hljs-tag&quot;&gt;h4&lt;/span&gt;, &lt;span class=&quot;hljs-tag&quot;&gt;h5&lt;/span&gt;, &lt;span class=&quot;hljs-tag&quot;&gt;h6&lt;/span&gt;,
-&lt;span class=&quot;hljs-tag&quot;&gt;blockquote&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;400&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-class&quot;&gt;.promo&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;600&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;body&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-family&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'Open Sans'&lt;/span&gt;, sans-serif;
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;300&lt;/span&gt;;
+}
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;h1&lt;/span&gt;, &lt;span class=&quot;hljs-selector-tag&quot;&gt;h2&lt;/span&gt;, &lt;span class=&quot;hljs-selector-tag&quot;&gt;h3&lt;/span&gt;, &lt;span class=&quot;hljs-selector-tag&quot;&gt;h4&lt;/span&gt;, &lt;span class=&quot;hljs-selector-tag&quot;&gt;h5&lt;/span&gt;, &lt;span class=&quot;hljs-selector-tag&quot;&gt;h6&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;blockquote&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;400&lt;/span&gt;;
+}
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.promo&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;600&lt;/span&gt;;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Тег &lt;code class=&quot;hljs-tag&quot;&gt;strong&lt;/code&gt; может встечаться и в основном тексте, и в цитатах, и промо-блоке. Надо это учесть.&lt;/p&gt;
 
 &lt;p&gt;По-умолчанию:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;strong&lt;/span&gt;, &lt;span class=&quot;hljs-tag&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; bold&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* bold = 700 */&lt;/span&gt;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;strong&lt;/span&gt;, &lt;span class=&quot;hljs-selector-tag&quot;&gt;b&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;: bold; &lt;span class=&quot;hljs-comment&quot;&gt;/* bold = 700 */&lt;/span&gt;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;А нам хочется, чтобы у &lt;code class=&quot;hljs-tag&quot;&gt;strong&lt;/code&gt; и &lt;code class=&quot;hljs-tag&quot;&gt;b&lt;/code&gt; для основного текста было Normal 400, для цитат и заголовков — Bold 700, а для промо блока — Extra-Bold 800. Это сохранит контраст между жирным и нежирным текстом примерно равным во всех случаях.&lt;/p&gt;
@@ -1446,14 +1461,14 @@ Content Cell  | Content Cell
 
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;/* сбрасываем стандартное «bold»,
 шрифт становится таким же как его родительский элемент */&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;strong&lt;/span&gt;, &lt;span class=&quot;hljs-tag&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; inherit&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;strong&lt;/span&gt;, &lt;span class=&quot;hljs-selector-tag&quot;&gt;b&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;: inherit;
+}
 
 &lt;span class=&quot;hljs-comment&quot;&gt;/* теперь bolder будет вычисляться исходя из веса шрифта родительского элемента */&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;strong&lt;/span&gt;, &lt;span class=&quot;hljs-tag&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; bolder&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;strong&lt;/span&gt;, &lt;span class=&quot;hljs-selector-tag&quot;&gt;b&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;: bolder;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Именно так, как два отдельных правила. Первое обнуляет значение &lt;code class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/code&gt; из браузерной таблицы стилей, второе задаёт жирность уже в относительных, а не абсолютных единицах.&lt;/p&gt;
@@ -1481,14 +1496,14 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Если у вас шрифт установлен в системе, но не подключен через &lt;code class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;font-face&lt;/span&gt;&lt;/code&gt;, то Google Chrome определяет только Normal и Bold начертания шрифта. Чтобы локальный шрифт заработал, нужно дополнительно указать его &lt;code class=&quot;hljs-attribute&quot;&gt;font-family&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-class&quot;&gt;.fw300&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-family&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;Open Sans Light&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;Open Sans&quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;300&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-class&quot;&gt;.fw600&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-family&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;Open Sans SemiBold&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;Open Sans&quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;600&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.fw300&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-family&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Open Sans Light&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;Open Sans&quot;&lt;/span&gt;;
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;300&lt;/span&gt;;
+}
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.fw600&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-family&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;Open Sans SemiBold&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;Open Sans&quot;&lt;/span&gt;;
+  &lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;600&lt;/span&gt;;
+}
 &lt;/code&gt;&lt;/pre&gt;</content>
         </entry>
     
@@ -1502,7 +1517,7 @@ Content Cell  | Content Cell
 &lt;p&gt;«Если у Вас возникли любые вопросы касательно вашего заказа, пожалуйста, свяжитесь со Службой поддержки по телефону &lt;a href=&quot;tel:XXXX XXX XXXX&quot;&gt;XXXX XXX XXXX&lt;/a&gt; или напишите по адресу &lt;a href=&quot;mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;body=Мой номер заказа XXXXX&quot; class=&quot;breakall&quot;&gt;customerservices@sitename.com&lt;/a&gt;. Не забудьте сообщить ваш номер заказа.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Создавая шаблоны для таких писем, не поленитесь прописать этот самый номер заказа (и любую другую нужную службе поддержки информацию) в параметры mailto ссылки:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;amp;body=Мой номер заказа XXXXX&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;customerservices@sitename.com&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;amp;body=Мой номер заказа XXXXX&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;customerservices@sitename.com&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Теперь при клике на адрес электронной почты в новом сообщении номер заказа подставится и в тему письма, и в текст сообщения.&lt;/p&gt;
 &lt;p&gt;Мелочь, но она сэкономит вашим покупателям пару лишних действий. Особенно актуально это для тех, кто пишет письмо с мобильника.&lt;/p&gt;
 </content>
@@ -1527,13 +1542,13 @@ Content Cell  | Content Cell
 &lt;/figure&gt;
 
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:link&lt;/span&gt;          &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-hexcolor&quot;&gt;#0267FF&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;}
-&lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:visited&lt;/span&gt;       &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-hexcolor&quot;&gt;#B413D3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;}
-&lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:hover&lt;/span&gt;         &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-hexcolor&quot;&gt;#004DC0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;}
-&lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:visited&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-hexcolor&quot;&gt;#9501B3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;}
-&lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:focus&lt;/span&gt;         &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-hexcolor&quot;&gt;#004DC0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;}
-&lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:visited&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:focus&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-hexcolor&quot;&gt;#770081&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;}
-&lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:active&lt;/span&gt;        &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-hexcolor&quot;&gt;#000000&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;}
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:link&lt;/span&gt;          {&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;#0267FF&lt;/span&gt;}
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:visited&lt;/span&gt;       {&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;#B413D3&lt;/span&gt;}
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:hover&lt;/span&gt;         {&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;#004DC0&lt;/span&gt;}
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:visited&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:hover&lt;/span&gt; {&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;#9501B3&lt;/span&gt;}
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:focus&lt;/span&gt;         {&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;#004DC0&lt;/span&gt;}
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:visited&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:focus&lt;/span&gt; {&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;#770081&lt;/span&gt;}
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:active&lt;/span&gt;        {&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;#000000&lt;/span&gt;}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://cssdeck.com/labs/visited_link_on_hover&quot; target=&quot;_blank&quot; class=&quot;link-to-demo&quot;&gt;Пример&lt;/a&gt;&lt;/p&gt;</content>
@@ -1550,7 +1565,7 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Например:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-class&quot;&gt;.classy&lt;/span&gt;) &lt;span class=&quot;hljs-rules&quot;&gt;{ &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; red&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(.classy)&lt;/span&gt; { &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: red; }
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Ну окей, думаю я, в моей практике не встречались такие ситуации. Обходились мы ведь как-то раньше без &lt;code class=&quot;hljs-pseudo&quot;&gt;:not&lt;/code&gt;. Приходилось немного переписать структуру селекторов или обнулить пару значений.&lt;/p&gt;
@@ -1561,14 +1576,14 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Например, мы хотим на сайте сделать красивые буллиты для ненумерованных списков &lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;ul li&lt;/span&gt;&lt;/code&gt;. Мы пишем код:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{ &lt;span class=&quot;hljs-comment&quot;&gt;/* наши красивые стили */&lt;/span&gt; &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt; { &lt;span class=&quot;hljs-comment&quot;&gt;/* наши красивые стили */&lt;/span&gt; }
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;В результате, наши красивые буллиты появляются не только в контенте, но и, например, в навигации, где тоже используются &lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;ul li&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Мы ограничиваем область действия селектора:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-class&quot;&gt;.content&lt;/span&gt; &lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{ &lt;span class=&quot;hljs-comment&quot;&gt;/* красота */&lt;/span&gt; &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.content&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt; { &lt;span class=&quot;hljs-comment&quot;&gt;/* красота */&lt;/span&gt; }
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Навигацию мы спасли, но ненужные буллиты всё еще вылазят на слайдерах, списках новостей и других конструкциях внутри &lt;code class=&quot;hljs-class&quot;&gt;.content&lt;/code&gt;, где тоже используются &lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;ul li&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
@@ -1579,14 +1594,14 @@ Content Cell  | Content Cell
 
 &lt;p&gt;2) пойти от обратного и ставить класс всем спискам, которые нужно стилизовать:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-class&quot;&gt;.textlist&lt;/span&gt; &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{ &lt;span class=&quot;hljs-comment&quot;&gt;/* красота */&lt;/span&gt; &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.textlist&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt; { &lt;span class=&quot;hljs-comment&quot;&gt;/* красота */&lt;/span&gt; }
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Это добавляет лишней работы по расстановке классов в контенте. Иногда имеет смысл, но лишнюю работу никто не любит.&lt;/p&gt;
 
 &lt;p&gt;3) стилизовать только те &lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;ul li&lt;/span&gt;&lt;/code&gt;, у которых нет никаких классов вообще:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[class]&lt;/span&gt;) &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{ &lt;span class=&quot;hljs-comment&quot;&gt;/* красота */&lt;/span&gt; &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[class]&lt;/span&gt;) &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt; { &lt;span class=&quot;hljs-comment&quot;&gt;/* красота */&lt;/span&gt; }
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Победа! Нам не нужно делать дополнительную работу по расстановке классов в контенте. А на слайдерах, аккордеонах и прочих конструкциях, которые не должны выглядеть как списки, но используют их в своей разметке, в 99% случаев уже будут свои классы, и наши стили их не затронут.&lt;/p&gt;
@@ -1605,20 +1620,20 @@ Content Cell  | Content Cell
 &lt;p&gt;Такой эффект можно реализовать без &lt;code class=&quot;hljs-pseudo&quot;&gt;:not&lt;/code&gt; путем перезаписи значений. И это будет работать в бо́льшем количестве браузеров.&lt;/p&gt;
 
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;/* с перезаписью свойств */&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;opacity&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;0.5&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;opacity&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;opacity&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;0.5&lt;/span&gt;;
+}
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:hover&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;opacity&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt;;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Но если придется обнулять слишком много свойств, то есть смысл использовать &lt;code class=&quot;hljs-pseudo&quot;&gt;:not&lt;/code&gt;.&lt;/p&gt;
 
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;/* используя :not() */&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:hover)&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;opacity&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;0.5&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:hover)&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;opacity&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;0.5&lt;/span&gt;;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Пример 3. Меню с разделителями между элементами&lt;/h2&gt;
@@ -1633,26 +1648,26 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Через перезапись свойств. Но тут два правила вместо одного, что не есть «&lt;abbr title=&quot;Don't Repeat Yourself&quot;&gt;DRY&lt;/abbr&gt;».&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-class&quot;&gt;.menu-item&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;' | '&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-class&quot;&gt;.menu-item&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:last-child&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; none&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.menu-item&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:after&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;' | '&lt;/span&gt;;
+}
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.menu-item&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:last-child&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:after&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;: none;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Через &lt;code class=&quot;hljs-pseudo&quot;&gt;:nth-last-child()&lt;/code&gt;. Одно правило, но тяжело читается.&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-class&quot;&gt;.menu-item&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:nth-last-child(n+2)&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;' | '&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.menu-item&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:nth-last-child(n+2)&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:after&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;' | '&lt;/span&gt;;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Через &lt;code class=&quot;hljs-pseudo&quot;&gt;:not()&lt;/code&gt; — самая короткая и понятная запись.&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-class&quot;&gt;.menu-item&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:last-child)&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;' | '&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.menu-item&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:last-child)&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:after&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;' | '&lt;/span&gt;;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Пример 4. Debug css&lt;/h2&gt;
@@ -1660,61 +1675,61 @@ Content Cell  | Content Cell
 &lt;p&gt;Удобно для отладки и самоконтроля искать/подсвечивать картинки без alt, label без for и другие ошибки.&lt;/p&gt;
 
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;/* подсвечиваем теги без необходимых атрибутов */&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[alt]&lt;/span&gt;),
-&lt;span class=&quot;hljs-tag&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[for]&lt;/span&gt;),
-&lt;span class=&quot;hljs-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=submit]&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[value]&lt;/span&gt;) &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;outline&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;2px&lt;/span&gt; solid red&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[alt]&lt;/span&gt;),
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[for]&lt;/span&gt;),
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=submit]&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[value]&lt;/span&gt;) {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;outline&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;2px&lt;/span&gt; solid red;
+}
 
 &lt;span class=&quot;hljs-comment&quot;&gt;/* тревога, если первый child внутри списка не li и прочие похожие примеры */&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt; &amp;gt; *&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(li)&lt;/span&gt;,
-&lt;span class=&quot;hljs-tag&quot;&gt;ol&lt;/span&gt; &amp;gt; *&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(li)&lt;/span&gt;,
-&lt;span class=&quot;hljs-tag&quot;&gt;dl&lt;/span&gt; &amp;gt; *&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(dt)&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(dd)&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-  &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;outline&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;2px&lt;/span&gt; solid red&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt; &amp;gt; *&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(li)&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;ol&lt;/span&gt; &amp;gt; *&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(li)&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;dl&lt;/span&gt; &amp;gt; *&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(dt)&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(dd)&lt;/span&gt; {
+  &lt;span class=&quot;hljs-attribute&quot;&gt;outline&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;2px&lt;/span&gt; solid red;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2&gt;Пример 5. Поля форм&lt;/h2&gt;
 
 &lt;p&gt;Раньше текстовых полей форм было не много. Достаточно было написать:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;select&lt;/span&gt;,
-&lt;span class=&quot;hljs-tag&quot;&gt;textarea&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;text&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;password&quot;]&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;select&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;textarea&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;text&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;password&quot;]&lt;/span&gt; {
     &lt;span class=&quot;hljs-comment&quot;&gt;/* стили для текстовых полей ввода */&lt;/span&gt;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;С появлением новых типов полей в HTML5 этот список увеличился:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;select&lt;/span&gt;,
-&lt;span class=&quot;hljs-tag&quot;&gt;textarea&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;text&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;password&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;color&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;date&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;datetime&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;datetime-local&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;email&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;number&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;search&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;tel&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;time&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;url&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;month&quot;]&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;week&quot;]&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;select&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;textarea&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;text&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;password&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;color&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;date&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;datetime&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;datetime-local&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;email&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;number&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;search&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;tel&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;time&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;url&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;month&quot;]&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;week&quot;]&lt;/span&gt; {
   &lt;span class=&quot;hljs-comment&quot;&gt;/* стили для текстовых полей ввода */&lt;/span&gt;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Вместо перечисления 14 типов инпутов можно исключить 8 из них:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;select&lt;/span&gt;,
-&lt;span class=&quot;hljs-tag&quot;&gt;textarea&lt;/span&gt;,
-&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type]&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;checkbox&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;radio&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;button&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;submit&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;reset&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;range&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;file&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[type=&quot;image&quot;]&lt;/span&gt;) &lt;span class=&quot;hljs-rules&quot;&gt;{
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;select&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;textarea&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type]&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;checkbox&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;radio&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;button&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;submit&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;reset&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;range&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;file&quot;]&lt;/span&gt;)&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[type=&quot;image&quot;]&lt;/span&gt;) {
   &lt;span class=&quot;hljs-comment&quot;&gt;/* стили для текстовых полей ввода */&lt;/span&gt;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Ладно, этот пример не очень красив, и я рекомендую всё же первый вариант с перечислением, он работает с IE8+, а второй вариант с IE9+.&lt;/p&gt;
@@ -1751,17 +1766,17 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Эту проблему можно решить, но придется переписать все отступы для тегов &lt;code class=&quot;hljs-tag&quot;&gt;ul&lt;/code&gt;, &lt;code class=&quot;hljs-tag&quot;&gt;ol&lt;/code&gt; и &lt;code class=&quot;hljs-tag&quot;&gt;li&lt;/code&gt;. Так как &lt;code class=&quot;hljs-tag nobr&quot;&gt;ul &gt; li&lt;/code&gt; могут использоваться не только для текста с маркерами, но и для менюшек, слайдеров, списков новостей и других семантических конструкций, задавать стили напрямую тегам &lt;code class=&quot;hljs-tag&quot;&gt;ol&lt;/code&gt;, &lt;code class=&quot;hljs-tag&quot;&gt;ul&lt;/code&gt; и &lt;code class=&quot;hljs-tag&quot;&gt;li&lt;/code&gt; опасно. Иначе в дальнейшем придется слишком часто эти стили обнулять. Поэтому создадим отдельный класс &lt;code class=&quot;hljs-class&quot;&gt;.textlist&lt;/code&gt;, чтобы ставить его на наши &lt;code class=&quot;hljs-tag&quot;&gt;ul&lt;/code&gt; и &lt;code class=&quot;hljs-tag&quot;&gt;ol&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-class&quot;&gt;.textlist&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;margin&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-class&quot;&gt;.textlist&lt;/span&gt; &amp;gt; &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;margin&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;padding-left&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;2em&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;list-style-position&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; inside&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;text-indent&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;-&lt;span class=&quot;hljs-number&quot;&gt;1em&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;overflow&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; hidden&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.textlist&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;
+}
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.textlist&lt;/span&gt; &amp;gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding-left&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;2em&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;list-style-position&lt;/span&gt;: inside;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;text-indent&lt;/span&gt;:-&lt;span class=&quot;hljs-number&quot;&gt;1em&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;overflow&lt;/span&gt;: hidden;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;overflow&lt;/span&gt;: &lt;span class=&quot;hljs-value&quot;&gt;hidden&lt;/span&gt;&lt;/code&gt;  тут нам нужен для того, чтобы запретить тексту обтекание картинки по строкам внутри &lt;code class=&quot;hljs-tag&quot;&gt;li&lt;/code&gt;. Теперь каждая &lt;code class=&quot;hljs-tag&quot;&gt;li&lt;/code&gt; обтекает картинку как прямоугольный блок.&lt;/p&gt;
@@ -1785,24 +1800,24 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Для списков, у которых нет классов, перенесём дефолтный отступ 2.5em с левого края на правый, а сами &lt;code class=&quot;hljs-tag nowrap&quot;&gt;li&lt;/code&gt; сдвинем на те же 2.5em вправо при помощи &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;transform&lt;/span&gt;: &lt;span class=&quot;hljs-value&quot;&gt;translateX(2.5em)&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[class]&lt;/span&gt;),
-&lt;span class=&quot;hljs-tag&quot;&gt;ol&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[class]&lt;/span&gt;) &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;padding-left&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;padding-right&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;2.5em&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[class]&lt;/span&gt;) &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt;,
-&lt;span class=&quot;hljs-tag&quot;&gt;ol&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-attr_selector&quot;&gt;[class]&lt;/span&gt;) &lt;span class=&quot;hljs-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;transform&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-function&quot;&gt;translateX&lt;/span&gt;(&lt;span class=&quot;hljs-number&quot;&gt;2.5em&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;animation&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; fixlists &lt;span class=&quot;hljs-number&quot;&gt;1s&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[class]&lt;/span&gt;),
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;ol&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[class]&lt;/span&gt;) {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding-left&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;padding-right&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;2.5em&lt;/span&gt;;
+}
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[class]&lt;/span&gt;) &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;ol&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:not(&lt;/span&gt;&lt;span class=&quot;hljs-selector-attr&quot;&gt;[class]&lt;/span&gt;) &lt;span class=&quot;hljs-selector-tag&quot;&gt;li&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;transform&lt;/span&gt;: &lt;span class=&quot;hljs-built_in&quot;&gt;translateX&lt;/span&gt;(2.5em);
+    &lt;span class=&quot;hljs-attribute&quot;&gt;animation&lt;/span&gt;: fixlists &lt;span class=&quot;hljs-number&quot;&gt;1s&lt;/span&gt;;
+}
 
-&lt;span class=&quot;hljs-at_rule&quot;&gt;@&lt;span class=&quot;hljs-keyword&quot;&gt;keyframes&lt;/span&gt; fixlists &lt;/span&gt;{
-    0% &lt;span class=&quot;hljs-rules&quot;&gt;{
-        &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;text-indent&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; -&lt;span class=&quot;hljs-number&quot;&gt;0.001em&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-    100% &lt;span class=&quot;hljs-rules&quot;&gt;{
-        &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;text-indent&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+@&lt;span class=&quot;hljs-keyword&quot;&gt;keyframes&lt;/span&gt; fixlists {
+    0% {
+        &lt;span class=&quot;hljs-attribute&quot;&gt;text-indent&lt;/span&gt;: -&lt;span class=&quot;hljs-number&quot;&gt;0.001em&lt;/span&gt;;
+    }
+    100% {
+        &lt;span class=&quot;hljs-attribute&quot;&gt;text-indent&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;
+    }
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -1868,11 +1883,11 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Обычно в CMS уже есть какой-либо класс для индикации текущей страницы в меню. Допишем ему pointer-events:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-class&quot;&gt;.demo-menu&lt;/span&gt; &lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-class&quot;&gt;.current&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#AAA&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-hexcolor&quot;&gt;#333&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;pointer-events&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; none&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* disables click event */&lt;/span&gt;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.demo-menu&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.current&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#AAA&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#333&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;pointer-events&lt;/span&gt;: none; &lt;span class=&quot;hljs-comment&quot;&gt;/* disables click event */&lt;/span&gt;
+}
 &lt;/code&gt;&lt;/pre&gt;
 
 </content>
@@ -1925,32 +1940,32 @@ Content Cell  | Content Cell
 &lt;/p&gt;
 
 &lt;p&gt;Напишем стили для строчного тега &lt;code class=&quot;hljs-tag&quot;&gt;del&lt;/code&gt; и подготовим класс для перечёркивания блочных элементов &lt;code class=&quot;hljs-class&quot;&gt;.del-cross&lt;/code&gt;.&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;del&lt;/span&gt;&lt;span class=&quot;hljs-class&quot;&gt;.cross&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;display&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;inline-block&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* запрещает перенос текста на следующую строку */&lt;/span&gt;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;text-decoration&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;none&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;position&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;relative&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;del&lt;/span&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.cross&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;display&lt;/span&gt;:inline-block; &lt;span class=&quot;hljs-comment&quot;&gt;/* запрещает перенос текста на следующую строку */&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;text-decoration&lt;/span&gt;:none;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;position&lt;/span&gt;:relative;
+}
 
-&lt;span class=&quot;hljs-class&quot;&gt;.del-cross&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;display&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;block&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;position&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;relative&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;overflow&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;hidden&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* запрещает обтекать другие блоки */&lt;/span&gt;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.del-cross&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;display&lt;/span&gt;:block;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;position&lt;/span&gt;:relative;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;overflow&lt;/span&gt;:hidden; &lt;span class=&quot;hljs-comment&quot;&gt;/* запрещает обтекать другие блоки */&lt;/span&gt;
+}
 
-&lt;span class=&quot;hljs-tag&quot;&gt;del&lt;/span&gt;&lt;span class=&quot;hljs-class&quot;&gt;.cross&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:before&lt;/span&gt;,
-&lt;span class=&quot;hljs-class&quot;&gt;.del-cross&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:before&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;''&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;position&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;absolute&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;display&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;block&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;auto&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;auto&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;left&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;top&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;right&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;bottom&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-function&quot;&gt;rgba&lt;/span&gt;(&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;hljs-function&quot;&gt;url&lt;/span&gt;(cross.svg) no-repeat&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;background-size&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;100%&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* растягивает фон на всю ширину и высоту блока */&lt;/span&gt;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-selector-tag&quot;&gt;del&lt;/span&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.cross&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:before&lt;/span&gt;,
+&lt;span class=&quot;hljs-selector-class&quot;&gt;.del-cross&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:before&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-string&quot;&gt;''&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;position&lt;/span&gt;:absolute;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;display&lt;/span&gt;:block;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;:auto;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;:auto;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;left&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;top&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;right&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;bottom&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;hljs-built_in&quot;&gt;rgba&lt;/span&gt;(0,0,0,0) &lt;span class=&quot;hljs-built_in&quot;&gt;url&lt;/span&gt;(cross.svg) no-repeat;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;background-size&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;100%&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* растягивает фон на всю ширину и высоту блока */&lt;/span&gt;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;aside&gt;
     &lt;p&gt;Примечание: лучше использовать &lt;code class=&quot;hljs-pseudo&quot;&gt;:before&lt;/code&gt;, так как на &lt;code class=&quot;hljs-pseudo&quot;&gt;:after&lt;/code&gt; может быть clearfix.&lt;/p&gt;
@@ -1968,10 +1983,10 @@ Content Cell  | Content Cell
 &lt;p&gt;А теперь посмотрим, что внутри SVG-файла, и как настроить цвет и толщину линий.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;/demo/crosswise/cross_old.svg&quot;&gt;cross_old.svg&lt;/a&gt;:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;xmlns&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;http://www.w3.org/2000/svg&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;viewBox&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0 0 100 100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;preserveAspectRatio&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;none&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;stroke: rgba(255,0,0,0.9); stroke-width: 1.5&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt;   &lt;span class=&quot;hljs-attribute&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;vector-effect&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;non-scaling-stroke&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt;   &lt;span class=&quot;hljs-attribute&quot;&gt;vector-effect&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;non-scaling-stroke&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;svg&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;xmlns&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;http://www.w3.org/2000/svg&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;viewBox&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;0 0 100 100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;preserveAspectRatio&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;none&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;stroke: rgba(255,0,0,0.9); stroke-width: 1.5&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;0&quot;&lt;/span&gt;   &lt;span class=&quot;hljs-attr&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;vector-effect&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;non-scaling-stroke&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;100&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;0&quot;&lt;/span&gt;   &lt;span class=&quot;hljs-attr&quot;&gt;vector-effect&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;non-scaling-stroke&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;svg&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;code class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;viewBox&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&amp;quot;0 0 100 100&amp;quot;&lt;/span&gt;&lt;/code&gt; — задает виртуальный размер картинки 100×100 безразмерных единиц. Формат записи: &lt;code&gt;x1 y1 x2 y2&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;preserveAspectRatio&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&amp;quot;none&amp;quot;&lt;/span&gt;&lt;/code&gt; — отключает сохранение пропорций при масштабировании.&lt;/p&gt;
@@ -1988,10 +2003,10 @@ Content Cell  | Content Cell
 
 &lt;p&gt;В комментариях GreLI подсказал, что SVG-файл можно сократить до такого вида (&lt;a href=&quot;/2012/crosswise//cross.svg&quot;&gt;cross.svg&lt;/a&gt;):&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;xmlns&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;http://www.w3.org/2000/svg&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;stroke: rgba(255,0,0,0.9); stroke-width: 1.5&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt;    &lt;span class=&quot;hljs-attribute&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100%&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100%&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100%&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;100%&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;0&quot;&lt;/span&gt;    /&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-title&quot;&gt;svg&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;xmlns&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;http://www.w3.org/2000/svg&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;stroke: rgba(255,0,0,0.9); stroke-width: 1.5&quot;&lt;/span&gt; &amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;0&quot;&lt;/span&gt;    &lt;span class=&quot;hljs-attr&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;100%&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;100%&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;x1&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;y1&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;100%&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;x2&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;100%&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;y2&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;0&quot;&lt;/span&gt;    /&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;svg&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Задавая координаты линий в процентах, мы избавляемся от необходимости применять &lt;code class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;vector-effect&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&amp;quot;non-scaling-stroke&amp;quot;&lt;/span&gt;&lt;/code&gt;, который не работает в IE9 и IE10.&lt;/p&gt;</content>
@@ -2068,13 +2083,13 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Пример CSS-кода:&lt;/p&gt;
 
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;hljs-class&quot;&gt;.readmore&lt;/span&gt; &lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;'\203A'&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* выведет › */&lt;/span&gt;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;position&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; absolute&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;right&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;0.8em&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;top&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;4px&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;display&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; block&lt;/span&gt;&lt;/span&gt;;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;hljs-selector-class&quot;&gt;.readmore&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:after&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'\203A'&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* выведет › */&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;position&lt;/span&gt;: absolute;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;right&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0.8em&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;top&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;4px&lt;/span&gt;;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;display&lt;/span&gt;: block;
+}&lt;/code&gt;&lt;/pre&gt;
 
 
 &lt;h2&gt;Таблица символов&lt;/h2&gt;
@@ -3776,7 +3791,7 @@ Content Cell  | Content Cell
 &lt;!-- cut --&gt;
 &lt;p&gt;В трекере описан этот &lt;a href=&quot;http://code.google.com/p/chromium/issues/detail?id=46543&quot;&gt;баг&lt;/a&gt;, но &lt;time datetime=&quot;2012-10-30&quot;&gt;пока&lt;/time&gt; решения нет.&lt;/p&gt;
 &lt;p&gt;Автозаполнение можно выключить с помощью &lt;code class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;autocomplete&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&amp;quot;off&amp;quot;&lt;/span&gt;&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;action&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;…&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;method&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;post&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;autocomplete&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;off&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;action&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;…&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;method&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;post&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;autocomplete&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;off&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Обновлено 30 октября 2012.&lt;/strong&gt;&lt;/p&gt;
 &lt;figure&gt;
@@ -3785,17 +3800,17 @@ Content Cell  | Content Cell
 &lt;/figure&gt;
 
 &lt;p&gt;Поля c автокомплитом можно перекрасить при помощи трюка с &lt;code class=&quot;hljs-attribute&quot;&gt;box-shadow&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:-webkit-autofill&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-box-shadow&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; inset &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;50px&lt;/span&gt; white&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет вашего фона */&lt;/span&gt;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-text-fill-color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; black&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет текста */&lt;/span&gt;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:-webkit-autofill&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-box-shadow&lt;/span&gt;: inset &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;50px&lt;/span&gt; white; &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет вашего фона */&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-text-fill-color&lt;/span&gt;: black; &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет текста */&lt;/span&gt;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Если вы для &lt;code class=&quot;hljs-pseudo&quot;&gt;:focus&lt;/code&gt; состояния задавали стили с использованием &lt;code class=&quot;hljs-attribute&quot;&gt;box-shadow&lt;/code&gt;, то вам придется заново их переопределить:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:-webkit-autofill&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:focus&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-box-shadow&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;5px&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;    blue,   &lt;span class=&quot;hljs-comment&quot;&gt;/* ваш box-shadow для :focus */&lt;/span&gt;
-                  inset &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;   &lt;span class=&quot;hljs-number&quot;&gt;50px&lt;/span&gt; white&lt;/span&gt;&lt;/span&gt;;  &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет вашего фона */&lt;/span&gt;
-    &lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-text-fill-color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; black&lt;/span&gt;&lt;/span&gt;;          &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет текста */&lt;/span&gt;
-&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:-webkit-autofill&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:focus&lt;/span&gt; {
+    &lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-box-shadow&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;5px&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;    blue,   &lt;span class=&quot;hljs-comment&quot;&gt;/* ваш box-shadow для :focus */&lt;/span&gt;
+                  inset &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;   &lt;span class=&quot;hljs-number&quot;&gt;50px&lt;/span&gt; white;  &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет вашего фона */&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-text-fill-color&lt;/span&gt;: black;          &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет текста */&lt;/span&gt;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;При помощи нескольких теней можно &lt;a href=&quot;/demo/box-shadow_instead_gradient/&quot;&gt;имитировать градиент&lt;/a&gt;.&lt;/p&gt;
 </content>

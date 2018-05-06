@@ -194,11 +194,11 @@
             <div class="browserframe" data-title="page.css">
                 <pre class="highlight"><code class="hljs css"><span class="hljs-comment">/* page.css */</span>
 
-<span class="hljs-class">.page</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">40px</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#000</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
-<span class="hljs-rule">}</span></span>
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+}
 </code></pre>
 
             </div>
@@ -212,10 +212,10 @@
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.1</span>
 
 <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-<span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-<span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+<span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+<span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 
-<span class="hljs-class">.page</span> {
+<span class="hljs-selector-class">.page</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
@@ -248,10 +248,10 @@
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.1</span>
 
 <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-<span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-<span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+<span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+<span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 
-<span class="hljs-class">.page</span> {
+<span class="hljs-selector-class">.page</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
@@ -268,10 +268,10 @@
             <div class="browserframe" data-title="page.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.2</span>
 
-<span class="hljs-class">.page</span> {
+<span class="hljs-selector-class">.page</span> {
     <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-    <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-    <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+    <span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+    <span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
@@ -299,10 +299,10 @@
             <div class="browserframe" data-title="page.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.2</span>
 
-<span class="hljs-class">.page</span> {
+<span class="hljs-selector-class">.page</span> {
     <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-    <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-    <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+    <span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+    <span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
@@ -320,14 +320,14 @@
             <div class="browserframe" data-title="page.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.3</span>
 
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-    <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-    <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+    <span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+    <span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 }
 
-<span class="hljs-class">.page</span> {
-    <span class="hljs-class">.page-settings</span>();
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-selector-class">.page-settings</span>();
 
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
@@ -359,12 +359,12 @@
             <div class="browserframe" data-title="projectname.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// projectname.less</span>
 
-<span class="hljs-at_rule">@import</span> <span class="hljs-string">'normalize.css'</span>;
-<span class="hljs-at_rule">@import</span> <span class="hljs-string">'typography.less'</span>;
-<span class="hljs-at_rule">@import</span> <span class="hljs-string">'page.less'</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">'normalize.css'</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">'typography.less'</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">'page.less'</span>;
 <span class="hljs-comment">// и много других компонентов...</span>
 
-<span class="hljs-at_rule">@import</span> <span class="hljs-string">'config.less'</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">'config.less'</span>;
 </code></pre>
 
             </div>
@@ -374,14 +374,14 @@
             <div class="browserframe" data-title="page.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// page.less v0.3</span>
 
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-variable">@padding:</span> <span class="hljs-number">40px</span>;
-    <span class="hljs-variable">@txt-color:</span> <span class="hljs-hexcolor">#000</span>;
-    <span class="hljs-variable">@bg-color:</span> <span class="hljs-hexcolor">#fff</span>;
+    <span class="hljs-variable">@txt-color:</span> <span class="hljs-number">#000</span>;
+    <span class="hljs-variable">@bg-color:</span> <span class="hljs-number">#fff</span>;
 }
 
-<span class="hljs-class">.page</span> {
-    <span class="hljs-class">.page-settings</span>();
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-selector-class">.page-settings</span>();
 
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
@@ -400,7 +400,7 @@
 <span class="hljs-variable">@glob-bg-color:</span> darkblue;
 
 <span class="hljs-comment">// кастомизация компонентов</span>
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@glob-text-color</span>;
     <span class="hljs-variable">@bg-color:</span> <span class="hljs-variable">@glob-bg-color</span>;
 }
@@ -439,7 +439,7 @@
 
 <span class="hljs-variable">@txt-color:</span> white;
 
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-comment">// тут рекурсия и ошибка компиляции</span>
     <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@txt-color</span>;
 }
@@ -457,7 +457,7 @@
 
 <span class="hljs-variable">@glob-txt-color:</span> white;
 
-<span class="hljs-class">.page-settings</span>() {
+<span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-comment">// всё в порядке</span>
     <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@glob-txt-color</span>;
 }
@@ -484,16 +484,16 @@
             <div class="browserframe" data-title="page.scss">
                 <pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// page.scss v0.1</span>
 
-<span class="hljs-variable">$page-settings</span><span class="hljs-value">: (
+<span class="hljs-variable">$page-settings</span>: (
     padding: <span class="hljs-number">40px</span>,
-    bg-color: <span class="hljs-hexcolor">#fff</span>,
-    text-color: <span class="hljs-hexcolor">#000</span>,
-);</span>
+    bg-color: <span class="hljs-number">#fff</span>,
+    text-color: <span class="hljs-number">#000</span>,
+);
 
-<span class="hljs-class">.page</span> {
-    <span class="hljs-attribute">padding</span><span class="hljs-value">:          <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, padding);</span>
-    <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, bg-color);</span>
-    <span class="hljs-attribute">color</span><span class="hljs-value">:            <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, text-color);</span>
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-attribute">padding</span>:          map-get(<span class="hljs-variable">$page-settings</span>, padding);
+    <span class="hljs-attribute">background-color</span>: map-get(<span class="hljs-variable">$page-settings</span>, bg-color);
+    <span class="hljs-attribute">color</span>:            map-get(<span class="hljs-variable">$page-settings</span>, text-color);
 }
 </code></pre>
 
@@ -510,11 +510,11 @@
             <div class="browserframe" data-title="projectname.scss">
                 <pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// projectname.scss</span>
 
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'config'</span>;</span>
+@<span class="hljs-keyword">import</span>: <span class="hljs-string">'config'</span>;
 
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'normalize'</span>;</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'typography'</span>;</span>
-<span class="hljs-at_rule">@<span class="hljs-keyword">import</span>: <span class="hljs-string">'page'</span>;</span>
+@<span class="hljs-keyword">import</span>: <span class="hljs-string">'normalize'</span>;
+@<span class="hljs-keyword">import</span>: <span class="hljs-string">'typography'</span>;
+@<span class="hljs-keyword">import</span>: <span class="hljs-string">'page'</span>;
 <span class="hljs-comment">// и много других компонентов...</span>
 </code></pre>
 
@@ -525,14 +525,14 @@
             <div class="browserframe" data-title="config.scss">
                 <pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// config.scss</span>
 
-<span class="hljs-variable">$glob-text-color</span><span class="hljs-value">: white;</span>
-<span class="hljs-variable">$glob-bg-color</span><span class="hljs-value">: darkblue;</span>
+<span class="hljs-variable">$glob-text-color</span>: white;
+<span class="hljs-variable">$glob-bg-color</span>: darkblue;
 
 <span class="hljs-comment">// кастомизируем</span>
-<span class="hljs-variable">$page-settings</span><span class="hljs-value">: (
+<span class="hljs-variable">$page-settings</span>: (
     bg-color: <span class="hljs-variable">$glob-bg-color</span>,
     text-color: <span class="hljs-variable">$glob-text-color</span>,
-);</span>
+);
 </code></pre>
 
             </div>
@@ -542,22 +542,22 @@
             <div class="browserframe" data-title="page.scss">
                 <pre class="highlight"><code class="hljs scss"><span class="hljs-comment">// page.scss v0.2</span>
 
-<span class="hljs-variable">$page-override</span><span class="hljs-value">: ( );</span> <span class="hljs-comment">// [1]</span>
+<span class="hljs-variable">$page-override</span>: ( ); <span class="hljs-comment">// [1]</span>
 
-<span class="hljs-at_rule">@<span class="hljs-keyword">if</span><span class="hljs-preprocessor"> variable-exists</span>(<span class="hljs-keyword">page</span>-settings) {</span>
-    <span class="hljs-variable">$page-override</span><span class="hljs-value">: <span class="hljs-variable">$page-settings</span>;</span> <span class="hljs-comment">// [2]</span>
+@<span class="hljs-keyword">if</span> variable-exists(<span class="hljs-keyword">page</span>-settings) {
+    <span class="hljs-variable">$page-override</span>: <span class="hljs-variable">$page-settings</span>; <span class="hljs-comment">// [2]</span>
 }
 
-<span class="hljs-variable">$page-settings</span><span class="hljs-value">:  <span class="hljs-function">map-merge</span>((
+<span class="hljs-variable">$page-settings</span>:  map-merge((
     padding: <span class="hljs-number">40px</span>,
-    bg-color: <span class="hljs-hexcolor">#fff</span>,
-    text-color: <span class="hljs-hexcolor">#000</span>,
-), <span class="hljs-variable">$page-override</span>);</span> <span class="hljs-comment">// [3]</span>
+    bg-color: <span class="hljs-number">#fff</span>,
+    text-color: <span class="hljs-number">#000</span>,
+), <span class="hljs-variable">$page-override</span>); <span class="hljs-comment">// [3]</span>
 
-<span class="hljs-class">.page</span> {
-    <span class="hljs-attribute">padding</span><span class="hljs-value">:          <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, padding);</span>
-    <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, bg-color);</span>
-    <span class="hljs-attribute">color</span><span class="hljs-value">:            <span class="hljs-function">map-get</span>(<span class="hljs-variable">$page-settings</span>, text-color);</span>
+<span class="hljs-selector-class">.page</span> {
+    <span class="hljs-attribute">padding</span>:          map-get(<span class="hljs-variable">$page-settings</span>, padding);
+    <span class="hljs-attribute">background-color</span>: map-get(<span class="hljs-variable">$page-settings</span>, bg-color);
+    <span class="hljs-attribute">color</span>:            map-get(<span class="hljs-variable">$page-settings</span>, text-color);
 }
 </code></pre>
 

@@ -163,11 +163,11 @@
     <p data-height="300" data-theme-id="16915" data-slug-hash="oWErMY" data-default-tab="result" data-user="paulradzkov" data-embed-version="2" data-pen-title="2012-pointer-events-demo-2" class="codepen">See the Pen <a href="https://codepen.io/paulradzkov/pen/oWErMY/">2012-pointer-events-demo-2</a> by Paul Radzkov (<a href="http://codepen.io/paulradzkov">@paulradzkov</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></figure><p>Обычно в CMS уже есть какой-либо класс для индикации текущей страницы в меню. Допишем ему pointer-events:</p>
 
-<pre class="highlight"><code class="hljs css"><span class="hljs-class">.demo-menu</span> <span class="hljs-tag">a</span><span class="hljs-class">.current</span> <span class="hljs-rules">{
-    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#AAA</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#333</span></span></span>;
-    <span class="hljs-rule"><span class="hljs-attribute">pointer-events</span>:<span class="hljs-value"> none</span></span>; <span class="hljs-comment">/* disables click event */</span>
-<span class="hljs-rule">}</span></span>
+<pre class="highlight"><code class="hljs css"><span class="hljs-selector-class">.demo-menu</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.current</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#AAA</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
+    <span class="hljs-attribute">pointer-events</span>: none; <span class="hljs-comment">/* disables click event */</span>
+}
 </code></pre>
 
 

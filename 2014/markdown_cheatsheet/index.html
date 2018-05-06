@@ -244,9 +244,9 @@
 
 <div class="raw-output">
 <pre class="highlight"><code class="hljs markdown">
-<span class="hljs-header"># GitHub-Flavored Markdown</span>
+<span class="hljs-section"># GitHub-Flavored Markdown</span>
 
-<span class="hljs-header">## Краткое руководство</span>
+<span class="hljs-section">## Краткое руководство</span>
 
 Абзацы создаются при помощи пустой строки. Если вокруг текста сверху и снизу есть пустые строки, то текст превращается в абзац.
 
@@ -255,16 +255,16 @@
 
 Заголовки отмечаются диезом <span class="hljs-code">`#`</span> в начале строки, от одного до шести. Например:
 
-<span class="hljs-header"># Заголовок первого уровня #</span>
-<span class="hljs-header">## Заголовок h2</span>
-<span class="hljs-header">### Заголовок h3</span>
-<span class="hljs-header">#### Заголовок h4</span>
-<span class="hljs-header">##### Заголовок h5</span>
-<span class="hljs-header">###### Заголовок h6</span>
+<span class="hljs-section"># Заголовок первого уровня #</span>
+<span class="hljs-section">## Заголовок h2</span>
+<span class="hljs-section">### Заголовок h3</span>
+<span class="hljs-section">#### Заголовок h4</span>
+<span class="hljs-section">##### Заголовок h5</span>
+<span class="hljs-section">###### Заголовок h6</span>
 
 В декоративных целях заголовки можно «закрывать» с обратной стороны.
 
-<span class="hljs-header">### Списки</span>
+<span class="hljs-section">### Списки</span>
 
 Для разметки неупорядоченных списков можно использовать или <span class="hljs-code">`*`</span>, или <span class="hljs-code">`-`</span>, или <span class="hljs-code">`+`</span>:
 
@@ -306,48 +306,48 @@
 
 <span class="hljs-code">    Четыре абзац (Четыре пробела в начале или один tab).</span>
 
-<span class="hljs-header">### Цитаты</span>
+<span class="hljs-section">### Цитаты</span>
 
 Цитаты оформляются как в емейлах, с помощью символа <span class="hljs-code">`&gt;`</span>.
 
-<span class="hljs-blockquote">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</span>
-<span class="hljs-blockquote">&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.</span>
-<span class="hljs-blockquote">&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</span>
+<span class="hljs-quote">&gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.</span>
+<span class="hljs-quote">&gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</span>
+<span class="hljs-quote">&gt;
 &gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse</span>
-<span class="hljs-blockquote">&gt; id sem consectetuer libero luctus adipiscing.</span>
+<span class="hljs-quote">&gt; id sem consectetuer libero luctus adipiscing.</span>
 
 Или более ленивым способом, когда знак <span class="hljs-code">`&gt;`</span> ставится перед каждым элементом цитаты, будь то абзац, заголовок или пустая строка:
 
-<span class="hljs-blockquote">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</span>
+<span class="hljs-quote">&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</span>
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt;
 &gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse</span>
 id sem consectetuer libero luctus adipiscing.
 
 В цитаты можно помещать всё что угодно, в том числе вложенные цитаты:
 
-<span class="hljs-blockquote">&gt; ## This is a header.</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt; ## This is a header.</span>
+<span class="hljs-quote">&gt;
 &gt; 1.   This is the first list item.</span>
-<span class="hljs-blockquote">&gt; 2.   This is the second list item.</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt; 2.   This is the second list item.</span>
+<span class="hljs-quote">&gt;
 &gt; &gt; Вложенная цитата.</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt;
 &gt; Here's some example code:</span>
-<span class="hljs-blockquote">&gt;
+<span class="hljs-quote">&gt;
 &gt;     return shell_exec("echo $input | $markdown_script");</span>
 
-<span class="hljs-header">### Исходный код</span>
+<span class="hljs-section">### Исходный код</span>
 
 В чистом Маркдауне блоки кода отбиваются 4 пробелами в начале каждой строки.
 
 Но в GitHub-Flavored Markdown (сокращенно GFM) есть более удобный способ: ставим по три апострофа (на букве Ё) до и после кода. Также можно указать язык исходного кода.
 
 <span class="hljs-code">` `</span> `html
-<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-primary"</span>&gt;</span></span>
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav nav-primary"</span>&gt;</span></span>
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span></span>
 <span class="hljs-code">    &lt;li class="tab-conversation active"&gt;</span>
 <span class="hljs-code">      &lt;a href="#" data-role="post-count" class="publisher-nav-color" data-nav="conversation"&gt;</span>
 <span class="hljs-code">        &lt;span class="comment-count"&gt;0 комментариев&lt;/span&gt;</span>
@@ -364,50 +364,50 @@ id sem consectetuer libero luctus adipiscing.
 <span class="hljs-code">        &lt;span class="caret"&gt;&lt;/span&gt;</span>
 <span class="hljs-code">      &lt;/a&gt;</span>
 <span class="hljs-code">    &lt;/li&gt;</span>
-  <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span></span>
+  <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></span>
 <span class="hljs-code">` `</span> `
 
 Самое приятное, что в коде не нужно заменять угловые скобки <span class="hljs-code">`&lt; &gt;`</span> и амперсанд <span class="hljs-code">`&amp;`</span> на их html-сущности.
 
-<span class="hljs-header">### Инлайн код</span>
+<span class="hljs-section">### Инлайн код</span>
 
 Для вставки кода внутри предложений нужно заключать этот код в апострофы (на букве Ё). Пример: <span class="hljs-code">`&lt;html class="ie no-js"&gt;`</span>.
 
 Если внутри кода есть апостроф, то код надо обрамить двойными апострофами: <span class="hljs-code">``There is a literal backtick (`</span>) here.``
 
-<span class="hljs-header">### Горизонтальная черта</span>
+<span class="hljs-section">### Горизонтальная черта</span>
 
 <span class="hljs-code">`hr`</span> создается тремя звездочками или тремя дефисами.
 
 <span class="hljs-emphasis">***</span>
 
-<span class="hljs-header">### Ссылки</span>
+<span class="hljs-section">### Ссылки</span>
 
-Это встроенная [<span class="hljs-link_label">ссылка с title элементом</span>](<span class="hljs-link_url">http://example.com/link "Я ссылка"</span>). Это — [<span class="hljs-link_label">без title</span>](<span class="hljs-link_url">http://example.com/link</span>).
+Это встроенная [<span class="hljs-string">ссылка с title элементом</span>](<span class="hljs-link">http://example.com/link "Я ссылка"</span>). Это — [<span class="hljs-string">без title</span>](<span class="hljs-link">http://example.com/link</span>).
 
-А вот [<span class="hljs-link_label">пример</span>][<span class="hljs-link_reference">1</span>] [<span class="hljs-link_label">нескольких</span>][<span class="hljs-link_reference">2</span>] [<span class="hljs-link_label">ссылок</span>][<span class="hljs-link_reference">id</span>] с разметкой как у сносок. Прокатит и [<span class="hljs-link_label">короткая запись</span>][<span class="hljs-link_reference"></span>] без указания id.
+А вот [<span class="hljs-string">пример</span>][<span class="hljs-symbol">1</span>] [<span class="hljs-string">нескольких</span>][<span class="hljs-symbol">2</span>] [<span class="hljs-string">ссылок</span>][<span class="hljs-symbol">id</span>] с разметкой как у сносок. Прокатит и [<span class="hljs-string">короткая запись</span>][<span class="hljs-symbol"></span>] без указания id.
 
-[<span class="hljs-link_reference">1</span>]:<span class="hljs-link_url"> http://example.com/ "Optional Title Here"</span>
-[<span class="hljs-link_reference">2</span>]:<span class="hljs-link_url"> http://example.com/some</span>
-[<span class="hljs-link_reference">id</span>]:<span class="hljs-link_url"> http://example.com/links (Optional Title Here)</span>
-[<span class="hljs-link_reference">короткая запись</span>]:<span class="hljs-link_url"> http://example.com/short</span>
+[<span class="hljs-symbol">1</span>]: <span class="hljs-link">http://example.com/ "Optional Title Here"</span>
+[<span class="hljs-symbol">2</span>]: <span class="hljs-link">http://example.com/some</span>
+[<span class="hljs-symbol">id</span>]: <span class="hljs-link">http://example.com/links (Optional Title Here)</span>
+[<span class="hljs-symbol">короткая запись</span>]: <span class="hljs-link">http://example.com/short</span>
 
 Вынос длинных урлов из предложения способствует сохранению читабельности исходника. Сноски можно располагать в любом месте документа.
 
-<span class="hljs-header">### Emphasis</span>
+<span class="hljs-section">### Emphasis</span>
 
 Выделять слова можно при помощи <span class="hljs-code">`*`</span> и <span class="hljs-code">`_`</span>. Одним символ для наклонного текста, два символа для жирного текста, три — для наклонного и жирного одновременно.
 
 Например, это <span class="hljs-emphasis">_italic_</span> и это тоже <span class="hljs-emphasis">*italic*</span>. А вот так уже <span class="hljs-strong">__strong__</span>, и так тоже <span class="hljs-strong">**strong**</span>. А так <span class="hljs-strong">***жирный и наклонный**</span>* одновременно.
 
-<span class="hljs-header">### Зачеркивание</span>
+<span class="hljs-section">### Зачеркивание</span>
 
 В GFM добавлено зачеркивание текста: две тильды <span class="hljs-code">`~`</span> до и после текста.
 
 ~~Зачеркнуто~~
 
-<span class="hljs-header">## Картинки</span>
+<span class="hljs-section">## Картинки</span>
 
 Картинка без <span class="hljs-code">`alt`</span> текста
 
@@ -415,47 +415,47 @@ id sem consectetuer libero luctus adipiscing.
 
 Картинка с альтом и тайтлом:
 
-![<span class="hljs-link_label">Alt text</span>](<span class="hljs-link_url">http://placehold.it/150x100 "Можно задать title"</span>)
+![<span class="hljs-string">Alt text</span>](<span class="hljs-link">http://placehold.it/150x100 "Можно задать title"</span>)
 
 Запомнить просто: синтаксис как у ссылок, только перед открывающей квадратной скобкой ставится восклицательный знак.
 
 Картинки «сноски»:
 
-![<span class="hljs-link_label">Картинка</span>][<span class="hljs-link_reference">image1</span>]
-![<span class="hljs-link_label">Картинка</span>][<span class="hljs-link_reference">image2</span>]
-![<span class="hljs-link_label">Картинка</span>][<span class="hljs-link_reference">image3</span>]
+![<span class="hljs-string">Картинка</span>][<span class="hljs-symbol">image1</span>]
+![<span class="hljs-string">Картинка</span>][<span class="hljs-symbol">image2</span>]
+![<span class="hljs-string">Картинка</span>][<span class="hljs-symbol">image3</span>]
 
-[<span class="hljs-link_reference">image1</span>]:<span class="hljs-link_url"> http://placehold.it/250x100</span>
-[<span class="hljs-link_reference">image2</span>]:<span class="hljs-link_url"> http://placehold.it/200x100</span>
-[<span class="hljs-link_reference">image3</span>]:<span class="hljs-link_url"> http://placehold.it/150x100</span>
+[<span class="hljs-symbol">image1</span>]: <span class="hljs-link">http://placehold.it/250x100</span>
+[<span class="hljs-symbol">image2</span>]: <span class="hljs-link">http://placehold.it/200x100</span>
+[<span class="hljs-symbol">image3</span>]: <span class="hljs-link">http://placehold.it/150x100</span>
 
 Картинки-ссылки:
 
-[<span class="hljs-link_label">![Alt text</span>](<span class="hljs-link_url">http://placehold.it/150x100</span>)](<span class="hljs-link_url">http://example.com/</span>)
+[<span class="hljs-string">![Alt text</span>](<span class="hljs-link">http://placehold.it/150x100</span>)](<span class="hljs-link">http://example.com/</span>)
 
 
-<span class="hljs-header">## Использование HTML внутри Markdown</span>
+<span class="hljs-section">## Использование HTML внутри Markdown</span>
 
 Mожно смешивать Markdown и HTML. Если на какие-то элементы нужно поставить классы или атрибуты, смело используем HTML:
 
-<span class="hljs-blockquote">&gt; Выделять слова можно при помощи * и _ . Например, это &lt;em class="a1"&gt;italic&lt;/em&gt; и это тоже &lt;i class="a1"&gt;italic&lt;/i&gt;. А вот так уже &lt;b&gt;strong&lt;/b&gt;, и так тоже &lt;strong&gt;strong&lt;/strong&gt;.</span>
+<span class="hljs-quote">&gt; Выделять слова можно при помощи * и _ . Например, это &lt;em class="a1"&gt;italic&lt;/em&gt; и это тоже &lt;i class="a1"&gt;italic&lt;/i&gt;. А вот так уже &lt;b&gt;strong&lt;/b&gt;, и так тоже &lt;strong&gt;strong&lt;/strong&gt;.</span>
 
 Можно и наоборот, внутри HTML-тегов использовать Маркдаун.
 
-<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"someclass"</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"someclass"</span>&gt;</span></span>
 
-<span class="hljs-header">### Пример Маркдауна внутри HTML</span>
+<span class="hljs-section">### Пример Маркдауна внутри HTML</span>
 
 Выделять слова можно при помощи <span class="hljs-code">`*`</span> и <span class="hljs-code">`_`</span> . Например, это <span class="hljs-emphasis">_italic_</span> и это тоже <span class="hljs-emphasis">*italic*</span>. А вот так уже <span class="hljs-strong">__strong__</span>, и так тоже <span class="hljs-strong">**strong**</span>.
 
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span>
 
-<span class="hljs-header">### Таблицы</span>
+<span class="hljs-section">### Таблицы</span>
 
 В чистом Маркдауне нет синтаксиса для таблиц, а в GFM есть.
 
 First Header  | Second Header
-<span class="hljs-horizontal_rule">------------- | -------------</span>
+------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 
