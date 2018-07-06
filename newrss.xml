@@ -4,10 +4,10 @@
         <description><![CDATA[Заметки о веб-разработке Павла Радькова.]]></description>
         <link>http://paulradzkov.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 06 May 2018 20:15:26 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Jul 2018 17:09:08 GMT</lastBuildDate>
         <atom:link href="http://paulradzkov.com/newrss.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Павел Радьков]]></author>
-        <pubDate>Sun, 06 May 2018 20:14:57 GMT</pubDate>
+        <pubDate>Fri, 06 Jul 2018 17:08:40 GMT</pubDate>
         <item>
             <title><![CDATA[Как правильно использовать переменные в препроцессорах Less и Sass]]></title>
             <description><![CDATA[<p>История архитектурной ошибки, её последствия, и три правила, благодаря которым вы сможете держать исходный код в порядке и снизить стоимость внесения изменений.</p>
@@ -505,7 +505,7 @@
             <link>http://paulradzkov.com/2017/local_variables/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2017/local_variables/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Mon, 10 Jul 2017 14:01:03 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Как верстальщику получить код ревью]]></title>
@@ -539,7 +539,7 @@
             <link>http://paulradzkov.com/2016/code_review/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2016/code_review/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Wed, 31 May 2017 20:59:38 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Веб-лицензии для платных шрифтов могут стоить вам дорого]]></title>
@@ -595,7 +595,7 @@
             <link>http://paulradzkov.com/2014/web-fonts_license/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/web-fonts_license/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Wed, 31 May 2017 20:59:38 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Бесплатная замена платному Helvetica Neue]]></title>
@@ -623,7 +623,7 @@
             <link>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Wed, 31 May 2017 20:59:38 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Деплой Docpad-сайта на GitHub Pages]]></title>
@@ -762,7 +762,7 @@
             <link>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 19:39:31 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Краткое руководство по Маркдауну]]></title>
@@ -1303,7 +1303,7 @@ Content Cell  | Content Cell
             <link>http://paulradzkov.com/2014/markdown_cheatsheet/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/markdown_cheatsheet/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Wed, 31 May 2017 20:59:38 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[О каких дизайнерах мечтают верстальщики]]></title>
@@ -1323,7 +1323,7 @@ Content Cell  | Content Cell
             <link>http://paulradzkov.com/2014/designer-superstar/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/designer-superstar/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Wed, 31 May 2017 20:59:38 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Захват экрана в GIF]]></title>
@@ -1352,7 +1352,7 @@ Content Cell  | Content Cell
             <link>http://paulradzkov.com/2014/capture_screen_to_gif/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/capture_screen_to_gif/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Wed, 31 May 2017 20:59:38 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Font-weight: bolder для шрифтов со множеством начертаний]]></title>
@@ -1495,7 +1495,7 @@ Content Cell  | Content Cell
             <link>http://paulradzkov.com/2014/font-weight_bolder/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/font-weight_bolder/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Wed, 31 May 2017 20:59:38 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Параметры subject и body в mailto ссылках]]></title>
@@ -1511,7 +1511,7 @@ Content Cell  | Content Cell
             <link>http://paulradzkov.com/2014/mailto_parameters/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/mailto_parameters/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Wed, 31 May 2017 20:59:38 GMT</pubDate>
+            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
         </item>
     </channel>
 </rss>
