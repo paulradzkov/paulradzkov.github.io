@@ -4,10 +4,10 @@
         <description><![CDATA[Заметки о веб-разработке Павла Радькова.]]></description>
         <link>http://paulradzkov.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 11 Jul 2018 09:42:06 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Jul 2018 17:00:22 GMT</lastBuildDate>
         <atom:link href="http://paulradzkov.com/newrss.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Павел Радьков]]></author>
-        <pubDate>Wed, 11 Jul 2018 09:41:40 GMT</pubDate>
+        <pubDate>Wed, 11 Jul 2018 16:59:54 GMT</pubDate>
         <item>
             <title><![CDATA[Как правильно использовать переменные в препроцессорах Less и Sass]]></title>
             <description><![CDATA[<p>История архитектурной ошибки, её последствия, и три правила, благодаря которым вы сможете держать исходный код в порядке и снизить стоимость внесения изменений.</p>
@@ -89,7 +89,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Было.</strong> Пример кода компонента.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Было.</strong> Пример кода компонента.</figcaption>
         </section>
         <section class="col-xs-12 col-md-1">
             <p>↓</p>
@@ -110,7 +110,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Стало.</strong> Переменные объявлены в глобальной области видимости и у них слишком общие имена. Это плохо.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Стало.</strong> Переменные объявлены в глобальной области видимости и у них слишком общие имена. Это плохо.</figcaption>
         </section>
     </div>
 </figure>
@@ -146,7 +146,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Было.</strong> Глобальные переменные.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Было.</strong> Глобальные переменные.</figcaption>
         </section>
         <section class="col-xs-12 col-md-1">
             <p>↓</p>
@@ -167,7 +167,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Стало.</strong> Переменные объявлены внутри селектора и не создают конфликта имён, потому что теперь они локальные.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Стало.</strong> Переменные объявлены внутри селектора и не создают конфликта имён, потому что теперь они локальные.</figcaption>
         </section>
     </div>
 </figure>
@@ -198,7 +198,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Было.</strong> Локальные переменные внутри селектора.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Было.</strong> Локальные переменные внутри селектора.</figcaption>
         </section>
         <section class="col-xs-12 col-md-1">
             <p>↓</p>
@@ -223,7 +223,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Стало.</strong> Миксин доставляет переменные в зону видимости селектора.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Стало.</strong> Миксин доставляет переменные в зону видимости селектора.</figcaption>
         </section>
     </div>
 </figure>
@@ -242,7 +242,7 @@
 <p>Рассмотрим три файла:</p>
 <figure class="space-out-h-kilo-xl">
     <div class="row row-bottom-xs row-center-xs row-middle-lg">
-        <section class="col-xs-12 col-md-6 col-lg col-xl space-minus-right-kilo-lg">
+        <section class="col-xs-12 col-md-6 col-lg-shrink col-xl space-minus-right-base-md space-minus-right-kilo-lg">
             <div class="browserframe" data-title="projectname.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// projectname.less</span>
 
@@ -255,7 +255,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Главный файл.</strong><br> Импортируем компоненты и конфиг. Конфиг — последним.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Главный файл.</strong><br> Импортируем компоненты и конфиг. Конфиг — последним.</figcaption>
         </section>
         <section class="col-xs-12 col-md-6 col-lg-shrink col-xl space-minus-right-kilo-lg">
             <div class="browserframe" data-title="page.less">
@@ -277,7 +277,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Компонент.</strong><br> Все переменные локальные и хранятся в миксине.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Компонент.</strong><br> Все переменные локальные и хранятся в миксине.</figcaption>
         </section>
         <section class="col-xs-12 col-md-shrink col-lg-shrink col-xl">
             <div class="browserframe" data-title="config.less">
@@ -294,7 +294,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Конфиг проекта.</strong><br> Переопределяем параметры компонента с помощью миксина настроек.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Конфиг проекта.</strong><br> Переопределяем параметры компонента с помощью миксина настроек.</figcaption>
         </section>
     </div>
 </figure>
@@ -333,7 +333,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Неправильно.</strong> Рекурсивное определение переменной вызывает ошибку компиляции.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Неправильно.</strong> Рекурсивное определение переменной вызывает ошибку компиляции.</figcaption>
         </section>
         <section class="col-xs-12 col-md-1">
             <p>↓</p>
@@ -351,7 +351,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Правильно.</strong> У глобальных переменных свой префикс <code>glob-</code>, что исключает совпадение имён.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Правильно.</strong> У глобальных переменных свой префикс <code>glob-</code>, что исключает совпадение имён.</figcaption>
         </section>
     </div>
 </figure>
@@ -361,7 +361,7 @@
 <p>Sass отличается от Less и больше похож на скриптовый язык программирования: нет «ленивых вычислений» и переменная должна быть обязательно объявлена до её использования в коде. Если определить переменную и использовать её в коде, а потом переопределить и использовать ещё раз, то в первый вызов получим исходное значение в CSS, а во второй вызов новое значение. Трюк с миксинами, как в Less, не пройдет. Но есть другие пути решения.</p>
 <p>Наборы переменных для настройки компонента удобно хранить в <dfn>map-объектах</dfn>. Это массив из пар «ключ: значение». Метод <dfn>map-get</dfn> извлекает конкретное значение из массива, метод <dfn>map-merge</dfn> объединяет два массива в один, дополняя или переписывая исходный массив.</p>
 <aside class="article-grid--aside txt-aside">
- <p>Читайте <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps" target="_blank">про Maps</a> в документации Sass.</p>
+ <p>Читайте <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps" target="_blank" rel="noopener">про Maps</a> в документации Sass.</p>
 </aside>
 
 <p>Простейший компонент без возможности переопределения извне будет выглядеть так:</p>
@@ -406,7 +406,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Главный файл.</strong><br> Сначала импортируем конфиг, потом компоненты.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Главный файл.</strong><br> Сначала импортируем конфиг, потом компоненты.</figcaption>
         </section>
         <section class="col-xs-12 col-md col-lg-6">
             <div class="browserframe" data-title="config.scss">
@@ -423,7 +423,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Настройки.</strong><br> Создаём глобальные переменные и переопределяем параметры компонента.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Настройки.</strong><br> Создаём глобальные переменные и переопределяем параметры компонента.</figcaption>
         </section>
         <section class="col-xs-12 col-md-shrink">
             <div class="browserframe" data-title="page.scss">
@@ -449,7 +449,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Компонент.</strong><br> Добавили проверку: а не существуют ли уже настройки, чтобы переопределить компонент?</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Компонент.</strong><br> Добавили проверку: а не существуют ли уже настройки, чтобы переопределить компонент?</figcaption>
         </section>
     </div>
 </figure>
@@ -505,7 +505,7 @@
             <link>http://paulradzkov.com/2017/local_variables/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2017/local_variables/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 16:59:33 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Как верстальщику получить код ревью]]></title>
@@ -539,7 +539,7 @@
             <link>http://paulradzkov.com/2016/code_review/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2016/code_review/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 12:16:29 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Веб-лицензии для платных шрифтов могут стоить вам дорого]]></title>
@@ -595,7 +595,7 @@
             <link>http://paulradzkov.com/2014/web-fonts_license/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/web-fonts_license/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 12:16:29 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Бесплатная замена платному Helvetica Neue]]></title>
@@ -623,7 +623,7 @@
             <link>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 11:57:48 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Деплой Docpad-сайта на GitHub Pages]]></title>
@@ -762,14 +762,14 @@
             <link>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 11:57:48 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Краткое руководство по Маркдауну]]></title>
-            <description><![CDATA[<p><strong>12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее <a href="http://codepen.io/paulradzkov/pen/ZGoLgr" target="_blank">руководство с традиционным Маркдауном</a>.</strong>
+            <description><![CDATA[<p><strong>12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее <a href="http://codepen.io/paulradzkov/pen/ZGoLgr" target="_blank" rel="noopener">руководство с традиционным Маркдауном</a>.</strong>
 </p>
 
-<p><a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Официальное руководство</a> по синтаксису Markdown мне кажется слишком длинным и не слишком наглядным, поэтому я составил краткое руководство, которое поможет выучить или повторить синтаксис Маркдауна за час.</p>
+<p><a href="http://daringfireball.net/projects/markdown/syntax" target="_blank" rel="noopener">Официальное руководство</a> по синтаксису Markdown мне кажется слишком длинным и не слишком наглядным, поэтому я составил краткое руководство, которое поможет выучить или повторить синтаксис Маркдауна за час.</p>
 
 <!-- cut -->
 
@@ -782,7 +782,7 @@
     <li>добавили зачеркнутый текст.</li>
 </ul>
 
-<p><a href="https://help.github.com/articles/github-flavored-markdown/" target="_blank">Полный список отличий</a> на Гитхабе.</p>
+<p><a href="https://help.github.com/articles/github-flavored-markdown/" target="_blank" rel="noopener">Полный список отличий</a> на Гитхабе.</p>
 
 <div class="raw-output">
 <pre class="highlight"><code class="hljs markdown">
@@ -1303,7 +1303,7 @@ Content Cell  | Content Cell
             <link>http://paulradzkov.com/2014/markdown_cheatsheet/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/markdown_cheatsheet/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 16:59:33 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[О каких дизайнерах мечтают верстальщики]]></title>
@@ -1323,11 +1323,11 @@ Content Cell  | Content Cell
             <link>http://paulradzkov.com/2014/designer-superstar/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/designer-superstar/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 11:57:48 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Захват экрана в GIF]]></title>
-            <description><![CDATA[<p>Рекомендую замечательную маленькую программку для записи области экрана в GIF — <a href="http://www.cockos.com/licecap/" target="_blank"><strong>LICEcap</strong></a>. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.</p>
+            <description><![CDATA[<p>Рекомендую замечательную маленькую программку для записи области экрана в GIF — <a href="http://www.cockos.com/licecap/" target="_blank" rel="noopener"><strong>LICEcap</strong></a>. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.</p>
 
 <p>А ещё можно сохранять в гифки смешные моменты из фильмов.</p>
 
@@ -1347,12 +1347,12 @@ Content Cell  | Content Cell
 <p>LICEcap бесплатна. Есть версия для Windows и OS X.</p>
 
 <p>
-    <a href="http://www.cockos.com/licecap/" target="_blank" class="link-to-demo">Скачать с сайта разработчика</a>
+    <a href="http://www.cockos.com/licecap/" target="_blank" rel="noopener" class="link-to-demo">Скачать с сайта разработчика</a>
 </p>]]></description>
             <link>http://paulradzkov.com/2014/capture_screen_to_gif/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/capture_screen_to_gif/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 16:59:33 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Font-weight: bolder для шрифтов со множеством начертаний]]></title>
@@ -1398,7 +1398,7 @@ Content Cell  | Content Cell
 
 <p>Уверен, многие пробовали использовать <code class="css"><span class="hljs-tag">strong</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bolder</span></span>;<span class="hljs-rule">}</span></span></code>, но это не принесло ожидаемого результата — текст стал ещё жирнее, чем ожидалось.</p>
 
-<p>А всё потому, что согласно <a href="http://www.w3.org/TR/CSS2/fonts.html#font-boldness" target="_blank">спецификации</a>, значение <code class="hljs-rule"><span class="hljs-value">bolder</span></code>  (<code class="hljs-rule"><span class="hljs-value">lighter</span></code>) увеличивает (уменьшает) <em>унаследованное</em> значение <code class="hljs-attribute">font-weight</code> до следующего возможного для данного шрифта значения, согласно следующей таблице.</p>
+<p>А всё потому, что согласно <a href="http://www.w3.org/TR/CSS2/fonts.html#font-boldness" target="_blank" rel="noopener">спецификации</a>, значение <code class="hljs-rule"><span class="hljs-value">bolder</span></code>  (<code class="hljs-rule"><span class="hljs-value">lighter</span></code>) увеличивает (уменьшает) <em>унаследованное</em> значение <code class="hljs-attribute">font-weight</code> до следующего возможного для данного шрифта значения, согласно следующей таблице.</p>
 
 <figure>
 <table style="margin: auto;">
@@ -1463,10 +1463,10 @@ Content Cell  | Content Cell
 <p>Теперь нам не придётся заботиться о вложенности элементов — каскад всё сделает автоматически. Мы можем вкладывать теги <code class="hljs-tag">strong</code> друг в друга.</p>
 
 <figure>
-    <a href="http://cssdeck.com/labs/x20utix0" target="_blank"><img src="/2014/font-weight_bolder/nested-tags-with-font-weight-bolder.png" alt=""></a>
+    <a href="http://cssdeck.com/labs/x20utix0" target="_blank" rel="noopener"><img src="/2014/font-weight_bolder/nested-tags-with-font-weight-bolder.png" alt=""></a>
     <figcaption>
         <p>Вложенные теги «strong». Толщина шрифта определяется исходя из значения родительского элемента.</p>
-        <p style="text-align: center;"><a href="http://cssdeck.com/labs/x20utix0" target="_blank" class="link-to-demo">Демка</a></p>
+        <p style="text-align: center;"><a href="http://cssdeck.com/labs/x20utix0" target="_blank" rel="noopener" class="link-to-demo">Демка</a></p>
     </figcaption>
 </figure>
 
@@ -1495,7 +1495,7 @@ Content Cell  | Content Cell
             <link>http://paulradzkov.com/2014/font-weight_bolder/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/font-weight_bolder/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 16:59:33 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Параметры subject и body в mailto ссылках]]></title>
@@ -1511,7 +1511,7 @@ Content Cell  | Content Cell
             <link>http://paulradzkov.com/2014/mailto_parameters/</link>
             <guid isPermaLink="true">http://paulradzkov.com/2014/mailto_parameters/</guid>
             <dc:creator><![CDATA[Павел Радьков]]></dc:creator>
-            <pubDate>Sun, 06 May 2018 21:05:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jul 2018 11:57:48 GMT</pubDate>
         </item>
     </channel>
 </rss>

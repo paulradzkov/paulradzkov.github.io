@@ -94,7 +94,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Было.</strong> Пример кода компонента.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Было.</strong> Пример кода компонента.</figcaption>
         </section>
         <section class="col-xs-12 col-md-1">
             <p>↓</p>
@@ -115,7 +115,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Стало.</strong> Переменные объявлены в глобальной области видимости и у них слишком общие имена. Это плохо.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Стало.</strong> Переменные объявлены в глобальной области видимости и у них слишком общие имена. Это плохо.</figcaption>
         </section>
     </div>
 </figure>
@@ -151,7 +151,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Было.</strong> Глобальные переменные.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Было.</strong> Глобальные переменные.</figcaption>
         </section>
         <section class="col-xs-12 col-md-1">
             <p>↓</p>
@@ -172,7 +172,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Стало.</strong> Переменные объявлены внутри селектора и не создают конфликта имён, потому что теперь они локальные.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Стало.</strong> Переменные объявлены внутри селектора и не создают конфликта имён, потому что теперь они локальные.</figcaption>
         </section>
     </div>
 </figure>
@@ -203,7 +203,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Было.</strong> Локальные переменные внутри селектора.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Было.</strong> Локальные переменные внутри селектора.</figcaption>
         </section>
         <section class="col-xs-12 col-md-1">
             <p>↓</p>
@@ -228,7 +228,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Стало.</strong> Миксин доставляет переменные в зону видимости селектора.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Стало.</strong> Миксин доставляет переменные в зону видимости селектора.</figcaption>
         </section>
     </div>
 </figure>
@@ -247,7 +247,7 @@
 <p>Рассмотрим три файла:</p>
 <figure class="space-out-h-kilo-xl">
     <div class="row row-bottom-xs row-center-xs row-middle-lg">
-        <section class="col-xs-12 col-md-6 col-lg col-xl space-minus-right-kilo-lg">
+        <section class="col-xs-12 col-md-6 col-lg-shrink col-xl space-minus-right-base-md space-minus-right-kilo-lg">
             <div class="browserframe" data-title="projectname.less">
                 <pre class="highlight"><code class="hljs less"><span class="hljs-comment">// projectname.less</span>
 
@@ -260,7 +260,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Главный файл.</strong><br> Импортируем компоненты и конфиг. Конфиг — последним.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Главный файл.</strong><br> Импортируем компоненты и конфиг. Конфиг — последним.</figcaption>
         </section>
         <section class="col-xs-12 col-md-6 col-lg-shrink col-xl space-minus-right-kilo-lg">
             <div class="browserframe" data-title="page.less">
@@ -282,7 +282,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Компонент.</strong><br> Все переменные локальные и хранятся в миксине.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Компонент.</strong><br> Все переменные локальные и хранятся в миксине.</figcaption>
         </section>
         <section class="col-xs-12 col-md-shrink col-lg-shrink col-xl">
             <div class="browserframe" data-title="config.less">
@@ -299,7 +299,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Конфиг проекта.</strong><br> Переопределяем параметры компонента с помощью миксина настроек.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Конфиг проекта.</strong><br> Переопределяем параметры компонента с помощью миксина настроек.</figcaption>
         </section>
     </div>
 </figure>
@@ -338,7 +338,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Неправильно.</strong> Рекурсивное определение переменной вызывает ошибку компиляции.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Неправильно.</strong> Рекурсивное определение переменной вызывает ошибку компиляции.</figcaption>
         </section>
         <section class="col-xs-12 col-md-1">
             <p>↓</p>
@@ -356,7 +356,7 @@
 </code></pre>
 
             </div>
-            <figcaption><strong>Правильно.</strong> У глобальных переменных свой префикс <code>glob-</code>, что исключает совпадение имён.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Правильно.</strong> У глобальных переменных свой префикс <code>glob-</code>, что исключает совпадение имён.</figcaption>
         </section>
     </div>
 </figure>
@@ -366,7 +366,7 @@
 <p>Sass отличается от Less и больше похож на скриптовый язык программирования: нет «ленивых вычислений» и переменная должна быть обязательно объявлена до её использования в коде. Если определить переменную и использовать её в коде, а потом переопределить и использовать ещё раз, то в первый вызов получим исходное значение в CSS, а во второй вызов новое значение. Трюк с миксинами, как в Less, не пройдет. Но есть другие пути решения.</p>
 <p>Наборы переменных для настройки компонента удобно хранить в <dfn>map-объектах</dfn>. Это массив из пар «ключ: значение». Метод <dfn>map-get</dfn> извлекает конкретное значение из массива, метод <dfn>map-merge</dfn> объединяет два массива в один, дополняя или переписывая исходный массив.</p>
 <aside class="article-grid--aside txt-aside">
- <p>Читайте <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps" target="_blank">про Maps</a> в документации Sass.</p>
+ <p>Читайте <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps" target="_blank" rel="noopener">про Maps</a> в документации Sass.</p>
 </aside>
 
 <p>Простейший компонент без возможности переопределения извне будет выглядеть так:</p>
@@ -411,7 +411,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Главный файл.</strong><br> Сначала импортируем конфиг, потом компоненты.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Главный файл.</strong><br> Сначала импортируем конфиг, потом компоненты.</figcaption>
         </section>
         <section class="col-xs-12 col-md col-lg-6">
             <div class="browserframe" data-title="config.scss">
@@ -428,7 +428,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Настройки.</strong><br> Создаём глобальные переменные и переопределяем параметры компонента.</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Настройки.</strong><br> Создаём глобальные переменные и переопределяем параметры компонента.</figcaption>
         </section>
         <section class="col-xs-12 col-md-shrink">
             <div class="browserframe" data-title="page.scss">
@@ -454,7 +454,7 @@
 </code></pre>
 
             </div>
-            <figcaption class="space-in-h-base-lg"><strong>Компонент.</strong><br> Добавили проверку: а не существуют ли уже настройки, чтобы переопределить компонент?</figcaption>
+            <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Компонент.</strong><br> Добавили проверку: а не существуют ли уже настройки, чтобы переопределить компонент?</figcaption>
         </section>
     </div>
 </figure>
@@ -791,10 +791,10 @@
 				<link>http://paulradzkov.com/2014/markdown_cheatsheet/</link>
 				<description></description>
 				<content:encoded>
-					<![CDATA[<p><strong>12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее <a href="http://codepen.io/paulradzkov/pen/ZGoLgr" target="_blank">руководство с традиционным Маркдауном</a>.</strong>
+					<![CDATA[<p><strong>12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее <a href="http://codepen.io/paulradzkov/pen/ZGoLgr" target="_blank" rel="noopener">руководство с традиционным Маркдауном</a>.</strong>
 </p>
 
-<p><a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Официальное руководство</a> по синтаксису Markdown мне кажется слишком длинным и не слишком наглядным, поэтому я составил краткое руководство, которое поможет выучить или повторить синтаксис Маркдауна за час.</p>
+<p><a href="http://daringfireball.net/projects/markdown/syntax" target="_blank" rel="noopener">Официальное руководство</a> по синтаксису Markdown мне кажется слишком длинным и не слишком наглядным, поэтому я составил краткое руководство, которое поможет выучить или повторить синтаксис Маркдауна за час.</p>
 
 <!-- cut -->
 
@@ -807,7 +807,7 @@
     <li>добавили зачеркнутый текст.</li>
 </ul>
 
-<p><a href="https://help.github.com/articles/github-flavored-markdown/" target="_blank">Полный список отличий</a> на Гитхабе.</p>
+<p><a href="https://help.github.com/articles/github-flavored-markdown/" target="_blank" rel="noopener">Полный список отличий</a> на Гитхабе.</p>
 
 <div class="raw-output">
 <pre class="highlight"><code class="hljs markdown">
@@ -1360,7 +1360,7 @@ Content Cell  | Content Cell
 				<link>http://paulradzkov.com/2014/capture_screen_to_gif/</link>
 				<description></description>
 				<content:encoded>
-					<![CDATA[<p>Рекомендую замечательную маленькую программку для записи области экрана в GIF — <a href="http://www.cockos.com/licecap/" target="_blank"><strong>LICEcap</strong></a>. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.</p>
+					<![CDATA[<p>Рекомендую замечательную маленькую программку для записи области экрана в GIF — <a href="http://www.cockos.com/licecap/" target="_blank" rel="noopener"><strong>LICEcap</strong></a>. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.</p>
 
 <p>А ещё можно сохранять в гифки смешные моменты из фильмов.</p>
 
@@ -1380,7 +1380,7 @@ Content Cell  | Content Cell
 <p>LICEcap бесплатна. Есть версия для Windows и OS X.</p>
 
 <p>
-    <a href="http://www.cockos.com/licecap/" target="_blank" class="link-to-demo">Скачать с сайта разработчика</a>
+    <a href="http://www.cockos.com/licecap/" target="_blank" rel="noopener" class="link-to-demo">Скачать с сайта разработчика</a>
 </p>]]>
 				</content:encoded>
 				<pubDate>Sun, 09 Feb 2014 00:00:00 GMT</pubDate>
@@ -1435,7 +1435,7 @@ Content Cell  | Content Cell
 
 <p>Уверен, многие пробовали использовать <code class="css"><span class="hljs-tag">strong</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> bolder</span></span>;<span class="hljs-rule">}</span></span></code>, но это не принесло ожидаемого результата — текст стал ещё жирнее, чем ожидалось.</p>
 
-<p>А всё потому, что согласно <a href="http://www.w3.org/TR/CSS2/fonts.html#font-boldness" target="_blank">спецификации</a>, значение <code class="hljs-rule"><span class="hljs-value">bolder</span></code>  (<code class="hljs-rule"><span class="hljs-value">lighter</span></code>) увеличивает (уменьшает) <em>унаследованное</em> значение <code class="hljs-attribute">font-weight</code> до следующего возможного для данного шрифта значения, согласно следующей таблице.</p>
+<p>А всё потому, что согласно <a href="http://www.w3.org/TR/CSS2/fonts.html#font-boldness" target="_blank" rel="noopener">спецификации</a>, значение <code class="hljs-rule"><span class="hljs-value">bolder</span></code>  (<code class="hljs-rule"><span class="hljs-value">lighter</span></code>) увеличивает (уменьшает) <em>унаследованное</em> значение <code class="hljs-attribute">font-weight</code> до следующего возможного для данного шрифта значения, согласно следующей таблице.</p>
 
 <figure>
 <table style="margin: auto;">
@@ -1500,10 +1500,10 @@ Content Cell  | Content Cell
 <p>Теперь нам не придётся заботиться о вложенности элементов — каскад всё сделает автоматически. Мы можем вкладывать теги <code class="hljs-tag">strong</code> друг в друга.</p>
 
 <figure>
-    <a href="http://cssdeck.com/labs/x20utix0" target="_blank"><img src="/2014/font-weight_bolder/nested-tags-with-font-weight-bolder.png" alt=""></a>
+    <a href="http://cssdeck.com/labs/x20utix0" target="_blank" rel="noopener"><img src="/2014/font-weight_bolder/nested-tags-with-font-weight-bolder.png" alt=""></a>
     <figcaption>
         <p>Вложенные теги «strong». Толщина шрифта определяется исходя из значения родительского элемента.</p>
-        <p style="text-align: center;"><a href="http://cssdeck.com/labs/x20utix0" target="_blank" class="link-to-demo">Демка</a></p>
+        <p style="text-align: center;"><a href="http://cssdeck.com/labs/x20utix0" target="_blank" rel="noopener" class="link-to-demo">Демка</a></p>
     </figcaption>
 </figure>
 
@@ -1567,7 +1567,7 @@ Content Cell  | Content Cell
 <!-- cut -->
 
 <figure>
-  <a href="http://cssdeck.com/labs/visited_link_on_hover" target="_blank"><img src="/2014/visited_link_on_hover/sample.gif" width="600" height="150" alt="Посещенная ссылка и не посещенная при наведении имеют разные цвета"></a>
+  <a href="http://cssdeck.com/labs/visited_link_on_hover" target="_blank" rel="noopener"><img src="/2014/visited_link_on_hover/sample.gif" width="600" height="150" alt="Посещенная ссылка и не посещенная при наведении имеют разные цвета"></a>
   <figcaption>
     <p style="text-align: center;">Посещённая ссылка и не посещённая при наведении и фокусе имеют разные цвета</p>
   </figcaption>
@@ -1583,7 +1583,7 @@ Content Cell  | Content Cell
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span>        {<span class="hljs-attribute">color</span>:<span class="hljs-number">#000000</span>}
 </code></pre>
 
-<p><a href="http://cssdeck.com/labs/visited_link_on_hover" target="_blank" class="link-to-demo">Пример</a></p>]]>
+<p><a href="http://cssdeck.com/labs/visited_link_on_hover" target="_blank" rel="noopener" class="link-to-demo">Пример</a></p>]]>
 				</content:encoded>
 				<pubDate>Sun, 26 Jan 2014 00:00:00 GMT</pubDate>
 				<guid>http://paulradzkov.com/2014/visited_link_on_hover/</guid>
@@ -1626,7 +1626,7 @@ Content Cell  | Content Cell
 
 <p>Далее у нас варианты:</p>
 
-<p>1) обнулить мешающие стили в слайдерах и других местах. Но это противоречит «<abbr title="Don't Repeat Yourself">DRY</abbr>» и является одним из <a href="http://csswizardry.com/2012/11/code-smells-in-css/" target="_blank">признаков «вонючего» кода</a>. К тому же не решает проблему раз и навсегда: добавите, например, аккордеон и списки в нем снова придется обнулять.</p>
+<p>1) обнулить мешающие стили в слайдерах и других местах. Но это противоречит «<abbr title="Don't Repeat Yourself">DRY</abbr>» и является одним из <a href="http://csswizardry.com/2012/11/code-smells-in-css/" target="_blank" rel="noopener">признаков «вонючего» кода</a>. К тому же не решает проблему раз и навсегда: добавите, например, аккордеон и списки в нем снова придется обнулять.</p>
 
 <p>2) пойти от обратного и ставить класс всем спискам, которые нужно стилизовать:</p>
 
@@ -1647,9 +1647,9 @@ Content Cell  | Content Cell
 <h2>Пример 2. Изменение внешнего вида всех элементов, кроме наведенного</h2>
 
 <figure>
-  <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank"><img src="/2014/negation_css_selector/sample2.gif" width="600" height="150" alt="Изменение внешнего вида всех элементов, кроме наведенного"/></a>
+  <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank" rel="noopener"><img src="/2014/negation_css_selector/sample2.gif" width="600" height="150" alt="Изменение внешнего вида всех элементов, кроме наведенного"/></a>
   <figcaption>
-    <p style="text-align: center;"><a href="http://cssdeck.com/labs/dlg62kjv" class="link-to-demo" target="_blank">Пример</a></p>
+    <p style="text-align: center;"><a href="http://cssdeck.com/labs/dlg62kjv" class="link-to-demo" target="_blank" rel="noopener">Пример</a></p>
   </figcaption>
 </figure>
 
@@ -1674,9 +1674,9 @@ Content Cell  | Content Cell
 
 <h2>Пример 3. Меню с разделителями между элементами</h2>
 <figure>
-    <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank"><img src="/2014/negation_css_selector/sample3.png" width="600" height="200" alt="Меню с разделителями между элементами"/></a>
+    <a href="http://cssdeck.com/labs/dlg62kjv" target="_blank" rel="noopener"><img src="/2014/negation_css_selector/sample3.png" width="600" height="200" alt="Меню с разделителями между элементами"/></a>
   <figcaption>
-    <p style="text-align: center;"><a href="http://cssdeck.com/labs/dlg62kjv" class="link-to-demo" target="_blank">Пример</a></p>
+    <p style="text-align: center;"><a href="http://cssdeck.com/labs/dlg62kjv" class="link-to-demo" target="_blank" rel="noopener">Пример</a></p>
   </figcaption>
 </figure>
 
@@ -1772,11 +1772,11 @@ Content Cell  | Content Cell
 
 <h2>Поддержка</h2>
 
-<p>Следует заметить, что согласно <a href="http://www.w3.org/TR/css3-selectors/#negation" target="_blank">спецификации</a> в скобках селектора <code class="hljs-pseudo">:not()</code> может стоять только <a href="http://www.w3.org/TR/css3-selectors/#simple-selectors-dfn" target="_blank">простой селектор</a> и в скобках нельзя использовать сам селектор <code class="hljs-pseudo">:not()</code>. Если нужно исключить несколько элементов, <code class="hljs-pseudo">:not()</code> можно повторить несолько раз, как в примере 5.</p>
+<p>Следует заметить, что согласно <a href="http://www.w3.org/TR/css3-selectors/#negation" target="_blank" rel="noopener">спецификации</a> в скобках селектора <code class="hljs-pseudo">:not()</code> может стоять только <a href="http://www.w3.org/TR/css3-selectors/#simple-selectors-dfn" target="_blank" rel="noopener">простой селектор</a> и в скобках нельзя использовать сам селектор <code class="hljs-pseudo">:not()</code>. Если нужно исключить несколько элементов, <code class="hljs-pseudo">:not()</code> можно повторить несолько раз, как в примере 5.</p>
 
-<div class="caniuse" data-feature="css-sel3"><a href="http://caniuse.com/#search=%3Anot" target="_blank">Поддержка браузерами</a></div>
+<div class="caniuse" data-feature="css-sel3"><a href="http://caniuse.com/#search=%3Anot" target="_blank" rel="noopener">Поддержка браузерами</a></div>
 
-<p>Если очень нужны CSS3-селекторы в браузерах, которые их не поддерживают, можно использовать полифил <a href="http://selectivizr.com/" target="_blank">selectivizr</a>.</p>]]>
+<p>Если очень нужны CSS3-селекторы в браузерах, которые их не поддерживают, можно использовать полифил <a href="http://selectivizr.com/" target="_blank" rel="noopener">selectivizr</a>.</p>]]>
 				</content:encoded>
 				<pubDate>Sun, 19 Jan 2014 00:00:00 GMT</pubDate>
 				<guid>http://paulradzkov.com/2014/negation_css_selector/</guid>
@@ -1794,7 +1794,7 @@ Content Cell  | Content Cell
 
 <!-- cut -->
 
-<p><a href="https://codepen.io/paulradzkov/full/PmQMby/" class="link-to-demo" target="_blank">демка</a></p>
+<p><a href="https://codepen.io/paulradzkov/full/PmQMby/" class="link-to-demo" target="_blank" rel="noopener">демка</a></p>
 <figure>
     <img src="/2013/lists_and_floats/floated_images_and_lists_problem.png" width="800" height="560" alt="Если картинка обтекает список, маркеры списка налазят на картинку"/>
     <figcaption>Проблема: если картинка обтекает список, то маркеры списка налазят на картинку</figcaption>
@@ -1865,7 +1865,7 @@ Content Cell  | Content Cell
 
 <p>В отличие от старого решения, элементы списка обтекают картинку естественным образом, не оставляя зазоров под картинкой.</p>
 
-<p>Чтобы починить <a href="https://github.com/paulradzkov/bettertext.css/issues/4" target="_blank">баг</a> в Хроме, Опере и других браузерах на движке Blink, пришлось добавить невидимую анимацию. Она заставляет браузер пересчитать размеры элементов списка и поставить маркеры на место.</p>
+<p>Чтобы починить <a href="https://github.com/paulradzkov/bettertext.css/issues/4" target="_blank" rel="noopener">баг</a> в Хроме, Опере и других браузерах на движке Blink, пришлось добавить невидимую анимацию. Она заставляет браузер пересчитать размеры элементов списка и поставить маркеры на место.</p>
 
 <p>Живой пример:</p>
 
@@ -2073,15 +2073,15 @@ Content Cell  | Content Cell
 				<link>http://paulradzkov.com/2012/mobile_developing/</link>
 				<description></description>
 				<content:encoded>
-					<![CDATA[<p>7 марта Abobe <a href="http://tv.adobe.com/watch/adobe-technology-sneaks-2012/adobe-shadow" title="Смотрим презентацию" target="_blank">представила</a> замечательный комплекс программ, позволяющий синхронно просматривать и проводить отладку сайтов в браузерах Webkit на компе и нескольких планшетах и смартфонах одновременно. Количество подключаемых устройств не ограничено. Поддерживаются как iOS, так и Android.</p>
+					<![CDATA[<p>7 марта Abobe <a href="http://tv.adobe.com/watch/adobe-technology-sneaks-2012/adobe-shadow" title="Смотрим презентацию" target="_blank" rel="noopener">представила</a> замечательный комплекс программ, позволяющий синхронно просматривать и проводить отладку сайтов в браузерах Webkit на компе и нескольких планшетах и смартфонах одновременно. Количество подключаемых устройств не ограничено. Поддерживаются как iOS, так и Android.</p>
 
 <!-- cut -->
 
 <p>Как это работает?</p>
-<p>Для начала устанавливаем <a href="http://labs.adobe.com/downloads/shadow.html" target="_blank">приложение Adobe Shadow</a> для Windows или Mac. Оно должно быть включено во время отладки, без него работать не будет.</p>
+<p>Для начала устанавливаем <a href="http://labs.adobe.com/downloads/shadow.html" target="_blank" rel="noopener">приложение Adobe Shadow</a> для Windows или Mac. Оно должно быть включено во время отладки, без него работать не будет.</p>
 <p><strong>Добавлено.</strong> Теперь продукт называется <a href="http://html.adobe.com/edge/inspect/">Adobe Edge Inspect</a>.</p>
-<p>Ставим <a href="https://chrome.google.com/webstore/detail/ijoeapleklopieoejahbpdnhkjjgddem" target="_blank">плагин Adobe Shadow</a> в Google Chrome.</p>
-<p>На мобильные устройства ставим соответствующие приложения из <a href="https://play.google.com/store/apps/details?id=com.adobe.shadow.android" target="_blank">Плей Маркета</a> или <a href="http://itunes.apple.com/app/adobe-shadow/id498621426" target="_blank">АппСтора</a>.</p>
+<p>Ставим <a href="https://chrome.google.com/webstore/detail/ijoeapleklopieoejahbpdnhkjjgddem" target="_blank" rel="noopener">плагин Adobe Shadow</a> в Google Chrome.</p>
+<p>На мобильные устройства ставим соответствующие приложения из <a href="https://play.google.com/store/apps/details?id=com.adobe.shadow.android" target="_blank" rel="noopener">Плей Маркета</a> или <a href="http://itunes.apple.com/app/adobe-shadow/id498621426" target="_blank" rel="noopener">АппСтора</a>.</p>
 <p>Все устройства должны находиться в одной wifi сети. Запускаем мобильные приложения, вводим коды для синхронизации. Всё готово к работе.</p>
 <p>Теперь можно серфить по сайтам с основного компа, а на подключенных устройствах будут открываться те же страницы. При этом используется движок родного браузера iOS или Android, но внутри приложения Shadow.</p>
 <p>Чтобы вызвать инспектор кода, нужно в выпадающем меню плагина Adobe Shadow кликнуть иконку <strong>&lt;&gt;</strong> напротив интересующего устройства.</p>

@@ -4,7 +4,7 @@
     <subtitle>Заметки о веб-разработке Павла Радькова.</subtitle>
     <link href="http://paulradzkov.com/atom.xml" rel="self" />
     <link href="http://paulradzkov.com" />
-    <updated>2018-07-11T09:41:40.311Z</updated>
+    <updated>2018-07-11T16:59:54.255Z</updated>
     <id>http://paulradzkov.com</id>
     <author>
         <name>Павел Радьков</name>
@@ -102,7 +102,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption&gt;&lt;strong&gt;Было.&lt;/strong&gt; Пример кода компонента.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Было.&lt;/strong&gt; Пример кода компонента.&lt;/figcaption&gt;
         &lt;/section&gt;
         &lt;section class=&quot;col-xs-12 col-md-1&quot;&gt;
             &lt;p&gt;↓&lt;/p&gt;
@@ -123,7 +123,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Переменные объявлены в глобальной области видимости и у них слишком общие имена. Это плохо.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Переменные объявлены в глобальной области видимости и у них слишком общие имена. Это плохо.&lt;/figcaption&gt;
         &lt;/section&gt;
     &lt;/div&gt;
 &lt;/figure&gt;
@@ -159,7 +159,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption&gt;&lt;strong&gt;Было.&lt;/strong&gt; Глобальные переменные.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Было.&lt;/strong&gt; Глобальные переменные.&lt;/figcaption&gt;
         &lt;/section&gt;
         &lt;section class=&quot;col-xs-12 col-md-1&quot;&gt;
             &lt;p&gt;↓&lt;/p&gt;
@@ -180,7 +180,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Переменные объявлены внутри селектора и не создают конфликта имён, потому что теперь они локальные.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Переменные объявлены внутри селектора и не создают конфликта имён, потому что теперь они локальные.&lt;/figcaption&gt;
         &lt;/section&gt;
     &lt;/div&gt;
 &lt;/figure&gt;
@@ -211,7 +211,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption&gt;&lt;strong&gt;Было.&lt;/strong&gt; Локальные переменные внутри селектора.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Было.&lt;/strong&gt; Локальные переменные внутри селектора.&lt;/figcaption&gt;
         &lt;/section&gt;
         &lt;section class=&quot;col-xs-12 col-md-1&quot;&gt;
             &lt;p&gt;↓&lt;/p&gt;
@@ -236,7 +236,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Миксин доставляет переменные в зону видимости селектора.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Миксин доставляет переменные в зону видимости селектора.&lt;/figcaption&gt;
         &lt;/section&gt;
     &lt;/div&gt;
 &lt;/figure&gt;
@@ -255,7 +255,7 @@
 &lt;p&gt;Рассмотрим три файла:&lt;/p&gt;
 &lt;figure class=&quot;space-out-h-kilo-xl&quot;&gt;
     &lt;div class=&quot;row row-bottom-xs row-center-xs row-middle-lg&quot;&gt;
-        &lt;section class=&quot;col-xs-12 col-md-6 col-lg col-xl space-minus-right-kilo-lg&quot;&gt;
+        &lt;section class=&quot;col-xs-12 col-md-6 col-lg-shrink col-xl space-minus-right-base-md space-minus-right-kilo-lg&quot;&gt;
             &lt;div class=&quot;browserframe&quot; data-title=&quot;projectname.less&quot;&gt;
                 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs less&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// projectname.less&lt;/span&gt;
 
@@ -268,7 +268,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Главный файл.&lt;/strong&gt;&lt;br&gt; Импортируем компоненты и конфиг. Конфиг — последним.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Главный файл.&lt;/strong&gt;&lt;br&gt; Импортируем компоненты и конфиг. Конфиг — последним.&lt;/figcaption&gt;
         &lt;/section&gt;
         &lt;section class=&quot;col-xs-12 col-md-6 col-lg-shrink col-xl space-minus-right-kilo-lg&quot;&gt;
             &lt;div class=&quot;browserframe&quot; data-title=&quot;page.less&quot;&gt;
@@ -290,7 +290,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Компонент.&lt;/strong&gt;&lt;br&gt; Все переменные локальные и хранятся в миксине.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Компонент.&lt;/strong&gt;&lt;br&gt; Все переменные локальные и хранятся в миксине.&lt;/figcaption&gt;
         &lt;/section&gt;
         &lt;section class=&quot;col-xs-12 col-md-shrink col-lg-shrink col-xl&quot;&gt;
             &lt;div class=&quot;browserframe&quot; data-title=&quot;config.less&quot;&gt;
@@ -307,7 +307,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Конфиг проекта.&lt;/strong&gt;&lt;br&gt; Переопределяем параметры компонента с помощью миксина настроек.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Конфиг проекта.&lt;/strong&gt;&lt;br&gt; Переопределяем параметры компонента с помощью миксина настроек.&lt;/figcaption&gt;
         &lt;/section&gt;
     &lt;/div&gt;
 &lt;/figure&gt;
@@ -346,7 +346,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption&gt;&lt;strong&gt;Неправильно.&lt;/strong&gt; Рекурсивное определение переменной вызывает ошибку компиляции.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Неправильно.&lt;/strong&gt; Рекурсивное определение переменной вызывает ошибку компиляции.&lt;/figcaption&gt;
         &lt;/section&gt;
         &lt;section class=&quot;col-xs-12 col-md-1&quot;&gt;
             &lt;p&gt;↓&lt;/p&gt;
@@ -364,7 +364,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption&gt;&lt;strong&gt;Правильно.&lt;/strong&gt; У глобальных переменных свой префикс &lt;code&gt;glob-&lt;/code&gt;, что исключает совпадение имён.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Правильно.&lt;/strong&gt; У глобальных переменных свой префикс &lt;code&gt;glob-&lt;/code&gt;, что исключает совпадение имён.&lt;/figcaption&gt;
         &lt;/section&gt;
     &lt;/div&gt;
 &lt;/figure&gt;
@@ -374,7 +374,7 @@
 &lt;p&gt;Sass отличается от Less и больше похож на скриптовый язык программирования: нет «ленивых вычислений» и переменная должна быть обязательно объявлена до её использования в коде. Если определить переменную и использовать её в коде, а потом переопределить и использовать ещё раз, то в первый вызов получим исходное значение в CSS, а во второй вызов новое значение. Трюк с миксинами, как в Less, не пройдет. Но есть другие пути решения.&lt;/p&gt;
 &lt;p&gt;Наборы переменных для настройки компонента удобно хранить в &lt;dfn&gt;map-объектах&lt;/dfn&gt;. Это массив из пар «ключ: значение». Метод &lt;dfn&gt;map-get&lt;/dfn&gt; извлекает конкретное значение из массива, метод &lt;dfn&gt;map-merge&lt;/dfn&gt; объединяет два массива в один, дополняя или переписывая исходный массив.&lt;/p&gt;
 &lt;aside class=&quot;article-grid--aside txt-aside&quot;&gt;
- &lt;p&gt;Читайте &lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps&quot; target=&quot;_blank&quot;&gt;про Maps&lt;/a&gt; в документации Sass.&lt;/p&gt;
+ &lt;p&gt;Читайте &lt;a href=&quot;http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;про Maps&lt;/a&gt; в документации Sass.&lt;/p&gt;
 &lt;/aside&gt;
 
 &lt;p&gt;Простейший компонент без возможности переопределения извне будет выглядеть так:&lt;/p&gt;
@@ -419,7 +419,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Главный файл.&lt;/strong&gt;&lt;br&gt; Сначала импортируем конфиг, потом компоненты.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Главный файл.&lt;/strong&gt;&lt;br&gt; Сначала импортируем конфиг, потом компоненты.&lt;/figcaption&gt;
         &lt;/section&gt;
         &lt;section class=&quot;col-xs-12 col-md col-lg-6&quot;&gt;
             &lt;div class=&quot;browserframe&quot; data-title=&quot;config.scss&quot;&gt;
@@ -436,7 +436,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Настройки.&lt;/strong&gt;&lt;br&gt; Создаём глобальные переменные и переопределяем параметры компонента.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Настройки.&lt;/strong&gt;&lt;br&gt; Создаём глобальные переменные и переопределяем параметры компонента.&lt;/figcaption&gt;
         &lt;/section&gt;
         &lt;section class=&quot;col-xs-12 col-md-shrink&quot;&gt;
             &lt;div class=&quot;browserframe&quot; data-title=&quot;page.scss&quot;&gt;
@@ -462,7 +462,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption class=&quot;space-in-h-base-lg&quot;&gt;&lt;strong&gt;Компонент.&lt;/strong&gt;&lt;br&gt; Добавили проверку: а не существуют ли уже настройки, чтобы переопределить компонент?&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Компонент.&lt;/strong&gt;&lt;br&gt; Добавили проверку: а не существуют ли уже настройки, чтобы переопределить компонент?&lt;/figcaption&gt;
         &lt;/section&gt;
     &lt;/div&gt;
 &lt;/figure&gt;
@@ -779,10 +779,10 @@
             <link href="http://paulradzkov.com/2014/markdown_cheatsheet/"/>
             <updated>2014-04-07T00:00:00.000Z</updated>
             <id>http://paulradzkov.com/2014/markdown_cheatsheet/</id>
-            <content type="html">&lt;p&gt;&lt;strong&gt;12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее &lt;a href=&quot;http://codepen.io/paulradzkov/pen/ZGoLgr&quot; target=&quot;_blank&quot;&gt;руководство с традиционным Маркдауном&lt;/a&gt;.&lt;/strong&gt;
+            <content type="html">&lt;p&gt;&lt;strong&gt;12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее &lt;a href=&quot;http://codepen.io/paulradzkov/pen/ZGoLgr&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;руководство с традиционным Маркдауном&lt;/a&gt;.&lt;/strong&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot; target=&quot;_blank&quot;&gt;Официальное руководство&lt;/a&gt; по синтаксису Markdown мне кажется слишком длинным и не слишком наглядным, поэтому я составил краткое руководство, которое поможет выучить или повторить синтаксис Маркдауна за час.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Официальное руководство&lt;/a&gt; по синтаксису Markdown мне кажется слишком длинным и не слишком наглядным, поэтому я составил краткое руководство, которое поможет выучить или повторить синтаксис Маркдауна за час.&lt;/p&gt;
 
 &lt;!-- cut --&gt;
 
@@ -795,7 +795,7 @@
     &lt;li&gt;добавили зачеркнутый текст.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown/&quot; target=&quot;_blank&quot;&gt;Полный список отличий&lt;/a&gt; на Гитхабе.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Полный список отличий&lt;/a&gt; на Гитхабе.&lt;/p&gt;
 
 &lt;div class=&quot;raw-output&quot;&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs markdown&quot;&gt;
@@ -1340,7 +1340,7 @@ Content Cell  | Content Cell
             <link href="http://paulradzkov.com/2014/capture_screen_to_gif/"/>
             <updated>2014-02-09T00:00:00.000Z</updated>
             <id>http://paulradzkov.com/2014/capture_screen_to_gif/</id>
-            <content type="html">&lt;p&gt;Рекомендую замечательную маленькую программку для записи области экрана в GIF — &lt;a href=&quot;http://www.cockos.com/licecap/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;LICEcap&lt;/strong&gt;&lt;/a&gt;. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.&lt;/p&gt;
+            <content type="html">&lt;p&gt;Рекомендую замечательную маленькую программку для записи области экрана в GIF — &lt;a href=&quot;http://www.cockos.com/licecap/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;LICEcap&lt;/strong&gt;&lt;/a&gt;. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.&lt;/p&gt;
 
 &lt;p&gt;А ещё можно сохранять в гифки смешные моменты из фильмов.&lt;/p&gt;
 
@@ -1360,7 +1360,7 @@ Content Cell  | Content Cell
 &lt;p&gt;LICEcap бесплатна. Есть версия для Windows и OS X.&lt;/p&gt;
 
 &lt;p&gt;
-    &lt;a href=&quot;http://www.cockos.com/licecap/&quot; target=&quot;_blank&quot; class=&quot;link-to-demo&quot;&gt;Скачать с сайта разработчика&lt;/a&gt;
+    &lt;a href=&quot;http://www.cockos.com/licecap/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;link-to-demo&quot;&gt;Скачать с сайта разработчика&lt;/a&gt;
 &lt;/p&gt;</content>
         </entry>
     
@@ -1411,7 +1411,7 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Уверен, многие пробовали использовать &lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;strong&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; bolder&lt;/span&gt;&lt;/span&gt;;&lt;span class=&quot;hljs-rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;, но это не принесло ожидаемого результата — текст стал ещё жирнее, чем ожидалось.&lt;/p&gt;
 
-&lt;p&gt;А всё потому, что согласно &lt;a href=&quot;http://www.w3.org/TR/CSS2/fonts.html#font-boldness&quot; target=&quot;_blank&quot;&gt;спецификации&lt;/a&gt;, значение &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-value&quot;&gt;bolder&lt;/span&gt;&lt;/code&gt;  (&lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-value&quot;&gt;lighter&lt;/span&gt;&lt;/code&gt;) увеличивает (уменьшает) &lt;em&gt;унаследованное&lt;/em&gt; значение &lt;code class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/code&gt; до следующего возможного для данного шрифта значения, согласно следующей таблице.&lt;/p&gt;
+&lt;p&gt;А всё потому, что согласно &lt;a href=&quot;http://www.w3.org/TR/CSS2/fonts.html#font-boldness&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;спецификации&lt;/a&gt;, значение &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-value&quot;&gt;bolder&lt;/span&gt;&lt;/code&gt;  (&lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-value&quot;&gt;lighter&lt;/span&gt;&lt;/code&gt;) увеличивает (уменьшает) &lt;em&gt;унаследованное&lt;/em&gt; значение &lt;code class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/code&gt; до следующего возможного для данного шрифта значения, согласно следующей таблице.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;table style=&quot;margin: auto;&quot;&gt;
@@ -1476,10 +1476,10 @@ Content Cell  | Content Cell
 &lt;p&gt;Теперь нам не придётся заботиться о вложенности элементов — каскад всё сделает автоматически. Мы можем вкладывать теги &lt;code class=&quot;hljs-tag&quot;&gt;strong&lt;/code&gt; друг в друга.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&quot;http://cssdeck.com/labs/x20utix0&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/2014/font-weight_bolder/nested-tags-with-font-weight-bolder.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://cssdeck.com/labs/x20utix0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;/2014/font-weight_bolder/nested-tags-with-font-weight-bolder.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
     &lt;figcaption&gt;
         &lt;p&gt;Вложенные теги «strong». Толщина шрифта определяется исходя из значения родительского элемента.&lt;/p&gt;
-        &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://cssdeck.com/labs/x20utix0&quot; target=&quot;_blank&quot; class=&quot;link-to-demo&quot;&gt;Демка&lt;/a&gt;&lt;/p&gt;
+        &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://cssdeck.com/labs/x20utix0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;link-to-demo&quot;&gt;Демка&lt;/a&gt;&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1535,7 +1535,7 @@ Content Cell  | Content Cell
 &lt;!-- cut --&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://cssdeck.com/labs/visited_link_on_hover&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/2014/visited_link_on_hover/sample.gif&quot; width=&quot;600&quot; height=&quot;150&quot; alt=&quot;Посещенная ссылка и не посещенная при наведении имеют разные цвета&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://cssdeck.com/labs/visited_link_on_hover&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;/2014/visited_link_on_hover/sample.gif&quot; width=&quot;600&quot; height=&quot;150&quot; alt=&quot;Посещенная ссылка и не посещенная при наведении имеют разные цвета&quot;&gt;&lt;/a&gt;
   &lt;figcaption&gt;
     &lt;p style=&quot;text-align: center;&quot;&gt;Посещённая ссылка и не посещённая при наведении и фокусе имеют разные цвета&lt;/p&gt;
   &lt;/figcaption&gt;
@@ -1551,7 +1551,7 @@ Content Cell  | Content Cell
 &lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:active&lt;/span&gt;        {&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;#000000&lt;/span&gt;}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://cssdeck.com/labs/visited_link_on_hover&quot; target=&quot;_blank&quot; class=&quot;link-to-demo&quot;&gt;Пример&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a href=&quot;http://cssdeck.com/labs/visited_link_on_hover&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;link-to-demo&quot;&gt;Пример&lt;/a&gt;&lt;/p&gt;</content>
         </entry>
     
         <entry>
@@ -1590,7 +1590,7 @@ Content Cell  | Content Cell
 
 &lt;p&gt;Далее у нас варианты:&lt;/p&gt;
 
-&lt;p&gt;1) обнулить мешающие стили в слайдерах и других местах. Но это противоречит «&lt;abbr title=&quot;Don't Repeat Yourself&quot;&gt;DRY&lt;/abbr&gt;» и является одним из &lt;a href=&quot;http://csswizardry.com/2012/11/code-smells-in-css/&quot; target=&quot;_blank&quot;&gt;признаков «вонючего» кода&lt;/a&gt;. К тому же не решает проблему раз и навсегда: добавите, например, аккордеон и списки в нем снова придется обнулять.&lt;/p&gt;
+&lt;p&gt;1) обнулить мешающие стили в слайдерах и других местах. Но это противоречит «&lt;abbr title=&quot;Don't Repeat Yourself&quot;&gt;DRY&lt;/abbr&gt;» и является одним из &lt;a href=&quot;http://csswizardry.com/2012/11/code-smells-in-css/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;признаков «вонючего» кода&lt;/a&gt;. К тому же не решает проблему раз и навсегда: добавите, например, аккордеон и списки в нем снова придется обнулять.&lt;/p&gt;
 
 &lt;p&gt;2) пойти от обратного и ставить класс всем спискам, которые нужно стилизовать:&lt;/p&gt;
 
@@ -1611,9 +1611,9 @@ Content Cell  | Content Cell
 &lt;h2&gt;Пример 2. Изменение внешнего вида всех элементов, кроме наведенного&lt;/h2&gt;
 
 &lt;figure&gt;
-  &lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/2014/negation_css_selector/sample2.gif&quot; width=&quot;600&quot; height=&quot;150&quot; alt=&quot;Изменение внешнего вида всех элементов, кроме наведенного&quot;/&gt;&lt;/a&gt;
+  &lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;/2014/negation_css_selector/sample2.gif&quot; width=&quot;600&quot; height=&quot;150&quot; alt=&quot;Изменение внешнего вида всех элементов, кроме наведенного&quot;/&gt;&lt;/a&gt;
   &lt;figcaption&gt;
-    &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot;&gt;Пример&lt;/a&gt;&lt;/p&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Пример&lt;/a&gt;&lt;/p&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1638,9 +1638,9 @@ Content Cell  | Content Cell
 
 &lt;h2&gt;Пример 3. Меню с разделителями между элементами&lt;/h2&gt;
 &lt;figure&gt;
-    &lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/2014/negation_css_selector/sample3.png&quot; width=&quot;600&quot; height=&quot;200&quot; alt=&quot;Меню с разделителями между элементами&quot;/&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;/2014/negation_css_selector/sample3.png&quot; width=&quot;600&quot; height=&quot;200&quot; alt=&quot;Меню с разделителями между элементами&quot;/&gt;&lt;/a&gt;
   &lt;figcaption&gt;
-    &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot;&gt;Пример&lt;/a&gt;&lt;/p&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://cssdeck.com/labs/dlg62kjv&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Пример&lt;/a&gt;&lt;/p&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -1736,11 +1736,11 @@ Content Cell  | Content Cell
 
 &lt;h2&gt;Поддержка&lt;/h2&gt;
 
-&lt;p&gt;Следует заметить, что согласно &lt;a href=&quot;http://www.w3.org/TR/css3-selectors/#negation&quot; target=&quot;_blank&quot;&gt;спецификации&lt;/a&gt; в скобках селектора &lt;code class=&quot;hljs-pseudo&quot;&gt;:not()&lt;/code&gt; может стоять только &lt;a href=&quot;http://www.w3.org/TR/css3-selectors/#simple-selectors-dfn&quot; target=&quot;_blank&quot;&gt;простой селектор&lt;/a&gt; и в скобках нельзя использовать сам селектор &lt;code class=&quot;hljs-pseudo&quot;&gt;:not()&lt;/code&gt;. Если нужно исключить несколько элементов, &lt;code class=&quot;hljs-pseudo&quot;&gt;:not()&lt;/code&gt; можно повторить несолько раз, как в примере 5.&lt;/p&gt;
+&lt;p&gt;Следует заметить, что согласно &lt;a href=&quot;http://www.w3.org/TR/css3-selectors/#negation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;спецификации&lt;/a&gt; в скобках селектора &lt;code class=&quot;hljs-pseudo&quot;&gt;:not()&lt;/code&gt; может стоять только &lt;a href=&quot;http://www.w3.org/TR/css3-selectors/#simple-selectors-dfn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;простой селектор&lt;/a&gt; и в скобках нельзя использовать сам селектор &lt;code class=&quot;hljs-pseudo&quot;&gt;:not()&lt;/code&gt;. Если нужно исключить несколько элементов, &lt;code class=&quot;hljs-pseudo&quot;&gt;:not()&lt;/code&gt; можно повторить несолько раз, как в примере 5.&lt;/p&gt;
 
-&lt;div class=&quot;caniuse&quot; data-feature=&quot;css-sel3&quot;&gt;&lt;a href=&quot;http://caniuse.com/#search=%3Anot&quot; target=&quot;_blank&quot;&gt;Поддержка браузерами&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;caniuse&quot; data-feature=&quot;css-sel3&quot;&gt;&lt;a href=&quot;http://caniuse.com/#search=%3Anot&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Поддержка браузерами&lt;/a&gt;&lt;/div&gt;
 
-&lt;p&gt;Если очень нужны CSS3-селекторы в браузерах, которые их не поддерживают, можно использовать полифил &lt;a href=&quot;http://selectivizr.com/&quot; target=&quot;_blank&quot;&gt;selectivizr&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;Если очень нужны CSS3-селекторы в браузерах, которые их не поддерживают, можно использовать полифил &lt;a href=&quot;http://selectivizr.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;selectivizr&lt;/a&gt;.&lt;/p&gt;</content>
         </entry>
     
         <entry>
@@ -1754,7 +1754,7 @@ Content Cell  | Content Cell
 
 &lt;!-- cut --&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://codepen.io/paulradzkov/full/PmQMby/&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot;&gt;демка&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://codepen.io/paulradzkov/full/PmQMby/&quot; class=&quot;link-to-demo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;демка&lt;/a&gt;&lt;/p&gt;
 &lt;figure&gt;
     &lt;img src=&quot;/2013/lists_and_floats/floated_images_and_lists_problem.png&quot; width=&quot;800&quot; height=&quot;560&quot; alt=&quot;Если картинка обтекает список, маркеры списка налазят на картинку&quot;/&gt;
     &lt;figcaption&gt;Проблема: если картинка обтекает список, то маркеры списка налазят на картинку&lt;/figcaption&gt;
@@ -1825,7 +1825,7 @@ Content Cell  | Content Cell
 
 &lt;p&gt;В отличие от старого решения, элементы списка обтекают картинку естественным образом, не оставляя зазоров под картинкой.&lt;/p&gt;
 
-&lt;p&gt;Чтобы починить &lt;a href=&quot;https://github.com/paulradzkov/bettertext.css/issues/4&quot; target=&quot;_blank&quot;&gt;баг&lt;/a&gt; в Хроме, Опере и других браузерах на движке Blink, пришлось добавить невидимую анимацию. Она заставляет браузер пересчитать размеры элементов списка и поставить маркеры на место.&lt;/p&gt;
+&lt;p&gt;Чтобы починить &lt;a href=&quot;https://github.com/paulradzkov/bettertext.css/issues/4&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;баг&lt;/a&gt; в Хроме, Опере и других браузерах на движке Blink, пришлось добавить невидимую анимацию. Она заставляет браузер пересчитать размеры элементов списка и поставить маркеры на место.&lt;/p&gt;
 
 &lt;p&gt;Живой пример:&lt;/p&gt;
 
@@ -2017,15 +2017,15 @@ Content Cell  | Content Cell
             <link href="http://paulradzkov.com/2012/mobile_developing/"/>
             <updated>2012-04-08T00:00:00.000Z</updated>
             <id>http://paulradzkov.com/2012/mobile_developing/</id>
-            <content type="html">&lt;p&gt;7 марта Abobe &lt;a href=&quot;http://tv.adobe.com/watch/adobe-technology-sneaks-2012/adobe-shadow&quot; title=&quot;Смотрим презентацию&quot; target=&quot;_blank&quot;&gt;представила&lt;/a&gt; замечательный комплекс программ, позволяющий синхронно просматривать и проводить отладку сайтов в браузерах Webkit на компе и нескольких планшетах и смартфонах одновременно. Количество подключаемых устройств не ограничено. Поддерживаются как iOS, так и Android.&lt;/p&gt;
+            <content type="html">&lt;p&gt;7 марта Abobe &lt;a href=&quot;http://tv.adobe.com/watch/adobe-technology-sneaks-2012/adobe-shadow&quot; title=&quot;Смотрим презентацию&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;представила&lt;/a&gt; замечательный комплекс программ, позволяющий синхронно просматривать и проводить отладку сайтов в браузерах Webkit на компе и нескольких планшетах и смартфонах одновременно. Количество подключаемых устройств не ограничено. Поддерживаются как iOS, так и Android.&lt;/p&gt;
 
 &lt;!-- cut --&gt;
 
 &lt;p&gt;Как это работает?&lt;/p&gt;
-&lt;p&gt;Для начала устанавливаем &lt;a href=&quot;http://labs.adobe.com/downloads/shadow.html&quot; target=&quot;_blank&quot;&gt;приложение Adobe Shadow&lt;/a&gt; для Windows или Mac. Оно должно быть включено во время отладки, без него работать не будет.&lt;/p&gt;
+&lt;p&gt;Для начала устанавливаем &lt;a href=&quot;http://labs.adobe.com/downloads/shadow.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;приложение Adobe Shadow&lt;/a&gt; для Windows или Mac. Оно должно быть включено во время отладки, без него работать не будет.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Добавлено.&lt;/strong&gt; Теперь продукт называется &lt;a href=&quot;http://html.adobe.com/edge/inspect/&quot;&gt;Adobe Edge Inspect&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Ставим &lt;a href=&quot;https://chrome.google.com/webstore/detail/ijoeapleklopieoejahbpdnhkjjgddem&quot; target=&quot;_blank&quot;&gt;плагин Adobe Shadow&lt;/a&gt; в Google Chrome.&lt;/p&gt;
-&lt;p&gt;На мобильные устройства ставим соответствующие приложения из &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.adobe.shadow.android&quot; target=&quot;_blank&quot;&gt;Плей Маркета&lt;/a&gt; или &lt;a href=&quot;http://itunes.apple.com/app/adobe-shadow/id498621426&quot; target=&quot;_blank&quot;&gt;АппСтора&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ставим &lt;a href=&quot;https://chrome.google.com/webstore/detail/ijoeapleklopieoejahbpdnhkjjgddem&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;плагин Adobe Shadow&lt;/a&gt; в Google Chrome.&lt;/p&gt;
+&lt;p&gt;На мобильные устройства ставим соответствующие приложения из &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.adobe.shadow.android&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Плей Маркета&lt;/a&gt; или &lt;a href=&quot;http://itunes.apple.com/app/adobe-shadow/id498621426&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;АппСтора&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Все устройства должны находиться в одной wifi сети. Запускаем мобильные приложения, вводим коды для синхронизации. Всё готово к работе.&lt;/p&gt;
 &lt;p&gt;Теперь можно серфить по сайтам с основного компа, а на подключенных устройствах будут открываться те же страницы. При этом используется движок родного браузера iOS или Android, но внутри приложения Shadow.&lt;/p&gt;
 &lt;p&gt;Чтобы вызвать инспектор кода, нужно в выпадающем меню плагина Adobe Shadow кликнуть иконку &lt;strong&gt;&amp;lt;&amp;gt;&lt;/strong&gt; напротив интересующего устройства.&lt;/p&gt;
