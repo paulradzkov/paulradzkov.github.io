@@ -4,10 +4,10 @@
         <description><![CDATA[Заметки о веб-разработке Павла Радькова.]]></description>
         <link>http://paulradzkov.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 11 Jul 2018 17:00:22 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Jul 2018 20:03:05 GMT</lastBuildDate>
         <atom:link href="http://paulradzkov.com/newrss.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Павел Радьков]]></author>
-        <pubDate>Wed, 11 Jul 2018 16:59:54 GMT</pubDate>
+        <pubDate>Wed, 11 Jul 2018 20:02:37 GMT</pubDate>
         <item>
             <title><![CDATA[Как правильно использовать переменные в препроцессорах Less и Sass]]></title>
             <description><![CDATA[<p>История архитектурной ошибки, её последствия, и три правила, благодаря которым вы сможете держать исходный код в порядке и снизить стоимость внесения изменений.</p>
