@@ -3,7 +3,7 @@
 	<channel>
 		
 		<title>Блог Павла Радькова</title>
-		<link>https://paulradzkov.com</link>
+		<link>http://paulradzkov.com</link>
 		<description>Заметки о веб-разработке Павла Радькова.</description>
 		<lastBuildDate>Tue, 04 Jul 2017 00:00:00 GMT</lastBuildDate>
 		<language>ru</language>
@@ -12,12 +12,11 @@
 		
 			<item>
 				<title>Как правильно использовать переменные в препроцессорах Less и Sass</title>
-				<link>https://paulradzkov.com/2017/local_variables/</link>
+				<link>http://paulradzkov.com/2017/local_variables/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>История архитектурной ошибки, её последствия, и три правила, благодаря которым вы сможете держать исходный код в порядке и снизить стоимость внесения изменений.</p>
 <!-- cut -->
-
 <p><a name="prehistory" id="prehistory"></a></p>
 <aside class="article-grid--incut article-grid--incut-row-3 space-out-top-mega-xl">
     <ol class="local-nav">
@@ -56,15 +55,15 @@
 <p>Я придумал три правила, которые помогли побороть наши проблемы:</p>
 <ol class="ol-important space-in-h-zero-xs space-in-h-base-sm">
     <li>
-        <p class="text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm " data-number="1">**Переменная используется только в том файле, в котором объявлена.**</p>
+        <p class="text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm " data-number="1"><strong>Переменная используется только в том файле, в котором объявлена.</strong></p>
         <p>Правильно создавать все нужные переменные в файле самого компонента и не использовать переменные из других файлов. Тогда компоненты станут независимыми, их можно будет подключать и перемещать между проектами без поломок при компиляции. У каждого компонента собственный набор переменных, которые запрещено использовать в других компонентах и вызывать в других файлах. Когда переменные не выходят за пределы одного файла, легко увидеть, как они используются и на что влияют.</p>
     </li>
     <li>
-        <p class="text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm " data-number="2">**Все переменные внутри компонента — локальные.**</p>
+        <p class="text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm " data-number="2"><strong>Все переменные внутри компонента — локальные.</strong></p>
         <p>Раз у каждого компонента свои переменные, пусть они будут локальными. Это избавит от проблем с именованием: в компонентах можно использовать переменные с одинаковыми именами и разными значениями — они не будут конфликтовать друг с другом.</p>
     </li>
     <li>
-        <p class="text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm " data-number="3">**Глобальные переменные используются только внутри файла настроек.**</p>
+        <p class="text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm " data-number="3"><strong>Глобальные переменные используются только внутри файла настроек.</strong></p>
         <p>Благодаря первым двум правилам мы сильно сократим количество глобальных переменных, но они всё равно нужны. Глобальные переменные объявляются в главном файле проекта или в файле типа config.less. К ним тоже применяется правило №1 — переменные не используются за пределами своего файла. Это значит, что нельзя использовать глобальные переменные внутри файлов компонентов. Но существует способ не нарушая первого правила прокинуть значение глобальной переменной внутрь компонента. Как это сделать мы рассмотрим на примерах далее.</p>
     </li>
 </ol>
@@ -91,7 +90,8 @@
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">40px</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md"><strong>Было.</strong> Пример кода компонента.</figcaption>
@@ -111,7 +111,8 @@
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md"><strong>Стало.</strong> Переменные объявлены в глобальной области видимости и у них слишком общие имена. Это плохо.</figcaption>
@@ -146,7 +147,8 @@
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md"><strong>Было.</strong> Глобальные переменные.</figcaption>
@@ -166,7 +168,8 @@
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md"><strong>Стало.</strong> Переменные объявлены внутри селектора и не создают конфликта имён, потому что теперь они локальные.</figcaption>
@@ -196,7 +199,8 @@
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md"><strong>Было.</strong> Локальные переменные внутри селектора.</figcaption>
@@ -220,7 +224,8 @@
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md"><strong>Стало.</strong> Миксин доставляет переменные в зону видимости селектора.</figcaption>
@@ -251,7 +256,8 @@
 <span class="hljs-keyword">@import</span> <span class="hljs-string">'page.less'</span>;
 <span class="hljs-comment">// и много других компонентов...</span>
 
-<span class="hljs-keyword">@import</span> <span class="hljs-string">'config.less'</span>;</code></pre>
+<span class="hljs-keyword">@import</span> <span class="hljs-string">'config.less'</span>;
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Главный файл.</strong><br> Импортируем компоненты и конфиг. Конфиг — последним.</figcaption>
@@ -272,7 +278,8 @@
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">@padding</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">@txt-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@bg-color</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Компонент.</strong><br> Все переменные локальные и хранятся в миксине.</figcaption>
@@ -288,7 +295,8 @@
 <span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@glob-text-color</span>;
     <span class="hljs-variable">@bg-color:</span> <span class="hljs-variable">@glob-bg-color</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Конфиг проекта.</strong><br> Переопределяем параметры компонента с помощью миксина настроек.</figcaption>
@@ -326,7 +334,8 @@
 <span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-comment">// тут рекурсия и ошибка компиляции</span>
     <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@txt-color</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md"><strong>Неправильно.</strong> Рекурсивное определение переменной вызывает ошибку компиляции.</figcaption>
@@ -343,10 +352,11 @@
 <span class="hljs-selector-class">.page-settings</span>() {
     <span class="hljs-comment">// всё в порядке</span>
     <span class="hljs-variable">@txt-color:</span> <span class="hljs-variable">@glob-txt-color</span>;
-}</code></pre>
+}
+</code></pre>
 
             </div>
-            <figcaption class="space-in-h-mili-md"><strong>Правильно.</strong> У глобальных переменных свой префикс `glob-`, что исключает совпадение имён.</figcaption>
+            <figcaption class="space-in-h-mili-md"><strong>Правильно.</strong> У глобальных переменных свой префикс <code>glob-</code>, что исключает совпадение имён.</figcaption>
         </section>
     </div>
 </figure>
@@ -376,10 +386,11 @@
     <span class="hljs-attribute">padding</span>:          map-get(<span class="hljs-variable">$page-settings</span>, padding);
     <span class="hljs-attribute">background-color</span>: map-get(<span class="hljs-variable">$page-settings</span>, bg-color);
     <span class="hljs-attribute">color</span>:            map-get(<span class="hljs-variable">$page-settings</span>, text-color);
-}</code></pre>
+}
+</code></pre>
 
             </div>
-            <figcaption>Настройки хранятся в **map**-объекте и вызываются в коде с помощью **map-get**</figcaption>
+            <figcaption>Настройки хранятся в <strong>map</strong>-объекте и вызываются в коде с помощью <strong>map-get</strong></figcaption>
         </section>
     </div>
 </figure>
@@ -396,7 +407,8 @@
 @<span class="hljs-keyword">import</span>: <span class="hljs-string">'normalize'</span>;
 @<span class="hljs-keyword">import</span>: <span class="hljs-string">'typography'</span>;
 @<span class="hljs-keyword">import</span>: <span class="hljs-string">'page'</span>;
-<span class="hljs-comment">// и много других компонентов...</span></code></pre>
+<span class="hljs-comment">// и много других компонентов...</span>
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Главный файл.</strong><br> Сначала импортируем конфиг, потом компоненты.</figcaption>
@@ -412,7 +424,8 @@
 <span class="hljs-variable">$page-settings</span>: (
     bg-color: <span class="hljs-variable">$glob-bg-color</span>,
     text-color: <span class="hljs-variable">$glob-text-color</span>,
-);</code></pre>
+);
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Настройки.</strong><br> Создаём глобальные переменные и переопределяем параметры компонента.</figcaption>
@@ -437,7 +450,8 @@
     <span class="hljs-attribute">padding</span>:          map-get(<span class="hljs-variable">$page-settings</span>, padding);
     <span class="hljs-attribute">background-color</span>: map-get(<span class="hljs-variable">$page-settings</span>, bg-color);
     <span class="hljs-attribute">color</span>:            map-get(<span class="hljs-variable">$page-settings</span>, text-color);
-}</code></pre>
+}
+</code></pre>
 
             </div>
             <figcaption class="space-in-h-mili-md space-in-h-base-lg"><strong>Компонент.</strong><br> Добавили проверку: а не существуют ли уже настройки, чтобы переопределить компонент?</figcaption>
@@ -495,19 +509,18 @@
 ]]>
 				</content:encoded>
 				<pubDate>Tue, 04 Jul 2017 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2017/local_variables/</guid>
-				<comments>https://paulradzkov.com/2017/local_variables/#comments</comments>
+				<guid>http://paulradzkov.com/2017/local_variables/</guid>
+				<comments>http://paulradzkov.com/2017/local_variables/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Как верстальщику получить код ревью</title>
-				<link>https://paulradzkov.com/2016/code_review/</link>
+				<link>http://paulradzkov.com/2016/code_review/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p><strong>По мотивам вопроса на тостере «<a href="https://toster.ru/q/289819">Где найти того, кто оценит твой код?</a>»</strong></p>
 <p>Упростите жизнь ревьюверам. Постарайтесь, чтобы оценка кода занимала у них как можно меньше времени, а отправлять комментарии и исправления было легко. Чем меньше усилий потребуется со стороны ревьювера, тем выше шанс получить код ревью.</p>
 <!-- cut -->
-
 <h2 id="-">Код — на Гитхабе</h2>
 <p>Отправлять почтой zip-архив и просить посмотреть — неудобно для ревьювера. Некоторые откажутся сразу. Кто-то согласится, но не сделает. У оставшихся возникнет проблема, в каком виде отправить вам комментарии и замечания назад.</p>
 <p>Для маленьких и простых вещей делайте демку на <a href="http://codepen.io">http://codepen.io</a> и похожих  сервисах. Открыть ссылку, посмотреть код и результат, форкнуть, исправить или оставить пару комментариев там не займет много времени. И даже не придется открывать текстовый редактор или IDE.</p>
@@ -534,18 +547,17 @@
 ]]>
 				</content:encoded>
 				<pubDate>Sat, 13 Feb 2016 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2016/code_review/</guid>
-				<comments>https://paulradzkov.com/2016/code_review/#comments</comments>
+				<guid>http://paulradzkov.com/2016/code_review/</guid>
+				<comments>http://paulradzkov.com/2016/code_review/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Веб-лицензии для платных шрифтов могут стоить вам дорого</title>
-				<link>https://paulradzkov.com/2014/web-fonts_license/</link>
+				<link>http://paulradzkov.com/2014/web-fonts_license/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Использовать платные шрифты в вебе бывает неоправдано дорого. Веб-лицензия, в отличие от настольной лицензии, подразумевает не покупку файлов шрифта, а аренду @font-face версии этого шрифта, причем стоимость аренды зависит от посещаемости вашего сайта. Самая главная опасность платных шрифтов в том, что это не разовые, а <em>постоянные</em> затраты.</p>
 <!-- cut -->
-
 <h2 id="-">Отличия в лицензиях</h2>
 <p><strong>Настольная лицензия</strong> (desktop license):
 Вы один раз покупаете ttf-файлы шрифта, устанавливаете их себе на компьютер и можете неограниченно использовать в графических редакторах или на печати.</p>
@@ -571,12 +583,12 @@
 <p>Самым выгодным вариантом является <a href="https://typekit.com/plans/business">Adobe Typekit</a> c его предложением 40$ в месяц за 2 млн. просмотров. Это 480$ в год. Цена уже более менее адекватная, но на неё всё равно согласится не каждый, учитывая, что можно найти <a href="/2014/free_substitution_for_helvetica_neue/">бесплатный аналог</a> и избежать этих затрат.</p>
 <p>Как видим, цены на одно и то же могут отличаться в 10 раз.</p>
 <div class="fotorama">
-    ![Настольная лицензия на сайте Linotype стоит 116€](/2014/web-fonts_license/linotype-helvetica-desktop.png)
-    ![Веб-шрифт на Linotype стоит 309€ за 1,5 млн. просмотров](/2014/web-fonts_license/linotype-helvetica-web.png)
-    ![Цены на Helvetica на MyFonts.com](/2014/web-fonts_license/myfonts-helvetica-1500000.png)
-    ![Тарифные планы на Fonts.com](/2014/web-fonts_license/font-com-pricing.png)
-    ![У Adobe Typekit можно взять недорогой план для сайтов с малым посещением](/2014/web-fonts_license/typekit-annual-pricing.png)
-    ![Самым выгодным вариантом является Adobe Typekit c его предложением 40$ в месяц за 2 млн. просмотров](/2014/web-fonts_license/typekit-business-pricing.png)
+    <img src="/2014/web-fonts_license/linotype-helvetica-desktop.png" alt="Настольная лицензия на сайте Linotype стоит 116€">
+    <img src="/2014/web-fonts_license/linotype-helvetica-web.png" alt="Веб-шрифт на Linotype стоит 309€ за 1,5 млн. просмотров">
+    <img src="/2014/web-fonts_license/myfonts-helvetica-1500000.png" alt="Цены на Helvetica на MyFonts.com">
+    <img src="/2014/web-fonts_license/font-com-pricing.png" alt="Тарифные планы на Fonts.com">
+    <img src="/2014/web-fonts_license/typekit-annual-pricing.png" alt="У Adobe Typekit можно взять недорогой план для сайтов с малым посещением">
+    <img src="/2014/web-fonts_license/typekit-business-pricing.png" alt="Самым выгодным вариантом является Adobe Typekit c его предложением 40$ в месяц за 2 млн. просмотров">
 </div>
 
 <h2 id="-">Выводы</h2>
@@ -595,13 +607,13 @@
 ]]>
 				</content:encoded>
 				<pubDate>Fri, 02 May 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/web-fonts_license/</guid>
-				<comments>https://paulradzkov.com/2014/web-fonts_license/#comments</comments>
+				<guid>http://paulradzkov.com/2014/web-fonts_license/</guid>
+				<comments>http://paulradzkov.com/2014/web-fonts_license/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Бесплатная замена платному Helvetica Neue</title>
-				<link>https://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</link>
+				<link>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Подбирал бесплатную замену платному Helvetica Neue. До финала дошли:</p>
@@ -614,10 +626,9 @@
 </ul>
 <p>Победителем вышел <strong>TeX Gyre Heros</strong>, т.к. он очень похож на Helvetica Neue, поддерживает кириллицу и дополнительно у него есть 4 condenced начертания.</p>
 <!-- cut -->
-
 <figure>
     <a href="/demo/free_substitutes_for_helvetica_neue/">
-    ![TeX Gyre Heros — бесплатная альтернатива Helvetica Neue](/2014/free_substitution_for_helvetica_neue/helvetica-neue-vs-tex-gyre-heros.png)
+    <img src="/2014/free_substitution_for_helvetica_neue/helvetica-neue-vs-tex-gyre-heros.png" alt="TeX Gyre Heros — бесплатная альтернатива Helvetica Neue">
     </a>
     <figcaption>Слева Helvetica Neue, справа TeX Gyre Heros</figcaption>
 </figure>
@@ -628,13 +639,13 @@
 ]]>
 				</content:encoded>
 				<pubDate>Thu, 01 May 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</guid>
-				<comments>https://paulradzkov.com/2014/free_substitution_for_helvetica_neue/#comments</comments>
+				<guid>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</guid>
+				<comments>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Деплой Docpad-сайта на GitHub Pages</title>
-				<link>https://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</link>
+				<link>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>При деплое <a href="http://docpad.org/">Docpad</a>-сайта на <a href="https://pages.github.com/">GitHub Pages</a> столкнулся с некоторыми проблемами.</p>
@@ -645,15 +656,15 @@
 </ol>
 <p>Так как у меня не всё прошло гладко и очевидно, решил написать эту инструкцию.</p>
 <!-- cut -->
-
 <h2 id="-">Проблема с абсолютными путями</h2>
 <p>Сначала разберёмся с абсолютными путями в докпаде.</p>
 <p>Установим плагин <a href="https://github.com/Hypercubed/docpad-plugin-geturl/">Get Url Plugin for DocPad</a>.</p>
-<p>Если ещё не создана, сделаем в конфиге докпада переменную <a href="mailto:%60@site.url">`@site.url</a>`:</p>
+<p>Если ещё не создана, сделаем в конфиге докпада переменную <code>@site.url</code>:</p>
 <pre class="highlight"><code class="hljs coffeescript">    templateData:
         site:
             <span class="hljs-comment"># The production url of our website. Used in sitemap and rss feed</span>
-            url: <span class="hljs-string">"http://paulradzkov.github.io/docpad-simpleblog"</span></code></pre>
+            url: <span class="hljs-string">"http://paulradzkov.github.io/docpad-simpleblog"</span>
+</code></pre>
 <p>И добавим отдельную конфигурацию для «development» окружения:</p>
 <pre class="highlight"><code class="hljs coffeescript">    <span class="hljs-comment"># =================================</span>
     <span class="hljs-comment"># Environments</span>
@@ -662,33 +673,38 @@
         development:
             templateData:
                 site:
-                    url: <span class="hljs-string">'http://localhost:9778'</span></code></pre>
-<p>Эта переменная — <a href="mailto:%60@site.url">`@site.url</a>` — будет подставляться префиксом ко всем путям и ссылкам в зависимости от того, работаем мы на локалхосте или выкатываем сайт на хостинг.</p>
+                    url: <span class="hljs-string">'http://localhost:9778'</span>
+</code></pre>
+<p>Эта переменная — <code>@site.url</code> — будет подставляться префиксом ко всем путям и ссылкам в зависимости от того, работаем мы на локалхосте или выкатываем сайт на хостинг.</p>
 <p>Теперь нужно добавить хелпер «<code>@getUrl()</code>» ко всем «<code>href</code>» и «<code>src</code>» в шаблоне, в документах — везде, где встречаются абсолютные пути.</p>
 <p>Например, было:</p>
 <pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- DocPad Styles + Our Own --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">%-</span> @<span class="hljs-attr">getBlock</span>("<span class="hljs-attr">styles</span>")<span class="hljs-attr">.add</span>(@<span class="hljs-attr">site.styles</span>)<span class="hljs-attr">.toHTML</span>() %&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/vendor/modernizr.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/vendor/modernizr.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
 <p>Стало:</p>
 <pre class="highlight"><code class="hljs xml"><span class="hljs-comment">&lt;!-- DocPad Styles + Our Own --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">%-</span> @<span class="hljs-attr">getBlock</span>("<span class="hljs-attr">styles</span>")<span class="hljs-attr">.add</span>(@<span class="hljs-attr">getUrl</span>(@<span class="hljs-attr">site.styles</span>))<span class="hljs-attr">.toHTML</span>() %&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;%= @getUrl('/vendor/modernizr.js') %&gt;"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;%= @getUrl('/vendor/modernizr.js') %&gt;"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
 <p>Было:</p>
 <pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-list"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/paulradzkov/docpad-simpleblog/issues"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Issues<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/paulradzkov/docpad-simpleblog"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Source Code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
 <p>Стало:</p>
 <pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-list"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @getUrl('/') %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @getUrl('/docs') %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Documentation<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/paulradzkov/docpad-simpleblog/issues"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Issues<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://github.com/paulradzkov/docpad-simpleblog"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Source Code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
 <p>Было:</p>
 <pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"meta-data"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"comments"</span>&gt;</span>
@@ -699,7 +715,8 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label-tag"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @getTagUrl(tag) %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span> <span class="hljs-attr">tag</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">%</span> <span class="hljs-attr">end</span> %&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
 <p>Стало:</p>
 <pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"meta-data"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"comments"</span>&gt;</span>
@@ -710,21 +727,22 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label-tag"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"&lt;%= @getUrl(@getTagUrl(tag)) %&gt;"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span> <span class="hljs-attr">tag</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">%</span> <span class="hljs-attr">end</span> %&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
 <p>И так далее.</p>
-<p>Теперь, когда мы запускаем <kbd class="cli" contenteditable="true" >&zwj;<span contenteditable="false">docpad run</span>&zwj;</kbd>, ко всем путям подставляется <a href="mailto:%60@site.url">`@site.url</a><code>из девелоперского окружения —</code><a href="http://localhost:9778%60">http://localhost:9778`</a>. А когда <kbd class="cli" contenteditable="true" >&zwj;<span contenteditable="false">docpad run --env static</span>&zwj;</kbd>, переменная <a href="mailto:%60@site.url">`@site.url</a>` равна нашему продакшен пути.</p>
+<p>Теперь, когда мы запускаем <kbd class="cli" contenteditable="true" >&zwj;<span contenteditable="false">docpad run</span>&zwj;</kbd>, ко всем путям подставляется <code>@site.url</code> из девелоперского окружения — <code>http://localhost:9778</code>. А когда <kbd class="cli" contenteditable="true" >&zwj;<span contenteditable="false">docpad run --env static</span>&zwj;</kbd>, переменная <code>@site.url</code> равна нашему продакшен пути.</p>
 <h2 id="-github-pages">Деплой на GitHub Pages</h2>
 <p>В репозитории создадим ветку «<code>gh-pages</code>». По инструкции это должна быть пустая ветка без истории, но об этом в дальнейшем позаботится плагин для деплоя.</p>
 <figure>
-    ![В репозитории проекта создадим ветку с именем «gh-pages»](/2014/deploy_docpad_site_to_github_pages/new_branch_gh-pages.png)
-    <figcaption>В репозитории проекта создадим ветку с именем «`gh-pages`»</figcaption>
+    <img src="/2014/deploy_docpad_site_to_github_pages/new_branch_gh-pages.png" alt="В репозитории проекта создадим ветку с именем «gh-pages»">
+    <figcaption>В репозитории проекта создадим ветку с именем «<code>gh-pages</code>»</figcaption>
 </figure>
 
 <p>Установим <a href="https://github.com/docpad/docpad-plugin-ghpages">GitHub Pages Deployer Plugin for DocPad</a>.</p>
 <p>При попытке выполнить <kbd class="cli" contenteditable="true">&zwj;<span contenteditable="false">docpad deploy-ghpages --env static</span>&zwj;</kbd> у меня появляется ошибка:</p>
 <figure>
-    ![could not read Username for ’http://github.com’: No such file or directory](/2014/deploy_docpad_site_to_github_pages/gh-pages_deploy_error.png)
-    <figcaption>`could not read Username for ’http://github.com’: No such file or directory`</figcaption>
+    <img src="/2014/deploy_docpad_site_to_github_pages/gh-pages_deploy_error.png" alt="could not read Username for ’http://github.com’: No such file or directory">
+    <figcaption><code>could not read Username for ’http://github.com’: No such file or directory</code></figcaption>
 </figure>
 
 <p>Плагин не смог соединиться с моим аккаунтом на гитхабе. Чтобы показать плагину правильный путь с логином и паролем, добавим новый «remote» для репозитория. Для этого в консоли git выполним:</p>
@@ -734,7 +752,7 @@
 <p>«<code>login</code>» и «<code>password</code>» — данные вашего аккаунта на Гитхабе.</p>
 <p>«<code>github.com/repo_owner/repo_name.git</code>» — путь к репозиторию проекта, в котором у вас есть права на запись. Это не обязательно должен быть ваш репозиторий, если вы коллаборатор, и у вас есть доступ на запись — вы можете деплоить туда проект.</p>
 <figure>
-    ![Добавление нового «remote» c логином и паролем](/2014/deploy_docpad_site_to_github_pages/adding_another_remote.png)
+    <img src="/2014/deploy_docpad_site_to_github_pages/adding_another_remote.png" alt="Добавление нового «remote» c логином и паролем">
     <figcaption>Добавление нового «remote» c логином и паролем. Эту процедуру нужно выполнить один раз для каждого локального репозитория</figcaption>
 </figure>
 
@@ -743,7 +761,8 @@
     plugins:
         ghpages:
             deployRemote: <span class="hljs-string">'deploy'</span>
-            deployBranch: <span class="hljs-string">'gh-pages'</span></code></pre>
+            deployBranch: <span class="hljs-string">'gh-pages'</span>
+</code></pre>
 <p>Теперь можно выкатывать сайт:</p>
 <p><kbd class="cli" contenteditable="true" >&zwj;<span contenteditable="false">docpad deploy-ghpages --env static</span>&zwj;</kbd></p>
 <h2 id="-">Двухфакторная аутентификация</h2>
@@ -763,13 +782,13 @@
 ]]>
 				</content:encoded>
 				<pubDate>Fri, 25 Apr 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</guid>
-				<comments>https://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/#comments</comments>
+				<guid>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</guid>
+				<comments>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Краткое руководство по Маркдауну</title>
-				<link>https://paulradzkov.com/2014/markdown_cheatsheet/</link>
+				<link>http://paulradzkov.com/2014/markdown_cheatsheet/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p><strong>12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее <a href="http://codepen.io/paulradzkov/pen/ZGoLgr" target="_blank" rel="noopener">руководство с традиционным Маркдауном</a>.</strong>
@@ -1025,7 +1044,6 @@ Content Cell  | Content Cell
 Внутри таблиц можно использовать ссылки, наклонный, жирный или зачеркнутый текст.
 
 Для всего остального есть обычный HTML.
-
 </code></pre>
 
 </div>
@@ -1309,20 +1327,19 @@ Content Cell  | Content Cell
 </ul>]]>
 				</content:encoded>
 				<pubDate>Mon, 07 Apr 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/markdown_cheatsheet/</guid>
-				<comments>https://paulradzkov.com/2014/markdown_cheatsheet/#comments</comments>
+				<guid>http://paulradzkov.com/2014/markdown_cheatsheet/</guid>
+				<comments>http://paulradzkov.com/2014/markdown_cheatsheet/#comments</comments>
 			</item>
 		
 			<item>
 				<title>О каких дизайнерах мечтают верстальщики</title>
-				<link>https://paulradzkov.com/2014/designer-superstar/</link>
+				<link>http://paulradzkov.com/2014/designer-superstar/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>В <a href="http://artgorbunov.ru/bb/soviet/20140206/">совете</a> Николай Товеровский классифицировал верстальщиков на три категории: «Неандертальцы», «Планктон» и «Суперзвёзды».</p>
 <p>На мой взгляд, между «Планктоном» и «Суперзвёздами» должны быть «Мастера», которые замечают все проблемы, советуются с дизайнерами, предлагают варианты, но не требуют «нарисовать макетик» и, пока ещё, не берут на себя ответственность дорабатывать макет самостоятельно. Таким специалистам достаточно на словах объяснить, что будет в крайних ситуациях и как должны вести себя элементы сайта в непрорисованных состояниях. Они всё поймут и сделают как надо.</p>
 <p>А вот о каких дизайнерах мечтают верстальщики…</p>
 <!-- cut -->
-
 <hr>
 <p>Бывает дизайнер-Суперзвезда, который отдаёт 15 страниц макета и страницу, на которой прорисованы все базовые элементы: заголовки, списки, цитаты, таблички, формы с полями ввода, чекбоксами и кнопочками.</p>
 <p>Сверстаешь такую страницу, а дальше все остальные пятнадцать страниц автоматически «собираются» пиксель-в-пиксель как на макете, только теги добавляй и новые стили дописывай. И в стилях при этом ничего не приходится обнулять, переписывать, идти на компромисcы.</p>
@@ -1334,13 +1351,13 @@ Content Cell  | Content Cell
 ]]>
 				</content:encoded>
 				<pubDate>Mon, 10 Feb 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/designer-superstar/</guid>
-				<comments>https://paulradzkov.com/2014/designer-superstar/#comments</comments>
+				<guid>http://paulradzkov.com/2014/designer-superstar/</guid>
+				<comments>http://paulradzkov.com/2014/designer-superstar/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Захват экрана в GIF</title>
-				<link>https://paulradzkov.com/2014/capture_screen_to_gif/</link>
+				<link>http://paulradzkov.com/2014/capture_screen_to_gif/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Рекомендую замечательную маленькую программку для записи области экрана в GIF — <a href="http://www.cockos.com/licecap/" target="_blank" rel="noopener"><strong>LICEcap</strong></a>. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.</p>
@@ -1367,13 +1384,13 @@ Content Cell  | Content Cell
 </p>]]>
 				</content:encoded>
 				<pubDate>Sun, 09 Feb 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/capture_screen_to_gif/</guid>
-				<comments>https://paulradzkov.com/2014/capture_screen_to_gif/#comments</comments>
+				<guid>http://paulradzkov.com/2014/capture_screen_to_gif/</guid>
+				<comments>http://paulradzkov.com/2014/capture_screen_to_gif/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Font-weight: bolder для шрифтов со множеством начертаний</title>
-				<link>https://paulradzkov.com/2014/font-weight_bolder/</link>
+				<link>http://paulradzkov.com/2014/font-weight_bolder/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Если вы используете шрифт со множеством начертаний, то вам, вероятно, захочется, чтобы теги <code class="hljs-tag">strong</code> и <code class="hljs-tag">b</code> не увеличивали жирность шрифта до фиксированного значения <code class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-number">700</span></code>, как это происходит по-умолчанию, а использовали промежуточные значения, рассчитанные исходя из жирности шрифта родительского элемента.</p>
@@ -1514,13 +1531,13 @@ Content Cell  | Content Cell
 </code></pre>]]>
 				</content:encoded>
 				<pubDate>Thu, 06 Feb 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/font-weight_bolder/</guid>
-				<comments>https://paulradzkov.com/2014/font-weight_bolder/#comments</comments>
+				<guid>http://paulradzkov.com/2014/font-weight_bolder/</guid>
+				<comments>http://paulradzkov.com/2014/font-weight_bolder/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Параметры subject и body в mailto ссылках</title>
-				<link>https://paulradzkov.com/2014/mailto_parameters/</link>
+				<link>http://paulradzkov.com/2014/mailto_parameters/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>В письмах от сервисов и электронных магазинов, приходящих в ответ на заказ услуги или покупку товара, часто есть подобная фраза:</p>
@@ -1528,18 +1545,19 @@ Content Cell  | Content Cell
 <p>«Если у Вас возникли любые вопросы касательно вашего заказа, пожалуйста, свяжитесь со Службой поддержки по телефону <a href="tel:XXXX XXX XXXX">XXXX XXX XXXX</a> или напишите по адресу <a href="mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;body=Мой номер заказа XXXXX" class="breakall">customerservices@sitename.com</a>. Не забудьте сообщить ваш номер заказа.</p>
 </blockquote>
 <p>Создавая шаблоны для таких писем, не поленитесь прописать этот самый номер заказа (и любую другую нужную службе поддержки информацию) в параметры mailto ссылки:</p>
-<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;body=Мой номер заказа XXXXX"</span>&gt;</span>customerservices@sitename.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre><p>Теперь при клике на адрес электронной почты в новом сообщении номер заказа подставится и в тему письма, и в текст сообщения.</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;body=Мой номер заказа XXXXX"</span>&gt;</span>customerservices@sitename.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre><p>Теперь при клике на адрес электронной почты в новом сообщении номер заказа подставится и в тему письма, и в текст сообщения.</p>
 <p>Мелочь, но она сэкономит вашим покупателям пару лишних действий. Особенно актуально это для тех, кто пишет письмо с мобильника.</p>
 ]]>
 				</content:encoded>
 				<pubDate>Tue, 04 Feb 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/mailto_parameters/</guid>
-				<comments>https://paulradzkov.com/2014/mailto_parameters/#comments</comments>
+				<guid>http://paulradzkov.com/2014/mailto_parameters/</guid>
+				<comments>http://paulradzkov.com/2014/mailto_parameters/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Посещённая ссылка при наведении</title>
-				<link>https://paulradzkov.com/2014/visited_link_on_hover/</link>
+				<link>http://paulradzkov.com/2014/visited_link_on_hover/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Век живи — век учись. Недавно узнал, что можно задавать посещённой ссылке отдельный цвет при наведении комбинируя два псевдокласса: <code class="css"><span class="hljs-tag">a</span><span class="hljs-pseudo">:visited</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"><span class="hljs-hexcolor">#9501B3</span></span></span></span>}</code>.</p>
@@ -1568,13 +1586,13 @@ Content Cell  | Content Cell
 <p><a href="http://cssdeck.com/labs/visited_link_on_hover" target="_blank" rel="noopener" class="link-to-demo">Пример</a></p>]]>
 				</content:encoded>
 				<pubDate>Sun, 26 Jan 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/visited_link_on_hover/</guid>
-				<comments>https://paulradzkov.com/2014/visited_link_on_hover/#comments</comments>
+				<guid>http://paulradzkov.com/2014/visited_link_on_hover/</guid>
+				<comments>http://paulradzkov.com/2014/visited_link_on_hover/#comments</comments>
 			</item>
 		
 			<item>
 				<title>CSS-селектор :not. Полезные примеры</title>
-				<link>https://paulradzkov.com/2014/negation_css_selector/</link>
+				<link>http://paulradzkov.com/2014/negation_css_selector/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>В спецификации и блогах про селектор <code class="hljs-pseudo">:not</code> обычно приводят какие-то искусственные примеры, которые хоть и объясняют синтаксис и принцип действия, но не несут никакой идеи о том, как получить пользу от нового селектора.</p>
@@ -1761,13 +1779,13 @@ Content Cell  | Content Cell
 <p>Если очень нужны CSS3-селекторы в браузерах, которые их не поддерживают, можно использовать полифил <a href="http://selectivizr.com/" target="_blank" rel="noopener">selectivizr</a>.</p>]]>
 				</content:encoded>
 				<pubDate>Sun, 19 Jan 2014 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2014/negation_css_selector/</guid>
-				<comments>https://paulradzkov.com/2014/negation_css_selector/#comments</comments>
+				<guid>http://paulradzkov.com/2014/negation_css_selector/</guid>
+				<comments>http://paulradzkov.com/2014/negation_css_selector/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Списки и картинки с флоатами</title>
-				<link>https://paulradzkov.com/2013/lists_and_floats/</link>
+				<link>http://paulradzkov.com/2013/lists_and_floats/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p><strong>Обновлено 12 декабря 2015. Спустя три года после написания этого поста в голову пришло более простое и стабильное решение.</strong></p>
@@ -1857,13 +1875,13 @@ Content Cell  | Content Cell
 </figure>]]>
 				</content:encoded>
 				<pubDate>Thu, 24 Jan 2013 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2013/lists_and_floats/</guid>
-				<comments>https://paulradzkov.com/2013/lists_and_floats/#comments</comments>
+				<guid>http://paulradzkov.com/2013/lists_and_floats/</guid>
+				<comments>http://paulradzkov.com/2013/lists_and_floats/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Pointer-events</title>
-				<link>https://paulradzkov.com/2012/pointer-events/</link>
+				<link>http://paulradzkov.com/2012/pointer-events/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Представим ситуацию, когда у нас один html-элемент расположен поверх другого. Но нам нужно, чтобы нижний элемент был кликабельным или реагировал на hover.</p>
@@ -1919,13 +1937,13 @@ Content Cell  | Content Cell
 ]]>
 				</content:encoded>
 				<pubDate>Sun, 09 Dec 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2012/pointer-events/</guid>
-				<comments>https://paulradzkov.com/2012/pointer-events/#comments</comments>
+				<guid>http://paulradzkov.com/2012/pointer-events/</guid>
+				<comments>http://paulradzkov.com/2012/pointer-events/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Как отключить javascript в Google Chrome</title>
-				<link>https://paulradzkov.com/2012/chrome_dev_tools/</link>
+				<link>http://paulradzkov.com/2012/chrome_dev_tools/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p><em>Статья обновлена 6 февраля 2014.</em></p>
@@ -1957,13 +1975,13 @@ Content Cell  | Content Cell
 </ul>]]>
 				</content:encoded>
 				<pubDate>Tue, 27 Nov 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2012/chrome_dev_tools/</guid>
-				<comments>https://paulradzkov.com/2012/chrome_dev_tools/#comments</comments>
+				<guid>http://paulradzkov.com/2012/chrome_dev_tools/</guid>
+				<comments>http://paulradzkov.com/2012/chrome_dev_tools/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Перечёркивание крест-накрест</title>
-				<link>https://paulradzkov.com/2012/crosswise/</link>
+				<link>http://paulradzkov.com/2012/crosswise/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Итак, задача: перечеркнуть слово или блок текста или картинку диагональными линиями крест-накрест. Нам поможет SVG.</p>
@@ -2046,13 +2064,13 @@ Content Cell  | Content Cell
 <p>Задавая координаты линий в процентах, мы избавляемся от необходимости применять <code class="hljs-tag"><span class="hljs-attribute">vector-effect</span>=<span class="hljs-value">&quot;non-scaling-stroke&quot;</span></code>, который не работает в IE9 и IE10.</p>]]>
 				</content:encoded>
 				<pubDate>Sun, 28 Oct 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2012/crosswise/</guid>
-				<comments>https://paulradzkov.com/2012/crosswise/#comments</comments>
+				<guid>http://paulradzkov.com/2012/crosswise/</guid>
+				<comments>http://paulradzkov.com/2012/crosswise/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Отладка мобильных сайтов в Webkit. Инспектор кода на мобильных устройствах</title>
-				<link>https://paulradzkov.com/2012/mobile_developing/</link>
+				<link>http://paulradzkov.com/2012/mobile_developing/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>7 марта Abobe <a href="http://tv.adobe.com/watch/adobe-technology-sneaks-2012/adobe-shadow" title="Смотрим презентацию" target="_blank" rel="noopener">представила</a> замечательный комплекс программ, позволяющий синхронно просматривать и проводить отладку сайтов в браузерах Webkit на компе и нескольких планшетах и смартфонах одновременно. Количество подключаемых устройств не ограничено. Поддерживаются как iOS, так и Android.</p>
@@ -2075,13 +2093,13 @@ Content Cell  | Content Cell
 <p>В общем, рекомендую Adobe Shadow всем разработчикам, кто верстает под различные устройства. Успехов в создании сайтов с отзывчивой вёрсткой!</p>]]>
 				</content:encoded>
 				<pubDate>Sun, 08 Apr 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2012/mobile_developing/</guid>
-				<comments>https://paulradzkov.com/2012/mobile_developing/#comments</comments>
+				<guid>http://paulradzkov.com/2012/mobile_developing/</guid>
+				<comments>http://paulradzkov.com/2012/mobile_developing/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Горячие клавиши для выбора предыдущего и следующего слоя в Photoshop</title>
-				<link>https://paulradzkov.com/2012/photoshop_next_and_previous_layer/</link>
+				<link>http://paulradzkov.com/2012/photoshop_next_and_previous_layer/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>При написании макросов в Фотошопе бывает нужно выбрать слой выше или ниже активного. Кликать в слой курсором плохой вариант, так как макрос запишет команду «Выбрать слой "имя_слоя"», т.е. будет выбираться конкретный слой, где бы он не находился, а не слой относительно текущего.</p>
@@ -2112,13 +2130,13 @@ Content Cell  | Content Cell
 </ul>]]>
 				</content:encoded>
 				<pubDate>Sun, 18 Mar 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2012/photoshop_next_and_previous_layer/</guid>
-				<comments>https://paulradzkov.com/2012/photoshop_next_and_previous_layer/#comments</comments>
+				<guid>http://paulradzkov.com/2012/photoshop_next_and_previous_layer/</guid>
+				<comments>http://paulradzkov.com/2012/photoshop_next_and_previous_layer/#comments</comments>
 			</item>
 		
 			<item>
 				<title>HTML-сущности и их UTF-коды</title>
-				<link>https://paulradzkov.com/2012/html-entities_and_utf_codes/</link>
+				<link>http://paulradzkov.com/2012/html-entities_and_utf_codes/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Генерируемое содержимое псевдоклассов <code class="hljs-pseudo">:before</code> и <code class="hljs-pseudo">:after</code> очень удобно использовать для создания иконок, буллитов, кавычек и в прочих декоративных целях.</p>
@@ -3807,18 +3825,17 @@ Content Cell  | Content Cell
 </div>]]>
 				</content:encoded>
 				<pubDate>Sun, 11 Mar 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2012/html-entities_and_utf_codes/</guid>
-				<comments>https://paulradzkov.com/2012/html-entities_and_utf_codes/#comments</comments>
+				<guid>http://paulradzkov.com/2012/html-entities_and_utf_codes/</guid>
+				<comments>http://paulradzkov.com/2012/html-entities_and_utf_codes/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Нарезка в Photoshop — New Layer Based Slice</title>
-				<link>https://paulradzkov.com/2012/photoshop_new_layer_based_slice/</link>
+				<link>http://paulradzkov.com/2012/photoshop_new_layer_based_slice/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>Открыл для себя недавно полезную команду в фотошопе — меню «Layer» &rarr; «New Layer Based Slice», — которая создаёт слайс по границам выделенного слоя. В случае выделения нескольких слоёв, создает слайс по границам каждого слоя. Это в несколько раз ускоряется нарезку графики с тенями, свечением и контурами.</p>
 <!-- cut -->
-
 <figure>
     <img src="/2012/photoshop_new_layer_based_slice/Photoshop-New-Layer-Based-Slice.png" width="875" height="735" alt="New Layer Based Slice"/>
     <figcaption>Layer &rarr; New Layer Based Slice (Alt+L)+(Alt+B)</figcaption>
@@ -3833,21 +3850,21 @@ Content Cell  | Content Cell
 </figure>]]>
 				</content:encoded>
 				<pubDate>Wed, 22 Feb 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2012/photoshop_new_layer_based_slice/</guid>
-				<comments>https://paulradzkov.com/2012/photoshop_new_layer_based_slice/#comments</comments>
+				<guid>http://paulradzkov.com/2012/photoshop_new_layer_based_slice/</guid>
+				<comments>http://paulradzkov.com/2012/photoshop_new_layer_based_slice/#comments</comments>
 			</item>
 		
 			<item>
 				<title>Как перекрасить поля с автозаполнением в Google Chrome</title>
-				<link>https://paulradzkov.com/2012/autocomplete/</link>
+				<link>http://paulradzkov.com/2012/autocomplete/</link>
 				<description></description>
 				<content:encoded>
 					<![CDATA[<p>В Google Chrome в user agent stylesheet для полей с автозаполнением прописан желтый фон (#FAFFBD) и черный цвет текста, причем оба правила усилены с помощью <code class="hljs-important">!important</code> и переопределить их в своей CSS нельзя. Но есть способы решить эту проблему обходными путями.</p>
 <!-- cut -->
-
 <p>В трекере описан этот <a href="http://code.google.com/p/chromium/issues/detail?id=46543">баг</a>, но <time datetime="2012-10-30">пока</time> решения нет.</p>
 <p>Автозаполнение можно выключить с помощью <code class="hljs-tag"><span class="hljs-attribute">autocomplete</span>=<span class="hljs-value">&quot;off&quot;</span></code>:</p>
-<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"…"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string">"off"</span>&gt;</span></code></pre>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"…"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string">"off"</span>&gt;</span>
+</code></pre>
 <p><strong>Обновлено 30 октября 2012.</strong></p>
 <figure>
     <img src="/2012/autocomplete/chrome-autocomplete-recolor.gif" width="998" height="659" alt="Жёлтые поля ввода можно перекрасить с помощью box-shadow"/>
@@ -3858,19 +3875,21 @@ Content Cell  | Content Cell
 <pre class="highlight"><code class="hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">:-webkit-autofill</span> {
     <span class="hljs-attribute">-webkit-box-shadow</span>: inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">50px</span> white; <span class="hljs-comment">/* цвет вашего фона */</span>
     <span class="hljs-attribute">-webkit-text-fill-color</span>: black; <span class="hljs-comment">/* цвет текста */</span>
-}</code></pre>
+}
+</code></pre>
 <p>Если вы для <code class="hljs-pseudo">:focus</code> состояния задавали стили с использованием <code class="hljs-attribute">box-shadow</code>, то вам придется заново их переопределить:</p>
 <pre class="highlight"><code class="hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">:-webkit-autofill</span><span class="hljs-selector-pseudo">:focus</span> {
     <span class="hljs-attribute">-webkit-box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">0</span>    blue,   <span class="hljs-comment">/* ваш box-shadow для :focus */</span>
                   inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>   <span class="hljs-number">50px</span> white;  <span class="hljs-comment">/* цвет вашего фона */</span>
     <span class="hljs-attribute">-webkit-text-fill-color</span>: black;          <span class="hljs-comment">/* цвет текста */</span>
-}</code></pre>
+}
+</code></pre>
 <p>При помощи нескольких теней можно <a href="/demo/box-shadow_instead_gradient/">имитировать градиент</a>.</p>
 ]]>
 				</content:encoded>
 				<pubDate>Sun, 12 Feb 2012 00:00:00 GMT</pubDate>
-				<guid>https://paulradzkov.com/2012/autocomplete/</guid>
-				<comments>https://paulradzkov.com/2012/autocomplete/#comments</comments>
+				<guid>http://paulradzkov.com/2012/autocomplete/</guid>
+				<comments>http://paulradzkov.com/2012/autocomplete/#comments</comments>
 			</item>
 		
 	</channel>

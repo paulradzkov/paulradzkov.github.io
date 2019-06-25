@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Блог Павла Радькова</title>
     <subtitle>Заметки о веб-разработке Павла Радькова.</subtitle>
-    <link href="https://paulradzkov.com/atom.xml" rel="self" />
-    <link href="https://paulradzkov.com" />
-    <updated>2019-06-25T13:32:02.926Z</updated>
+    <link href="http://paulradzkov.com/atom.xml" rel="self" />
+    <link href="http://paulradzkov.com" />
+    <updated>2018-07-11T20:02:37.955Z</updated>
     <id>http://paulradzkov.com</id>
     <author>
         <name>Павел Радьков</name>
@@ -12,20 +12,19 @@
     </author>
     <entry>
         <title>Эта лента мертва (×_×)</title>
-        <link href="https://paulradzkov.com/rss.xml"/>
+        <link href="http://paulradzkov.com/rss.xml"/>
         <updated>2017-05-01</updated>
-        <id>https://paulradzkov.com/rss.xml</id>
+        <id>http://paulradzkov.com/rss.xml</id>
         <content type="html">Эта лента мертва! Если тут еще есть кто-то живой, переподпишитесь на http://paulradzkov.com/rss.xml</content>
     </entry>
     
         <entry>
             <title>Как правильно использовать переменные в препроцессорах Less и Sass</title>
-            <link href="https://paulradzkov.com/2017/local_variables/"/>
+            <link href="http://paulradzkov.com/2017/local_variables/"/>
             <updated>2017-07-04T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2017/local_variables/</id>
+            <id>http://paulradzkov.com/2017/local_variables/</id>
             <content type="html">&lt;p&gt;История архитектурной ошибки, её последствия, и три правила, благодаря которым вы сможете держать исходный код в порядке и снизить стоимость внесения изменений.&lt;/p&gt;
 &lt;!-- cut --&gt;
-
 &lt;p&gt;&lt;a name=&quot;prehistory&quot; id=&quot;prehistory&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;aside class=&quot;article-grid--incut article-grid--incut-row-3 space-out-top-mega-xl&quot;&gt;
     &lt;ol class=&quot;local-nav&quot;&gt;
@@ -64,15 +63,15 @@
 &lt;p&gt;Я придумал три правила, которые помогли побороть наши проблемы:&lt;/p&gt;
 &lt;ol class=&quot;ol-important space-in-h-zero-xs space-in-h-base-sm&quot;&gt;
     &lt;li&gt;
-        &lt;p class=&quot;text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm &quot; data-number=&quot;1&quot;&gt;**Переменная используется только в том файле, в котором объявлена.**&lt;/p&gt;
+        &lt;p class=&quot;text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm &quot; data-number=&quot;1&quot;&gt;&lt;strong&gt;Переменная используется только в том файле, в котором объявлена.&lt;/strong&gt;&lt;/p&gt;
         &lt;p&gt;Правильно создавать все нужные переменные в файле самого компонента и не использовать переменные из других файлов. Тогда компоненты станут независимыми, их можно будет подключать и перемещать между проектами без поломок при компиляции. У каждого компонента собственный набор переменных, которые запрещено использовать в других компонентах и вызывать в других файлах. Когда переменные не выходят за пределы одного файла, легко увидеть, как они используются и на что влияют.&lt;/p&gt;
     &lt;/li&gt;
     &lt;li&gt;
-        &lt;p class=&quot;text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm &quot; data-number=&quot;2&quot;&gt;**Все переменные внутри компонента — локальные.**&lt;/p&gt;
+        &lt;p class=&quot;text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm &quot; data-number=&quot;2&quot;&gt;&lt;strong&gt;Все переменные внутри компонента — локальные.&lt;/strong&gt;&lt;/p&gt;
         &lt;p&gt;Раз у каждого компонента свои переменные, пусть они будут локальными. Это избавит от проблем с именованием: в компонентах можно использовать переменные с одинаковыми именами и разными значениями — они не будут конфликтовать друг с другом.&lt;/p&gt;
     &lt;/li&gt;
     &lt;li&gt;
-        &lt;p class=&quot;text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm &quot; data-number=&quot;3&quot;&gt;**Глобальные переменные используются только внутри файла настроек.**&lt;/p&gt;
+        &lt;p class=&quot;text-custom-number text-important text-center space-in-wide-base-xs space-in-wide-kilo-md space-out-v-base-xs space-minus-h-base-sm &quot; data-number=&quot;3&quot;&gt;&lt;strong&gt;Глобальные переменные используются только внутри файла настроек.&lt;/strong&gt;&lt;/p&gt;
         &lt;p&gt;Благодаря первым двум правилам мы сильно сократим количество глобальных переменных, но они всё равно нужны. Глобальные переменные объявляются в главном файле проекта или в файле типа config.less. К ним тоже применяется правило №1 — переменные не используются за пределами своего файла. Это значит, что нельзя использовать глобальные переменные внутри файлов компонентов. Но существует способ не нарушая первого правила прокинуть значение глобальной переменной внутрь компонента. Как это сделать мы рассмотрим на примерах далее.&lt;/p&gt;
     &lt;/li&gt;
 &lt;/ol&gt;
@@ -99,7 +98,8 @@
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;40px&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#000&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;#fff&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Было.&lt;/strong&gt; Пример кода компонента.&lt;/figcaption&gt;
@@ -119,7 +119,8 @@
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Переменные объявлены в глобальной области видимости и у них слишком общие имена. Это плохо.&lt;/figcaption&gt;
@@ -154,7 +155,8 @@
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Было.&lt;/strong&gt; Глобальные переменные.&lt;/figcaption&gt;
@@ -174,7 +176,8 @@
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Переменные объявлены внутри селектора и не создают конфликта имён, потому что теперь они локальные.&lt;/figcaption&gt;
@@ -204,7 +207,8 @@
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Было.&lt;/strong&gt; Локальные переменные внутри селектора.&lt;/figcaption&gt;
@@ -228,7 +232,8 @@
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Стало.&lt;/strong&gt; Миксин доставляет переменные в зону видимости селектора.&lt;/figcaption&gt;
@@ -259,7 +264,8 @@
 &lt;span class=&quot;hljs-keyword&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'page.less'&lt;/span&gt;;
 &lt;span class=&quot;hljs-comment&quot;&gt;// и много других компонентов...&lt;/span&gt;
 
-&lt;span class=&quot;hljs-keyword&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'config.less'&lt;/span&gt;;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;hljs-keyword&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'config.less'&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Главный файл.&lt;/strong&gt;&lt;br&gt; Импортируем компоненты и конфиг. Конфиг — последним.&lt;/figcaption&gt;
@@ -280,7 +286,8 @@
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@padding&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Компонент.&lt;/strong&gt;&lt;br&gt; Все переменные локальные и хранятся в миксине.&lt;/figcaption&gt;
@@ -296,7 +303,8 @@
 &lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;() {
     &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@glob-text-color&lt;/span&gt;;
     &lt;span class=&quot;hljs-variable&quot;&gt;@bg-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@glob-bg-color&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Конфиг проекта.&lt;/strong&gt;&lt;br&gt; Переопределяем параметры компонента с помощью миксина настроек.&lt;/figcaption&gt;
@@ -334,7 +342,8 @@
 &lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;() {
     &lt;span class=&quot;hljs-comment&quot;&gt;// тут рекурсия и ошибка компиляции&lt;/span&gt;
     &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Неправильно.&lt;/strong&gt; Рекурсивное определение переменной вызывает ошибку компиляции.&lt;/figcaption&gt;
@@ -351,10 +360,11 @@
 &lt;span class=&quot;hljs-selector-class&quot;&gt;.page-settings&lt;/span&gt;() {
     &lt;span class=&quot;hljs-comment&quot;&gt;// всё в порядке&lt;/span&gt;
     &lt;span class=&quot;hljs-variable&quot;&gt;@txt-color:&lt;/span&gt; &lt;span class=&quot;hljs-variable&quot;&gt;@glob-txt-color&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Правильно.&lt;/strong&gt; У глобальных переменных свой префикс `glob-`, что исключает совпадение имён.&lt;/figcaption&gt;
+            &lt;figcaption class=&quot;space-in-h-mili-md&quot;&gt;&lt;strong&gt;Правильно.&lt;/strong&gt; У глобальных переменных свой префикс &lt;code&gt;glob-&lt;/code&gt;, что исключает совпадение имён.&lt;/figcaption&gt;
         &lt;/section&gt;
     &lt;/div&gt;
 &lt;/figure&gt;
@@ -384,10 +394,11 @@
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;:          map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, padding);
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, bg-color);
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:            map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, text-color);
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
-            &lt;figcaption&gt;Настройки хранятся в **map**-объекте и вызываются в коде с помощью **map-get**&lt;/figcaption&gt;
+            &lt;figcaption&gt;Настройки хранятся в &lt;strong&gt;map&lt;/strong&gt;-объекте и вызываются в коде с помощью &lt;strong&gt;map-get&lt;/strong&gt;&lt;/figcaption&gt;
         &lt;/section&gt;
     &lt;/div&gt;
 &lt;/figure&gt;
@@ -404,7 +415,8 @@
 @&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'normalize'&lt;/span&gt;;
 @&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'typography'&lt;/span&gt;;
 @&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;'page'&lt;/span&gt;;
-&lt;span class=&quot;hljs-comment&quot;&gt;// и много других компонентов...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;hljs-comment&quot;&gt;// и много других компонентов...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Главный файл.&lt;/strong&gt;&lt;br&gt; Сначала импортируем конфиг, потом компоненты.&lt;/figcaption&gt;
@@ -420,7 +432,8 @@
 &lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;: (
     bg-color: &lt;span class=&quot;hljs-variable&quot;&gt;$glob-bg-color&lt;/span&gt;,
     text-color: &lt;span class=&quot;hljs-variable&quot;&gt;$glob-text-color&lt;/span&gt;,
-);&lt;/code&gt;&lt;/pre&gt;
+);
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Настройки.&lt;/strong&gt;&lt;br&gt; Создаём глобальные переменные и переопределяем параметры компонента.&lt;/figcaption&gt;
@@ -445,7 +458,8 @@
     &lt;span class=&quot;hljs-attribute&quot;&gt;padding&lt;/span&gt;:          map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, padding);
     &lt;span class=&quot;hljs-attribute&quot;&gt;background-color&lt;/span&gt;: map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, bg-color);
     &lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:            map-get(&lt;span class=&quot;hljs-variable&quot;&gt;$page-settings&lt;/span&gt;, text-color);
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 
             &lt;/div&gt;
             &lt;figcaption class=&quot;space-in-h-mili-md space-in-h-base-lg&quot;&gt;&lt;strong&gt;Компонент.&lt;/strong&gt;&lt;br&gt; Добавили проверку: а не существуют ли уже настройки, чтобы переопределить компонент?&lt;/figcaption&gt;
@@ -505,13 +519,12 @@
     
         <entry>
             <title>Как верстальщику получить код ревью</title>
-            <link href="https://paulradzkov.com/2016/code_review/"/>
+            <link href="http://paulradzkov.com/2016/code_review/"/>
             <updated>2016-02-13T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2016/code_review/</id>
+            <id>http://paulradzkov.com/2016/code_review/</id>
             <content type="html">&lt;p&gt;&lt;strong&gt;По мотивам вопроса на тостере «&lt;a href=&quot;https://toster.ru/q/289819&quot;&gt;Где найти того, кто оценит твой код?&lt;/a&gt;»&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Упростите жизнь ревьюверам. Постарайтесь, чтобы оценка кода занимала у них как можно меньше времени, а отправлять комментарии и исправления было легко. Чем меньше усилий потребуется со стороны ревьювера, тем выше шанс получить код ревью.&lt;/p&gt;
 &lt;!-- cut --&gt;
-
 &lt;h2 id=&quot;-&quot;&gt;Код — на Гитхабе&lt;/h2&gt;
 &lt;p&gt;Отправлять почтой zip-архив и просить посмотреть — неудобно для ревьювера. Некоторые откажутся сразу. Кто-то согласится, но не сделает. У оставшихся возникнет проблема, в каком виде отправить вам комментарии и замечания назад.&lt;/p&gt;
 &lt;p&gt;Для маленьких и простых вещей делайте демку на &lt;a href=&quot;http://codepen.io&quot;&gt;http://codepen.io&lt;/a&gt; и похожих  сервисах. Открыть ссылку, посмотреть код и результат, форкнуть, исправить или оставить пару комментариев там не займет много времени. И даже не придется открывать текстовый редактор или IDE.&lt;/p&gt;
@@ -540,12 +553,11 @@
     
         <entry>
             <title>Веб-лицензии для платных шрифтов могут стоить вам дорого</title>
-            <link href="https://paulradzkov.com/2014/web-fonts_license/"/>
+            <link href="http://paulradzkov.com/2014/web-fonts_license/"/>
             <updated>2014-05-02T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/web-fonts_license/</id>
+            <id>http://paulradzkov.com/2014/web-fonts_license/</id>
             <content type="html">&lt;p&gt;Использовать платные шрифты в вебе бывает неоправдано дорого. Веб-лицензия, в отличие от настольной лицензии, подразумевает не покупку файлов шрифта, а аренду @font-face версии этого шрифта, причем стоимость аренды зависит от посещаемости вашего сайта. Самая главная опасность платных шрифтов в том, что это не разовые, а &lt;em&gt;постоянные&lt;/em&gt; затраты.&lt;/p&gt;
 &lt;!-- cut --&gt;
-
 &lt;h2 id=&quot;-&quot;&gt;Отличия в лицензиях&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Настольная лицензия&lt;/strong&gt; (desktop license):
 Вы один раз покупаете ttf-файлы шрифта, устанавливаете их себе на компьютер и можете неограниченно использовать в графических редакторах или на печати.&lt;/p&gt;
@@ -571,12 +583,12 @@
 &lt;p&gt;Самым выгодным вариантом является &lt;a href=&quot;https://typekit.com/plans/business&quot;&gt;Adobe Typekit&lt;/a&gt; c его предложением 40$ в месяц за 2 млн. просмотров. Это 480$ в год. Цена уже более менее адекватная, но на неё всё равно согласится не каждый, учитывая, что можно найти &lt;a href=&quot;/2014/free_substitution_for_helvetica_neue/&quot;&gt;бесплатный аналог&lt;/a&gt; и избежать этих затрат.&lt;/p&gt;
 &lt;p&gt;Как видим, цены на одно и то же могут отличаться в 10 раз.&lt;/p&gt;
 &lt;div class=&quot;fotorama&quot;&gt;
-    ![Настольная лицензия на сайте Linotype стоит 116€](/2014/web-fonts_license/linotype-helvetica-desktop.png)
-    ![Веб-шрифт на Linotype стоит 309€ за 1,5 млн. просмотров](/2014/web-fonts_license/linotype-helvetica-web.png)
-    ![Цены на Helvetica на MyFonts.com](/2014/web-fonts_license/myfonts-helvetica-1500000.png)
-    ![Тарифные планы на Fonts.com](/2014/web-fonts_license/font-com-pricing.png)
-    ![У Adobe Typekit можно взять недорогой план для сайтов с малым посещением](/2014/web-fonts_license/typekit-annual-pricing.png)
-    ![Самым выгодным вариантом является Adobe Typekit c его предложением 40$ в месяц за 2 млн. просмотров](/2014/web-fonts_license/typekit-business-pricing.png)
+    &lt;img src=&quot;/2014/web-fonts_license/linotype-helvetica-desktop.png&quot; alt=&quot;Настольная лицензия на сайте Linotype стоит 116€&quot;&gt;
+    &lt;img src=&quot;/2014/web-fonts_license/linotype-helvetica-web.png&quot; alt=&quot;Веб-шрифт на Linotype стоит 309€ за 1,5 млн. просмотров&quot;&gt;
+    &lt;img src=&quot;/2014/web-fonts_license/myfonts-helvetica-1500000.png&quot; alt=&quot;Цены на Helvetica на MyFonts.com&quot;&gt;
+    &lt;img src=&quot;/2014/web-fonts_license/font-com-pricing.png&quot; alt=&quot;Тарифные планы на Fonts.com&quot;&gt;
+    &lt;img src=&quot;/2014/web-fonts_license/typekit-annual-pricing.png&quot; alt=&quot;У Adobe Typekit можно взять недорогой план для сайтов с малым посещением&quot;&gt;
+    &lt;img src=&quot;/2014/web-fonts_license/typekit-business-pricing.png&quot; alt=&quot;Самым выгодным вариантом является Adobe Typekit c его предложением 40$ в месяц за 2 млн. просмотров&quot;&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;-&quot;&gt;Выводы&lt;/h2&gt;
@@ -597,9 +609,9 @@
     
         <entry>
             <title>Бесплатная замена платному Helvetica Neue</title>
-            <link href="https://paulradzkov.com/2014/free_substitution_for_helvetica_neue/"/>
+            <link href="http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/"/>
             <updated>2014-05-01T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</id>
+            <id>http://paulradzkov.com/2014/free_substitution_for_helvetica_neue/</id>
             <content type="html">&lt;p&gt;Подбирал бесплатную замену платному Helvetica Neue. До финала дошли:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.fontsquirrel.com/fonts/TeX-Gyre-Heros&quot;&gt;TeX Gyre Heros&lt;/a&gt;&lt;/li&gt;
@@ -610,10 +622,9 @@
 &lt;/ul&gt;
 &lt;p&gt;Победителем вышел &lt;strong&gt;TeX Gyre Heros&lt;/strong&gt;, т.к. он очень похож на Helvetica Neue, поддерживает кириллицу и дополнительно у него есть 4 condenced начертания.&lt;/p&gt;
 &lt;!-- cut --&gt;
-
 &lt;figure&gt;
     &lt;a href=&quot;/demo/free_substitutes_for_helvetica_neue/&quot;&gt;
-    ![TeX Gyre Heros — бесплатная альтернатива Helvetica Neue](/2014/free_substitution_for_helvetica_neue/helvetica-neue-vs-tex-gyre-heros.png)
+    &lt;img src=&quot;/2014/free_substitution_for_helvetica_neue/helvetica-neue-vs-tex-gyre-heros.png&quot; alt=&quot;TeX Gyre Heros — бесплатная альтернатива Helvetica Neue&quot;&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;Слева Helvetica Neue, справа TeX Gyre Heros&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -626,9 +637,9 @@
     
         <entry>
             <title>Деплой Docpad-сайта на GitHub Pages</title>
-            <link href="https://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/"/>
+            <link href="http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/"/>
             <updated>2014-04-25T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</id>
+            <id>http://paulradzkov.com/2014/deploy_docpad_site_to_github_pages/</id>
             <content type="html">&lt;p&gt;При деплое &lt;a href=&quot;http://docpad.org/&quot;&gt;Docpad&lt;/a&gt;-сайта на &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; столкнулся с некоторыми проблемами.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Проблема с абсолютными путями: докпад по-умолчанию использует пути к ресурсам от корня домена, а на GH Pages url проекта будет выглядеть так &lt;code&gt;http://username.github.io/repository/&lt;/code&gt;. Т.е. сайт находится в папке, а не в корне, и все пути к ресурсам недействительны. Конечно, можно купить собственное доменное имя, но это не мой случай. Нужно, чтобы на локалхосте url оставались абсолютными, а при деплое заменялись с учетом папки, в которую сайт деплоится.&lt;/li&gt;
@@ -637,15 +648,15 @@
 &lt;/ol&gt;
 &lt;p&gt;Так как у меня не всё прошло гладко и очевидно, решил написать эту инструкцию.&lt;/p&gt;
 &lt;!-- cut --&gt;
-
 &lt;h2 id=&quot;-&quot;&gt;Проблема с абсолютными путями&lt;/h2&gt;
 &lt;p&gt;Сначала разберёмся с абсолютными путями в докпаде.&lt;/p&gt;
 &lt;p&gt;Установим плагин &lt;a href=&quot;https://github.com/Hypercubed/docpad-plugin-geturl/&quot;&gt;Get Url Plugin for DocPad&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Если ещё не создана, сделаем в конфиге докпада переменную &lt;a href=&quot;mailto:%60@site.url&quot;&gt;`@site.url&lt;/a&gt;`:&lt;/p&gt;
+&lt;p&gt;Если ещё не создана, сделаем в конфиге докпада переменную &lt;code&gt;@site.url&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs coffeescript&quot;&gt;    templateData:
         site:
             &lt;span class=&quot;hljs-comment&quot;&gt;# The production url of our website. Used in sitemap and rss feed&lt;/span&gt;
-            url: &lt;span class=&quot;hljs-string&quot;&gt;&quot;http://paulradzkov.github.io/docpad-simpleblog&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+            url: &lt;span class=&quot;hljs-string&quot;&gt;&quot;http://paulradzkov.github.io/docpad-simpleblog&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;И добавим отдельную конфигурацию для «development» окружения:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs coffeescript&quot;&gt;    &lt;span class=&quot;hljs-comment&quot;&gt;# =================================&lt;/span&gt;
     &lt;span class=&quot;hljs-comment&quot;&gt;# Environments&lt;/span&gt;
@@ -654,33 +665,38 @@
         development:
             templateData:
                 site:
-                    url: &lt;span class=&quot;hljs-string&quot;&gt;'http://localhost:9778'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Эта переменная — &lt;a href=&quot;mailto:%60@site.url&quot;&gt;`@site.url&lt;/a&gt;` — будет подставляться префиксом ко всем путям и ссылкам в зависимости от того, работаем мы на локалхосте или выкатываем сайт на хостинг.&lt;/p&gt;
+                    url: &lt;span class=&quot;hljs-string&quot;&gt;'http://localhost:9778'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Эта переменная — &lt;code&gt;@site.url&lt;/code&gt; — будет подставляться префиксом ко всем путям и ссылкам в зависимости от того, работаем мы на локалхосте или выкатываем сайт на хостинг.&lt;/p&gt;
 &lt;p&gt;Теперь нужно добавить хелпер «&lt;code&gt;@getUrl()&lt;/code&gt;» ко всем «&lt;code&gt;href&lt;/code&gt;» и «&lt;code&gt;src&lt;/code&gt;» в шаблоне, в документах — везде, где встречаются абсолютные пути.&lt;/p&gt;
 &lt;p&gt;Например, было:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!-- DocPad Styles + Our Own --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%-&lt;/span&gt; @&lt;span class=&quot;hljs-attr&quot;&gt;getBlock&lt;/span&gt;(&quot;&lt;span class=&quot;hljs-attr&quot;&gt;styles&lt;/span&gt;&quot;)&lt;span class=&quot;hljs-attr&quot;&gt;.add&lt;/span&gt;(@&lt;span class=&quot;hljs-attr&quot;&gt;site.styles&lt;/span&gt;)&lt;span class=&quot;hljs-attr&quot;&gt;.toHTML&lt;/span&gt;() %&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;/vendor/modernizr.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;/vendor/modernizr.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Стало:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;&amp;lt;!-- DocPad Styles + Our Own --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%-&lt;/span&gt; @&lt;span class=&quot;hljs-attr&quot;&gt;getBlock&lt;/span&gt;(&quot;&lt;span class=&quot;hljs-attr&quot;&gt;styles&lt;/span&gt;&quot;)&lt;span class=&quot;hljs-attr&quot;&gt;.add&lt;/span&gt;(@&lt;span class=&quot;hljs-attr&quot;&gt;getUrl&lt;/span&gt;(@&lt;span class=&quot;hljs-attr&quot;&gt;site.styles&lt;/span&gt;))&lt;span class=&quot;hljs-attr&quot;&gt;.toHTML&lt;/span&gt;() %&amp;gt;&lt;/span&gt;
 
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl('/vendor/modernizr.js') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl('/vendor/modernizr.js') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Было:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;nav-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;/&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Blog&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;/docs&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Documentation&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog/issues&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Issues&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Source Code&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Стало:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;nav-list&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl('/') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Blog&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl('/docs') %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Documentation&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog/issues&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Issues&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;https://github.com/paulradzkov/docpad-simpleblog&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;Source Code&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Было:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;meta-data&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;comments&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
@@ -691,7 +707,8 @@
             &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;label-tag&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getTagUrl(tag) %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%=&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;tag&lt;/span&gt; %&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;end&lt;/span&gt; %&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Стало:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;meta-data&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;comments&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
@@ -702,21 +719,22 @@
             &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;label-tag&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;&amp;lt;%= @getUrl(@getTagUrl(tag)) %&amp;gt;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%=&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;tag&lt;/span&gt; %&amp;gt;&lt;/span&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;end&lt;/span&gt; %&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;И так далее.&lt;/p&gt;
-&lt;p&gt;Теперь, когда мы запускаем &lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot; &gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;docpad run&lt;/span&gt;&amp;zwj;&lt;/kbd&gt;, ко всем путям подставляется &lt;a href=&quot;mailto:%60@site.url&quot;&gt;`@site.url&lt;/a&gt;&lt;code&gt;из девелоперского окружения —&lt;/code&gt;&lt;a href=&quot;http://localhost:9778%60&quot;&gt;http://localhost:9778`&lt;/a&gt;. А когда &lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot; &gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;docpad run --env static&lt;/span&gt;&amp;zwj;&lt;/kbd&gt;, переменная &lt;a href=&quot;mailto:%60@site.url&quot;&gt;`@site.url&lt;/a&gt;` равна нашему продакшен пути.&lt;/p&gt;
+&lt;p&gt;Теперь, когда мы запускаем &lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot; &gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;docpad run&lt;/span&gt;&amp;zwj;&lt;/kbd&gt;, ко всем путям подставляется &lt;code&gt;@site.url&lt;/code&gt; из девелоперского окружения — &lt;code&gt;http://localhost:9778&lt;/code&gt;. А когда &lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot; &gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;docpad run --env static&lt;/span&gt;&amp;zwj;&lt;/kbd&gt;, переменная &lt;code&gt;@site.url&lt;/code&gt; равна нашему продакшен пути.&lt;/p&gt;
 &lt;h2 id=&quot;-github-pages&quot;&gt;Деплой на GitHub Pages&lt;/h2&gt;
 &lt;p&gt;В репозитории создадим ветку «&lt;code&gt;gh-pages&lt;/code&gt;». По инструкции это должна быть пустая ветка без истории, но об этом в дальнейшем позаботится плагин для деплоя.&lt;/p&gt;
 &lt;figure&gt;
-    ![В репозитории проекта создадим ветку с именем «gh-pages»](/2014/deploy_docpad_site_to_github_pages/new_branch_gh-pages.png)
-    &lt;figcaption&gt;В репозитории проекта создадим ветку с именем «`gh-pages`»&lt;/figcaption&gt;
+    &lt;img src=&quot;/2014/deploy_docpad_site_to_github_pages/new_branch_gh-pages.png&quot; alt=&quot;В репозитории проекта создадим ветку с именем «gh-pages»&quot;&gt;
+    &lt;figcaption&gt;В репозитории проекта создадим ветку с именем «&lt;code&gt;gh-pages&lt;/code&gt;»&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Установим &lt;a href=&quot;https://github.com/docpad/docpad-plugin-ghpages&quot;&gt;GitHub Pages Deployer Plugin for DocPad&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;При попытке выполнить &lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot;&gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;docpad deploy-ghpages --env static&lt;/span&gt;&amp;zwj;&lt;/kbd&gt; у меня появляется ошибка:&lt;/p&gt;
 &lt;figure&gt;
-    ![could not read Username for ’http://github.com’: No such file or directory](/2014/deploy_docpad_site_to_github_pages/gh-pages_deploy_error.png)
-    &lt;figcaption&gt;`could not read Username for ’http://github.com’: No such file or directory`&lt;/figcaption&gt;
+    &lt;img src=&quot;/2014/deploy_docpad_site_to_github_pages/gh-pages_deploy_error.png&quot; alt=&quot;could not read Username for ’http://github.com’: No such file or directory&quot;&gt;
+    &lt;figcaption&gt;&lt;code&gt;could not read Username for ’http://github.com’: No such file or directory&lt;/code&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Плагин не смог соединиться с моим аккаунтом на гитхабе. Чтобы показать плагину правильный путь с логином и паролем, добавим новый «remote» для репозитория. Для этого в консоли git выполним:&lt;/p&gt;
@@ -726,7 +744,7 @@
 &lt;p&gt;«&lt;code&gt;login&lt;/code&gt;» и «&lt;code&gt;password&lt;/code&gt;» — данные вашего аккаунта на Гитхабе.&lt;/p&gt;
 &lt;p&gt;«&lt;code&gt;github.com/repo_owner/repo_name.git&lt;/code&gt;» — путь к репозиторию проекта, в котором у вас есть права на запись. Это не обязательно должен быть ваш репозиторий, если вы коллаборатор, и у вас есть доступ на запись — вы можете деплоить туда проект.&lt;/p&gt;
 &lt;figure&gt;
-    ![Добавление нового «remote» c логином и паролем](/2014/deploy_docpad_site_to_github_pages/adding_another_remote.png)
+    &lt;img src=&quot;/2014/deploy_docpad_site_to_github_pages/adding_another_remote.png&quot; alt=&quot;Добавление нового «remote» c логином и паролем&quot;&gt;
     &lt;figcaption&gt;Добавление нового «remote» c логином и паролем. Эту процедуру нужно выполнить один раз для каждого локального репозитория&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -735,7 +753,8 @@
     plugins:
         ghpages:
             deployRemote: &lt;span class=&quot;hljs-string&quot;&gt;'deploy'&lt;/span&gt;
-            deployBranch: &lt;span class=&quot;hljs-string&quot;&gt;'gh-pages'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+            deployBranch: &lt;span class=&quot;hljs-string&quot;&gt;'gh-pages'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Теперь можно выкатывать сайт:&lt;/p&gt;
 &lt;p&gt;&lt;kbd class=&quot;cli&quot; contenteditable=&quot;true&quot; &gt;&amp;zwj;&lt;span contenteditable=&quot;false&quot;&gt;docpad deploy-ghpages --env static&lt;/span&gt;&amp;zwj;&lt;/kbd&gt;&lt;/p&gt;
 &lt;h2 id=&quot;-&quot;&gt;Двухфакторная аутентификация&lt;/h2&gt;
@@ -757,9 +776,9 @@
     
         <entry>
             <title>Краткое руководство по Маркдауну</title>
-            <link href="https://paulradzkov.com/2014/markdown_cheatsheet/"/>
+            <link href="http://paulradzkov.com/2014/markdown_cheatsheet/"/>
             <updated>2014-04-07T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/markdown_cheatsheet/</id>
+            <id>http://paulradzkov.com/2014/markdown_cheatsheet/</id>
             <content type="html">&lt;p&gt;&lt;strong&gt;12 июля 2015: Обновил руководство до Github Flavoured Markdown. Предыдущее &lt;a href=&quot;http://codepen.io/paulradzkov/pen/ZGoLgr&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;руководство с традиционным Маркдауном&lt;/a&gt;.&lt;/strong&gt;
 &lt;/p&gt;
 
@@ -1013,7 +1032,6 @@ Content Cell  | Content Cell
 Внутри таблиц можно использовать ссылки, наклонный, жирный или зачеркнутый текст.
 
 Для всего остального есть обычный HTML.
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;/div&gt;
@@ -1299,14 +1317,13 @@ Content Cell  | Content Cell
     
         <entry>
             <title>О каких дизайнерах мечтают верстальщики</title>
-            <link href="https://paulradzkov.com/2014/designer-superstar/"/>
+            <link href="http://paulradzkov.com/2014/designer-superstar/"/>
             <updated>2014-02-10T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/designer-superstar/</id>
+            <id>http://paulradzkov.com/2014/designer-superstar/</id>
             <content type="html">&lt;p&gt;В &lt;a href=&quot;http://artgorbunov.ru/bb/soviet/20140206/&quot;&gt;совете&lt;/a&gt; Николай Товеровский классифицировал верстальщиков на три категории: «Неандертальцы», «Планктон» и «Суперзвёзды».&lt;/p&gt;
 &lt;p&gt;На мой взгляд, между «Планктоном» и «Суперзвёздами» должны быть «Мастера», которые замечают все проблемы, советуются с дизайнерами, предлагают варианты, но не требуют «нарисовать макетик» и, пока ещё, не берут на себя ответственность дорабатывать макет самостоятельно. Таким специалистам достаточно на словах объяснить, что будет в крайних ситуациях и как должны вести себя элементы сайта в непрорисованных состояниях. Они всё поймут и сделают как надо.&lt;/p&gt;
 &lt;p&gt;А вот о каких дизайнерах мечтают верстальщики…&lt;/p&gt;
 &lt;!-- cut --&gt;
-
 &lt;hr&gt;
 &lt;p&gt;Бывает дизайнер-Суперзвезда, который отдаёт 15 страниц макета и страницу, на которой прорисованы все базовые элементы: заголовки, списки, цитаты, таблички, формы с полями ввода, чекбоксами и кнопочками.&lt;/p&gt;
 &lt;p&gt;Сверстаешь такую страницу, а дальше все остальные пятнадцать страниц автоматически «собираются» пиксель-в-пиксель как на макете, только теги добавляй и новые стили дописывай. И в стилях при этом ничего не приходится обнулять, переписывать, идти на компромисcы.&lt;/p&gt;
@@ -1320,9 +1337,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Захват экрана в GIF</title>
-            <link href="https://paulradzkov.com/2014/capture_screen_to_gif/"/>
+            <link href="http://paulradzkov.com/2014/capture_screen_to_gif/"/>
             <updated>2014-02-09T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/capture_screen_to_gif/</id>
+            <id>http://paulradzkov.com/2014/capture_screen_to_gif/</id>
             <content type="html">&lt;p&gt;Рекомендую замечательную маленькую программку для записи области экрана в GIF — &lt;a href=&quot;http://www.cockos.com/licecap/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;strong&gt;LICEcap&lt;/strong&gt;&lt;/a&gt;. Она должна быть полезна тестерам и разработчикам — лучше показать / увидеть баг в динамике, чем расписывать последовательность шагов для воспроизведения бага.&lt;/p&gt;
 
 &lt;p&gt;А ещё можно сохранять в гифки смешные моменты из фильмов.&lt;/p&gt;
@@ -1349,9 +1366,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Font-weight: bolder для шрифтов со множеством начертаний</title>
-            <link href="https://paulradzkov.com/2014/font-weight_bolder/"/>
+            <link href="http://paulradzkov.com/2014/font-weight_bolder/"/>
             <updated>2014-02-06T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/font-weight_bolder/</id>
+            <id>http://paulradzkov.com/2014/font-weight_bolder/</id>
             <content type="html">&lt;p&gt;Если вы используете шрифт со множеством начертаний, то вам, вероятно, захочется, чтобы теги &lt;code class=&quot;hljs-tag&quot;&gt;strong&lt;/code&gt; и &lt;code class=&quot;hljs-tag&quot;&gt;b&lt;/code&gt; не увеличивали жирность шрифта до фиксированного значения &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;font-weight&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;700&lt;/span&gt;&lt;/code&gt;, как это происходит по-умолчанию, а использовали промежуточные значения, рассчитанные исходя из жирности шрифта родительского элемента.&lt;/p&gt;
 &lt;p&gt;Ведь не очень красиво, когда в ультратонком шрифте появляются жирные кляксы тегов &lt;code class=&quot;hljs-tag&quot;&gt;strong&lt;/code&gt;.&lt;/p&gt;
 
@@ -1492,24 +1509,25 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Параметры subject и body в mailto ссылках</title>
-            <link href="https://paulradzkov.com/2014/mailto_parameters/"/>
+            <link href="http://paulradzkov.com/2014/mailto_parameters/"/>
             <updated>2014-02-04T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/mailto_parameters/</id>
+            <id>http://paulradzkov.com/2014/mailto_parameters/</id>
             <content type="html">&lt;p&gt;В письмах от сервисов и электронных магазинов, приходящих в ответ на заказ услуги или покупку товара, часто есть подобная фраза:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;«Если у Вас возникли любые вопросы касательно вашего заказа, пожалуйста, свяжитесь со Службой поддержки по телефону &lt;a href=&quot;tel:XXXX XXX XXXX&quot;&gt;XXXX XXX XXXX&lt;/a&gt; или напишите по адресу &lt;a href=&quot;mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;body=Мой номер заказа XXXXX&quot; class=&quot;breakall&quot;&gt;customerservices@sitename.com&lt;/a&gt;. Не забудьте сообщить ваш номер заказа.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Создавая шаблоны для таких писем, не поленитесь прописать этот самый номер заказа (и любую другую нужную службе поддержки информацию) в параметры mailto ссылки:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;amp;body=Мой номер заказа XXXXX&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;customerservices@sitename.com&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Теперь при клике на адрес электронной почты в новом сообщении номер заказа подставится и в тему письма, и в текст сообщения.&lt;/p&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;mailto:customerservices@sitename.com?subject=Заказ XXXXX&amp;amp;amp;body=Мой номер заказа XXXXX&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;customerservices@sitename.com&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;/&lt;span class=&quot;hljs-name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Теперь при клике на адрес электронной почты в новом сообщении номер заказа подставится и в тему письма, и в текст сообщения.&lt;/p&gt;
 &lt;p&gt;Мелочь, но она сэкономит вашим покупателям пару лишних действий. Особенно актуально это для тех, кто пишет письмо с мобильника.&lt;/p&gt;
 </content>
         </entry>
     
         <entry>
             <title>Посещённая ссылка при наведении</title>
-            <link href="https://paulradzkov.com/2014/visited_link_on_hover/"/>
+            <link href="http://paulradzkov.com/2014/visited_link_on_hover/"/>
             <updated>2014-01-26T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/visited_link_on_hover/</id>
+            <id>http://paulradzkov.com/2014/visited_link_on_hover/</id>
             <content type="html">&lt;p&gt;Век живи — век учись. Недавно узнал, что можно задавать посещённой ссылке отдельный цвет при наведении комбинируя два псевдокласса: &lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:visited&lt;/span&gt;&lt;span class=&quot;hljs-pseudo&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;hljs-rules&quot;&gt;{&lt;span class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-hexcolor&quot;&gt;#9501B3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;}&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;То есть, что комбинировать псевдоклассы можно, я знал, но не догадывался попробовать провернуть это со ссылками и не ожидал, что это сработает.&lt;/p&gt;
@@ -1538,9 +1556,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>CSS-селектор :not. Полезные примеры</title>
-            <link href="https://paulradzkov.com/2014/negation_css_selector/"/>
+            <link href="http://paulradzkov.com/2014/negation_css_selector/"/>
             <updated>2014-01-19T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2014/negation_css_selector/</id>
+            <id>http://paulradzkov.com/2014/negation_css_selector/</id>
             <content type="html">&lt;p&gt;В спецификации и блогах про селектор &lt;code class=&quot;hljs-pseudo&quot;&gt;:not&lt;/code&gt; обычно приводят какие-то искусственные примеры, которые хоть и объясняют синтаксис и принцип действия, но не несут никакой идеи о том, как получить пользу от нового селектора.&lt;/p&gt;
 
 &lt;!-- cut --&gt;
@@ -1727,9 +1745,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Списки и картинки с флоатами</title>
-            <link href="https://paulradzkov.com/2013/lists_and_floats/"/>
+            <link href="http://paulradzkov.com/2013/lists_and_floats/"/>
             <updated>2013-01-24T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2013/lists_and_floats/</id>
+            <id>http://paulradzkov.com/2013/lists_and_floats/</id>
             <content type="html">&lt;p&gt;&lt;strong&gt;Обновлено 12 декабря 2015. Спустя три года после написания этого поста в голову пришло более простое и стабильное решение.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Для дефолтных браузерных стилей характерно такое поведение: если картинка обтекает список слева, маркеры списка налазят на картинку. От этого можно избавиться незначительно переписав стили. &lt;/p&gt;
@@ -1819,9 +1837,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Pointer-events</title>
-            <link href="https://paulradzkov.com/2012/pointer-events/"/>
+            <link href="http://paulradzkov.com/2012/pointer-events/"/>
             <updated>2012-12-09T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2012/pointer-events/</id>
+            <id>http://paulradzkov.com/2012/pointer-events/</id>
             <content type="html">&lt;p&gt;Представим ситуацию, когда у нас один html-элемент расположен поверх другого. Но нам нужно, чтобы нижний элемент был кликабельным или реагировал на hover.&lt;/p&gt;
 
 &lt;p&gt;В модуле «CSS4-UI» есть такое свойство — &lt;code&gt;&lt;a href=&quot;http://wiki.csswg.org/spec/css4-ui#pointer-events&quot;&gt;pointer-events&lt;/a&gt;&lt;/code&gt;.&lt;/p&gt;
@@ -1877,9 +1895,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Как отключить javascript в Google Chrome</title>
-            <link href="https://paulradzkov.com/2012/chrome_dev_tools/"/>
+            <link href="http://paulradzkov.com/2012/chrome_dev_tools/"/>
             <updated>2012-11-27T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2012/chrome_dev_tools/</id>
+            <id>http://paulradzkov.com/2012/chrome_dev_tools/</id>
             <content type="html">&lt;p&gt;&lt;em&gt;Статья обновлена 6 февраля 2014.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;В настройках Chrome Developer Tools запрятано много полезных, не сразу заметных, опций. Самые часто используемые — это отключение яваскрипта и отключение кэша.&lt;/p&gt;
 
@@ -1911,9 +1929,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Перечёркивание крест-накрест</title>
-            <link href="https://paulradzkov.com/2012/crosswise/"/>
+            <link href="http://paulradzkov.com/2012/crosswise/"/>
             <updated>2012-10-28T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2012/crosswise/</id>
+            <id>http://paulradzkov.com/2012/crosswise/</id>
             <content type="html">&lt;p&gt;Итак, задача: перечеркнуть слово или блок текста или картинку диагональными линиями крест-накрест. Нам поможет SVG.&lt;/p&gt;
 
 &lt;!-- cut --&gt;
@@ -1996,9 +2014,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Отладка мобильных сайтов в Webkit. Инспектор кода на мобильных устройствах</title>
-            <link href="https://paulradzkov.com/2012/mobile_developing/"/>
+            <link href="http://paulradzkov.com/2012/mobile_developing/"/>
             <updated>2012-04-08T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2012/mobile_developing/</id>
+            <id>http://paulradzkov.com/2012/mobile_developing/</id>
             <content type="html">&lt;p&gt;7 марта Abobe &lt;a href=&quot;http://tv.adobe.com/watch/adobe-technology-sneaks-2012/adobe-shadow&quot; title=&quot;Смотрим презентацию&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;представила&lt;/a&gt; замечательный комплекс программ, позволяющий синхронно просматривать и проводить отладку сайтов в браузерах Webkit на компе и нескольких планшетах и смартфонах одновременно. Количество подключаемых устройств не ограничено. Поддерживаются как iOS, так и Android.&lt;/p&gt;
 
 &lt;!-- cut --&gt;
@@ -2021,9 +2039,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Горячие клавиши для выбора предыдущего и следующего слоя в Photoshop</title>
-            <link href="https://paulradzkov.com/2012/photoshop_next_and_previous_layer/"/>
+            <link href="http://paulradzkov.com/2012/photoshop_next_and_previous_layer/"/>
             <updated>2012-03-18T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2012/photoshop_next_and_previous_layer/</id>
+            <id>http://paulradzkov.com/2012/photoshop_next_and_previous_layer/</id>
             <content type="html">&lt;p&gt;При написании макросов в Фотошопе бывает нужно выбрать слой выше или ниже активного. Кликать в слой курсором плохой вариант, так как макрос запишет команду «Выбрать слой &quot;имя_слоя&quot;», т.е. будет выбираться конкретный слой, где бы он не находился, а не слой относительно текущего.&lt;/p&gt;
 &lt;p&gt;Нам помогут горячие клавиши: &lt;/p&gt;
 &lt;ul&gt;
@@ -2054,9 +2072,9 @@ Content Cell  | Content Cell
     
         <entry>
             <title>HTML-сущности и их UTF-коды</title>
-            <link href="https://paulradzkov.com/2012/html-entities_and_utf_codes/"/>
+            <link href="http://paulradzkov.com/2012/html-entities_and_utf_codes/"/>
             <updated>2012-03-11T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2012/html-entities_and_utf_codes/</id>
+            <id>http://paulradzkov.com/2012/html-entities_and_utf_codes/</id>
             <content type="html">&lt;p&gt;Генерируемое содержимое псевдоклассов &lt;code class=&quot;hljs-pseudo&quot;&gt;:before&lt;/code&gt; и &lt;code class=&quot;hljs-pseudo&quot;&gt;:after&lt;/code&gt; очень удобно использовать для создания иконок, буллитов, кавычек и в прочих декоративных целях.&lt;/p&gt;
 
 &lt;p&gt;Но свойство &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;'\203A'&lt;/span&gt;;&lt;/span&gt;&lt;/code&gt; отображает HTML-сущности так, как они записаны в CSS, не заменяет их на специальные символы. Например, напишем в CSS &lt;code class=&quot;hljs-rule&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;content&lt;/span&gt;:&lt;span class=&quot;hljs-value&quot;&gt; &lt;span class=&quot;hljs-string&quot;&gt;'&amp;amp;rarr;'&lt;/span&gt;;&lt;/span&gt;&lt;/code&gt;, получим в браузере «&amp;amp;rarr;» вместо «&amp;rarr;». Поэтому писать спецальные символы в &lt;code class=&quot;hljs-attribute&quot;&gt;content&lt;/code&gt; нужно 4-значными UTF-кодами (UTF-16 hex), экранированными обратным слэшем.&lt;/p&gt;
@@ -3745,12 +3763,11 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Нарезка в Photoshop — New Layer Based Slice</title>
-            <link href="https://paulradzkov.com/2012/photoshop_new_layer_based_slice/"/>
+            <link href="http://paulradzkov.com/2012/photoshop_new_layer_based_slice/"/>
             <updated>2012-02-22T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2012/photoshop_new_layer_based_slice/</id>
+            <id>http://paulradzkov.com/2012/photoshop_new_layer_based_slice/</id>
             <content type="html">&lt;p&gt;Открыл для себя недавно полезную команду в фотошопе — меню «Layer» &amp;rarr; «New Layer Based Slice», — которая создаёт слайс по границам выделенного слоя. В случае выделения нескольких слоёв, создает слайс по границам каждого слоя. Это в несколько раз ускоряется нарезку графики с тенями, свечением и контурами.&lt;/p&gt;
 &lt;!-- cut --&gt;
-
 &lt;figure&gt;
     &lt;img src=&quot;/2012/photoshop_new_layer_based_slice/Photoshop-New-Layer-Based-Slice.png&quot; width=&quot;875&quot; height=&quot;735&quot; alt=&quot;New Layer Based Slice&quot;/&gt;
     &lt;figcaption&gt;Layer &amp;rarr; New Layer Based Slice (Alt+L)+(Alt+B)&lt;/figcaption&gt;
@@ -3767,15 +3784,15 @@ Content Cell  | Content Cell
     
         <entry>
             <title>Как перекрасить поля с автозаполнением в Google Chrome</title>
-            <link href="https://paulradzkov.com/2012/autocomplete/"/>
+            <link href="http://paulradzkov.com/2012/autocomplete/"/>
             <updated>2012-02-12T00:00:00.000Z</updated>
-            <id>https://paulradzkov.com/2012/autocomplete/</id>
+            <id>http://paulradzkov.com/2012/autocomplete/</id>
             <content type="html">&lt;p&gt;В Google Chrome в user agent stylesheet для полей с автозаполнением прописан желтый фон (#FAFFBD) и черный цвет текста, причем оба правила усилены с помощью &lt;code class=&quot;hljs-important&quot;&gt;!important&lt;/code&gt; и переопределить их в своей CSS нельзя. Но есть способы решить эту проблему обходными путями.&lt;/p&gt;
 &lt;!-- cut --&gt;
-
 &lt;p&gt;В трекере описан этот &lt;a href=&quot;http://code.google.com/p/chromium/issues/detail?id=46543&quot;&gt;баг&lt;/a&gt;, но &lt;time datetime=&quot;2012-10-30&quot;&gt;пока&lt;/time&gt; решения нет.&lt;/p&gt;
 &lt;p&gt;Автозаполнение можно выключить с помощью &lt;code class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;autocomplete&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&amp;quot;off&amp;quot;&lt;/span&gt;&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;action&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;…&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;method&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;post&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;autocomplete&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;off&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-name&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;action&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;…&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;method&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;post&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attr&quot;&gt;autocomplete&lt;/span&gt;=&lt;span class=&quot;hljs-string&quot;&gt;&quot;off&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Обновлено 30 октября 2012.&lt;/strong&gt;&lt;/p&gt;
 &lt;figure&gt;
     &lt;img src=&quot;/2012/autocomplete/chrome-autocomplete-recolor.gif&quot; width=&quot;998&quot; height=&quot;659&quot; alt=&quot;Жёлтые поля ввода можно перекрасить с помощью box-shadow&quot;/&gt;
@@ -3786,13 +3803,15 @@ Content Cell  | Content Cell
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:-webkit-autofill&lt;/span&gt; {
     &lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-box-shadow&lt;/span&gt;: inset &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;50px&lt;/span&gt; white; &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет вашего фона */&lt;/span&gt;
     &lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-text-fill-color&lt;/span&gt;: black; &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет текста */&lt;/span&gt;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Если вы для &lt;code class=&quot;hljs-pseudo&quot;&gt;:focus&lt;/code&gt; состояния задавали стили с использованием &lt;code class=&quot;hljs-attribute&quot;&gt;box-shadow&lt;/code&gt;, то вам придется заново их переопределить:&lt;/p&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;hljs css&quot;&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:-webkit-autofill&lt;/span&gt;&lt;span class=&quot;hljs-selector-pseudo&quot;&gt;:focus&lt;/span&gt; {
     &lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-box-shadow&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;5px&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;    blue,   &lt;span class=&quot;hljs-comment&quot;&gt;/* ваш box-shadow для :focus */&lt;/span&gt;
                   inset &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;   &lt;span class=&quot;hljs-number&quot;&gt;50px&lt;/span&gt; white;  &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет вашего фона */&lt;/span&gt;
     &lt;span class=&quot;hljs-attribute&quot;&gt;-webkit-text-fill-color&lt;/span&gt;: black;          &lt;span class=&quot;hljs-comment&quot;&gt;/* цвет текста */&lt;/span&gt;
-}&lt;/code&gt;&lt;/pre&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;При помощи нескольких теней можно &lt;a href=&quot;/demo/box-shadow_instead_gradient/&quot;&gt;имитировать градиент&lt;/a&gt;.&lt;/p&gt;
 </content>
         </entry>
